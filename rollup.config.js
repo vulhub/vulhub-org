@@ -2,9 +2,11 @@ import buble from "rollup-plugin-buble"
 import resolve from "rollup-plugin-node-resolve"
 import uglify from "rollup-plugin-uglify"
 import scss from 'rollup-plugin-scss'
+import commonjs from 'rollup-plugin-commonjs'
 
 export default {
   plugins: [
+    commonjs(),
     buble({
       jsx: "h",
       include: ["src/**.js"]

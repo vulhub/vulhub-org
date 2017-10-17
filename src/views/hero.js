@@ -1,6 +1,6 @@
 import { h } from 'hyperapp'
 
-import { Link } from './link'
+import { Link } from '../components/link'
 
 export const Hero = ({state, actions}, children) => (
     <section class="hero is-info is-medium">

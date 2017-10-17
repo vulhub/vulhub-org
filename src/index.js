@@ -1,7 +1,8 @@
 import './scss/index.scss'
 import { h, app } from "hyperapp"
 
-import { Hero } from "./components/hero"
+import { Hero } from "./views/hero"
+import { Body } from "./views/body"
 /** @jsx h */
 
 app({
@@ -12,6 +13,10 @@ app({
     return (
       <main>
         <Hero 
+          state={state} 
+          actions={actions}
+        />
+        <Body
           state={state} 
           actions={actions}
         />
