@@ -1,3 +1,7 @@
 .hero .logo {
   font-size: 1.5rem;
   font-weight: bold; }
+
+.content {
+  word-wrap: break-word;
+  word-break: bread-all; }
