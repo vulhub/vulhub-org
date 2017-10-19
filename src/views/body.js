@@ -3,7 +3,7 @@ import { h } from 'hyperapp'
 import { htmlify } from '../helper/htmlify';
 
 export const Body = ({state, actions}, children) => {
-    let repos = state.repositories.slice(0, 10)
+    let repos = state.repo_list.slice(0, 10)
     
     return (
         <section class="section">
@@ -14,7 +14,7 @@ export const Body = ({state, actions}, children) => {
                             <p class="panel-heading"> 漏洞环境 </p>
                             <div class="panel-block">
                                 <p class="control has-icons-left">
-                                <input class="input is-media" type="text" placeholder="Search" />
+                                <input class="input is-media" type="text" placeholder="Search" value={state.search_init} onkeyup={actions.search} />
                                 <span class="icon is-media is-left">
                                     <i class="fa fa-search"></i>
                                 </span>
@@ -30,7 +30,7 @@ export const Body = ({state, actions}, children) => {
                             <label class="panel-block">
                                 <input type="checkbox" /> Remember me </label>
                             <div class="panel-block">
-                                <button class="button is-primary is-outlined is-fullwidth"> Reset all filters </button>
+                                <button class="button is-primary is-outlined is-fullwidth" onclick={actions.reset}> Reset all filters </button>
                             </div>
                         </nav>
                     </div>
