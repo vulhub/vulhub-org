@@ -2,7 +2,9 @@ import { h } from 'hyperapp'
 
 import { Link } from '../components/link'
 
-export const Hero = ({state, actions}, children) => (
+export const Hero = ({state, actions}, children) => {
+
+    return (
     <section class="hero is-info is-medium">
         <div class="hero-head">
             <header class="nav">
@@ -44,19 +46,27 @@ export const Hero = ({state, actions}, children) => (
             <h2 class="subtitle">
                 使用Vulhub一键搭建漏洞测试靶场
             </h2>
+            <div id="start-bar">
+                <span class="user" href="docs/">root:~ #</span><span class="command">docker-compose up -d</span>
+            </div>
+            <p>
+                <a class="github-button" href="https://github.com/vulhub" aria-label="Follow @vulhub on GitHub">Follow @vulhub</a> &nbsp;
+                <a class="github-button" href="https://github.com/vulhub/vulhub" data-icon="octicon-star" data-show-count="true" aria-label="Star vulhub/vulhub on GitHub">Star</a> &nbsp;
+                <a class="github-button" href="https://github.com/vulhub/vulhub/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork vulhub/vulhub on GitHub">Fork</a>
+            </p>
             </div>
         </div>
         <div class="hero-foot">
             <nav class="tabs is-boxed">
             <div class="container">
                 <ul>
-                    <li class={state.location == '#/' ? 'is-active' : ''}>
-                        <Link to="#/" go={actions.go}>描述</Link>
+                    <li class={location.hash.startsWith('#/readme/') || _.isEmpty(location.hash) ? 'is-active' : ''}>
+                        <Link to="#/readme/" go={actions.go}>描述</Link>
                     </li>
-                    <li class={state.location == '#/environments/' ? 'is-active' : ''}>
+                    <li class={location.hash.startsWith('#/environments/') ? 'is-active' : ''}>
                         <Link to="#/environments/" go={actions.go}>环境</Link>
                     </li>
-                    <li class={state.location == '#/contribute/' ? 'is-active' : ''}>
+                    <li class={location.hash.startsWith('#/contribute/') ? 'is-active' : ''}>
                         <Link to="#/contribute/" go={actions.go}>贡献</Link>
                     </li>
                 </ul>
@@ -64,4 +74,5 @@ export const Hero = ({state, actions}, children) => (
             </nav>
         </div>
     </section>
-)
+    )
+}
