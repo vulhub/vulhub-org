@@ -25,15 +25,13 @@ export const Body = ({state, actions}, children) => {
                             {state.repo_list.map(vuln => {
                                 i += 1
                                 return (
-                                    <a class={state.vuln_name == vuln.name ? 'panel-block is-active':'panel-block'}
-                                       style={{display: !state.showAll && i>=10 ? 'none':'block'}}
-                                       onclick={e => {
-                                            actions.go(`#/environments/${vuln.path}/`)
-                                            actions.load_vuln(vuln)
-                                           }
-                                       }>
+                                    <Link class={state.vuln.name == vuln.name ? 'panel-block is-active':'panel-block'}
+                                          style={{display: !state.showAll && i>=10 ? 'none':'block'}}
+                                          to={`#/environments/${vuln.path}/`}
+                                          go={actions.go}
+                                    >
                                         <span class="panel-icon"> <i class="fa fa-book"></i> </span> {vuln.name}
-                                    </a>
+                                    </Link>
                                 )
                             })}
                             <label class="panel-block">
@@ -46,9 +44,9 @@ export const Body = ({state, actions}, children) => {
                     <div class="column is-8">
                         <Tag title="App" onclick={e => actions.search(state.vuln.app)}>{state.vuln.app}</Tag>
                         <Tag title="CVE" onclick={e => actions.search(state.vuln.cve)}>{state.vuln.cve}</Tag>
-                        <Tag title="Environment" href={`https://github.com/vulhub/vulhub/tree/master/${state.vuln.path}`} target="_blank">{state.vuln.name}</Tag>
+                        <Tag title="Path" href={`https://github.com/vulhub/vulhub/tree/master/${state.vuln.path}`} target="_blank">{state.vuln.path}</Tag>
 
-                        <article class="content" id="content" oncreate={htmlify(state.html)}></article> 
+                        <article class="content" onupdate={htmlify(state.html)} oncreate={htmlify(state.html)}></article> 
                     </div>
                 </div>
             </div>

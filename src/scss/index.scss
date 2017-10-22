@@ -1,5 +1,3 @@
-@import '../../node_modules/bulmaswatch/materia/bulmaswatch.min.css';
-
 .hero {
   .logo {
     font-size: 1.5rem;
@@ -20,6 +18,7 @@
       font-family: "Source Code Pro",Monaco,Menlo,Consolas,monospace;
       display: inline-block;
       padding: 15px 20px;
+      text-decoration: none;
   }
 
   .user {
@@ -27,11 +26,6 @@
       background: rgb(39, 98, 127);
       display: inline-block;
       padding: 15px;
-      text-decoration: none;
-      -webkit-transition: .2s;
-      -moz-transition: .2s;
-      -ms-transition: .2s;
-      transition: .2s;
       font-family: "Source Code Pro",Monaco,Menlo,Consolas,monospace;
   }
 
@@ -42,4 +36,68 @@
 .inline-box {
   display: inline-block;
   margin: 0 10px 15px 0;
+}
+
+.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+
+  /*
+    Introduced in IE 10.
+    See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+  */
+  -ms-user-select: none;
+  user-select: none;
+}
+#quick-start-code {
+  code {
+    background-color: #434659;
+    color: #c2f5ff;
+    font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
+  }
+
+  span.c {
+    color: #86a5b1;
+    font-style: italic;
+  }
+
+  span.s {
+    &:before {
+      content: "$ ";
+    }
+  }
+}
+
+#quick-start {
+  a {
+    color: #2196f3;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer {
+  padding: 3rem 1.5rem 4rem;
+  color: rgba(255,255,255,.6);
+  background-color: #535353;
+  font-weight: 200;
+
+  a {
+    font-weight: 400;
+    color: rgba(255,255,255,.6);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .footer-nav {
+    float: left;
+  }
+  .footer-nav-item {
+    display: inline-block;
+  }
 }

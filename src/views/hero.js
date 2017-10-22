@@ -1,5 +1,6 @@
 import { h } from 'hyperapp'
 
+import router from '../helper/router'
 import { Link } from '../components/link'
 
 export const Hero = ({state, actions}, children) => {
@@ -10,7 +11,7 @@ export const Hero = ({state, actions}, children) => {
             <header class="nav">
             <div class="container">
                 <div class="nav-left">
-                <a class="nav-item logo">
+                <a class="nav-item logo" href="/">
                     Vulhub
                 </a>
                 </div>
@@ -20,12 +21,30 @@ export const Hero = ({state, actions}, children) => {
                 <span></span>
                 </span>
                 <div class="nav-right nav-menu">
-                <a class="nav-item is-active">
+                <Link 
+                    class={state.pos == 'index' || _.isEmpty(location.hash) ? 'nav-item is-active' : 'nav-item'} 
+                    to="#/index/" 
+                    go={actions.go} >
                     主页
-                </a>
-                <a class="nav-item">
+                </Link>
+                <Link 
+                    class={state.pos == 'docs' ? 'nav-item is-active' : 'nav-item'} 
+                    to="#/docs/" 
+                    go={actions.go} >
                     文档
-                </a>
+                </Link>
+                <Link 
+                    class={state.pos == 'environments' ? 'nav-item is-active' : 'nav-item'} 
+                    to="#/environments/"
+                    go={actions.go} >
+                    漏洞环境
+                </Link>
+                <Link 
+                    class={state.pos == 'contribute' ? 'nav-item is-active' : 'nav-item'} 
+                    to="#/contribute/" 
+                    go={actions.go} >
+                    贡献
+                </Link>
                 <span class="nav-item">
                     <a class="button is-primary is-inverted" href="https://github.com/vulhub/vulhub" target="_blank">
                     <span class="icon">
@@ -47,7 +66,7 @@ export const Hero = ({state, actions}, children) => {
                 使用Vulhub一键搭建漏洞测试靶场
             </h2>
             <div id="start-bar">
-                <span class="user" href="docs/">root:~ #</span><span class="command">docker-compose up -d</span>
+                <span class="user unselectable" href="docs/">root:~ #</span><span class="command">docker-compose up -d</span>
             </div>
             <p>
                 <a class="github-button" href="https://github.com/vulhub" aria-label="Follow @vulhub on GitHub">Follow @vulhub</a> &nbsp;
@@ -56,23 +75,22 @@ export const Hero = ({state, actions}, children) => {
             </p>
             </div>
         </div>
-        <div class="hero-foot">
-            <nav class="tabs is-boxed">
-            <div class="container">
-                <ul>
-                    <li class={location.hash.startsWith('#/readme/') || _.isEmpty(location.hash) ? 'is-active' : ''}>
-                        <Link to="#/readme/" go={actions.go}>描述</Link>
-                    </li>
-                    <li class={location.hash.startsWith('#/environments/') ? 'is-active' : ''}>
-                        <Link to="#/environments/" go={actions.go}>环境</Link>
-                    </li>
-                    <li class={location.hash.startsWith('#/contribute/') ? 'is-active' : ''}>
-                        <Link to="#/contribute/" go={actions.go}>贡献</Link>
-                    </li>
-                </ul>
+        {['environments', 'docs'].indexOf(state.pos) >= 0 && (
+            <div class="hero-foot">
+                <nav class="tabs is-boxed">
+                <div class="container">
+                    <ul>
+                        <li class={state.pos == 'docs' && 'is-active'}>
+                            <Link to="#/docs/" go={actions.go}>安装</Link>
+                        </li>
+                        <li class={state.pos == 'environments' && 'is-active'}>
+                            <Link to="#/environments/" go={actions.go}>漏洞环境</Link>
+                        </li>
+                    </ul>
+                </div>
+                </nav>
             </div>
-            </nav>
-        </div>
+        )}
     </section>
     )
 }

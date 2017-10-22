@@ -41,11 +41,35 @@ module.exports = {
                 use: ['css-loader', 'sass-loader'],
                 fallback: 'style-loader'
             })
+        },
+        {
+          test: /\.css$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: 'base.css',
+                outputPath: 'css/'
+              }
+            }
+          ]
+        },
+        {
+          test: /\.md$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[path][name].[ext]',
+                outputPath: 'docs/'
+              }
+            }
+          ]
         }
       ]
   },
   plugins: [
-    new ExtractTextPlugin('css/bundle.css'),
+    new ExtractTextPlugin('css/app.css'),
     new UglifyJSPlugin(),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
@@ -53,5 +77,8 @@ module.exports = {
       cssProcessorOptions: { discardComments: {removeAll: true } },
       canPrint: true
     })
-  ]
+  ],
+  externals: {
+    'marked': 'window.marked'
+  }
 }
