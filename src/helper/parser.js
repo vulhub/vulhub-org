@@ -3,27 +3,29 @@
 export default (path, html) => {
     var baseurl = `${location.protocol}//${location.host}/vulhub/${path}`
     const buildNodes = node => {
-        var i, newNode, attributes, child;
+        var i, newNode, attributes, child
     
         switch( node.nodeType ){
             case 1: // ELEMENT_NODE
-                newNode = document.createElement( node.tagName );
-                for( i = 0; i < node.attributes.length; i++ ){
-                    if(node.tagName.toLowerCase() == "img" && node.attributes[ i ].name == "src") {
-                        newNode.setAttribute( node.attributes[ i ].name, `${baseurl}/${node.attributes[i].value}`);
+                newNode = document.createElement( node.tagName )
+                for ( i = 0; i < node.attributes.length; i++ ) {
+                    if (node.tagName.toLowerCase() == "img" && node.attributes[ i ].name == "src") {
+                        newNode.setAttribute( node.attributes[ i ].name, `${baseurl}/${node.attributes[i].value}`)
+                    } else if (node.tagName.toLowerCase() == "a" && node.attributes[ i ].name == "href" && !/^https?:\/\/.+$/i.test(node.attributes[ i ].value)) {
+                        newNode.setAttribute( node.attributes[ i ].name, `https://github.com/vulhub/vulhub/blob/master/${path}/${node.attributes[i].value}`)
                     } else {
-                        newNode.setAttribute( node.attributes[ i ].name, node.attributes[ i ].value );
+                        newNode.setAttribute( node.attributes[ i ].name, node.attributes[ i ].value )
                     }
                 }
                 for( i = 0; i < node.childNodes.length; i++ ){
-                    child = buildNodes( node.childNodes[ i ] );
+                    child = buildNodes( node.childNodes[ i ] )
                     if( child !== undefined ){
-                        newNode.appendChild( child );
+                        newNode.appendChild( child )
                     }
                 }
-                return newNode;
+                return newNode
             case 3: // TEXT_NODE
-                return document.createTextNode( node.textContent );
+                return document.createTextNode( node.textContent )
             default:
                 return undefined;
         }
