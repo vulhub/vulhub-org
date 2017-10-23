@@ -4,6 +4,9 @@ import './scss/index.scss'
 import { h, app } from "hyperapp"
 import marked from 'marked'
 import nanoajax from 'nanoajax'
+import NProgress from 'nprogress'
+import find from 'lodash/find'
+import filter from 'lodash/filter'
 
 import { Hero } from "./views/hero"
 import { Body } from "./views/body"
@@ -71,6 +74,7 @@ app({
       component = (
         <Readme state={state} actions={actions} />
       )
+      actions.finishLoading()
     }
 
     return (
@@ -86,6 +90,7 @@ app({
   },
   actions: {
     init: (state, actions) => {
+      actions.startLoading()
       if (state.pos == 'environments') {
         var default_vuln = "activemq/CVE-2016-3088"
         let matches = /^#\/environments\/(.+)\/$/i.exec(location.hash)
@@ -93,7 +98,7 @@ app({
           default_vuln = matches[1]
         }
   
-        let vuln = _.find(state.repositories, (el, index) => {
+        let vuln = find(state.repositories, (el, index) => {
           return el.path == default_vuln
         }) || state.repositories[0]
         actions.load_vuln(vuln)
@@ -104,9 +109,9 @@ app({
           default_docs = matches[1]
         }
         actions.load_docs(default_docs)
+      } else {
+        return state
       }
-
-      return state
     },
     go: (state, actions, url) => {
       history.pushState({}, null, url)
@@ -124,17 +129,18 @@ app({
     load_docs: (state, actions, name) => {
       nanoajax.ajax({url: `documents/${name}.md`}, (code, md) => {
         if(md && code == 200) {
-          let html = marked(md, {sanitize: true})
+          let html = marked(md, {sanitize: false})
           actions.render(html)
         }
       })
     },
     render: (state, actions, html) => {
       state.html = html
+      actions.finishLoading()
       return state
     },
     search: (state, actions, keyword) => {
-      state.repo_list = _.filter(state.repositories, (vuln, i) => {
+      state.repo_list = filter(state.repositories, (vuln, i) => {
         const text = toLowerCase(keyword)
         const app_name = toLowerCase(vuln.app)
         const vul_name = toLowerCase(vuln.name)
@@ -153,6 +159,12 @@ app({
     showAll: (state, actions, e) => {
       state.showAll = e.target.checked
       return state
+    },
+    startLoading: (state, actions) => {
+      NProgress.start()
+    },
+    finishLoading: (state, actions, e) => {
+      NProgress.done()
     }
   }
 }, document.getElementById("app"))

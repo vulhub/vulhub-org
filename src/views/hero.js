@@ -1,4 +1,5 @@
 import { h } from 'hyperapp'
+import isEmpty from 'lodash/isEmpty'
 
 import router from '../helper/router'
 import { Link } from '../components/link'
@@ -22,13 +23,13 @@ export const Hero = ({state, actions}, children) => {
                 </span>
                 <div class="nav-right nav-menu">
                 <Link 
-                    class={state.pos == 'index' || _.isEmpty(location.hash) ? 'nav-item is-active' : 'nav-item'} 
+                    class={state.pos == 'index' || isEmpty(location.hash) ? 'nav-item is-active' : 'nav-item'} 
                     to="#/index/" 
                     go={actions.go} >
                     主页
                 </Link>
                 <Link 
-                    class={state.pos == 'docs' ? 'nav-item is-active' : 'nav-item'} 
+                    class={state.pos == 'docs' && location.hash != '#/docs/donate/' ? 'nav-item is-active' : 'nav-item'} 
                     to="#/docs/" 
                     go={actions.go} >
                     文档
@@ -40,10 +41,10 @@ export const Hero = ({state, actions}, children) => {
                     漏洞环境
                 </Link>
                 <Link 
-                    class={state.pos == 'contribute' ? 'nav-item is-active' : 'nav-item'} 
-                    to="#/contribute/" 
+                    class={location.hash == '#/docs/donate/' ? 'nav-item is-active' : 'nav-item'} 
+                    to="#/docs/donate/"
                     go={actions.go} >
-                    贡献
+                    捐助
                 </Link>
                 <span class="nav-item">
                     <a class="button is-primary is-inverted" href="https://github.com/vulhub/vulhub" target="_blank">

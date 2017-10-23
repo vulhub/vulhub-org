@@ -20,7 +20,7 @@ export const Docs = ({state, actions}, children) => {
                             </p>
                             <ul class="menu-list">
                                 <li>
-                                    <a>安装Docker</a>
+                                    <Menu to="#/docs/install-docker/" go={actions.go}>安装Docker</Menu>
                                     <ul>
                                     <li><Menu to="#/docs/install-docker-one-click/" go={actions.go}>一键安装</Menu></li>
                                     <li><Menu to="#/docs/install-docker-manual/" go={actions.go}>手工安装</Menu></li>
@@ -45,6 +45,12 @@ export const Docs = ({state, actions}, children) => {
                             <li><Menu to="#/docs/requirement/" go={actions.go}>配置要求</Menu></li>    
                             <li><Menu to="#/docs/failure-reason/" go={actions.go}>失败的原因</Menu></li>
                             <li><Menu to="#/docs/contribute/" go={actions.go}>贡献环境</Menu></li>
+                            </ul>
+                            <p class="menu-label">
+                            Donate
+                            </p>
+                            <ul class="menu-list">
+                            <li><Menu to="#/docs/donate/" go={actions.go}>捐助</Menu></li>    
                             </ul>
                         </aside>
                     </div>

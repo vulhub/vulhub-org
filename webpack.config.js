@@ -36,23 +36,11 @@ module.exports = {
             }
         },
         {
-            test: /\.scss$/,
+            test: /\.(scss|css)$/,
             use: ExtractTextPlugin.extract({
                 use: ['css-loader', 'sass-loader'],
                 fallback: 'style-loader'
             })
-        },
-        {
-          test: /\.css$/,
-          use: [
-            {
-              loader: 'file-loader',
-              options: {
-                name: 'base.css',
-                outputPath: 'css/'
-              }
-            }
-          ]
         },
         {
           test: /\.md$/,
