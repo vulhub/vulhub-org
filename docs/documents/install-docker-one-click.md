@@ -15,3 +15,5 @@ sudo apt install docker.io
 ```
 
 但包管理工具安装的Docker版本一般较老，有可能在使用Vulhub的时候会出现BUG（基本上下不会，但也不排除有的Docker版本过老的）。
+
+**注意**，docker是一个系统服务，所以，安装完成后可能需要手工启动服务：`service start docker`，否则会出现连接失败的情况。同样，如果docker没有自启动，你也需要手工启动docker服务。如果你是使用一键安装工具安装的docker，则docker会自动启动。
