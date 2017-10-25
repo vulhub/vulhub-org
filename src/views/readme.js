@@ -62,11 +62,8 @@ export const Readme = ({state, actions}, children) => {
 
                             <pre id="quick-start-code">
                                 <code>
-                                    <span class="c"># If you don't have a docker installed, you'll need to install docker</span> <br />
-                                    <span class="s">curl -s https://get.docker.com/ | sh</span> <br />
-                                    <br />
-                                    <span class="c"># Use pip to install docker-compose</span> <br />
-                                    <span class="s">pip install docker-compose </span> <br />
+                                    <span class="c"># Download the latest version of the vulhub</span> <br />
+                                    <span class="s">git clone https://github.com/vulhub/vulhub.git </span> <br />
                                     <br />
                                     <span class="c"># Entry vulnerability directory</span> <br />
                                     <span class="s">cd /path/to/vuln/</span> <br />
