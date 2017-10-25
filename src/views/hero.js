@@ -7,7 +7,7 @@ import { Link } from '../components/link'
 export const Hero = ({state, actions}, children) => {
 
     return (
-    <section class="hero is-info is-medium">
+    <section class="hero is-info tsuyukusa is-medium">
         <div class="hero-head">
             <header class="nav">
             <div class="container">
