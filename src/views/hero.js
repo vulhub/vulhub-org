@@ -13,7 +13,7 @@ export const Hero = ({state, actions}, children) => {
             <div class="container">
                 <div class="nav-left">
                 <a class="nav-item logo" href="/">
-                    Vulhub
+                    <img src="img/logo.svg" />
                 </a>
                 </div>
                 <span class="nav-toggle">
