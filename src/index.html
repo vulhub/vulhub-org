@@ -4,12 +4,16 @@
   <meta charset="utf-8">
   <title>Vulhub - Docker-Compose file for vulnerability environment</title>
   <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/app.css">
-</head>  
+  <% for (var css in htmlWebpackPlugin.files.css) { %>
+    <link href="<%=htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
+  <% } %>
+</head>
 
 <body id="app">
 </body>
 <script src="https://cdn.bootcss.com/marked/0.3.6/marked.min.js"></script>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
-<script src="js/bundle.js"></script>
+<% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+  <script type="text/javascript" src="<%=htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+<% } %>
 </html>

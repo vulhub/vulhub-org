@@ -3,6 +3,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin")
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: [
@@ -47,7 +48,8 @@ module.exports = {
   },
   plugins: [
     new CopyWebpackPlugin([
-      { from: 'docs', to: './' }
+      { from: 'docs', to: './' },
+      { from: 'src/img', to: './img' }
     ]),
     new ExtractTextPlugin('css/app.css'),
     new UglifyJSPlugin(),
@@ -56,6 +58,16 @@ module.exports = {
       cssProcessor: require('cssnano'),
       cssProcessorOptions: { discardComments: {removeAll: true } },
       canPrint: true
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/index.html',
+      inject: false,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        minifyJS:true, 
+        minifyCSS:true
+      }
     }),
   ],
   externals: {
