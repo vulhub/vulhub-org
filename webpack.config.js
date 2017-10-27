@@ -2,6 +2,7 @@ const path = require('path')
 const ExtractTextPlugin = require("extract-text-webpack-plugin")
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: [
@@ -10,7 +11,7 @@ module.exports = {
   ],
   output: {
     filename: 'js/bundle.js',
-    path: path.resolve(__dirname, 'docs')
+    path: path.resolve(__dirname, 'dist')
   },
   module: {
     rules: [
@@ -41,22 +42,13 @@ module.exports = {
                 use: ['css-loader', 'sass-loader'],
                 fallback: 'style-loader'
             })
-        },
-        {
-          test: /\.md$/,
-          use: [
-            {
-              loader: 'file-loader',
-              options: {
-                name: '[path][name].[ext]',
-                outputPath: 'docs/'
-              }
-            }
-          ]
         }
       ]
   },
   plugins: [
+    new CopyWebpackPlugin([
+      { from: 'docs', to: './' }
+    ]),
     new ExtractTextPlugin('css/app.css'),
     new UglifyJSPlugin(),
     new OptimizeCssAssetsPlugin({
@@ -64,7 +56,7 @@ module.exports = {
       cssProcessor: require('cssnano'),
       cssProcessorOptions: { discardComments: {removeAll: true } },
       canPrint: true
-    })
+    }),
   ],
   externals: {
     'marked': 'window.marked'
