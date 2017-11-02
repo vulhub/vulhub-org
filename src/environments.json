@@ -12,6 +12,12 @@
         "path": "apache_parsing_vulnerability"
     },
     {
+        "name": "Discuz!X ≤3.4 任意文件删除漏洞",
+        "app": "Discuz",
+        "cve": null,
+        "path": "discuz/x3.4-arbitrary-file-deletion"
+    },
+    {
         "name": "CVE-2017-12794",
         "app": "Django",
         "cve": "CVE-2017-12794",
