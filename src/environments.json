@@ -162,6 +162,12 @@
         "path": "nginx_parsing_vulnerability"
     },
     {
+        "name": "node-postgres 代码执行漏洞分析",
+        "app": "node-postgres",
+        "cve": null,
+        "path": "node/node-postgres"
+    },
+    {
         "name": "CVE-2012-1823",
         "app": "PHP",
         "cve": "CVE-2012-1823",
