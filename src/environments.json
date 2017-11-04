@@ -1,6 +1,6 @@
 [
     {
-        "name": "CVE-2016-3088",
+        "name": "ActiveMQ任意文件写入漏洞",
         "app": "ActiveMQ",
         "cve": "CVE-2016-3088",
         "path": "activemq/CVE-2016-3088"
@@ -18,55 +18,55 @@
         "path": "discuz/x3.4-arbitrary-file-deletion"
     },
     {
-        "name": "CVE-2017-12794",
+        "name": "Django debug page XSS漏洞",
         "app": "Django",
         "cve": "CVE-2017-12794",
         "path": "django/CVE-2017-12794"
     },
     {
-        "name": "CVE-2014-3120",
+        "name": "ElasticSearch 命令执行漏洞",
         "app": "ElasticSearch",
         "cve": "CVE-2014-3120",
         "path": "elasticsearch/CVE-2014-3120"
     },
     {
-        "name": "CVE-2015-1427",
+        "name": "ElasticSearch Groovy 沙盒绕过 && 代码执行漏洞",
         "app": "ElasticSearch",
         "cve": "CVE-2015-1427",
         "path": "elasticsearch/CVE-2015-1427"
     },
     {
-        "name": "CVE-2015-3337",
+        "name": "ElasticSearch 插件目录穿越漏洞",
         "app": "ElasticSearch",
         "cve": "CVE-2015-3337",
         "path": "elasticsearch/CVE-2015-3337"
     },
     {
-        "name": "CVE-2015-5531",
+        "name": "ElasticSearch 目录穿越漏洞",
         "app": "ElasticSearch",
         "cve": "CVE-2015-5531",
         "path": "elasticsearch/CVE-2015-5531"
     },
     {
-        "name": "WooYun-2015-110216",
+        "name": "Elasticsearch写入webshell漏洞",
         "app": "ElasticSearch",
         "cve": null,
         "path": "elasticsearch/WooYun-2015-110216"
     },
     {
-        "name": "Fastjson反序列化漏洞",
+        "name": "fastjson 反序列化导致任意命令执行漏洞",
         "app": "Fastjson",
         "cve": null,
         "path": "fastjson/vuln"
     },
     {
-        "name": "CVE-2016-1897",
+        "name": "ffmpeg 任意文件读取漏洞/SSRF漏洞",
         "app": "ffmpeg",
-        "cve": "CVE-2016-1897",
+        "cve": "CVE-2016-1897,CVE-2016-1898",
         "path": "ffmpeg/CVE-2016-1897"
     },
     {
-        "name": "CVE-2017-9993",
+        "name": "ffmpeg 任意文件读取漏洞",
         "app": "ffmpeg",
         "cve": "CVE-2017-9993",
         "path": "ffmpeg/phdays"
@@ -84,13 +84,13 @@
         "path": "fpm"
     },
     {
-        "name": "CVE-2017-8386",
+        "name": "GIT-SHELL 沙盒绕过",
         "app": "git",
         "cve": "CVE-2017-8386",
         "path": "git/CVE-2017-8386"
     },
     {
-        "name": "CVE-2016-9086",
+        "name": "Gitlab 任意文件读取漏洞",
         "app": "gitlab",
         "cve": "CVE-2016-9086",
         "path": "gitlab/CVE-2016-9086"
@@ -102,7 +102,7 @@
         "path": "glassfish/4.1.0"
     },
     {
-        "name": "HeartBleed",
+        "name": "HeartBleed 心脏出血",
         "app": "OpenSSL",
         "cve": "CVE-2014-0160",
         "path": "heartbleed"
@@ -120,37 +120,37 @@
         "path": "imagetragick"
     },
     {
-        "name": "CVE-2017-1000353",
+        "name": "Jenkins-CI 远程代码执行漏洞",
         "app": "Jenkins",
         "cve": "CVE-2017-1000353",
         "path": "jenkins/CVE-2017-1000353"
     },
     {
-        "name": "CVE-2017-8917",
+        "name": "Joomla 3.7.0 SQL注入漏洞",
         "app": "Joomla",
         "cve": "CVE-2017-8917",
         "path": "joomla/CVE-2017-8917"
     },
     {
-        "name": "mybatis sql注入问题",
+        "name": "mybatis SQL注入问题",
         "app": "mybatis",
         "cve": null,
         "path": "mybatis_sqli"
     },
     {
-        "name": "CVE-2013-4547",
+        "name": "Nginx 文件名逻辑漏洞",
         "app": "Nginx",
         "cve": "CVE-2013-4547",
         "path": "nginx/CVE-2013-4547"
     },
     {
-        "name": "CVE-2017-7529",
+        "name": "Nginx越界读取缓存漏洞",
         "app": "Nginx",
         "cve": "CVE-2017-7529",
         "path": "nginx/CVE-2017-7529"
     },
     {
-        "name": "Nginx 配置错误",
+        "name": "Nginx 配置错误三例",
         "app": "Nginx",
         "cve": null,
         "path": "nginx/insecure-configuration"
@@ -168,37 +168,37 @@
         "path": "node/node-postgres"
     },
     {
-        "name": "CVE-2012-1823",
+        "name": "PHP-CGI远程代码执行漏洞",
         "app": "PHP",
         "cve": "CVE-2012-1823",
         "path": "php/CVE-2012-1823"
     },
     {
-        "name": "XML实体注入",
+        "name": "PHP XML实体注入",
         "app": "PHP",
         "cve": null,
         "path": "php_xxe"
     },
     {
-        "name": "PIL CVE-2017-8291",
+        "name": "Python PIL 远程命令执行漏洞（GhostButt）",
         "app": "Python",
         "cve": "CVE-2017-8291",
         "path": "python/PIL-CVE-2017-8291"
     },
     {
-        "name": "unpickle反序列化漏洞",
+        "name": "Python unpickle 反序列化漏洞",
         "app": "Python",
         "cve": null,
         "path": "python/unpickle"
     },
     {
-        "name": "CVE-2017-7494",
+        "name": "Samba 远程命令执行漏洞",
         "app": "Samba",
         "cve": "CVE-2017-7494",
         "path": "samba/CVE-2017-7494"
     },
     {
-        "name": "Shellshock",
+        "name": "Shellshock 破壳漏洞",
         "app": "bash",
         "cve": "CVE-2014-6271",
         "path": "shellshock"
@@ -276,7 +276,7 @@
         "path": "struts2/s2-053"
     },
     {
-        "name": "CVE-2017-11610",
+        "name": "Supervisord 远程命令执行漏洞",
         "app": "Supervisor",
         "cve": "CVE-2017-11610",
         "path": "supervisor/CVE-2017-11610"
@@ -288,7 +288,7 @@
         "path": "thinkphp/in-sqlinjection"
     },
     {
-        "name": "CVE-2017-12615",
+        "name": "Tomcat PUT方法任意写文件漏洞",
         "app": "Tomcat",
         "cve": "CVE-2017-12615",
         "path": "tomcat/CVE-2017-12615"
@@ -300,19 +300,19 @@
         "path": "tomcat/tomcat8"
     },
     {
-        "name": "Weblogic SSRF",
+        "name": "Weblogic SSRF漏洞",
         "app": "Weblogic",
         "cve": null,
         "path": "weblogic/ssrf"
     },
     {
-        "name": "Weblogic文件读取",
+        "name": "Weblogic 文件读取漏洞",
         "app": "Weblogic",
         "cve": null,
         "path": "weblogic/weak_password"
     },
     {
-        "name": "Wordpress Phpmailer RCE",
+        "name": "Wordpress 4.6 任意命令执行漏洞（PHPMailer）",
         "app": "Wordpress",
         "cve": null,
         "path": "wordpress/phpmailer-rce"
