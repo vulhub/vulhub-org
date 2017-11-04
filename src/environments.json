@@ -204,6 +204,12 @@
         "path": "shellshock"
     },
     {
+        "name": "Apache solr XML 实体注入漏洞",
+        "app": "solr",
+        "cve": "CVE-2017-12629",
+        "path": "solr/CVE-2017-12629-XXE"
+    },
+    {
         "name": "S2-001",
         "app": "Struts2",
         "cve": null,
