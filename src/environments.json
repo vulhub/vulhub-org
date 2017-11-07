@@ -162,6 +162,12 @@
         "path": "nginx_parsing_vulnerability"
     },
     {
+        "name": "Node.js 目录穿越漏洞",
+        "app": "node",
+        "cve": "CVE-2017-14849",
+        "path": "node/CVE-2017-14849"
+    },
+    {
         "name": "node-postgres 代码执行漏洞分析",
         "app": "node-postgres",
         "cve": null,
