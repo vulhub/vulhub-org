@@ -81,7 +81,7 @@ export const Readme = ({state, actions}, children) => {
                             <h3>出现BUG？</h3>
 
                             <p>
-                                编译及启动环境时可能会出现BUG，请<a href="https://github.com/vulhub/vulhub/issues/new" target="_blank">提交Issue</a>及时和官方反应。
+                                编译及启动环境时可能会出现BUG，请<a href="https://github.com/vulhub/vulhub/issues/new" target="_blank">提交Issue</a>及时和官方反映。
                             </p>
                         </div>
                     </div>
