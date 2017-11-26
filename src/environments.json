@@ -120,6 +120,12 @@
         "path": "imagetragick"
     },
     {
+        "name": "JBoss 5.x/6.x 反序列化漏洞",
+        "app": "jboss",
+        "cve": "CVE-2017-12149",
+        "path": "jboss/CVE-2017-12149"
+    },
+    {
         "name": "Jenkins-CI 远程代码执行漏洞",
         "app": "Jenkins",
         "cve": "CVE-2017-1000353",
