@@ -336,7 +336,7 @@
         "path": "weblogic/weak_password"
     },
     {
-        "name": "Wordpress 4.6 任意命令执行漏洞（PHPMailer）",
+        "name": "Wordpress 4.6 任意命令执行漏洞（PwnScriptum）",
         "app": "Wordpress",
         "cve": null,
         "path": "wordpress/phpmailer-rce"
