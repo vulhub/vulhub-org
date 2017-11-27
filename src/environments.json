@@ -192,6 +192,12 @@
         "path": "php_xxe"
     },
     {
+        "name": "PHPMailer 任意文件读取漏洞",
+        "app": "PHPMailer",
+        "cve": "CVE-2017-5223",
+        "path": "phpmailer/CVE-2017-5223"
+    },
+    {
         "name": "Python PIL 远程命令执行漏洞（GhostButt）",
         "app": "Python",
         "cve": "CVE-2017-8291",
