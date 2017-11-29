@@ -120,6 +120,12 @@
         "path": "imagetragick"
     },
     {
+        "name": "JBoss JMXInvokerServlet 反序列化漏洞",
+        "app": "jboss",
+        "cve": "CVE-2015-8103",
+        "path": "jboss/CVE-2015-8103"
+    },
+    {
         "name": "JBoss 5.x/6.x 反序列化漏洞",
         "app": "jboss",
         "cve": "CVE-2017-12149",
