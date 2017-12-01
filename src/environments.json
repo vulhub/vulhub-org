@@ -12,6 +12,12 @@
         "path": "apache_parsing_vulnerability"
     },
     {
+        "name": "Couchdb 垂直权限绕过漏洞",
+        "app": "Couchdb",
+        "cve": "CVE-2017-12635",
+        "path": "couchdb/CVE-2017-12635"
+    },
+    {
         "name": "Discuz!X ≤3.4 任意文件删除漏洞",
         "app": "Discuz",
         "cve": null,
