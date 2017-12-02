@@ -18,6 +18,12 @@
         "path": "couchdb/CVE-2017-12635"
     },
     {
+        "name": "Couchdb 任意命令执行漏洞",
+        "app": "Couchdb",
+        "cve": "CVE-2017-12636",
+        "path": "couchdb/CVE-2017-12636"
+    },
+    {
         "name": "Discuz!X ≤3.4 任意文件删除漏洞",
         "app": "Discuz",
         "cve": null,
