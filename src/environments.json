@@ -150,6 +150,12 @@
         "path": "jenkins/CVE-2017-1000353"
     },
     {
+        "name": "Joomla 3.4.5 反序列化漏洞",
+        "app": "Joomla",
+        "cve": "CVE-2015-8562",
+        "path": "joomla/CVE-2015-8562"
+    },
+    {
         "name": "Joomla 3.7.0 SQL注入漏洞",
         "app": "Joomla",
         "cve": "CVE-2017-8917",
