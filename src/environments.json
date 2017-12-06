@@ -210,6 +210,12 @@
         "path": "php/CVE-2012-1823"
     },
     {
+        "name": "XDebug 远程调试漏洞（代码执行）",
+        "app": "PHP",
+        "cve": null,
+        "path": "php/xdebug-rce"
+    },
+    {
         "name": "PHP XML实体注入",
         "app": "PHP",
         "cve": null,
