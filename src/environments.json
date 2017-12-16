@@ -12,6 +12,12 @@
         "path": "apache_parsing_vulnerability"
     },
     {
+        "name": "Aria2 任意文件写入漏洞",
+        "app": "Aria2",
+        "cve": null,
+        "path": "aria2/rce"
+    },
+    {
         "name": "Couchdb 垂直权限绕过漏洞",
         "app": "Couchdb",
         "cve": "CVE-2017-12635",
