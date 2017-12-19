@@ -120,6 +120,12 @@
         "path": "glassfish/4.1.0"
     },
     {
+        "name": "GoAhead 远程命令执行漏洞",
+        "app": "GoAhead",
+        "cve": "CVE-2017-17562",
+        "path": "goahead/CVE-2017-17562"
+    },
+    {
         "name": "HeartBleed 心脏出血",
         "app": "OpenSSL",
         "cve": "CVE-2014-0160",
