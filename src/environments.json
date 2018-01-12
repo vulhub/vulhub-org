@@ -174,6 +174,12 @@
         "path": "joomla/CVE-2017-8917"
     },
     {
+        "name": "Jupyter Notebook 未授权访问漏洞",
+        "app": "Jupyter",
+        "cve": null,
+        "path": "jupyter/notebook-rce"
+    },
+    {
         "name": "mybatis SQL注入问题",
         "app": "mybatis",
         "cve": null,
