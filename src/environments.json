@@ -258,6 +258,12 @@
         "path": "python/unpickle"
     },
     {
+        "name": "rsync 未授权访问漏洞",
+        "app": "rsync",
+        "cve": null,
+        "path": "rsync/common"
+    },
+    {
         "name": "Samba 远程命令执行漏洞",
         "app": "Samba",
         "cve": "CVE-2017-7494",
