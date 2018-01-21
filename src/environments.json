@@ -264,6 +264,12 @@
         "path": "rsync/common"
     },
     {
+        "name": "Ruby Net::FTP 模块命令注入漏洞（CVE-2017-17405）",
+        "app": "ruby",
+        "cve": "CVE-2017-17405",
+        "path": "ruby/CVE-2017-17405"
+    },
+    {
         "name": "Samba 远程命令执行漏洞",
         "app": "Samba",
         "cve": "CVE-2017-7494",
