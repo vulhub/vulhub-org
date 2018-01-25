@@ -66,10 +66,16 @@
         "path": "elasticsearch/CVE-2015-5531"
     },
     {
-        "name": "Elasticsearch写入webshell漏洞",
+        "name": "Elasticsearch 写入webshell漏洞",
         "app": "ElasticSearch",
         "cve": null,
         "path": "elasticsearch/WooYun-2015-110216"
+    },
+    {
+        "name": "electron 远程命令执行漏洞",
+        "app": "electron",
+        "cve": "CVE-2018-1000006",
+        "path": "electron/CVE-2018-1000006"
     },
     {
         "name": "fastjson 反序列化导致任意命令执行漏洞",
