@@ -294,6 +294,12 @@
         "path": "solr/CVE-2017-12629-XXE"
     },
     {
+        "name": "Spring Security Oauth2 远程命令执行漏洞",
+        "app": "spring security oauth2",
+        "cve": "CVE-2016-4977",
+        "path": "spring/CVE-2016-4977"
+    },
+    {
         "name": "S2-001",
         "app": "Struts2",
         "cve": null,
