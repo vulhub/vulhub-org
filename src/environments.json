@@ -300,6 +300,12 @@
         "path": "spring/CVE-2016-4977"
     },
     {
+        "name": "Spring Rest Data 远程命令执行漏洞",
+        "app": "spring rest data",
+        "cve": "CVE-2017-8046",
+        "path": "spring/CVE-2017-8046"
+    },
+    {
         "name": "S2-001",
         "app": "Struts2",
         "cve": null,
