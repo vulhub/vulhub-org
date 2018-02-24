@@ -300,6 +300,12 @@
         "path": "spring/CVE-2016-4977"
     },
     {
+        "name": "Spring WebFlow 远程代码执行漏洞",
+        "app": "spring webflow",
+        "cve": "CVE-2017-4971",
+        "path": "spring/CVE-2017-4971"
+    },
+    {
         "name": "Spring Data Rest 远程命令执行漏洞",
         "app": "spring data rest",
         "cve": "CVE-2017-8046",
