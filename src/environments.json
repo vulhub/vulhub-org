@@ -402,6 +402,12 @@
         "path": "tomcat/tomcat8"
     },
     {
+        "name": "Weblogic < 10.3.6 'wls-wsat' XMLDecoder 反序列化漏洞",
+        "app": "Weblogic",
+        "cve": "CVE-2017-10271",
+        "path": "weblogic/CVE-2017-10271"
+    },
+    {
         "name": "Weblogic SSRF漏洞",
         "app": "Weblogic",
         "cve": null,
