@@ -72,10 +72,16 @@
         "path": "elasticsearch/CVE-2015-5531"
     },
     {
-        "name": "Elasticsearch写入webshell漏洞",
+        "name": "Elasticsearch 写入webshell漏洞",
         "app": "ElasticSearch",
         "cve": null,
         "path": "elasticsearch/WooYun-2015-110216"
+    },
+    {
+        "name": "electron 远程命令执行漏洞",
+        "app": "electron",
+        "cve": "CVE-2018-1000006",
+        "path": "electron/CVE-2018-1000006"
     },
     {
         "name": "fastjson 反序列化导致任意命令执行漏洞",
@@ -264,6 +270,18 @@
         "path": "python/unpickle"
     },
     {
+        "name": "rsync 未授权访问漏洞",
+        "app": "rsync",
+        "cve": null,
+        "path": "rsync/common"
+    },
+    {
+        "name": "Ruby Net::FTP 模块命令注入漏洞（CVE-2017-17405）",
+        "app": "ruby",
+        "cve": "CVE-2017-17405",
+        "path": "ruby/CVE-2017-17405"
+    },
+    {
         "name": "Samba 远程命令执行漏洞",
         "app": "Samba",
         "cve": "CVE-2017-7494",
@@ -280,6 +298,24 @@
         "app": "solr",
         "cve": "CVE-2017-12629",
         "path": "solr/CVE-2017-12629-XXE"
+    },
+    {
+        "name": "Spring Security Oauth2 远程命令执行漏洞",
+        "app": "spring security oauth2",
+        "cve": "CVE-2016-4977",
+        "path": "spring/CVE-2016-4977"
+    },
+    {
+        "name": "Spring WebFlow 远程代码执行漏洞",
+        "app": "spring webflow",
+        "cve": "CVE-2017-4971",
+        "path": "spring/CVE-2017-4971"
+    },
+    {
+        "name": "Spring Data Rest 远程命令执行漏洞",
+        "app": "spring data rest",
+        "cve": "CVE-2017-8046",
+        "path": "spring/CVE-2017-8046"
     },
     {
         "name": "S2-001",
@@ -376,6 +412,12 @@
         "app": "Tomcat",
         "cve": null,
         "path": "tomcat/tomcat8"
+    },
+    {
+        "name": "Weblogic < 10.3.6 'wls-wsat' XMLDecoder 反序列化漏洞",
+        "app": "Weblogic",
+        "cve": "CVE-2017-10271",
+        "path": "weblogic/CVE-2017-10271"
     },
     {
         "name": "Weblogic SSRF漏洞",
