@@ -1,12 +1,18 @@
 [
     {
-        "name": "ActiveMQ任意文件写入漏洞",
+        "name": "ActiveMQ 反序列化漏洞",
+        "app": "ActiveMQ",
+        "cve": "CVE-2015-5254",
+        "path": "activemq/CVE-2015-5254"
+    },
+    {
+        "name": "ActiveMQ 任意文件写入漏洞",
         "app": "ActiveMQ",
         "cve": "CVE-2016-3088",
         "path": "activemq/CVE-2016-3088"
     },
     {
-        "name": "Apache解析漏洞",
+        "name": "Apache 解析漏洞",
         "app": "Apache",
         "cve": null,
         "path": "apache_parsing_vulnerability"
