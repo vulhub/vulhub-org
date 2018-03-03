@@ -174,6 +174,12 @@
         "path": "jenkins/CVE-2017-1000353"
     },
     {
+        "name": "Jmeter RMI 反序列化命令执行漏洞（CVE-2018-1297）",
+        "app": "Apache Jmeter",
+        "cve": "CVE-2018-1297",
+        "path": "jmeter/CVE-2018-1297"
+    },
+    {
         "name": "Joomla 3.4.5 反序列化漏洞",
         "app": "Joomla",
         "cve": "CVE-2015-8562",
