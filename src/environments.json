@@ -264,6 +264,12 @@
         "path": "phpmailer/CVE-2017-5223"
     },
     {
+        "name": "PostgreSQL 提权漏洞",
+        "app": "PostgreSQL",
+        "cve": "CVE-2018-1058",
+        "path": "postgres/CVE-2018-1058"
+    },
+    {
         "name": "Python PIL 远程命令执行漏洞（GhostButt）",
         "app": "Python",
         "cve": "CVE-2017-8291",
