@@ -92,7 +92,7 @@ app({
     init: (state, actions) => {
       actions.startLoading()
       if (state.pos == 'environments') {
-        var default_vuln = "activemq/CVE-2016-3088"
+        var default_vuln = "activemq/CVE-2015-5254"
         let matches = /^#\/environments\/(.+)\/$/i.exec(location.hash)
         if (matches) {
           default_vuln = matches[1]
