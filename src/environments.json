@@ -303,7 +303,7 @@
         "name": "Shellshock 破壳漏洞",
         "app": "bash",
         "cve": "CVE-2014-6271",
-        "path": "shellshock"
+        "path": "bash/shellshock"
     },
     {
         "name": "Apache solr XML 实体注入漏洞",
