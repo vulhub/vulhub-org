@@ -204,6 +204,12 @@
         "path": "jupyter/notebook-rce"
     },
     {
+        "name": "Apache Log4j Server 反序列化命令执行漏洞",
+        "app": "Apache Log4j",
+        "cve": "CVE-2017-5645",
+        "path": "log4j/CVE-2017-5645"
+    },
+    {
         "name": "Nginx 文件名逻辑漏洞",
         "app": "Nginx",
         "cve": "CVE-2013-4547",
