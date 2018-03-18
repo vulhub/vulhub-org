@@ -150,9 +150,9 @@
         "path": "openssl/heartbleed"
     },
     {
-        "name": "HTTPoxy",
+        "name": "HTTPoxy漏洞",
         "app": "cgi",
-        "cve": "CVE-2017-8386",
+        "cve": "CVE-2016-5385",
         "path": "cgi/httpoxy"
     },
     {
