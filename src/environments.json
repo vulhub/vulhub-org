@@ -12,10 +12,10 @@
         "path": "activemq/CVE-2016-3088"
     },
     {
-        "name": "Apache 解析漏洞",
-        "app": "Apache",
+        "name": "Apache HTTPd 解析漏洞",
+        "app": "Apache HTTPd",
         "cve": null,
-        "path": "apache_parsing_vulnerability"
+        "path": "httpd/apache_parsing_vulnerability"
     },
     {
         "name": "Aria2 任意文件写入漏洞",
@@ -147,19 +147,19 @@
         "name": "HeartBleed 心脏出血",
         "app": "OpenSSL",
         "cve": "CVE-2014-0160",
-        "path": "heartbleed"
+        "path": "openssl/heartbleed"
     },
     {
         "name": "HTTPoxy",
-        "app": "fastcgi",
+        "app": "cgi",
         "cve": "CVE-2017-8386",
-        "path": "httpoxy"
+        "path": "cgi/httpoxy"
     },
     {
-        "name": "Imagetragick",
+        "name": "Imagetragick 命令执行漏洞",
         "app": "ImageMagick",
         "cve": "CVE-2016–3714",
-        "path": "imagetragick"
+        "path": "imagemagick/imagetragick"
     },
     {
         "name": "JBoss JMXInvokerServlet 反序列化漏洞",
@@ -204,12 +204,6 @@
         "path": "jupyter/notebook-rce"
     },
     {
-        "name": "mybatis SQL注入问题",
-        "app": "mybatis",
-        "cve": null,
-        "path": "mybatis_sqli"
-    },
-    {
         "name": "Nginx 文件名逻辑漏洞",
         "app": "Nginx",
         "cve": "CVE-2013-4547",
@@ -231,7 +225,7 @@
         "name": "Nginx 解析漏洞",
         "app": "Nginx",
         "cve": null,
-        "path": "nginx_parsing_vulnerability"
+        "path": "nginx/nginx_parsing_vulnerability"
     },
     {
         "name": "Node.js 目录穿越漏洞",
@@ -261,7 +255,7 @@
         "name": "PHP XML实体注入",
         "app": "PHP",
         "cve": null,
-        "path": "php_xxe"
+        "path": "php/php_xxe"
     },
     {
         "name": "PHPMailer 任意文件读取漏洞",
