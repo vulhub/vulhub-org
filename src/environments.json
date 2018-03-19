@@ -54,6 +54,12 @@
         "path": "django/CVE-2017-12794"
     },
     {
+        "name": "DNS域传送漏洞",
+        "app": "dns",
+        "cve": null,
+        "path": "dns/dns-zone-transfer"
+    },
+    {
         "name": "ElasticSearch 命令执行漏洞",
         "app": "ElasticSearch",
         "cve": "CVE-2014-3120",
