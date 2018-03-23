@@ -222,6 +222,12 @@
         "path": "log4j/CVE-2017-5645"
     },
     {
+        "name": "Mysql 身份认证绕过漏洞",
+        "app": "Mysql",
+        "cve": "CVE-2012-2122",
+        "path": "mysql/CVE-2012-2122"
+    },
+    {
         "name": "Nginx 文件名逻辑漏洞",
         "app": "Nginx",
         "cve": "CVE-2013-4547",
