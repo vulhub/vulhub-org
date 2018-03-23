@@ -150,6 +150,12 @@
         "path": "goahead/CVE-2017-17562"
     },
     {
+        "name": "Hadoop YARN ResourceManager 未授权访问漏洞",
+        "app": "Hadoop YARN",
+        "cve": null,
+        "path": "hadoop/unauthorized-yarn"
+    },
+    {
         "name": "HeartBleed 心脏出血",
         "app": "OpenSSL",
         "cve": "CVE-2014-0160",
