@@ -450,6 +450,12 @@
         "path": "tomcat/tomcat8"
     },
     {
+        "name": "uWSGI PHP目录穿越漏洞",
+        "app": "uWSGI",
+        "cve": "CVE-2018-7490",
+        "path": "uwsgi/CVE-2018-7490"
+    },
+    {
         "name": "Weblogic < 10.3.6 'wls-wsat' XMLDecoder 反序列化漏洞",
         "app": "Weblogic",
         "cve": "CVE-2017-10271",
