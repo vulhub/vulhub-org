@@ -60,6 +60,12 @@
         "path": "dns/dns-zone-transfer"
     },
     {
+        "name": "docker daemon api 未授权访问漏洞",
+        "app": "docker",
+        "cve": null,
+        "path": "docker/unauthorized-rce"
+    },
+    {
         "name": "ElasticSearch 命令执行漏洞",
         "app": "ElasticSearch",
         "cve": "CVE-2014-3120",
