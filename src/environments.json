@@ -366,6 +366,12 @@
         "path": "spring/CVE-2017-8046"
     },
     {
+        "name": "Spring Data Commons 远程命令执行漏洞",
+        "app": "spring data commons",
+        "cve": "CVE-2018-1273",
+        "path": "spring/CVE-2018-1273"
+    },
+    {
         "name": "S2-001",
         "app": "Struts2",
         "cve": null,
