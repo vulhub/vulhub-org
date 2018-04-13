@@ -66,6 +66,12 @@
         "path": "docker/unauthorized-rce"
     },
     {
+        "name": "Drupal Drupalgeddon 2 远程代码执行漏洞",
+        "app": "drupal",
+        "cve": "CVE-2018-7600",
+        "path": "drupal/CVE-2018-7600"
+    },
+    {
         "name": "ElasticSearch 命令执行漏洞",
         "app": "ElasticSearch",
         "cve": "CVE-2014-3120",
