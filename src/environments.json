@@ -12,8 +12,14 @@
         "path": "activemq/CVE-2016-3088"
     },
     {
-        "name": "Apache HTTPd 解析漏洞",
-        "app": "Apache HTTPd",
+        "name": "Apache HTTPD 换行解析漏洞",
+        "app": "Apache HTTPD",
+        "cve": "CVE-2017-15715",
+        "path": "httpd/CVE-2017-15715"
+    },
+    {
+        "name": "Apache HTTPD 未知后缀解析漏洞",
+        "app": "Apache HTTPD",
         "cve": null,
         "path": "httpd/apache_parsing_vulnerability"
     },
@@ -364,6 +370,12 @@
         "app": "spring data rest",
         "cve": "CVE-2017-8046",
         "path": "spring/CVE-2017-8046"
+    },
+    {
+        "name": "Spring Data Commons 远程命令执行漏洞",
+        "app": "spring data commons",
+        "cve": "CVE-2018-1273",
+        "path": "spring/CVE-2018-1273"
     },
     {
         "name": "S2-001",
