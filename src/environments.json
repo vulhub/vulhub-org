@@ -480,6 +480,12 @@
         "path": "weblogic/CVE-2017-10271"
     },
     {
+        "name": "Weblogic WLS Core Components 反序列化命令执行漏洞",
+        "app": "Weblogic",
+        "cve": "CVE-2018-2628",
+        "path": "weblogic/CVE-2018-2628"
+    },
+    {
         "name": "Weblogic SSRF漏洞",
         "app": "Weblogic",
         "cve": null,
