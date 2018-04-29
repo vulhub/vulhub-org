@@ -156,6 +156,12 @@
         "path": "gitlab/CVE-2016-9086"
     },
     {
+        "name": "gitlist 0.6.0 远程命令执行漏洞",
+        "app": "gitlist",
+        "cve": null,
+        "path": "gitlist/0.6.0-rce"
+    },
+    {
         "name": "GlassFish 任意文件读取漏洞",
         "app": "GlassFish",
         "cve": null,
