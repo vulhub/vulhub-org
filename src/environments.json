@@ -526,5 +526,11 @@
         "app": "Wordpress",
         "cve": null,
         "path": "wordpress/pwnscriptum"
+    },
+    {
+        "name": "zabbix latest.php SQL注入漏洞",
+        "app": "zabbix",
+        "cve": "CVE-2016-10134",
+        "path": "zabbix/CVE-2016-10134"
     }
 ]
