@@ -30,6 +30,12 @@
         "path": "aria2/rce"
     },
     {
+        "name": "Adobe ColdFusion 文件读取漏洞",
+        "app": "Adobe ColdFusion",
+        "cve": "CVE-2010-2861",
+        "path": "coldfusion/CVE-2010-2861"
+    },
+    {
         "name": "Adobe ColdFusion 反序列化漏洞",
         "app": "Adobe ColdFusion",
         "cve": "CVE-2017-3066",
