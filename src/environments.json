@@ -216,6 +216,12 @@
         "path": "jboss/CVE-2017-12149"
     },
     {
+        "name": "JBoss 4.x JBossMQ JMS 反序列化漏洞",
+        "app": "jboss",
+        "cve": "CVE-2017-7504",
+        "path": "jboss/CVE-2017-7504"
+    },
+    {
         "name": "Jenkins-CI 远程代码执行漏洞",
         "app": "Jenkins",
         "cve": "CVE-2017-1000353",
