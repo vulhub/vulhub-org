@@ -330,6 +330,12 @@
         "path": "phpmailer/CVE-2017-5223"
     },
     {
+        "name": "phpmyadmin scripts/setup.php 反序列化漏洞",
+        "app": "phpmyadmin",
+        "cve": null,
+        "path": "phpmyadmin/WooYun-2016-199433"
+    },
+    {
         "name": "PostgreSQL 提权漏洞",
         "app": "PostgreSQL",
         "cve": "CVE-2018-1058",
