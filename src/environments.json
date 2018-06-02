@@ -342,6 +342,12 @@
         "path": "phpmyadmin/WooYun-2016-199433"
     },
     {
+        "name": "phpunit 远程代码执行漏洞",
+        "app": "phpunit",
+        "cve": "CVE-2017-9841",
+        "path": "phpunit/CVE-2017-9841"
+    },
+    {
         "name": "PostgreSQL 提权漏洞",
         "app": "PostgreSQL",
         "cve": "CVE-2018-1058",
