@@ -330,6 +330,12 @@
         "path": "phpmailer/CVE-2017-5223"
     },
     {
+        "name": "phpMyAdmin 4.0.x—4.6.2 远程代码执行漏洞",
+        "app": "phpmyadmin",
+        "cve": "CVE-2016-5734",
+        "path": "phpmyadmin/CVE-2016-5734"
+    },
+    {
         "name": "phpmyadmin scripts/setup.php 反序列化漏洞",
         "app": "phpmyadmin",
         "cve": null,
