@@ -336,6 +336,12 @@
         "path": "phpmailer/CVE-2017-5223"
     },
     {
+        "name": "phpmyadmin 4.8.1 远程文件包含漏洞",
+        "app": "phpmyadmin",
+        "cve": null,
+        "path": "phpmyadmin/4.8-rce"
+    },
+    {
         "name": "phpMyAdmin 4.0.x—4.6.2 远程代码执行漏洞",
         "app": "phpmyadmin",
         "cve": "CVE-2016-5734",
