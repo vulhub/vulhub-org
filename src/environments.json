@@ -54,6 +54,12 @@
         "path": "couchdb/CVE-2017-12636"
     },
     {
+        "name": "Discuz 7.x/6.x 全局变量防御绕过导致代码执行",
+        "app": "Discuz",
+        "cve": null,
+        "path": "discuz/wooyun-2010-080723"
+    },
+    {
         "name": "Discuz!X ≤3.4 任意文件删除漏洞",
         "app": "Discuz",
         "cve": null,
