@@ -338,8 +338,8 @@
     {
         "name": "phpmyadmin 4.8.1 远程文件包含漏洞",
         "app": "phpmyadmin",
-        "cve": null,
-        "path": "phpmyadmin/4.8-rce"
+        "cve": "CVE-2018-12613",
+        "path": "phpmyadmin/CVE-2018-12613"
     },
     {
         "name": "phpMyAdmin 4.0.x—4.6.2 远程代码执行漏洞",
