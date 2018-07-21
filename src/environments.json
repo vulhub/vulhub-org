@@ -162,6 +162,12 @@
         "path": "git/CVE-2017-8386"
     },
     {
+        "name": "Gitea 1.4.0 目录穿越导致命令执行漏洞",
+        "app": "gitea",
+        "cve": null,
+        "path": "gitea/1.4-rce"
+    },
+    {
         "name": "Gitlab 任意文件读取漏洞",
         "app": "gitlab",
         "cve": "CVE-2016-9086",
