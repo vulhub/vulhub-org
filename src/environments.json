@@ -72,6 +72,12 @@
         "path": "django/CVE-2017-12794"
     },
     {
+        "name": "Django < 2.0.8 任意URL跳转漏洞",
+        "app": "Django",
+        "cve": "CVE-2018-14574",
+        "path": "django/CVE-2018-14574"
+    },
+    {
         "name": "DNS域传送漏洞",
         "app": "dns",
         "cve": null,
