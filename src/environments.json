@@ -168,6 +168,12 @@
         "path": "git/CVE-2017-8386"
     },
     {
+        "name": "Gitea 1.4.0 目录穿越导致命令执行漏洞",
+        "app": "gitea",
+        "cve": null,
+        "path": "gitea/1.4-rce"
+    },
+    {
         "name": "Gitlab 任意文件读取漏洞",
         "app": "gitlab",
         "cve": "CVE-2016-9086",
@@ -562,6 +568,12 @@
         "app": "Weblogic",
         "cve": "CVE-2018-2628",
         "path": "weblogic/CVE-2018-2628"
+    },
+    {
+        "name": "Weblogic 任意文件上传漏洞",
+        "app": "Weblogic",
+        "cve": "CVE-2018-2894",
+        "path": "weblogic/CVE-2018-2894"
     },
     {
         "name": "Weblogic SSRF漏洞",
