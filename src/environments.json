@@ -408,6 +408,12 @@
         "path": "solr/CVE-2017-12629-XXE"
     },
     {
+        "name": "Apache Spark 未授权访问漏",
+        "app": "spark",
+        "cve": null,
+        "path": "spark/unacc"
+    },
+    {
         "name": "Spring Security Oauth2 远程命令执行漏洞",
         "app": "spring security oauth2",
         "cve": "CVE-2016-4977",
