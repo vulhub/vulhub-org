@@ -168,6 +168,12 @@
         "path": "fpm"
     },
     {
+        "name": "GhostScript 沙箱绕过（命令执行）漏洞",
+        "app": "ghostscript",
+        "cve": null,
+        "path": "ghostscript/9.23-rce"
+    },
+    {
         "name": "GIT-SHELL 沙盒绕过",
         "app": "git",
         "cve": "CVE-2017-8386",
