@@ -308,8 +308,8 @@
     {
         "name": "node-postgres 代码执行漏洞分析",
         "app": "node-postgres",
-        "cve": null,
-        "path": "node/node-postgres"
+        "cve": "CVE-2017-16082",
+        "path": "node/CVE-2017-16082"
     },
     {
         "name": "PHP-CGI远程代码执行漏洞",
