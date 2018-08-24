@@ -540,6 +540,12 @@
         "path": "struts2/s2-053"
     },
     {
+        "name": "Struts2 S2-057 远程命令执行漏洞",
+        "app": "Struts2",
+        "cve": "CVE-2018-11776",
+        "path": "struts2/s2-057"
+    },
+    {
         "name": "Supervisord 远程命令执行漏洞",
         "app": "Supervisor",
         "cve": "CVE-2017-11610",
