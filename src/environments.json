@@ -90,6 +90,12 @@
         "path": "docker/unauthorized-rce"
     },
     {
+        "name": "Drupal < 7.32 “Drupalgeddon” SQL注入漏洞",
+        "app": "drupal",
+        "cve": "CVE-2014-3704",
+        "path": "drupal/CVE-2014-3704"
+    },
+    {
         "name": "Drupal Drupalgeddon 2 远程代码执行漏洞",
         "app": "drupal",
         "cve": "CVE-2018-7600",
