@@ -72,6 +72,12 @@
         "path": "django/CVE-2017-12794"
     },
     {
+        "name": "Django < 2.0.8 任意URL跳转漏洞",
+        "app": "Django",
+        "cve": "CVE-2018-14574",
+        "path": "django/CVE-2018-14574"
+    },
+    {
         "name": "DNS域传送漏洞",
         "app": "dns",
         "cve": null,
@@ -412,6 +418,12 @@
         "app": "solr",
         "cve": "CVE-2017-12629",
         "path": "solr/CVE-2017-12629-XXE"
+    },
+    {
+        "name": "Apache Spark 未授权访问漏",
+        "app": "spark",
+        "cve": null,
+        "path": "spark/unacc"
     },
     {
         "name": "Spring Security Oauth2 远程命令执行漏洞",
