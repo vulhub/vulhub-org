@@ -468,73 +468,73 @@
         "path": "spring/CVE-2018-1273"
     },
     {
-        "name": "S2-001",
+        "name": "S2-001 远程代码执行漏洞",
         "app": "Struts2",
         "cve": null,
         "path": "struts2/s2-001"
     },
     {
-        "name": "S2-005",
+        "name": "S2-005 远程代码执行漏洞",
         "app": "Struts2",
         "cve": "CVE-2010-1870",
         "path": "struts2/s2-005"
     },
     {
-        "name": "S2-007",
+        "name": "S2-007 远程代码执行漏洞",
         "app": "Struts2",
         "cve": null,
         "path": "struts2/s2-007"
     },
     {
-        "name": "S2-008",
+        "name": "S2-008 远程代码执行漏洞",
         "app": "Struts2",
         "cve": "CVE-2012-0391",
         "path": "struts2/s2-008"
     },
     {
-        "name": "S2-009",
+        "name": "S2-009 远程代码执行漏洞",
         "app": "Struts2",
         "cve": "CVE-2011-3923",
         "path": "struts2/s2-009"
     },
     {
-        "name": "S2-012",
+        "name": "S2-012 远程代码执行漏洞",
         "app": "Struts2",
         "cve": "CVE-2013-1965",
         "path": "struts2/s2-012"
     },
     {
-        "name": "S2-013",
+        "name": "S2-013 远程代码执行漏洞",
         "app": "Struts2",
         "cve": "CVE-2013-1966",
         "path": "struts2/s2-013"
     },
     {
-        "name": "S2-015",
+        "name": "S2-015 远程代码执行漏洞",
         "app": "Struts2",
         "cve": "CVE-2013-2134,CVE-2013-2135",
         "path": "struts2/s2-015"
     },
     {
-        "name": "S2-016",
+        "name": "S2-016 远程代码执行漏洞",
         "app": "Struts2",
         "cve": "CVE-2013-2251",
         "path": "struts2/s2-016"
     },
     {
-        "name": "S2-048",
+        "name": "S2-048 远程代码执行漏洞",
         "app": "Struts2",
         "cve": "CVE-2017-9791",
         "path": "struts2/s2-048"
     },
     {
-        "name": "S2-052",
+        "name": "S2-052 远程代码执行漏洞",
         "app": "Struts2",
         "cve": "CVE-2017-9805",
         "path": "struts2/s2-052"
     },
     {
-        "name": "S2-053",
+        "name": "S2-053 远程代码执行漏洞",
         "app": "Struts2",
         "cve": "CVE-2017-12611",
         "path": "struts2/s2-053"
