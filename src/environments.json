@@ -138,6 +138,12 @@
         "path": "electron/CVE-2018-1000006"
     },
     {
+        "name": "Electron WebPreferences 远程命令执行漏洞",
+        "app": "electron",
+        "cve": "CVE-2018-15685",
+        "path": "electron/CVE-2018-15685"
+    },
+    {
         "name": "fastjson 反序列化导致任意命令执行漏洞",
         "app": "Fastjson",
         "cve": null,
