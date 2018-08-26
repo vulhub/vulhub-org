@@ -216,6 +216,12 @@
         "path": "hadoop/unauthorized-yarn"
     },
     {
+        "name": "OpenSSH 用户名枚举漏洞",
+        "app": "OpenSSH",
+        "cve": "CVE-2018-15473",
+        "path": "openssh/CVE-2018-15473"
+    },
+    {
         "name": "HeartBleed 心脏出血",
         "app": "OpenSSL",
         "cve": "CVE-2014-0160",
