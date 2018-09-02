@@ -7,7 +7,7 @@
     "start": "http-server -p 5000 -a 0.0.0.0 ./dist/"
   },
   "author": "phithon",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "homepage": "https://github.com/vulhub/vulhub-org",
   "repository": {
     "type": "git",
