@@ -102,6 +102,12 @@
         "path": "drupal/CVE-2018-7600"
     },
     {
+        "name": "ECShop 2.x/3.x SQL注入/任意代码执行漏洞",
+        "app": "ecshop",
+        "cve": null,
+        "path": "ecshop/xianzhi-2017-02-82239600"
+    },
+    {
         "name": "ElasticSearch 命令执行漏洞",
         "app": "ElasticSearch",
         "cve": "CVE-2014-3120",
