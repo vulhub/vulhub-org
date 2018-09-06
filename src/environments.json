@@ -182,8 +182,8 @@
     {
         "name": "GhostScript 沙箱绕过（命令执行）漏洞",
         "app": "ghostscript",
-        "cve": null,
-        "path": "ghostscript/9.23-rce"
+        "cve": "CVE-2018-16509",
+        "path": "ghostscript/CVE-2018-16509"
     },
     {
         "name": "GIT-SHELL 沙盒绕过",
