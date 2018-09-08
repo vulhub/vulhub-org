@@ -1,0 +1,3 @@
+[submodule "docs/vulhub"]
+	path = docs/vulhub
+	url = git@github.com:vulhub/vulhub.git
