@@ -7,7 +7,7 @@
   <title>Vulhub - Docker-Compose file for vulnerability environment</title>
   <meta name="description" content="Vulhub是一个基于docker和docker-compose的漏洞环境集合，进入对应目录并执行一条语句即可启动一个全新的漏洞环境，让漏洞复现变得更加简单，让安全研究者更加专注于漏洞原理本身。">
   <meta name="keywords" content="vulhub,docker,docker-compose,靶场,漏洞,漏洞复现,漏洞测试,漏洞环境,网络安全,信息安全">
-  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
   <link rel="shortcut icon" href="img/favicon.ico">
   <% for (var css in htmlWebpackPlugin.files.css) { %>
     <link href="<%=htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
@@ -16,7 +16,7 @@
 
 <body id="app">
 </body>
-<script src="https://cdn.bootcss.com/marked/0.3.6/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked@0.5.1/lib/marked.min.js"></script>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
   <script type="text/javascript" src="<%=htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
