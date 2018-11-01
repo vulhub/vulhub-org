@@ -252,6 +252,12 @@
         "path": "imagemagick/imagetragick"
     },
     {
+        "name": "Jackson-databind 反序列化漏洞",
+        "app": "Jackson-databind",
+        "cve": "CVE-2017-7525",
+        "path": "jackson/CVE-2017-7525"
+    },
+    {
         "name": "JBoss JMXInvokerServlet 反序列化漏洞",
         "app": "jboss",
         "cve": null,
