@@ -318,6 +318,12 @@
         "path": "log4j/CVE-2017-5645"
     },
     {
+        "name": "mini_httpd任意文件读取漏洞",
+        "app": "mini_httpd",
+        "cve": "CVE-2018-18778",
+        "path": "mini_httpd/CVE-2018-18778"
+    },
+    {
         "name": "Mysql 身份认证绕过漏洞",
         "app": "Mysql",
         "cve": "CVE-2012-2122",
