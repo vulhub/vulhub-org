@@ -426,6 +426,12 @@
         "path": "python/PIL-CVE-2017-8291"
     },
     {
+        "name": "Python PIL 远程命令执行漏洞（via Ghostscript）",
+        "app": "Python",
+        "cve": "CVE-2018-16509",
+        "path": "python/PIL-CVE-2018-16509"
+    },
+    {
         "name": "Python unpickle 反序列化漏洞",
         "app": "Python",
         "cve": null,
