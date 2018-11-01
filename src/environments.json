@@ -300,6 +300,12 @@
         "path": "jupyter/notebook-rce"
     },
     {
+        "name": "libssh 服务端权限认证绕过漏洞",
+        "app": "libssh",
+        "cve": "CVE-2018-10933",
+        "path": "libssh/CVE-2018-10933"
+    },
+    {
         "name": "Apache Log4j Server 反序列化命令执行漏洞",
         "app": "Apache Log4j",
         "cve": "CVE-2017-5645",
