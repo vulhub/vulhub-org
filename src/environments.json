@@ -222,6 +222,12 @@
         "path": "goahead/CVE-2017-17562"
     },
     {
+        "name": "Gogs 任意用户登录漏洞",
+        "app": "Gogs",
+        "cve": "CVE-2018-18925",
+        "path": "gogs/CVE-2018-18925"
+    },
+    {
         "name": "Hadoop YARN ResourceManager 未授权访问漏洞",
         "app": "Hadoop YARN",
         "cve": null,
