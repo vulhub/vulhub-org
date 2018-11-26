@@ -181,3 +181,26 @@ $barc: rgb(39, 98, 127);　
 .content figure {
   padding-top: 2em;
 }
+
+$sizes: (0,10,15,20,25,30,50);
+$positions: ('top','left','bottom','right');
+
+@each $size in $sizes {
+  @each $position in $positions {
+    .m-#{$position}-#{$size} {
+      margin-#{$position}: $size + px;
+    }
+
+    .p-#{$position}-#{$size} {
+      padding-#{$position}: $size + px;
+    }
+  }
+
+  .m-#{$size} {
+    margin: $size + px;
+  }
+
+  .p-#{$size} {
+    padding: $size + px;
+  }
+}

@@ -87,6 +87,39 @@ export const Readme = ({state, actions}, children) => {
                     </div>
                 </div>
             </section>
+
+            <section class="hero">
+                <div className="hero-body container">
+                    <div class="columns is-vcentered">
+                        <div class="column is-8 is-offset-2 has-text-left content">
+                            <h1 class="title has-text-centered">赞助商与合作伙伴</h1>
+
+                            <div class="columns has-text-centered m-top-50">
+                                <div class="column">
+                                    <a href="https://www.chaitin.cn/" target="_blank">
+                                        <img src="img/sponsor/chaitin.png" width="120" style={{height: "20px"}} />
+                                    </a>
+                                </div>
+                                <div class="column">
+                                    <a href="https://xianzhi.aliyun.com/" target="_blank">
+                                        <img src="img/sponsor/aliyun.svg" width="120" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="column">
+                                    <a href="https://www.didiyun.com/?channel=14196" target="_blank">
+                                        <img src="img/sponsor/didi.png" width="120" alt=""/>
+                                    </a>
+                                </div>
+                                <div class="column">
+                                    <a href="https://bysec.io/" target="_blank">
+                                        <img src="img/sponsor/bysec.png" width="120" alt=""/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }
