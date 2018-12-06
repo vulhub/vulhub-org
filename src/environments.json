@@ -624,6 +624,12 @@
         "path": "uwsgi/CVE-2018-7490"
     },
     {
+        "name": "uWSGI 未授权访问漏洞",
+        "app": "uWSGI",
+        "cve": null,
+        "path": "uwsgi/unacc"
+    },
+    {
         "name": "Weblogic < 10.3.6 'wls-wsat' XMLDecoder 反序列化漏洞",
         "app": "Weblogic",
         "cve": "CVE-2017-10271",
