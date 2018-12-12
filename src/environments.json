@@ -600,8 +600,14 @@
         "path": "supervisor/CVE-2017-11610"
     },
     {
+        "name": "ThinkPHP5 5.0.22/5.1.29 远程代码执行漏洞",
+        "app": "ThinkPHP",
+        "cve": null,
+        "path": "thinkphp/5-rce"
+    },
+    {
         "name": "ThinkPHP5 SQL注入漏洞/信息泄露",
-        "app": "ThinkPHP5",
+        "app": "ThinkPHP",
         "cve": null,
         "path": "thinkphp/in-sqlinjection"
     },
