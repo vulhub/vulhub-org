@@ -606,6 +606,12 @@
         "path": "thinkphp/5-rce"
     },
     {
+        "name": "ThinkPHP5 5.0.23 远程代码执行漏洞",
+        "app": "ThinkPHP",
+        "cve": null,
+        "path": "thinkphp/5.0.23-rce"
+    },
+    {
         "name": "ThinkPHP5 SQL注入漏洞/信息泄露",
         "app": "ThinkPHP",
         "cve": null,
