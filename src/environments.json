@@ -12,6 +12,12 @@
         "path": "activemq/CVE-2016-3088"
     },
     {
+        "name": "AppWeb认证绕过漏洞",
+        "app": "AppWeb",
+        "cve": "CVE-2018-8715",
+        "path": "appweb/CVE-2018-8715"
+    },
+    {
         "name": "Apache HTTPD 换行解析漏洞",
         "app": "Apache HTTPD",
         "cve": "CVE-2017-15715",
@@ -22,6 +28,12 @@
         "app": "Apache HTTPD",
         "cve": null,
         "path": "httpd/apache_parsing_vulnerability"
+    },
+    {
+        "name": "Apache SSI 远程命令执行漏洞",
+        "app": "Apache HTTPD",
+        "cve": null,
+        "path": "httpd/ssi-rce"
     },
     {
         "name": "Aria2 任意文件写入漏洞",
