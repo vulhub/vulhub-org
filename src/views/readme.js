@@ -110,11 +110,6 @@ export const Readme = ({state, actions}, children) => {
                                         <img src="img/sponsor/didi.png" width="120" alt=""/>
                                     </a>
                                 </div>
-                                <div class="column">
-                                    <a href="https://bysec.io/" target="_blank">
-                                        <img src="img/sponsor/bysec.png" width="120" alt=""/>
-                                    </a>
-                                </div>
                             </div>
                         </div>
                     </div>
