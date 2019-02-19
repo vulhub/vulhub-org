@@ -198,6 +198,12 @@
         "path": "ghostscript/CVE-2018-16509"
     },
     {
+        "name": "GhostScript 沙箱绕过（命令执行）漏洞",
+        "app": "ghostscript",
+        "cve": "CVE-2019-6116",
+        "path": "ghostscript/CVE-2019-6116"
+    },
+    {
         "name": "GIT-SHELL 沙盒绕过",
         "app": "git",
         "cve": "CVE-2017-8386",
@@ -346,6 +352,12 @@
         "app": "Mysql",
         "cve": "CVE-2012-2122",
         "path": "mysql/CVE-2012-2122"
+    },
+    {
+        "name": "Nexus Repository Manager 3 远程命令执行漏洞",
+        "app": "Nexus Repository Manager",
+        "cve": "CVE-2019-7238",
+        "path": "nexus/CVE-2019-7238"
     },
     {
         "name": "Nginx 文件名逻辑漏洞",
