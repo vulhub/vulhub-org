@@ -41,7 +41,7 @@ export const Readme = ({state, actions}, children) => {
                                 <div class="level-item has-text-centered">
                                     <div>
                                     <p class="heading">STARS</p>
-                                    <p class="title">2.6K+</p>
+                                    <p class="title">3000+</p>
                                     </div>
                                 </div>
                             </nav>
