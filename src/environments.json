@@ -528,6 +528,12 @@
         "path": "solr/CVE-2017-12629-XXE"
     },
     {
+        "name": "Apache Solr 远程命令执行漏洞",
+        "app": "solr",
+        "cve": "CVE-2017-12629",
+        "path": "solr/CVE-2017-12629-RCE"
+    },
+    {
         "name": "Apache Spark 未授权访问漏",
         "app": "spark",
         "cve": null,
