@@ -41,7 +41,7 @@ export const Readme = ({state, actions}, children) => {
                                 <div class="level-item has-text-centered">
                                     <div>
                                     <p class="heading">STARS</p>
-                                    <p class="title">2.6K+</p>
+                                    <p class="title">3000+</p>
                                     </div>
                                 </div>
                             </nav>
@@ -108,11 +108,6 @@ export const Readme = ({state, actions}, children) => {
                                 <div class="column">
                                     <a href="https://www.didiyun.com/?channel=14196" target="_blank">
                                         <img src="img/sponsor/didi.png" width="120" alt=""/>
-                                    </a>
-                                </div>
-                                <div class="column">
-                                    <a href="https://bysec.io/" target="_blank">
-                                        <img src="img/sponsor/bysec.png" width="120" alt=""/>
                                     </a>
                                 </div>
                             </div>

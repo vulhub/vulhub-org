@@ -25,7 +25,7 @@ export const Body = ({state, actions}, children) => {
                             {state.repo_list.map(vuln => {
                                 i += 1
                                 return (
-                                    <Link class={state.vuln.name == vuln.name ? 'panel-block is-active':'panel-block'}
+                                    <Link class={state.vuln.path == vuln.path ? 'panel-block is-active':'panel-block'}
                                           style={{display: !state.showAll && i>=10 ? 'none':'block'}}
                                           to={`#/environments/${vuln.path}/`}
                                           go={actions.go}
