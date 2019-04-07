@@ -198,6 +198,12 @@
         "path": "ghostscript/CVE-2018-16509"
     },
     {
+        "name": "GhostScript 沙箱绕过（命令执行）漏洞",
+        "app": "ghostscript",
+        "cve": "CVE-2019-6116",
+        "path": "ghostscript/CVE-2019-6116"
+    },
+    {
         "name": "GIT-SHELL 沙盒绕过",
         "app": "git",
         "cve": "CVE-2017-8386",
@@ -336,6 +342,12 @@
         "path": "log4j/CVE-2017-5645"
     },
     {
+        "name": "Magento 2.2 SQL注入漏洞",
+        "app": "Magento",
+        "cve": null,
+        "path": "magento/2.2-sqli"
+    },
+    {
         "name": "mini_httpd任意文件读取漏洞",
         "app": "mini_httpd",
         "cve": "CVE-2018-18778",
@@ -346,6 +358,12 @@
         "app": "Mysql",
         "cve": "CVE-2012-2122",
         "path": "mysql/CVE-2012-2122"
+    },
+    {
+        "name": "Nexus Repository Manager 3 远程命令执行漏洞",
+        "app": "Nexus Repository Manager",
+        "cve": "CVE-2019-7238",
+        "path": "nexus/CVE-2019-7238"
     },
     {
         "name": "Nginx 文件名逻辑漏洞",
@@ -444,6 +462,12 @@
         "path": "postgres/CVE-2018-1058"
     },
     {
+        "name": "PostgreSQL 高权限命令执行漏洞（CVE-2019-9193）",
+        "app": "PostgreSQL",
+        "cve": "CVE-2019-9193",
+        "path": "postgres/CVE-2019-9193"
+    },
+    {
         "name": "Python PIL 远程命令执行漏洞（GhostButt）",
         "app": "Python",
         "cve": "CVE-2017-8291",
@@ -460,6 +484,18 @@
         "app": "Python",
         "cve": null,
         "path": "python/unpickle"
+    },
+    {
+        "name": "Ruby On Rails 路径穿越漏洞",
+        "app": "Ruby on Rails",
+        "cve": "CVE-2018-3760",
+        "path": "rails/CVE-2018-3760"
+    },
+    {
+        "name": "Ruby on Rails 路径穿越与任意文件读取漏洞",
+        "app": "Ruby on Rails",
+        "cve": "CVE-2019-5418",
+        "path": "rails/CVE-2019-5418"
     },
     {
         "name": "rsync 未授权访问漏洞",
