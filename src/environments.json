@@ -54,6 +54,12 @@
         "path": "coldfusion/CVE-2017-3066"
     },
     {
+        "name": "Atlassian Confluence 路径穿越与命令执行漏洞",
+        "app": "Atlassian Confluence",
+        "cve": "CVE-2019-3396",
+        "path": "confluence/CVE-2019-3396"
+    },
+    {
         "name": "Couchdb 垂直权限绕过漏洞",
         "app": "Couchdb",
         "cve": "CVE-2017-12635",
