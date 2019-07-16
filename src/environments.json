@@ -114,10 +114,34 @@
         "path": "drupal/CVE-2014-3704"
     },
     {
+        "name": "Drupal Core 8 PECL YAML 反序列化任意代码执行漏洞",
+        "app": "drupal",
+        "cve": "CVE-2017-6920",
+        "path": "drupal/CVE-2017-6920"
+    },
+    {
         "name": "Drupal Drupalgeddon 2 远程代码执行漏洞",
         "app": "drupal",
         "cve": "CVE-2018-7600",
         "path": "drupal/CVE-2018-7600"
+    },
+    {
+        "name": "Drupal 远程代码执行漏洞",
+        "app": "drupal",
+        "cve": "CVE-2018-7602",
+        "path": "drupal/CVE-2018-7602"
+    },
+    {
+        "name": "Drupal 远程代码执行漏洞",
+        "app": "drupal",
+        "cve": "CVE-2019-6339",
+        "path": "drupal/CVE-2019-6339"
+    },
+    {
+        "name": "Drupal XSS漏洞",
+        "app": "drupal",
+        "cve": "CVE-2019-6341",
+        "path": "drupal/CVE-2019-6341"
     },
     {
         "name": "ECShop 2.x/3.x SQL注入/任意代码执行漏洞",
@@ -508,6 +532,12 @@
         "app": "Ruby on Rails",
         "cve": "CVE-2019-5418",
         "path": "rails/CVE-2019-5418"
+    },
+    {
+        "name": "Redis 4.x/5.x 未授权访问漏洞",
+        "app": "redis",
+        "cve": null,
+        "path": "redis/4-unacc"
     },
     {
         "name": "rsync 未授权访问漏洞",
