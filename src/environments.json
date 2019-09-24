@@ -96,6 +96,12 @@
         "path": "django/CVE-2018-14574"
     },
     {
+        "name": "Django JSONField/HStoreField SQL注入漏洞",
+        "app": "Django",
+        "cve": "CVE-2019-14234",
+        "path": "django/CVE-2019-14234"
+    },
+    {
         "name": "DNS域传送漏洞",
         "app": "dns",
         "cve": null,
@@ -194,8 +200,14 @@
     {
         "name": "fastjson 反序列化导致任意命令执行漏洞",
         "app": "Fastjson",
-        "cve": null,
+        "cve": "CVE-2017-18349",
         "path": "fastjson/vuln"
+    },
+    {
+        "name": "Fastjson 1.2.47 远程命令执行漏洞",
+        "app": "Fastjson",
+        "cve": null,
+        "path": "fastjson/1.2.47-rce"
     },
     {
         "name": "ffmpeg 任意文件读取漏洞/SSRF漏洞",
@@ -340,6 +352,12 @@
         "app": "Jenkins",
         "cve": "CVE-2018-1000861",
         "path": "jenkins/CVE-2018-1000861"
+    },
+    {
+        "name": "Atlassian Jira 模板注入漏洞",
+        "app": "jira",
+        "cve": "CVE-2019-11581",
+        "path": "jira/CVE-2019-11581"
     },
     {
         "name": "Jmeter RMI 反序列化命令执行漏洞（CVE-2018-1297）",
@@ -558,6 +576,12 @@
         "path": "samba/CVE-2017-7494"
     },
     {
+        "name": "scrapyd 未授权访问漏洞",
+        "app": "scrapyd",
+        "cve": null,
+        "path": "scrapy/scrapyd-unacc"
+    },
+    {
         "name": "Shellshock 破壳漏洞",
         "app": "bash",
         "cve": "CVE-2014-6271",
@@ -574,6 +598,12 @@
         "app": "solr",
         "cve": "CVE-2017-12629",
         "path": "solr/CVE-2017-12629-RCE"
+    },
+    {
+        "name": "Apache Solr 远程命令执行漏洞",
+        "app": "solr",
+        "cve": "CVE-2019-0193",
+        "path": "solr/CVE-2019-0193"
     },
     {
         "name": "Apache Spark 未授权访问漏",
@@ -696,6 +726,12 @@
         "path": "supervisor/CVE-2017-11610"
     },
     {
+        "name": "ThinkPHP 2.x 任意代码执行漏洞",
+        "app": "ThinkPHP",
+        "cve": null,
+        "path": "thinkphp/2-rce"
+    },
+    {
         "name": "ThinkPHP5 5.0.22/5.1.29 远程代码执行漏洞",
         "app": "ThinkPHP",
         "cve": null,
@@ -766,6 +802,12 @@
         "app": "Weblogic",
         "cve": null,
         "path": "weblogic/weak_password"
+    },
+    {
+        "name": "Webmin 远程命令执行漏洞",
+        "app": "Webmin",
+        "cve": "CVE-2019-15107",
+        "path": "webmin/CVE-2019-15107"
     },
     {
         "name": "Wordpress 4.6 任意命令执行漏洞（PwnScriptum）",
