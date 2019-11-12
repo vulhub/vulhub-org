@@ -324,6 +324,12 @@
         "path": "jackson/CVE-2017-7525"
     },
     {
+        "name": "Java RMI codebase 远程代码执行漏洞",
+        "app": "java rmi",
+        "cve": null,
+        "path": "java/rmi-codebase"
+    },
+    {
         "name": "JBoss JMXInvokerServlet 反序列化漏洞",
         "app": "jboss",
         "cve": null,
@@ -460,6 +466,18 @@
         "app": "PHP",
         "cve": "CVE-2012-1823",
         "path": "php/CVE-2012-1823"
+    },
+    {
+        "name": "PHP imap 远程命令执行漏洞",
+        "app": "PHP",
+        "cve": "CVE-2018-19518",
+        "path": "php/CVE-2018-19518"
+    },
+    {
+        "name": "PHP-FPM 远程代码执行漏洞",
+        "app": "PHP",
+        "cve": "CVE-2019-11043",
+        "path": "php/CVE-2019-11043"
     },
     {
         "name": "PHP文件包含漏洞（利用phpinfo）",
@@ -694,6 +712,18 @@
         "app": "Struts2",
         "cve": "CVE-2013-2251",
         "path": "struts2/s2-016"
+    },
+    {
+        "name": "S2-045 远程代码执行漏洞",
+        "app": "Struts2",
+        "cve": "CVE-2017-5638",
+        "path": "struts2/s2-045"
+    },
+    {
+        "name": "S2-046 远程代码执行漏洞",
+        "app": "Struts2",
+        "cve": "CVE-2017-5638",
+        "path": "struts2/s2-046"
     },
     {
         "name": "S2-048 远程代码执行漏洞",
