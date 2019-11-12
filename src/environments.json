@@ -201,7 +201,7 @@
         "name": "fastjson 反序列化导致任意命令执行漏洞",
         "app": "Fastjson",
         "cve": "CVE-2017-18349",
-        "path": "fastjson/vuln"
+        "path": "fastjson/1.2.24-rce"
     },
     {
         "name": "Fastjson 1.2.47 远程命令执行漏洞",
