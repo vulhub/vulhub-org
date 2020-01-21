@@ -242,6 +242,12 @@
     {
         "name": "GhostScript 沙箱绕过（命令执行）漏洞",
         "app": "ghostscript",
+        "cve": "CVE-2018-19475",
+        "path": "ghostscript/CVE-2018-19475"
+    },
+    {
+        "name": "GhostScript 沙箱绕过（命令执行）漏洞",
+        "app": "ghostscript",
         "cve": "CVE-2019-6116",
         "path": "ghostscript/CVE-2019-6116"
     },
@@ -316,6 +322,12 @@
         "app": "ImageMagick",
         "cve": "CVE-2016–3714",
         "path": "imagemagick/imagetragick"
+    },
+    {
+        "name": "Influxdb未授权访问漏洞",
+        "app": "influxdb",
+        "cve": null,
+        "path": "influxdb/unacc"
     },
     {
         "name": "Jackson-databind 反序列化漏洞",
@@ -412,6 +424,12 @@
         "app": "mini_httpd",
         "cve": "CVE-2018-18778",
         "path": "mini_httpd/CVE-2018-18778"
+    },
+    {
+        "name": "mongo-express 远程代码执行漏洞",
+        "app": "mongo-express",
+        "cve": "CVE-2019-10758",
+        "path": "mongo-express/CVE-2019-10758"
     },
     {
         "name": "Mysql 身份认证绕过漏洞",
@@ -598,6 +616,12 @@
         "app": "scrapyd",
         "cve": null,
         "path": "scrapy/scrapyd-unacc"
+    },
+    {
+        "name": "Apache Shiro 1.2.4反序列化漏洞",
+        "app": "shiro",
+        "cve": "CVE-2016-4437",
+        "path": "shiro/CVE-2016-4437"
     },
     {
         "name": "Shellshock 破壳漏洞",
