@@ -6,7 +6,7 @@
     <div class="column is-4-desktop is-6-tablet">
         <div class="card">
             <div class="card-image">
-            <figure class="image"> <img src="img/zan.jpg" alt="微信捐赠"> </figure>
+            <figure class="image"> <img src="img/wx.jpg" alt="微信捐赠"> </figure>
             </div>
             <div class="card-content">
             <div class="content has-text-centered"> 微信捐助 </div>

@@ -16,10 +16,9 @@
 
 <body id="app">
 </body>
-<script src="https://cdn.jsdelivr.net/npm/marked@0.5.1/lib/marked.min.js"></script>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
-<% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
-  <script type="text/javascript" src="<%=htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+<% for (var chunk in htmlWebpackPlugin.files.js) { %>
+  <script type="text/javascript" src="<%=htmlWebpackPlugin.files.js[chunk] %>"></script>
 <% } %>
 <script src="https://hm.baidu.com/hm.js?f3832fff0b237b0109a9952c8979379d" defer="defer"></script>
 </html>

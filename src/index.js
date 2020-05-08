@@ -36,19 +36,20 @@ app({
       state.pos = router()
       actions.init()
     })
-    let myRenderer = new marked.Renderer();
-    myRenderer.link = (href, title, text) => {
-      const isHttp = /^https?:\/\/.+$/.test(href)
-      if(/[&:]/.test(href) && !isHttp) {
-        return ''
+    let renderer = {
+      link(href, title, text) {
+        const isHttp = /^https?:\/\/.+$/.test(href)
+        if(/[&:]/.test(href) && !isHttp) {
+          return ''
+        }
+
+        let target = (isHttp || title === 'newWindow') ? ' target="_blank" ' : ''
+        title = (title && title !== 'newWindow') ? ` title="${title}" ` : ''
+
+        return `<a href="${href}" ${title} ${target}>${text}</a>`
       }
-
-      let target = (isHttp || title === 'newWindow') ? ' target="_blank" ' : ''
-      title = (title && title !== 'newWindow') ? ` title="${title}" ` : ''
-
-      return `<a href="${href}" ${title} ${target}>${text}</a>`
     }
-    marked.setOptions({renderer: myRenderer});
+    marked.use({renderer: renderer});
     actions.init()
   },
   state: {

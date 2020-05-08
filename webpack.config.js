@@ -1,9 +1,9 @@
 const path = require('path')
-const ExtractTextPlugin = require("extract-text-webpack-plugin")
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
   entry: [
@@ -32,27 +32,26 @@ module.exports = {
           ],
         },
         {
-            test: /\.json$/,
-            use: {
-                loader: 'json-loader'
-            }
-        },
-        {
-            test: /\.(scss|css)$/,
-            use: ExtractTextPlugin.extract({
-                use: ['css-loader', 'sass-loader'],
-                fallback: 'style-loader'
-            })
+            test: /\.(css|scss)$/,
+            use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
         }
       ]
+  },
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin()],
   },
   plugins: [
     new CopyWebpackPlugin([
       { from: 'docs', to: './' },
       { from: 'src/img', to: './img' }
     ]),
-    new ExtractTextPlugin('css/app.css'),
-    new UglifyJSPlugin(),
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // both options are optional
+      filename: "css/[name].css",
+      chunkFilename: "css/[id].css",
+    }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
       cssProcessor: require('cssnano'),
@@ -70,7 +69,4 @@ module.exports = {
       }
     }),
   ],
-  externals: {
-    'marked': 'window.marked'
-  }
 }
