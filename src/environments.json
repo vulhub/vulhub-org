@@ -102,6 +102,12 @@
         "path": "django/CVE-2019-14234"
     },
     {
+        "name": "Django GIS SQL注入漏洞",
+        "app": "Django",
+        "cve": "CVE-2020-9402",
+        "path": "django/CVE-2020-9402"
+    },
+    {
         "name": "DNS域传送漏洞",
         "app": "dns",
         "cve": null,
@@ -294,6 +300,12 @@
         "path": "gogs/CVE-2018-18925"
     },
     {
+        "name": "H2 Database Console 未授权访问",
+        "app": "Springboot H2 Database",
+        "cve": null,
+        "path": "h2database/h2-console-unacc"
+    },
+    {
         "name": "Hadoop YARN ResourceManager 未授权访问漏洞",
         "app": "Hadoop YARN",
         "cve": null,
@@ -402,10 +414,28 @@
         "path": "jupyter/notebook-rce"
     },
     {
+        "name": "Kibana 本地文件包含漏洞",
+        "app": "kibana",
+        "cve": "CVE-2018-17246",
+        "path": "kibana/CVE-2018-17246"
+    },
+    {
+        "name": "Kibana 原型链污染导致任意代码执行漏洞",
+        "app": "kibana",
+        "cve": "CVE-2019-7609",
+        "path": "kibana/CVE-2019-7609"
+    },
+    {
         "name": "libssh 服务端权限认证绕过漏洞",
         "app": "libssh",
         "cve": "CVE-2018-10933",
         "path": "libssh/CVE-2018-10933"
+    },
+    {
+        "name": "Liferay Portal CE 反序列化命令执行漏洞",
+        "app": "Liferay Portal",
+        "cve": "CVE-2020-7961",
+        "path": "liferay-portal/CVE-2020-7961"
     },
     {
         "name": "Apache Log4j Server 反序列化命令执行漏洞",
@@ -442,6 +472,18 @@
         "app": "Nexus Repository Manager",
         "cve": "CVE-2019-7238",
         "path": "nexus/CVE-2019-7238"
+    },
+    {
+        "name": "Nexus Repository Manager 3 远程命令执行漏洞",
+        "app": "Nexus Repository Manager",
+        "cve": "CVE-2020-10199",
+        "path": "nexus/CVE-2020-10199"
+    },
+    {
+        "name": "Nexus Repository Manager 3 远程命令执行漏洞",
+        "app": "Nexus Repository Manager",
+        "cve": "CVE-2020-10204",
+        "path": "nexus/CVE-2020-10204"
     },
     {
         "name": "Nginx 文件名逻辑漏洞",
@@ -588,6 +630,18 @@
         "path": "rails/CVE-2019-5418"
     },
     {
+        "name": "SaltStack 水平权限绕过漏洞",
+        "app": "SaltStack",
+        "cve": "CVE-2020-11651",
+        "path": "saltstack/CVE-2020-11651"
+    },
+    {
+        "name": "SaltStack 任意文件读写漏洞",
+        "app": "SaltStack",
+        "cve": "CVE-2020-11652",
+        "path": "saltstack/CVE-2020-11652"
+    },
+    {
         "name": "Redis 4.x/5.x 未授权访问漏洞",
         "app": "redis",
         "cve": null,
@@ -646,6 +700,12 @@
         "app": "solr",
         "cve": "CVE-2019-0193",
         "path": "solr/CVE-2019-0193"
+    },
+    {
+        "name": "Apache Solr Velocity 注入远程命令执行漏洞",
+        "app": "solr",
+        "cve": "CVE-2019-17558",
+        "path": "solr/CVE-2019-17558"
     },
     {
         "name": "Apache Spark 未授权访问漏",
@@ -808,6 +868,12 @@
         "app": "Tomcat",
         "cve": "CVE-2017-12615",
         "path": "tomcat/CVE-2017-12615"
+    },
+    {
+        "name": "Aapache Tomcat AJP 文件包含漏洞",
+        "app": "Tomcat",
+        "cve": "CVE-2020-1938",
+        "path": "tomcat/CVE-2020-1938"
     },
     {
         "name": "Tomcat弱口令",
