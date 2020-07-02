@@ -96,6 +96,11 @@ export const Readme = ({state, actions}, children) => {
 
                             <div class="columns has-text-centered m-top-50">
                                 <div class="column">
+                                    <a href="https://www.wangan.com/vulhub" target="_blank">
+                                        <img src="img/sponsor/wangan.png" width="auto" style={{height: "40px"}} />
+                                    </a>
+                                </div>
+                                <div class="column">
                                     <a href="https://www.chaitin.cn/" target="_blank">
                                         <img src="img/sponsor/chaitin.png" width="120" style={{height: "20px"}} />
                                     </a>

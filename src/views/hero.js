@@ -46,6 +46,13 @@ export const Hero = ({state, actions}, children) => {
                     go={actions.go} >
                     捐助
                 </Link>
+                <a 
+                    class="nav-item"
+                    href="https://www.wangan.com/vulhub"
+                    target="_blank"
+                    >
+                    社区
+                </a>
                 <span class="nav-item">
                     <a class="button is-primary is-inverted" href="https://github.com/vulhub/vulhub" target="_blank">
                     <span class="icon">
