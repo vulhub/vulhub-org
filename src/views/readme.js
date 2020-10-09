@@ -29,19 +29,19 @@ export const Readme = ({state, actions}, children) => {
                                 <div class="level-item has-text-centered">
                                     <div>
                                     <p class="heading">PULL</p>
-                                    <p class="title">200K+</p>
+                                    <p class="title">300K+</p>
                                     </div>
                                 </div>
                                 <div class="level-item has-text-centered">
                                     <div>
                                     <p class="heading">COMMITS</p>
-                                    <p class="title">1300+</p>
+                                    <p class="title">1400+</p>
                                     </div>
                                 </div>
                                 <div class="level-item has-text-centered">
                                     <div>
                                     <p class="heading">STARS</p>
-                                    <p class="title">5.9K+</p>
+                                    <p class="title">6.6K+</p>
                                     </div>
                                 </div>
                             </nav>
