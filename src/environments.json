@@ -12,6 +12,12 @@
         "path": "activemq/CVE-2016-3088"
     },
     {
+        "name": "Apereo CAS 4.1 反序列化命令执行漏洞",
+        "app": "Apereo CAS",
+        "cve": null,
+        "path": "apereo-cas/4.1-rce"
+    },
+    {
         "name": "AppWeb认证绕过漏洞",
         "app": "AppWeb",
         "cve": "CVE-2018-8715",
@@ -354,6 +360,18 @@
         "path": "java/rmi-codebase"
     },
     {
+        "name": "Java RMI Registry 反序列化漏洞(<=jdk8u111)",
+        "app": "java rmi",
+        "cve": null,
+        "path": "java/rmi-registry-bind-deserialization"
+    },
+    {
+        "name": "Java RMI Registry 反序列化漏洞(<jdk8u232_b09)",
+        "app": "java rmi",
+        "cve": null,
+        "path": "java/rmi-registry-bind-deserialization-bypass"
+    },
+    {
         "name": "JBoss JMXInvokerServlet 反序列化漏洞",
         "app": "jboss",
         "cve": null,
@@ -456,6 +474,12 @@
         "path": "mini_httpd/CVE-2018-18778"
     },
     {
+        "name": "Mojarra JSF ViewState 反序列化漏洞",
+        "app": "Mojarra JSF",
+        "cve": null,
+        "path": "mojarra/jsf-viewstate-deserialization"
+    },
+    {
         "name": "mongo-express 远程代码执行漏洞",
         "app": "mongo-express",
         "cve": "CVE-2019-10758",
@@ -520,6 +544,12 @@
         "app": "node-postgres",
         "cve": "CVE-2017-16082",
         "path": "node/CVE-2017-16082"
+    },
+    {
+        "name": "Apache OfBiz 反序列化命令执行漏洞",
+        "app": "Apache OfBiz",
+        "cve": "CVE-2020-9496",
+        "path": "ofbiz/CVE-2020-9496"
     },
     {
         "name": "PHP-CGI远程代码执行漏洞",
@@ -798,6 +828,12 @@
         "path": "struts2/s2-016"
     },
     {
+        "name": "S2-032 远程代码执行漏洞",
+        "app": "Struts2",
+        "cve": "CVE-2016-3081",
+        "path": "struts2/s2-032"
+    },
+    {
         "name": "S2-045 远程代码执行漏洞",
         "app": "Struts2",
         "cve": "CVE-2017-5638",
@@ -832,6 +868,12 @@
         "app": "Struts2",
         "cve": "CVE-2018-11776",
         "path": "struts2/s2-057"
+    },
+    {
+        "name": "Struts2 S2-059 远程命令执行漏洞",
+        "app": "Struts2",
+        "cve": "CVE-2019-0230",
+        "path": "struts2/s2-059"
     },
     {
         "name": "Supervisord 远程命令执行漏洞",
