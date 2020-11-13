@@ -95,22 +95,27 @@ export const Readme = ({state, actions}, children) => {
                             <h1 class="title has-text-centered">赞助商与合作伙伴</h1>
 
                             <div class="columns has-text-centered m-top-50">
-                                <div class="column">
+                                <div class="column sponsor">
                                     <a href="https://www.wangan.com/vulhub" target="_blank">
                                         <img src="img/sponsor/wangan.png" width="auto" style={{height: "40px"}} />
                                     </a>
                                 </div>
-                                <div class="column">
+                                <div class="column sponsor">
+                                    <a href="https://www.cvebase.com" target="_blank">
+                                        <img src="img/sponsor/cvebase.png" width="auto" style={{height: "40px"}} />
+                                    </a>
+                                </div>
+                                <div class="column sponsor">
                                     <a href="https://www.chaitin.cn/" target="_blank">
                                         <img src="img/sponsor/chaitin.png" width="120" style={{height: "20px"}} />
                                     </a>
                                 </div>
-                                <div class="column">
+                                <div class="column sponsor">
                                     <a href="https://xianzhi.aliyun.com/" target="_blank">
                                         <img src="img/sponsor/aliyun.svg" width="120" alt=""/>
                                     </a>
                                 </div>
-                                <div class="column">
+                                <div class="column sponsor">
                                     <a href="https://www.didiyun.com/?channel=14196" target="_blank">
                                         <img src="img/sponsor/didi.png" width="120" alt=""/>
                                     </a>

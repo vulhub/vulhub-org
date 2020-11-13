@@ -6,6 +6,12 @@
     font-size: 1.5rem;
     font-weight: bold;
   }
+
+  .sponsor {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  }
 }
 .content {
   word-wrap: break-word;
