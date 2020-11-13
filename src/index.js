@@ -110,6 +110,11 @@ app({
           default_docs = matches[1]
         }
         actions.load_docs(default_docs)
+      } else if (state.pos == 'index') {
+        const buttonEm = document.createElement('script');
+        buttonEm.type = 'text/javascript';
+        buttonEm.src = 'https://buttons.github.io/buttons.js';
+        document.body.appendChild(buttonEm);
       } else {
         return state
       }

@@ -16,7 +16,6 @@
 
 <body id="app">
 </body>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
 <% for (var chunk in htmlWebpackPlugin.files.js) { %>
   <script type="text/javascript" src="<%=htmlWebpackPlugin.files.js[chunk] %>"></script>
 <% } %>
