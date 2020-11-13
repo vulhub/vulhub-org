@@ -115,11 +115,6 @@ export const Readme = ({state, actions}, children) => {
                                         <img src="img/sponsor/aliyun.svg" width="120" alt=""/>
                                     </a>
                                 </div>
-                                <div class="column sponsor">
-                                    <a href="https://www.didiyun.com/?channel=14196" target="_blank">
-                                        <img src="img/sponsor/didi.png" width="120" alt=""/>
-                                    </a>
-                                </div>
                             </div>
                         </div>
                     </div>
