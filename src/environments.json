@@ -672,6 +672,12 @@
         "path": "saltstack/CVE-2020-11652"
     },
     {
+        "name": "SaltStack 命令注入漏洞",
+        "app": "SaltStack",
+        "cve": "CVE-2020-16846",
+        "path": "saltstack/CVE-2020-16846"
+    },
+    {
         "name": "Redis 4.x/5.x 未授权访问漏洞",
         "app": "redis",
         "cve": null,
@@ -954,6 +960,12 @@
         "path": "weblogic/CVE-2018-2894"
     },
     {
+        "name": "Weblogic 管理控制台未授权远程命令执行漏洞",
+        "app": "Weblogic",
+        "cve": "CVE-2020-14882, CVE-2020-14883",
+        "path": "weblogic/CVE-2020-14882"
+    },
+    {
         "name": "Weblogic SSRF漏洞",
         "app": "Weblogic",
         "cve": null,
@@ -976,6 +988,12 @@
         "app": "Wordpress",
         "cve": null,
         "path": "wordpress/pwnscriptum"
+    },
+    {
+        "name": "XXL-JOB executor 未授权访问漏洞",
+        "app": "xxl-job",
+        "cve": null,
+        "path": "xxl-job/unacc"
     },
     {
         "name": "zabbix latest.php SQL注入漏洞",
