@@ -113,7 +113,7 @@ app({
       } else if (state.pos == 'index') {
         const buttonEm = document.createElement('script');
         buttonEm.type = 'text/javascript';
-        buttonEm.src = 'https://buttons.github.io/buttons.js';
+        buttonEm.src = 'https://cdn.jsdelivr.net/gh/ntkme/github-buttons@master/dist/buttons.min.js';
         document.body.appendChild(buttonEm);
       } else {
         return state
