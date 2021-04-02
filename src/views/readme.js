@@ -35,13 +35,13 @@ export const Readme = ({state, actions}, children) => {
                                 <div class="level-item has-text-centered">
                                     <div>
                                     <p class="heading">COMMITS</p>
-                                    <p class="title">1400+</p>
+                                    <p class="title">1500+</p>
                                     </div>
                                 </div>
                                 <div class="level-item has-text-centered">
                                     <div>
                                     <p class="heading">STARS</p>
-                                    <p class="title">6.6K+</p>
+                                    <p class="title">7.5K+</p>
                                     </div>
                                 </div>
                             </nav>
@@ -103,6 +103,11 @@ export const Readme = ({state, actions}, children) => {
                                 <div class="column sponsor">
                                     <a href="https://www.cvebase.com" target="_blank">
                                         <img src="img/sponsor/cvebase.png" width="auto" style={{height: "40px"}} />
+                                    </a>
+                                </div>
+                                <div class="column sponsor">
+                                    <a href="https://www.huoxian.cn" target="_blank">
+                                        <img src="img/sponsor/huoxian.png" width="auto" style={{height: "40px"}} />
                                     </a>
                                 </div>
                                 <div class="column sponsor">
