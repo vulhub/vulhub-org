@@ -20,7 +20,7 @@
     "bulma": "^0.6.0",
     "bulmaswatch": "^0.5.2",
     "hyperapp": "^0.15.0",
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.19",
     "marked": "^1.0.0",
     "nanoajax": "^0.4.3",
     "nprogress": "^0.2.0"
