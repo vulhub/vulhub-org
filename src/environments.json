@@ -240,6 +240,18 @@
         "path": "flask/ssti"
     },
     {
+        "name": "Apache Flink 文件上传漏洞",
+        "app": "flink",
+        "cve": "CVE-2020-17518",
+        "path": "flink/CVE-2020-17518"
+    },
+    {
+        "name": "Apache Flink jobmanager/logs 目录穿越漏洞",
+        "app": "flink",
+        "cve": "CVE-2020-17519",
+        "path": "flink/CVE-2020-17519"
+    },
+    {
         "name": "PHP-FPM Fastcgi 未授权访问漏洞",
         "app": "php-fpm",
         "cve": null,
@@ -340,6 +352,12 @@
         "app": "ImageMagick",
         "cve": "CVE-2016–3714",
         "path": "imagemagick/imagetragick"
+    },
+    {
+        "name": "Imagemagick PDF密码位置命令注入漏洞",
+        "app": "imagemagick",
+        "cve": "CVE-2020-29599",
+        "path": "imagemagick/CVE-2020-29599"
     },
     {
         "name": "Influxdb未授权访问漏洞",
@@ -444,6 +462,12 @@
         "path": "kibana/CVE-2019-7609"
     },
     {
+        "name": "Laravel Ignition 2.5.1 代码执行漏洞",
+        "app": "laravel",
+        "cve": "CVE-2021-3129",
+        "path": "kibana/CVE-2021-3129"
+    },
+    {
         "name": "libssh 服务端权限认证绕过漏洞",
         "app": "libssh",
         "cve": "CVE-2018-10933",
@@ -546,10 +570,22 @@
         "path": "node/CVE-2017-16082"
     },
     {
+        "name": "ntopng权限绕过漏洞",
+        "app": "ntopng",
+        "cve": "CVE-2021-28073",
+        "path": "ntopng/CVE-2021-28073"
+    },
+    {
         "name": "Apache OfBiz 反序列化命令执行漏洞",
         "app": "Apache OfBiz",
         "cve": "CVE-2020-9496",
         "path": "ofbiz/CVE-2020-9496"
+    },
+    {
+        "name": "PHP 8.1.0-dev 开发版本后门事件",
+        "app": "PHP",
+        "cve": null,
+        "path": "php/8.1-backdoor"
     },
     {
         "name": "PHP-CGI远程代码执行漏洞",
@@ -714,6 +750,12 @@
         "path": "shiro/CVE-2016-4437"
     },
     {
+        "name": "Apache Skywalking 8.3.0 SQL注入漏洞",
+        "app": "skywalking",
+        "cve": null,
+        "path": "skywalking/8.3.0-sqli"
+    },
+    {
         "name": "Shellshock 破壳漏洞",
         "app": "bash",
         "cve": "CVE-2014-6271",
@@ -742,6 +784,12 @@
         "app": "solr",
         "cve": "CVE-2019-17558",
         "path": "solr/CVE-2019-17558"
+    },
+    {
+        "name": "Apache Solr RemoteStreaming 文件读取与SSRF漏洞",
+        "app": "solr",
+        "cve": null,
+        "path": "solr/Remote-Streaming-Fileread"
     },
     {
         "name": "Apache Spark 未授权访问漏",
@@ -882,6 +930,12 @@
         "path": "struts2/s2-059"
     },
     {
+        "name": "Struts2 S2-061 远程命令执行漏洞",
+        "app": "Struts2",
+        "cve": "CVE-2020-17530",
+        "path": "struts2/s2-061"
+    },
+    {
         "name": "Supervisord 远程命令执行漏洞",
         "app": "Supervisor",
         "cve": "CVE-2017-11610",
@@ -912,6 +966,12 @@
         "path": "thinkphp/in-sqlinjection"
     },
     {
+        "name": "Tiki Wiki CMS Groupware 认证绕过漏洞",
+        "app": "Tiki Wiki",
+        "cve": "CVE-2020-15906",
+        "path": "tikiwiki/CVE-2020-15906"
+    },
+    {
         "name": "Tomcat PUT方法任意写文件漏洞",
         "app": "Tomcat",
         "cve": "CVE-2017-12615",
@@ -928,6 +988,12 @@
         "app": "Tomcat",
         "cve": null,
         "path": "tomcat/tomcat8"
+    },
+    {
+        "name": "Apache Unomi 远程表达式代码执行漏洞",
+        "app": "unomi",
+        "cve": "CVE-2020-13942",
+        "path": "unomi/CVE-2020-13942"
     },
     {
         "name": "uWSGI PHP目录穿越漏洞",
@@ -1000,5 +1066,11 @@
         "app": "zabbix",
         "cve": "CVE-2016-10134",
         "path": "zabbix/CVE-2016-10134"
+    },
+    {
+        "name": "Zabbix Server trapper命令注入漏洞",
+        "app": "zabbix",
+        "cve": "CVE-2020-11800",
+        "path": "zabbix/CVE-2020-11800"
     }
 ]
