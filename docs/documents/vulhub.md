@@ -5,20 +5,20 @@ Vulhub是一个面向大众的开源漏洞靶场，无需docker知识，简单�
 安装`docker`和`docker-compose`后即可开始使用vulhub：
 
 ```
-# If you don't have a docker installed, you'll need to install docker 
-curl -s https://get.docker.com/ | sh 
+# If you don't have a docker installed, you'll need to install docker
+curl -s https://get.docker.com/ | sh
 
-# Use pip to install docker-compose 
-pip install docker-compose  
+# Use pip to install docker-compose
+pip install docker-compose
 
-# Entry vulnerability directory 
-cd /path/to/vuln/ 
+# Entry vulnerability directory
+cd /path/to/vuln/
 
-# Compile (optional) 
-docker-compose build 
+# Compile (optional)
+docker-compose build
 
-# Run 
-docker-compose up -d 
+# Run
+docker-compose up -d
 ```
 
 更多安装说明与使用方法请阅读详细文档。

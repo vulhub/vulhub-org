@@ -9,7 +9,7 @@ Docker-compose基于Python开发，所以我们可以使用pip进行安装。
 当然，如果你的环境中没有安装pip，还需要先安装pip。推荐使用如下命令进行安装，这种方式将会少安装很多不需要的依赖：
 
 ```
-curl -s https://bootstrap.pypa.io/get-pip.py | python
+curl -s https://bootstrap.pypa.io/get-pip.py | python3
 ```
 
 ## 安装docker-compose

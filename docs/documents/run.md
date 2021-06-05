@@ -22,4 +22,3 @@ docker-compose up -d
 `docker-compose up -d`运行后，会自动查找当前目录下的配置文件。如果配置文件中包含的环境均已经存在，则不会再次编译；如果配置文件中包含的环境不存在，则会自动进行编译。所以，其实`docker-compose up -d`命令是包含了`docker-compose build`的。
 
 如果更新了配置文件，你可以手工执行`docker-compose build`来重新编译靶场环境。
-
