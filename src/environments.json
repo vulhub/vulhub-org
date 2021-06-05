@@ -582,6 +582,12 @@
         "path": "ofbiz/CVE-2020-9496"
     },
     {
+        "name": "OpenSMTPD 远程命令执行漏洞 (CVE-2020-7247)",
+        "app": "OpenSMTPD",
+        "cve": "CVE-2020-7247",
+        "path": "opensmtpd/CVE-2020-7247"
+    },
+    {
         "name": "PHP 8.1.0-dev 开发版本后门事件",
         "app": "PHP",
         "cve": null,
@@ -748,6 +754,12 @@
         "app": "shiro",
         "cve": "CVE-2016-4437",
         "path": "shiro/CVE-2016-4437"
+    },
+    {
+        "name": "Apache Shiro 认证绕过漏洞",
+        "app": "shiro",
+        "cve": "CVE-2020-1957",
+        "path": "shiro/CVE-2020-1957"
     },
     {
         "name": "Apache Skywalking 8.3.0 SQL注入漏洞",
@@ -1054,6 +1066,18 @@
         "app": "Wordpress",
         "cve": null,
         "path": "wordpress/pwnscriptum"
+    },
+    {
+        "name": "XStream 反序列化命令执行漏洞",
+        "app": "XStream",
+        "cve": "CVE-2021-21351",
+        "path": "xstream/CVE-2021-21351"
+    },
+    {
+        "name": "XStream 反序列化命令执行漏洞",
+        "app": "XStream",
+        "cve": "CVE-2021-29505",
+        "path": "xstream/CVE-2021-29505"
     },
     {
         "name": "XXL-JOB executor 未授权访问漏洞",
