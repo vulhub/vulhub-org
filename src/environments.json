@@ -25,19 +25,37 @@
     },
     {
         "name": "Apache HTTPD 换行解析漏洞",
-        "app": "Apache HTTPD",
+        "app": "Apache HTTP Server",
         "cve": "CVE-2017-15715",
         "path": "httpd/CVE-2017-15715"
     },
     {
+        "name": "Apache HTTP Server 2.4.48 mod_proxy SSRF漏洞",
+        "app": "Apache HTTP Server",
+        "cve": "CVE-2021-40438",
+        "path": "httpd/CVE-2021-40438"
+    },
+    {
+        "name": "Apache HTTP Server 2.4.49 路径穿越漏洞",
+        "app": "Apache HTTP Server",
+        "cve": "CVE-2021-41773",
+        "path": "httpd/CVE-2021-41773"
+    },
+    {
+        "name": "Apache HTTP Server 2.4.50 路径穿越漏洞",
+        "app": "Apache HTTP Server",
+        "cve": "CVE-2021-42013",
+        "path": "httpd/CVE-2021-42013"
+    },
+    {
         "name": "Apache HTTPD 未知后缀解析漏洞",
-        "app": "Apache HTTPD",
+        "app": "Apache HTTP Server",
         "cve": null,
         "path": "httpd/apache_parsing_vulnerability"
     },
     {
         "name": "Apache SSI 远程命令执行漏洞",
-        "app": "Apache HTTPD",
+        "app": "Apache HTTP Server",
         "cve": null,
         "path": "httpd/ssi-rce"
     },
@@ -64,6 +82,12 @@
         "app": "Atlassian Confluence",
         "cve": "CVE-2019-3396",
         "path": "confluence/CVE-2019-3396"
+    },
+    {
+        "name": "Atlassian Confluence OGNL表达式注入代码执行漏洞",
+        "app": "Atlassian Confluence",
+        "cve": "CVE-2021-26084",
+        "path": "confluence/CVE-2021-26084"
     },
     {
         "name": "Couchdb 垂直权限绕过漏洞",
@@ -114,6 +138,12 @@
         "path": "django/CVE-2020-9402"
     },
     {
+        "name": "Django QuerySet.order_by() SQL注入漏洞",
+        "app": "Django",
+        "cve": "CVE-2021-35042",
+        "path": "django/CVE-2021-35042"
+    },
+    {
         "name": "DNS域传送漏洞",
         "app": "dns",
         "cve": null,
@@ -160,6 +190,18 @@
         "app": "drupal",
         "cve": "CVE-2019-6341",
         "path": "drupal/CVE-2019-6341"
+    },
+    {
+        "name": "Aapche Dubbo Java反序列化漏洞",
+        "app": "dubbo",
+        "cve": "CVE-2019-17564",
+        "path": "dubbo/CVE-2019-17564"
+    },
+    {
+        "name": "ECShop 4.x collection_list SQL注入",
+        "app": "ecshop",
+        "cve": null,
+        "path": "ecshop/collection_list-sqli"
     },
     {
         "name": "ECShop 2.x/3.x SQL注入/任意代码执行漏洞",
@@ -288,10 +330,16 @@
         "path": "gitea/1.4-rce"
     },
     {
-        "name": "Gitlab 任意文件读取漏洞",
+        "name": "GitLab 任意文件读取漏洞",
         "app": "gitlab",
         "cve": "CVE-2016-9086",
         "path": "gitlab/CVE-2016-9086"
+    },
+    {
+        "name": "GitLab 远程命令执行漏洞",
+        "app": "gitlab",
+        "cve": "CVE-2021-22205",
+        "path": "gitlab/CVE-2021-22205"
     },
     {
         "name": "gitlist 0.6.0 远程命令执行漏洞",
@@ -420,6 +468,24 @@
         "path": "jenkins/CVE-2018-1000861"
     },
     {
+        "name": "Jetty WEB-INF 敏感信息泄露漏洞",
+        "app": "jetty",
+        "cve": "CVE-2021-28164",
+        "path": "jetty/CVE-2021-28164"
+    },
+    {
+        "name": "Jetty 通用 Servlets 组件 ConcatServlet 信息泄露漏洞",
+        "app": "jetty",
+        "cve": "CVE-2021-28169",
+        "path": "jetty/CVE-2021-28169"
+    },
+    {
+        "name": "Jetty WEB-INF 敏感信息泄露漏洞",
+        "app": "jetty",
+        "cve": "CVE-2021-34429",
+        "path": "jetty/CVE-2021-34429"
+    },
+    {
         "name": "Atlassian Jira 模板注入漏洞",
         "app": "jira",
         "cve": "CVE-2019-11581",
@@ -514,6 +580,12 @@
         "app": "Mysql",
         "cve": "CVE-2012-2122",
         "path": "mysql/CVE-2012-2122"
+    },
+    {
+        "name": "Neo4j Shell Server 反序列化漏洞",
+        "app": "Neo4j",
+        "cve": "CVE-2021-34371",
+        "path": "neo4j/CVE-2021-34371"
     },
     {
         "name": "Nexus Repository Manager 3 远程命令执行漏洞",
@@ -726,6 +798,12 @@
         "path": "redis/4-unacc"
     },
     {
+        "name": "Rocket Chat MongoDB 注入漏洞",
+        "app": "rocket chat",
+        "cve": "CVE-2021-22911",
+        "path": "rocketchat/CVE-2021-22911"
+    },
+    {
         "name": "rsync 未授权访问漏洞",
         "app": "rsync",
         "cve": null,
@@ -772,6 +850,12 @@
         "app": "bash",
         "cve": "CVE-2014-6271",
         "path": "bash/shellshock"
+    },
+    {
+        "name": "Celery <4.0 Redis未授权访问+Pickle反序列化利用",
+        "app": "celery",
+        "cve": null,
+        "path": "celery/celery3_redis_unauth"
     },
     {
         "name": "Apache solr XML 实体注入漏洞",
