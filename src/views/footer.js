@@ -7,7 +7,7 @@ export const Footer = ({state, actions}, children) => {
             <div class="content has-text-centered">
 
             <p class="">
-                © 2020 Vulhub is released under the <a href="https://github.com/vulhub/vulhub/blob/master/LICENSE">MIT License</a>.
+                © 2021 Vulhub is released under the <a href="https://github.com/vulhub/vulhub/blob/master/LICENSE">MIT License</a>.
             </p>
 
             </div>
