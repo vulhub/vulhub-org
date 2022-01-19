@@ -18,6 +18,12 @@
         "path": "apereo-cas/4.1-rce"
     },
     {
+        "name": "Apache APISIX 默认密钥漏洞",
+        "app": "Apereo CAS",
+        "cve": "CVE-2020-13945",
+        "path": "apisix/CVE-2020-13945"
+    },
+    {
         "name": "AppWeb认证绕过漏洞",
         "app": "AppWeb",
         "cve": "CVE-2018-8715",
@@ -297,7 +303,7 @@
         "name": "PHP-FPM Fastcgi 未授权访问漏洞",
         "app": "php-fpm",
         "cve": null,
-        "path": "fpm"
+        "path": "php/fpm"
     },
     {
         "name": "GhostScript 沙箱绕过（命令执行）漏洞",
@@ -358,6 +364,12 @@
         "app": "GoAhead",
         "cve": "CVE-2017-17562",
         "path": "goahead/CVE-2017-17562"
+    },
+    {
+        "name": "GoAhead Server 环境变量注入",
+        "app": "GoAhead",
+        "cve": "CVE-2021-42342",
+        "path": "goahead/CVE-2021-42342"
     },
     {
         "name": "Gogs 任意用户登录漏洞",
@@ -580,6 +592,12 @@
         "app": "Mysql",
         "cve": "CVE-2012-2122",
         "path": "mysql/CVE-2012-2122"
+    },
+    {
+        "name": "Nacos 认证绕过漏洞",
+        "app": "Nacos",
+        "cve": "CVE-2021-29441",
+        "path": "nacos/CVE-2021-29441"
     },
     {
         "name": "Neo4j Shell Server 反序列化漏洞",
