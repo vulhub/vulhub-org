@@ -258,6 +258,12 @@
         "path": "electron/CVE-2018-15685"
     },
     {
+        "name": "elFinder ZIP 参数与任意命令注入",
+        "app": "elFinder",
+        "cve": "CVE-2021-32682",
+        "path": "elfinder/CVE-2021-32682"
+    },
+    {
         "name": "fastjson 反序列化导致任意命令执行漏洞",
         "app": "Fastjson",
         "cve": "CVE-2017-18349",
@@ -376,6 +382,12 @@
         "app": "Gogs",
         "cve": "CVE-2018-18925",
         "path": "gogs/CVE-2018-18925"
+    },
+    {
+        "name": "Grafana 8.x 插件模块目录穿越漏洞",
+        "app": "Grafana",
+        "cve": "CVE-2021-43798",
+        "path": "grafana/CVE-2021-43798"
     },
     {
         "name": "H2 Database Console 未授权访问",
@@ -564,6 +576,12 @@
         "path": "log4j/CVE-2017-5645"
     },
     {
+        "name": "Apache Log4j2 lookup JNDI 注入漏洞",
+        "app": "Apache Log4j",
+        "cve": "CVE-2021-44228",
+        "path": "log4j/CVE-2021-44228"
+    },
+    {
         "name": "Magento 2.2 SQL注入漏洞",
         "app": "Magento",
         "cve": null,
@@ -750,6 +768,12 @@
         "path": "phpunit/CVE-2017-9841"
     },
     {
+        "name": "Polkit pkexec 权限提升漏洞",
+        "app": "Polkit Pkexec",
+        "cve": "CVE-2021-4034",
+        "path": "polkit/CVE-2021-4034"
+    },
+    {
         "name": "PostgreSQL 提权漏洞",
         "app": "PostgreSQL",
         "cve": "CVE-2018-1058",
@@ -810,10 +834,16 @@
         "path": "saltstack/CVE-2020-16846"
     },
     {
-        "name": "Redis 4.x/5.x 未授权访问漏洞",
+        "name": "Redis 4.x/5.x 主从复制导致的命令执行",
         "app": "redis",
         "cve": null,
         "path": "redis/4-unacc"
+    },
+    {
+        "name": "Redis Lua沙盒绕过命令执行",
+        "app": "redis",
+        "cve": "CVE-2022-0543",
+        "path": "redis/CVE-2022-0543"
     },
     {
         "name": "Rocket Chat MongoDB 注入漏洞",
@@ -828,7 +858,7 @@
         "path": "rsync/common"
     },
     {
-        "name": "Ruby Net::FTP 模块命令注入漏洞（CVE-2017-17405）",
+        "name": "Ruby Net::FTP 模块命令注入漏洞",
         "app": "ruby",
         "cve": "CVE-2017-17405",
         "path": "ruby/CVE-2017-17405"
@@ -940,6 +970,12 @@
         "app": "spring data commons",
         "cve": "CVE-2018-1273",
         "path": "spring/CVE-2018-1273"
+    },
+    {
+        "name": "Spring Cloud Gateway Actuator API SpEL表达式注入命令执行",
+        "app": "spring cloud gateway",
+        "cve": "CVE-2022-22947",
+        "path": "spring/CVE-2022-22947"
     },
     {
         "name": "S2-001 远程代码执行漏洞",
