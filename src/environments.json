@@ -12,6 +12,24 @@
         "path": "activemq/CVE-2016-3088"
     },
     {
+        "name": "Apache Airflow 示例dag中的命令注入",
+        "app": "Airflow",
+        "cve": "CVE-2020-11978",
+        "path": "airflow/CVE-2020-11978"
+    },
+    {
+        "name": "Apache Airflow Celery 消息中间件命令执行",
+        "app": "Airflow",
+        "cve": "CVE-2020-11981",
+        "path": "airflow/CVE-2020-11981"
+    },
+    {
+        "name": "Apache Airflow 默认密钥导致的权限绕过",
+        "app": "Airflow",
+        "cve": "CVE-2020-17526",
+        "path": "airflow/CVE-2020-17526"
+    },
+    {
         "name": "Apereo CAS 4.1 反序列化命令执行漏洞",
         "app": "Apereo CAS",
         "cve": null,
@@ -408,6 +426,12 @@
         "path": "openssh/CVE-2018-15473"
     },
     {
+        "name": "OpenSSL无限循环DOS漏洞",
+        "app": "OpenSSL",
+        "cve": "CVE-2022-0778",
+        "path": "openssl/CVE-2022-0778"
+    },
+    {
         "name": "HeartBleed 心脏出血",
         "app": "OpenSSL",
         "cve": "CVE-2014-0160",
@@ -422,7 +446,7 @@
     {
         "name": "Imagetragick 命令执行漏洞",
         "app": "ImageMagick",
-        "cve": "CVE-2016–3714",
+        "cve": "CVE-2016-3714",
         "path": "imagemagick/imagetragick"
     },
     {
@@ -978,6 +1002,18 @@
         "path": "spring/CVE-2022-22947"
     },
     {
+        "name": "Spring Cloud Function SpEL表达式命令注入",
+        "app": "spring cloud function",
+        "cve": "CVE-2022-22963",
+        "path": "spring/CVE-2022-22963"
+    },
+    {
+        "name": "Spring框架Data Binding与JDK 9+导致的远程代码执行漏洞",
+        "app": "Spring",
+        "cve": "CVE-2022-22965",
+        "path": "spring/CVE-2022-22965"
+    },
+    {
         "name": "S2-001 远程代码执行漏洞",
         "app": "Struts2",
         "cve": null,
@@ -1222,6 +1258,12 @@
         "app": "xxl-job",
         "cve": null,
         "path": "xxl-job/unacc"
+    },
+    {
+        "name": "YApi开放注册导致RCE",
+        "app": "YApi",
+        "cve": null,
+        "path": "yapi/unacc"
     },
     {
         "name": "zabbix latest.php SQL注入漏洞",
