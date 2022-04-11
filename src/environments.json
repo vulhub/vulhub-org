@@ -54,10 +54,10 @@
         "path": "aria2/rce"
     },
     {
-        "name": "Shellshock 破壳漏洞",
+        "name": "Bash Shellshock 破壳漏洞",
         "app": "bash",
         "cve": "CVE-2014-6271",
-        "path": "bash/shellshock"
+        "path": "bash/CVE-2014-6271"
     },
     {
         "name": "Celery <4.0 Redis未授权访问+Pickle反序列化利用",
@@ -66,10 +66,10 @@
         "path": "celery/celery3_redis_unauth"
     },
     {
-        "name": "HTTPoxy漏洞",
+        "name": "CGI HTTPoxy漏洞",
         "app": "cgi",
         "cve": "CVE-2016-5385",
-        "path": "cgi/httpoxy"
+        "path": "cgi/CVE-2016-5385"
     },
     {
         "name": "Adobe ColdFusion 文件读取漏洞",
