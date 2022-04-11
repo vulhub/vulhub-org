@@ -306,12 +306,6 @@
         "path": "flink/CVE-2020-17519"
     },
     {
-        "name": "PHP-FPM Fastcgi 未授权访问漏洞",
-        "app": "php-fpm",
-        "cve": null,
-        "path": "php/fpm"
-    },
-    {
         "name": "GhostScript 沙箱绕过（命令执行）漏洞",
         "app": "ghostscript",
         "cve": "CVE-2018-16509",
@@ -438,16 +432,16 @@
         "path": "httpd/ssi-rce"
     },
     {
-        "name": "Imagetragick 命令执行漏洞",
-        "app": "ImageMagick",
-        "cve": "CVE-2016-3714",
-        "path": "imagemagick/imagetragick"
-    },
-    {
         "name": "Imagemagick PDF密码位置命令注入漏洞",
         "app": "imagemagick",
         "cve": "CVE-2020-29599",
         "path": "imagemagick/CVE-2020-29599"
+    },
+    {
+        "name": "Imagetragick 命令执行漏洞",
+        "app": "ImageMagick",
+        "cve": "CVE-2016-3714",
+        "path": "imagemagick/imagetragick"
     },
     {
         "name": "Influxdb未授权访问漏洞",
@@ -480,12 +474,6 @@
         "path": "java/rmi-registry-bind-deserialization-bypass"
     },
     {
-        "name": "JBoss JMXInvokerServlet 反序列化漏洞",
-        "app": "jboss",
-        "cve": null,
-        "path": "jboss/JMXInvokerServlet-deserialization"
-    },
-    {
         "name": "JBoss 5.x/6.x 反序列化漏洞",
         "app": "jboss",
         "cve": "CVE-2017-12149",
@@ -496,6 +484,12 @@
         "app": "jboss",
         "cve": "CVE-2017-7504",
         "path": "jboss/CVE-2017-7504"
+    },
+    {
+        "name": "JBoss JMXInvokerServlet 反序列化漏洞",
+        "app": "jboss",
+        "cve": null,
+        "path": "jboss/JMXInvokerServlet-deserialization"
     },
     {
         "name": "Jenkins-CI 远程代码执行漏洞",
@@ -756,6 +750,12 @@
         "path": "php/CVE-2019-11043"
     },
     {
+        "name": "PHP-FPM Fastcgi 未授权访问漏洞",
+        "app": "php-fpm",
+        "cve": null,
+        "path": "php/fpm"
+    },
+    {
         "name": "PHP文件包含漏洞（利用phpinfo）",
         "app": "PHP",
         "cve": null,
@@ -780,16 +780,16 @@
         "path": "phpmailer/CVE-2017-5223"
     },
     {
-        "name": "phpmyadmin 4.8.1 远程文件包含漏洞",
-        "app": "phpmyadmin",
-        "cve": "CVE-2018-12613",
-        "path": "phpmyadmin/CVE-2018-12613"
-    },
-    {
         "name": "phpMyAdmin 4.0.x—4.6.2 远程代码执行漏洞",
         "app": "phpmyadmin",
         "cve": "CVE-2016-5734",
         "path": "phpmyadmin/CVE-2016-5734"
+    },
+    {
+        "name": "phpmyadmin 4.8.1 远程文件包含漏洞",
+        "app": "phpmyadmin",
+        "cve": "CVE-2018-12613",
+        "path": "phpmyadmin/CVE-2018-12613"
     },
     {
         "name": "phpmyadmin scripts/setup.php 反序列化漏洞",
@@ -852,24 +852,6 @@
         "path": "rails/CVE-2019-5418"
     },
     {
-        "name": "SaltStack 水平权限绕过漏洞",
-        "app": "SaltStack",
-        "cve": "CVE-2020-11651",
-        "path": "saltstack/CVE-2020-11651"
-    },
-    {
-        "name": "SaltStack 任意文件读写漏洞",
-        "app": "SaltStack",
-        "cve": "CVE-2020-11652",
-        "path": "saltstack/CVE-2020-11652"
-    },
-    {
-        "name": "SaltStack 命令注入漏洞",
-        "app": "SaltStack",
-        "cve": "CVE-2020-16846",
-        "path": "saltstack/CVE-2020-16846"
-    },
-    {
         "name": "Redis 4.x/5.x 主从复制导致的命令执行",
         "app": "redis",
         "cve": null,
@@ -898,6 +880,24 @@
         "app": "ruby",
         "cve": "CVE-2017-17405",
         "path": "ruby/CVE-2017-17405"
+    },
+    {
+        "name": "SaltStack 水平权限绕过漏洞",
+        "app": "SaltStack",
+        "cve": "CVE-2020-11651",
+        "path": "saltstack/CVE-2020-11651"
+    },
+    {
+        "name": "SaltStack 任意文件读写漏洞",
+        "app": "SaltStack",
+        "cve": "CVE-2020-11652",
+        "path": "saltstack/CVE-2020-11652"
+    },
+    {
+        "name": "SaltStack 命令注入漏洞",
+        "app": "SaltStack",
+        "cve": "CVE-2020-16846",
+        "path": "saltstack/CVE-2020-16846"
     },
     {
         "name": "Samba 远程命令执行漏洞",
@@ -930,16 +930,16 @@
         "path": "skywalking/8.3.0-sqli"
     },
     {
-        "name": "Apache solr XML 实体注入漏洞",
-        "app": "solr",
-        "cve": "CVE-2017-12629",
-        "path": "solr/CVE-2017-12629-XXE"
-    },
-    {
         "name": "Apache Solr 远程命令执行漏洞",
         "app": "solr",
         "cve": "CVE-2017-12629",
         "path": "solr/CVE-2017-12629-RCE"
+    },
+    {
+        "name": "Apache Solr XML 实体注入漏洞",
+        "app": "solr",
+        "cve": "CVE-2017-12629",
+        "path": "solr/CVE-2017-12629-XXE"
     },
     {
         "name": "Apache Solr 远程命令执行漏洞",
