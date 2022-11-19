@@ -37,9 +37,15 @@
     },
     {
         "name": "Apache APISIX 默认密钥漏洞",
-        "app": "Apereo CAS",
+        "app": "Apache APISIX",
         "cve": "CVE-2020-13945",
         "path": "apisix/CVE-2020-13945"
+    },
+    {
+        "name": "Apache APISIX Dashboard API权限绕过导致RCE",
+        "app": "Apache APISIX",
+        "cve": "CVE-2021-45232",
+        "path": "apisix/CVE-2021-45232"
     },
     {
         "name": "AppWeb认证绕过漏洞",
@@ -96,16 +102,28 @@
         "path": "confluence/CVE-2021-26084"
     },
     {
+        "name": "Confluence OGNL表达式注入命令执行漏洞",
+        "app": "Atlassian Confluence",
+        "cve": "CVE-2022-26134",
+        "path": "confluence/CVE-2022-26134"
+    },
+    {
         "name": "Couchdb 垂直权限绕过漏洞",
-        "app": "Couchdb",
+        "app": "CouchDB",
         "cve": "CVE-2017-12635",
         "path": "couchdb/CVE-2017-12635"
     },
     {
         "name": "Couchdb 任意命令执行漏洞",
-        "app": "Couchdb",
+        "app": "CouchDB",
         "cve": "CVE-2017-12636",
         "path": "couchdb/CVE-2017-12636"
+    },
+    {
+        "name": "CouchDB Erlang 分布式协议代码执行",
+        "app": "CouchDB",
+        "cve": "CVE-2022-24706",
+        "path": "couchdb/CVE-2022-24706"
     },
     {
         "name": "Discuz 7.x/6.x 全局变量防御绕过导致代码执行",
@@ -148,6 +166,12 @@
         "app": "Django",
         "cve": "CVE-2021-35042",
         "path": "django/CVE-2021-35042"
+    },
+    {
+        "name": "Django Trunc(kind) and Extract(lookup_name) SQL注入漏洞",
+        "app": "Django",
+        "cve": "CVE-2022-34265",
+        "path": "django/CVE-2022-34265"
     },
     {
         "name": "DNS域传送漏洞",
@@ -384,6 +408,12 @@
         "path": "grafana/CVE-2021-43798"
     },
     {
+        "name": "Grafana管理后台SSRF",
+        "app": "Grafana",
+        "cve": null,
+        "path": "grafana/admin-ssrf"
+    },
+    {
         "name": "H2 Database Console 未授权访问",
         "app": "Springboot H2 Database",
         "cve": null,
@@ -600,6 +630,12 @@
         "path": "magento/2.2-sqli"
     },
     {
+        "name": "Metabase任意文件读取漏洞",
+        "app": "metabase",
+        "cve": "CVE-2021-41277",
+        "path": "metabase/CVE-2021-41277"
+    },
+    {
         "name": "mini_httpd任意文件读取漏洞",
         "app": "mini_httpd",
         "cve": "CVE-2018-18778",
@@ -724,6 +760,12 @@
         "app": "OpenSSL",
         "cve": "CVE-2022-0778",
         "path": "openssl/CVE-2022-0778"
+    },
+    {
+        "name": "OpenTSDB 命令注入漏洞",
+        "app": "OpenTSDB",
+        "cve": "CVE-2020-35476",
+        "path": "opentsdb/CVE-2020-35476"
     },
     {
         "name": "PHP 8.1.0-dev 开发版本后门事件",
@@ -1012,6 +1054,12 @@
         "app": "Spring",
         "cve": "CVE-2022-22965",
         "path": "spring/CVE-2022-22965"
+    },
+    {
+        "name": "Spring Security Authorization Bypass in RegexRequestMatcher",
+        "app": "Spring",
+        "cve": "CVE-2022-22978",
+        "path": "spring/CVE-2022-22978"
     },
     {
         "name": "S2-001 远程代码执行漏洞",
