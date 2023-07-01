@@ -29,19 +29,19 @@ export const Readme = ({state, actions}, children) => {
                                 <div class="level-item has-text-centered">
                                     <div>
                                     <p class="heading">PULL</p>
-                                    <p class="title">300K+</p>
+                                    <p class="title">600K+</p>
                                     </div>
                                 </div>
                                 <div class="level-item has-text-centered">
                                     <div>
                                     <p class="heading">COMMITS</p>
-                                    <p class="title">1600+</p>
+                                    <p class="title">1800+</p>
                                     </div>
                                 </div>
                                 <div class="level-item has-text-centered">
                                     <div>
                                     <p class="heading">STARS</p>
-                                    <p class="title">8.7K+</p>
+                                    <p class="title">14.3K+</p>
                                     </div>
                                 </div>
                             </nav>
@@ -57,7 +57,7 @@ export const Readme = ({state, actions}, children) => {
                             <p class="title has-text-centered">Download Vulhub and <Link to="#/docs/" go={actions.go}>Quick Start</Link></p>
 
                             <p>
-                                安装 docker 和 docker-compose 后即可开始使用Vulhub。
+                                安装 docker 后即可开始使用Vulhub。
                             </p>
 
                             <pre id="quick-start-code">
@@ -69,10 +69,10 @@ export const Readme = ({state, actions}, children) => {
                                     <span class="s">cd /path/to/vuln/</span> <br />
                                     <br />
                                     <span class="c"># Compile (optional)</span> <br />
-                                    <span class="s">docker-compose build</span> <br />
+                                    <span class="s">docker compose build</span> <br />
                                     <br />
                                     <span class="c"># Run</span> <br />
-                                    <span class="s">docker-compose up -d</span> <br />
+                                    <span class="s">docker compose up -d</span> <br />
                                 </code>
                             </pre>
                             <hr />

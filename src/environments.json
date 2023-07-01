@@ -30,6 +30,12 @@
         "path": "airflow/CVE-2020-17526"
     },
     {
+        "name": "Apache Druid 代码执行漏洞",
+        "app": "Apache Druid",
+        "cve": "CVE-2021-25646",
+        "path": "apache-druid/CVE-2021-25646"
+    },
+    {
         "name": "Apereo CAS 4.1 反序列化命令执行漏洞",
         "app": "Apereo CAS",
         "cve": null,
@@ -64,6 +70,12 @@
         "app": "bash",
         "cve": "CVE-2014-6271",
         "path": "bash/CVE-2014-6271"
+    },
+    {
+        "name": "Cacti 前台命令注入漏洞",
+        "app": "cacti",
+        "cve": "CVE-2022-46169",
+        "path": "cacti/CVE-2022-46169"
     },
     {
         "name": "Celery <4.0 Redis未授权访问+Pickle反序列化利用",
@@ -330,6 +342,12 @@
         "path": "flink/CVE-2020-17519"
     },
     {
+        "name": "GeoServer OGC Filter SQL注入漏洞",
+        "app": "GeoServer",
+        "cve": "CVE-2023-25157",
+        "path": "geoserver/CVE-2023-25157"
+    },
+    {
         "name": "GhostScript 沙箱绕过（命令执行）漏洞",
         "app": "ghostscript",
         "cve": "CVE-2018-16509",
@@ -462,22 +480,28 @@
         "path": "httpd/ssi-rce"
     },
     {
-        "name": "Imagemagick PDF密码位置命令注入漏洞",
-        "app": "imagemagick",
-        "cve": "CVE-2020-29599",
-        "path": "imagemagick/CVE-2020-29599"
-    },
-    {
         "name": "Imagetragick 命令执行漏洞",
         "app": "ImageMagick",
         "cve": "CVE-2016-3714",
         "path": "imagemagick/imagetragick"
     },
     {
-        "name": "Influxdb未授权访问漏洞",
-        "app": "influxdb",
-        "cve": null,
-        "path": "influxdb/unacc"
+        "name": "Imagemagick PDF密码位置命令注入漏洞",
+        "app": "imagemagick",
+        "cve": "CVE-2020-29599",
+        "path": "imagemagick/CVE-2020-29599"
+    },
+    {
+        "name": "ImageMagick任意文件读取漏洞",
+        "app": "imagemagick",
+        "cve": "CVE-2022-44268",
+        "path": "imagemagick/CVE-2022-44268"
+    },
+    {
+        "name": "InfluxDB Empty JWT Secret Key Authentication Bypass",
+        "app": "InfluxDB",
+        "cve": "CVE-2019-20933",
+        "path": "influxdb/CVE-2019-20933"
     },
     {
         "name": "Jackson-databind 反序列化漏洞",
@@ -576,10 +600,22 @@
         "path": "joomla/CVE-2017-8917"
     },
     {
+        "name": "Joomla 4.2.7 权限绕过漏洞",
+        "app": "Joomla",
+        "cve": "CVE-2023-23752",
+        "path": "joomla/CVE-2023-23752"
+    },
+    {
         "name": "Jupyter Notebook 未授权访问漏洞",
         "app": "Jupyter",
         "cve": null,
         "path": "jupyter/notebook-rce"
+    },
+    {
+        "name": "Apache Kafka Clients JNDI注入漏洞",
+        "app": "Apache Kafka",
+        "cve": "CVE-2023-25194",
+        "path": "kafka/CVE-2023-25194"
     },
     {
         "name": "Kibana 本地文件包含漏洞",
@@ -640,6 +676,12 @@
         "app": "mini_httpd",
         "cve": "CVE-2018-18778",
         "path": "mini_httpd/CVE-2018-18778"
+    },
+    {
+        "name": "MinIO集群模式信息泄露漏洞",
+        "app": "MinIO",
+        "cve": "CVE-2023-28432",
+        "path": "minio/CVE-2023-28432"
     },
     {
         "name": "Mojarra JSF ViewState 反序列化漏洞",
@@ -736,6 +778,12 @@
         "app": "Apache OfBiz",
         "cve": "CVE-2020-9496",
         "path": "ofbiz/CVE-2020-9496"
+    },
+    {
+        "name": "Openfire管理后台认证绕过漏洞",
+        "app": "Openfire",
+        "cve": "CVE-2023-32315",
+        "path": "openfire/CVE-2023-32315"
     },
     {
         "name": "OpenSMTPD 远程命令执行漏洞 (CVE-2020-7247)",
@@ -912,6 +960,12 @@
         "path": "rocketchat/CVE-2021-22911"
     },
     {
+        "name": "Apache RocketMQ 远程命令执行漏洞",
+        "app": "Apache RocketMQ",
+        "cve": "CVE-2023-33246",
+        "path": "rocketmq/CVE-2023-33246"
+    },
+    {
         "name": "rsync 未授权访问漏洞",
         "app": "rsync",
         "cve": null,
@@ -952,6 +1006,12 @@
         "app": "scrapyd",
         "cve": null,
         "path": "scrapy/scrapyd-unacc"
+    },
+    {
+        "name": "Apache Shiro 认证绕过漏洞",
+        "app": "shiro",
+        "cve": "CVE-2010-3863",
+        "path": "shiro/CVE-2010-3863"
     },
     {
         "name": "Apache Shiro 1.2.4反序列化漏洞",
@@ -1200,6 +1260,12 @@
         "path": "thinkphp/in-sqlinjection"
     },
     {
+        "name": "ThinkPHP 多语言本地文件包含漏洞",
+        "app": "ThinkPHP",
+        "cve": null,
+        "path": "thinkphp/lang-rce"
+    },
+    {
         "name": "Tiki Wiki CMS Groupware 认证绕过漏洞",
         "app": "Tiki Wiki",
         "cve": "CVE-2020-15906",
@@ -1242,6 +1308,12 @@
         "path": "uwsgi/unacc"
     },
     {
+        "name": "V2board 1.6.1 提权漏洞",
+        "app": "V2board",
+        "cve": null,
+        "path": "v2board/1.6-privilege-escalation"
+    },
+    {
         "name": "Weblogic < 10.3.6 'wls-wsat' XMLDecoder 反序列化漏洞",
         "app": "Weblogic",
         "cve": "CVE-2017-10271",
@@ -1262,8 +1334,14 @@
     {
         "name": "Weblogic 管理控制台未授权远程命令执行漏洞",
         "app": "Weblogic",
-        "cve": "CVE-2020-14882, CVE-2020-14883",
+        "cve": "CVE-2020-14882",
         "path": "weblogic/CVE-2020-14882"
+    },
+    {
+        "name": "Weblogic未授权远程代码执行漏洞",
+        "app": "Weblogic",
+        "cve": "CVE-2023-21839",
+        "path": "weblogic/CVE-2023-21839"
     },
     {
         "name": "Weblogic SSRF漏洞",
@@ -1306,6 +1384,12 @@
         "app": "xxl-job",
         "cve": null,
         "path": "xxl-job/unacc"
+    },
+    {
+        "name": "YApi NoSQL注入导致远程命令执行漏洞",
+        "app": "YApi",
+        "cve": null,
+        "path": "yapi/mongodb-inj"
     },
     {
         "name": "YApi开放注册导致RCE",
