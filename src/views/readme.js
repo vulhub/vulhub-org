@@ -116,7 +116,7 @@ export const Readme = ({state, actions}, children) => {
                                     </a>
                                 </div>
                                 <div class="column sponsor">
-                                    <a href="https://xianzhi.aliyun.com/" target="_blank">
+                                    <a href="https://xz.aliyun.com/" target="_blank">
                                         <img src="img/sponsor/aliyun.svg" width="120" alt=""/>
                                     </a>
                                 </div>
