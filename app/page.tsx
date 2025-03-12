@@ -21,7 +21,7 @@ export default function Home() {
                 <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
                   <Link href="/environments">Explore Environments</Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+                <Button asChild variant="outline" size="lg" className="border-white hover:bg-white/10 hover:text-white">
                   <a href="https://github.com/vulhub/vulhub" target="_blank" rel="noopener noreferrer">
                     <Github className="mr-2 h-5 w-5" />
                     GitHub
