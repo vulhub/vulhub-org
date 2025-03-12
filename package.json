@@ -44,9 +44,11 @@
     "date-fns": "4.1.0",
     "embla-carousel-react": "8.5.1",
     "input-otp": "1.4.1",
+    "js-toml": "^1.0.1",
     "lucide-react": "^0.454.0",
     "next": "15.1.2",
     "next-themes": "^0.4.4",
+    "prism-react-renderer": "^2.4.1",
     "react": "^19",
     "react-day-picker": "8.10.1",
     "react-dom": "^19",
@@ -66,5 +68,6 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
-  }
+  },
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }

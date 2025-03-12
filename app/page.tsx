@@ -1,8 +1,11 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Github, BookOpen, Database, Shield, ArrowRight } from "lucide-react"
+import { getPopularEnvironments } from "@/lib/environments"
 
 export default function Home() {
+  const popularEnvironments = getPopularEnvironments()
+  
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
@@ -37,16 +40,16 @@ export default function Home() {
             </div>
             <div className="md:w-1/2">
               <div className="bg-slate-800 border border-slate-700 rounded-lg p-6 shadow-xl">
-                <pre className="text-green-400 overflow-x-auto">
+                <pre className="text-slate-200 overflow-x-auto font-mono">
                   <code>
-                    {`# Clone the repository
-git clone https://github.com/vulhub/vulhub.git
-
-# Enter the directory
-cd vulhub/flask/ssti
-
-# Start the environment
-docker-compose up -d`}
+                    <span className="text-slate-400"># Clone the repository</span>{"\n"}
+                    <span className="text-emerald-400">git clone https://github.com/vulhub/vulhub.git</span>{"\n"}
+                    {"\n"}
+                    <span className="text-slate-400"># Enter the directory</span>{"\n"}
+                    <span className="text-emerald-400">cd vulhub/spring/CVE-2022-22947</span>{"\n"}
+                    {"\n"}
+                    <span className="text-slate-400"># Start the environment</span>{"\n"}
+                    <span className="text-emerald-400">docker compose up -d</span>
                   </code>
                 </pre>
               </div>
@@ -110,19 +113,26 @@ docker-compose up -d`}
               >
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-xs font-medium px-2.5 py-0.5 rounded bg-red-100 text-red-800">
-                      {env.category}
-                    </span>
+                    <div className="flex flex-wrap gap-1">
+                      {env.tags.map((tag, index) => (
+                        <span 
+                          key={index} 
+                          className="text-xs font-medium px-2.5 py-0.5 rounded bg-red-100 text-red-800"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
                     <span className="text-xs text-slate-500">{env.date}</span>
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">{env.title}</h3>
+                  <h3 className="text-xl font-semibold mb-2">{env.name}</h3>
                   <p className="text-slate-600 mb-4">{env.description}</p>
                   <div className="flex justify-between items-center">
                     <Link href={`/environments/${env.id}`} className="text-blue-600 hover:text-blue-800 font-medium">
                       Learn more
                     </Link>
                     <div className="flex items-center text-slate-500 text-sm">
-                      <span className="bg-slate-100 px-2 py-1 rounded">CVE-{env.cve}</span>
+                      <span className="bg-slate-100 px-2 py-1 rounded">{env.cve[0] || "N/A"}</span>
                     </div>
                   </div>
                 </div>
@@ -155,55 +165,4 @@ docker-compose up -d`}
     </div>
   )
 }
-
-const popularEnvironments = [
-  {
-    id: "flask-ssti",
-    title: "Flask Server-Side Template Injection",
-    description: "Explore the SSTI vulnerability in Flask applications and learn how to exploit it.",
-    category: "Web Application",
-    cve: "2019-8341",
-    date: "Updated 3 days ago",
-  },
-  {
-    id: "apache-log4j",
-    title: "Apache Log4j Remote Code Execution",
-    description: "Practice exploiting the critical Log4Shell vulnerability that affected millions of applications.",
-    category: "RCE",
-    cve: "2021-44228",
-    date: "Updated 2 months ago",
-  },
-  {
-    id: "spring-rce",
-    title: "Spring Framework RCE",
-    description: "Learn about remote code execution vulnerabilities in the Spring Framework.",
-    category: "RCE",
-    cve: "2022-22965",
-    date: "Updated 1 month ago",
-  },
-  {
-    id: "coldfusion-rce",
-    title: "ColdFusion Remote Code Execution",
-    description: "Explore vulnerabilities in Adobe ColdFusion that allow for remote code execution.",
-    category: "RCE",
-    cve: "2023-26360",
-    date: "Updated 2 months ago",
-  },
-  {
-    id: "apache-struts2",
-    title: "Apache Struts2 Remote Code Execution",
-    description: "Practice with the infamous Struts2 vulnerability that led to major data breaches.",
-    category: "Web Application",
-    cve: "2017-5638",
-    date: "Updated 6 months ago",
-  },
-  {
-    id: "wordpress-rce",
-    title: "WordPress Plugin Vulnerabilities",
-    description: "Explore common security issues in WordPress plugins and how they can be exploited.",
-    category: "CMS",
-    cve: "2021-24867",
-    date: "Updated 4 months ago",
-  },
-]
 
