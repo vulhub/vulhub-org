@@ -1,10 +1,11 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Github, BookOpen, Database, Shield, ArrowRight } from "lucide-react"
-import { getPopularEnvironments } from "@/lib/environments"
+import { getLatestEnvironments, getAllEnvironments } from "@/lib/environments"
 
 export default function Home() {
-  const popularEnvironments = getPopularEnvironments()
+  const environments = getAllEnvironments()
+  const latestEnvironments = getLatestEnvironments()
   
   return (
     <div className="flex flex-col min-h-screen">
@@ -36,6 +37,8 @@ export default function Home() {
                 <span>18.4k+ Stars</span>
                 <span className="mx-2">•</span>
                 <span>4.5k+ Forks</span>
+                <span className="mx-2">•</span>
+                <span>{environments.length} Environments</span>
               </div>
             </div>
             <div className="md:w-1/2">
@@ -99,19 +102,19 @@ export default function Home() {
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center mb-12">
-            <h2 className="text-3xl font-bold">Popular Environments</h2>
+            <h2 className="text-3xl font-bold">Latest Environments</h2>
             <Link href="/environments" className="text-blue-600 hover:text-blue-800 flex items-center">
               View all environments
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {popularEnvironments.map((env) => (
+            {latestEnvironments.map((env) => (
               <div
-                key={env.id}
-                className="border border-slate-200 rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow"
+                key={env.path}
+                className="border border-slate-200 rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow flex flex-col h-full"
               >
-                <div className="p-6">
+                <div className="p-6 flex flex-col flex-grow">
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex flex-wrap gap-1">
                       {env.tags.map((tag, index) => (
@@ -123,12 +126,12 @@ export default function Home() {
                         </span>
                       ))}
                     </div>
-                    <span className="text-xs text-slate-500">{env.date}</span>
+                    <span className="text-xs text-slate-500" title={env.date.format()}>Created {env.date.fromNow()}</span>
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{env.name}</h3>
-                  <p className="text-slate-600 mb-4">{env.description}</p>
-                  <div className="flex justify-between items-center">
-                    <Link href={`/environments/${env.id}`} className="text-blue-600 hover:text-blue-800 font-medium">
+                  <p className="text-slate-600">{`Explore the ${env.name} vulnerability and learn how to exploit it.`}</p>
+                  <div className="flex justify-between items-center mt-auto pt-4">
+                    <Link href={`https://github.com/vulhub/vulhub/tree/master/${env.path}`} target="_blank" className="text-blue-600 hover:text-blue-800 font-medium">
                       Learn more
                     </Link>
                     <div className="flex items-center text-slate-500 text-sm">

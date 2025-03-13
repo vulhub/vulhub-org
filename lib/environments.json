@@ -1,0 +1,3369 @@
+{
+  "environment": [
+    {
+      "name": "Apache ActiveMQ Deserialization",
+      "cve": [
+        "CVE-2015-5254"
+      ],
+      "app": "Apache ActiveMQ",
+      "path": "activemq/CVE-2015-5254",
+      "tags": [
+        "Deserialization"
+      ],
+      "date": "Mon Feb 26 14:34:36 2018 +0800"
+    },
+    {
+      "name": "Apache ActiveMQ Arbitrary File Write",
+      "cve": [
+        "CVE-2016-3088"
+      ],
+      "app": "Apache ActiveMQ",
+      "path": "activemq/CVE-2016-3088",
+      "tags": [
+        "File Operation"
+      ],
+      "date": "Mon Jul 3 17:09:30 2017 +0800"
+    },
+    {
+      "name": "Apache ActiveMQ Jolokia Authenticated Remote Code Execution",
+      "cve": [
+        "CVE-2022-41678"
+      ],
+      "app": "Apache ActiveMQ",
+      "path": "activemq/CVE-2022-41678",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Thu Nov 30 16:20:21 2023 +0800"
+    },
+    {
+      "name": "Apache ActiveMQ OpenWire Protocol Deserialization RCE",
+      "cve": [
+        "CVE-2023-46604"
+      ],
+      "app": "Apache ActiveMQ",
+      "path": "activemq/CVE-2023-46604",
+      "tags": [
+        "RCE",
+        "Deserialization"
+      ],
+      "date": "Tue Nov 7 17:38:41 2023 +0800"
+    },
+    {
+      "name": "Adminer Server-side Request Forgery on Error Page of Elasticsearch and ClickHouse",
+      "cve": [
+        "CVE-2021-21311"
+      ],
+      "app": "Adminer",
+      "path": "adminer/CVE-2021-21311",
+      "tags": [
+        "SSRF"
+      ],
+      "date": "Thu Jul 6 14:52:48 2023 +0800"
+    },
+    {
+      "name": "Adminer Remote Arbitrary File Read",
+      "cve": [
+        "CVE-2021-43008"
+      ],
+      "app": "Adminer",
+      "path": "adminer/CVE-2021-43008",
+      "tags": [
+        "File Operation"
+      ],
+      "date": "Thu Jul 6 02:53:33 2023 +0800"
+    },
+    {
+      "name": "Apache Airflow Command Injection",
+      "cve": [
+        "CVE-2020-11978"
+      ],
+      "app": "Apache Airflow",
+      "path": "airflow/CVE-2020-11978",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Tue Mar 29 01:45:36 2022 +0800"
+    },
+    {
+      "name": "Apache Airflow Celery Message Middleware Command Execution",
+      "cve": [
+        "CVE-2020-11981"
+      ],
+      "app": "Apache Airflow",
+      "path": "airflow/CVE-2020-11981",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Tue Mar 29 01:45:36 2022 +0800"
+    },
+    {
+      "name": "Apache Airflow Permission Bypass",
+      "cve": [
+        "CVE-2020-17526"
+      ],
+      "app": "Apache Airflow",
+      "path": "airflow/CVE-2020-17526",
+      "tags": [
+        "Auth Bypass"
+      ],
+      "date": "Tue Mar 29 04:23:47 2022 +0800"
+    },
+    {
+      "name": "AJ-Report Authentication Bypass and Remote Code Execution",
+      "cve": [],
+      "app": "AJ-Report",
+      "path": "aj-report/CNVD-2024-15077",
+      "tags": [
+        "RCE",
+        "Auth Bypass"
+      ],
+      "date": "Tue May 21 00:20:44 2024 +0800"
+    },
+    {
+      "name": "Apache Druid Code Execution",
+      "cve": [
+        "CVE-2021-25646"
+      ],
+      "app": "Apache Druid",
+      "path": "apache-druid/CVE-2021-25646",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Sun Apr 30 02:58:40 2023 +0800"
+    },
+    {
+      "name": "Apereo CAS 4.1 Deserialization Command Execution",
+      "cve": [],
+      "app": "Apereo CAS",
+      "path": "apereo-cas/4.1-rce",
+      "tags": [
+        "RCE",
+        "Deserialization"
+      ],
+      "date": "Thu Jul 16 01:47:28 2020 +0800"
+    },
+    {
+      "name": "Apache APISIX Default Key",
+      "cve": [
+        "CVE-2020-13945"
+      ],
+      "app": "Apache APISIX",
+      "path": "apisix/CVE-2020-13945",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Sun Jan 16 21:35:03 2022 +0800"
+    },
+    {
+      "name": "Apache APISIX Dashboard API Permission Bypass to RCE",
+      "cve": [
+        "CVE-2021-45232"
+      ],
+      "app": "Apache APISIX",
+      "path": "apisix/CVE-2021-45232",
+      "tags": [
+        "RCE",
+        "Auth Bypass"
+      ],
+      "date": "Tue Oct 11 00:24:49 2022 +0800"
+    },
+    {
+      "name": "AppWeb Authentication Bypass",
+      "cve": [
+        "CVE-2018-8715"
+      ],
+      "app": "AppWeb",
+      "path": "appweb/CVE-2018-8715",
+      "tags": [
+        "Auth Bypass"
+      ],
+      "date": "Wed Jan 30 17:32:37 2019 +0800"
+    },
+    {
+      "name": "Aria2 Arbitrary File Write",
+      "cve": [],
+      "app": "Aria2",
+      "path": "aria2/rce",
+      "tags": [
+        "File Operation"
+      ],
+      "date": "Sun Dec 17 03:39:32 2017 +0800"
+    },
+    {
+      "name": "Bash Shellshock Shell Exploit",
+      "cve": [
+        "CVE-2014-6271"
+      ],
+      "app": "Bash",
+      "path": "bash/CVE-2014-6271",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Tue Apr 12 03:01:24 2022 +0800"
+    },
+    {
+      "name": "Cacti Foreground Command Injection",
+      "cve": [
+        "CVE-2022-46169"
+      ],
+      "app": "Cacti",
+      "path": "cacti/CVE-2022-46169",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Mon Dec 12 20:33:17 2022 +0800"
+    },
+    {
+      "name": "Celery <4.0 Redis Unauthorized Access and Pickle Deserialization",
+      "cve": [],
+      "app": "Celery",
+      "path": "celery/celery3_redis_unauth",
+      "tags": [
+        "Deserialization"
+      ],
+      "date": "Wed Jun 30 11:43:09 2021 -0400"
+    },
+    {
+      "name": "CGI HTTPoxy Flaw",
+      "cve": [
+        "CVE-2016-5385"
+      ],
+      "app": "CGI",
+      "path": "cgi/CVE-2016-5385",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Tue Apr 12 02:56:49 2022 +0800"
+    },
+    {
+      "name": "CMS Made Simple (CMSMS) < 2.2.10 Unauthenticated SQL Injection",
+      "cve": [
+        "CVE-2019-9053"
+      ],
+      "app": "CMS Made Simple",
+      "path": "cmsms/CVE-2019-9053",
+      "tags": [
+        "SQL Injection"
+      ],
+      "date": "Sat Feb 3 02:17:55 2024 +0800"
+    },
+    {
+      "name": "CMS Made Simple (CMSMS) Unauthenticated Remote Code Execution",
+      "cve": [
+        "CVE-2019-9053",
+        "CVE-2021-26120"
+      ],
+      "app": "CMS Made Simple",
+      "path": "cmsms/CVE-2021-26120",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sat Feb 3 03:01:20 2024 +0800"
+    },
+    {
+      "name": "Adobe ColdFusion File Read",
+      "cve": [
+        "CVE-2010-2861"
+      ],
+      "app": "Adobe ColdFusion",
+      "path": "coldfusion/CVE-2010-2861",
+      "tags": [
+        "File Operation"
+      ],
+      "date": "Fri May 4 17:36:56 2018 +0800"
+    },
+    {
+      "name": "Adobe ColdFusion Deserialization",
+      "cve": [
+        "CVE-2017-3066"
+      ],
+      "app": "Adobe ColdFusion",
+      "path": "coldfusion/CVE-2017-3066",
+      "tags": [
+        "Deserialization"
+      ],
+      "date": "Thu Mar 15 20:38:22 2018 +0800"
+    },
+    {
+      "name": "Adobe ColdFusion Local File Inclusion Leads to RCE",
+      "cve": [
+        "CVE-2023-26360"
+      ],
+      "app": "Adobe ColdFusion",
+      "path": "coldfusion/CVE-2023-26360",
+      "tags": [
+        "RCE",
+        "File Inclusion"
+      ],
+      "date": "Sun Jan 28 07:50:17 2024 +0800"
+    },
+    {
+      "name": "Adobe ColdFusion XML Deserialization Leads to RCE",
+      "cve": [
+        "CVE-2023-29300"
+      ],
+      "app": "Adobe ColdFusion",
+      "path": "coldfusion/CVE-2023-29300",
+      "tags": [
+        "RCE",
+        "Deserialization"
+      ],
+      "date": "Tue Jan 30 01:40:16 2024 +0800"
+    },
+    {
+      "name": "Atlassian Confluence Path Traversal and Command Execution",
+      "cve": [
+        "CVE-2019-3396"
+      ],
+      "app": "Confluence",
+      "path": "confluence/CVE-2019-3396",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Wed Apr 10 02:48:38 2019 +0800"
+    },
+    {
+      "name": "Atlassian Confluence OGNL Expression Injection Code Execution",
+      "cve": [
+        "CVE-2021-26084"
+      ],
+      "app": "Confluence",
+      "path": "confluence/CVE-2021-26084",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Fri Sep 3 03:01:54 2021 +0800"
+    },
+    {
+      "name": "Atlassian Confluence OGNL Expression Injection Command Execution",
+      "cve": [
+        "CVE-2022-26134"
+      ],
+      "app": "Confluence",
+      "path": "confluence/CVE-2022-26134",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sat Jun 4 08:36:19 2022 +0800"
+    },
+    {
+      "name": "Confluence Access Control Broken by Attributes Overwrite",
+      "cve": [
+        "CVE-2023-22515"
+      ],
+      "app": "Confluence",
+      "path": "confluence/CVE-2023-22515",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Wed Oct 11 01:01:01 2023 +0800"
+    },
+    {
+      "name": "Confluence Pre-Auth Remote Code Execution via OGNL Injection",
+      "cve": [
+        "CVE-2023-22527"
+      ],
+      "app": "Confluence",
+      "path": "confluence/CVE-2023-22527",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Mon Jan 22 19:17:22 2024 +0800"
+    },
+    {
+      "name": "CouchDB Vertical Permission Bypass",
+      "cve": [
+        "CVE-2017-12635"
+      ],
+      "app": "Apache CouchDB",
+      "path": "couchdb/CVE-2017-12635",
+      "tags": [
+        "Auth Bypass"
+      ],
+      "date": "Sat Dec 2 05:51:59 2017 +0800"
+    },
+    {
+      "name": "CouchDB Arbitrary Command Execution",
+      "cve": [
+        "CVE-2017-12636"
+      ],
+      "app": "Apache CouchDB",
+      "path": "couchdb/CVE-2017-12636",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sun Dec 3 01:30:09 2017 +0800"
+    },
+    {
+      "name": "CouchDB Erlang Distributed Protocol Code Execution",
+      "cve": [
+        "CVE-2022-24706"
+      ],
+      "app": "Apache CouchDB",
+      "path": "couchdb/CVE-2022-24706",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Fri Nov 18 03:42:46 2022 +0800"
+    },
+    {
+      "name": "CraftCMS register_argc_argv Leads to Remote Code Execution",
+      "cve": [
+        "CVE-2024-56145"
+      ],
+      "app": "CraftCMS",
+      "path": "craftcms/CVE-2024-56145",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sun Dec 29 03:07:05 2024 +0800"
+    },
+    {
+      "name": "OpenPrinting Cups-Browsed Remote Code Execution via The FoomaticRIPCommandLine PPD parameter",
+      "cve": [
+        "CVE-2024-47177"
+      ],
+      "app": "OpenPrinting Cups-Browsed",
+      "path": "cups-browsed/CVE-2024-47177",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sat Sep 28 18:55:33 2024 +0800"
+    },
+    {
+      "name": "Discuz 7.x/6.x Remote Code Execution via Global Variable Override",
+      "cve": [],
+      "app": "Discuz!",
+      "path": "discuz/wooyun-2010-080723",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Thu Jun 7 00:54:09 2018 +0800"
+    },
+    {
+      "name": "Discuz!X ≤3.4 Arbitrary File Deletion",
+      "cve": [],
+      "app": "Discuz!",
+      "path": "discuz/x3.4-arbitrary-file-deletion",
+      "tags": [
+        "File Operation"
+      ],
+      "date": "Fri Nov 3 02:25:23 2017 +0800"
+    },
+    {
+      "name": "Django 500 Debug Page Cross-Site Scripting (XSS)",
+      "cve": [
+        "CVE-2017-12794"
+      ],
+      "app": "Django",
+      "path": "django/CVE-2017-12794",
+      "tags": [
+        "XSS",
+        "Python Framework"
+      ],
+      "date": "Fri Sep 8 05:36:14 2017 +0800"
+    },
+    {
+      "name": "Django < 2.0.8 Open Redirect in CommonMiddleware",
+      "cve": [
+        "CVE-2018-14574"
+      ],
+      "app": "Django",
+      "path": "django/CVE-2018-14574",
+      "tags": [
+        "Python Framework"
+      ],
+      "date": "Tue Aug 7 14:20:23 2018 +0800"
+    },
+    {
+      "name": "Django JSONField/HStoreField SQL Injection",
+      "cve": [
+        "CVE-2019-14234"
+      ],
+      "app": "Django",
+      "path": "django/CVE-2019-14234",
+      "tags": [
+        "SQL Injection",
+        "Python Framework"
+      ],
+      "date": "Sat Aug 3 03:48:57 2019 +0800"
+    },
+    {
+      "name": "Django GIS functions and aggregates on Oracle SQL Injection",
+      "cve": [
+        "CVE-2020-9402"
+      ],
+      "app": "Django",
+      "path": "django/CVE-2020-9402",
+      "tags": [
+        "SQL Injection",
+        "Python Framework"
+      ],
+      "date": "Mon Mar 16 23:34:29 2020 +0800"
+    },
+    {
+      "name": "Django QuerySet.order_by() SQL Injection",
+      "cve": [
+        "CVE-2021-35042"
+      ],
+      "app": "Django",
+      "path": "django/CVE-2021-35042",
+      "tags": [
+        "SQL Injection",
+        "Python Framework"
+      ],
+      "date": "Mon Jul 26 02:33:37 2021 +0800"
+    },
+    {
+      "name": "Django Trunc(kind) and Extract(lookup_name) SQL Injection",
+      "cve": [
+        "CVE-2022-34265"
+      ],
+      "app": "Django",
+      "path": "django/CVE-2022-34265",
+      "tags": [
+        "SQL Injection",
+        "Python Framework"
+      ],
+      "date": "Thu Jul 14 00:58:18 2022 +0800"
+    },
+    {
+      "name": "DNS Domain Transfer",
+      "cve": [],
+      "app": "DNS",
+      "path": "dns/dns-zone-transfer",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Mon Mar 19 20:06:24 2018 +0800"
+    },
+    {
+      "name": "Docker Daemon API Unauthorized Access",
+      "cve": [],
+      "app": "Docker",
+      "path": "docker/unauthorized-rce",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Tue Mar 27 17:42:11 2018 +0800"
+    },
+    {
+      "name": "Drupal < 7.32 \"Drupalgeddon\" SQL Injection",
+      "cve": [
+        "CVE-2014-3704"
+      ],
+      "app": "Drupal",
+      "path": "drupal/CVE-2014-3704",
+      "tags": [
+        "SQL Injection",
+        "CMS"
+      ],
+      "date": "Sun Aug 19 03:15:09 2018 +0800"
+    },
+    {
+      "name": "Drupal Core 8 PECL YAML Deserialization Remote Code Execution",
+      "cve": [
+        "CVE-2017-6920"
+      ],
+      "app": "Drupal",
+      "path": "drupal/CVE-2017-6920",
+      "tags": [
+        "RCE",
+        "Deserialization",
+        "CMS"
+      ],
+      "date": "Mon Jun 24 17:16:24 2019 +0800"
+    },
+    {
+      "name": "Drupal Drupalgeddon 2 Unauthenticated Remote Code Execution",
+      "cve": [
+        "CVE-2018-7600"
+      ],
+      "app": "Drupal",
+      "path": "drupal/CVE-2018-7600",
+      "tags": [
+        "RCE",
+        "CMS"
+      ],
+      "date": "Fri Apr 13 09:19:42 2018 +0800"
+    },
+    {
+      "name": "Drupal Drupalgeddon 3 Authenticated Remote Code Execution",
+      "cve": [
+        "CVE-2018-7602"
+      ],
+      "app": "Drupal",
+      "path": "drupal/CVE-2018-7602",
+      "tags": [
+        "RCE",
+        "CMS"
+      ],
+      "date": "Mon Jun 10 11:38:47 2019 +0800"
+    },
+    {
+      "name": "Drupal Remote Code Execution by phar deserialization",
+      "cve": [
+        "CVE-2019-6339"
+      ],
+      "app": "Drupal",
+      "path": "drupal/CVE-2019-6339",
+      "tags": [
+        "RCE",
+        "Deserialization",
+        "CMS"
+      ],
+      "date": "Tue Jun 18 17:01:47 2019 +0800"
+    },
+    {
+      "name": "Drupal Cross-Site Scripting by File Upload",
+      "cve": [
+        "CVE-2019-6341"
+      ],
+      "app": "Drupal",
+      "path": "drupal/CVE-2019-6341",
+      "tags": [
+        "XSS",
+        "CMS"
+      ],
+      "date": "Wed Jun 19 16:25:51 2019 +0800"
+    },
+    {
+      "name": "Apache Dubbo Java Deserialization",
+      "cve": [
+        "CVE-2019-17564"
+      ],
+      "app": "Apache Dubbo",
+      "path": "dubbo/CVE-2019-17564",
+      "tags": [
+        "Deserialization"
+      ],
+      "date": "Thu Jul 1 04:01:59 2021 +0800"
+    },
+    {
+      "name": "ECShop 4.x collection_list SQL Injection",
+      "cve": [],
+      "app": "ECshop",
+      "path": "ecshop/collection_list-sqli",
+      "tags": [
+        "SQL Injection"
+      ],
+      "date": "Sun Sep 26 20:02:01 2021 +0800"
+    },
+    {
+      "name": "ECShop 2.x/3.x SQL Injection/Arbitrary Code Execution",
+      "cve": [],
+      "app": "ECshop",
+      "path": "ecshop/xianzhi-2017-02-82239600",
+      "tags": [
+        "SQL Injection"
+      ],
+      "date": "Sat Sep 1 03:23:53 2018 +0800"
+    },
+    {
+      "name": "ElasticSearch Remote Code Execution",
+      "cve": [
+        "CVE-2014-3120"
+      ],
+      "app": "ElasticSearch",
+      "path": "elasticsearch/CVE-2014-3120",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sat Apr 22 01:59:53 2017 +0800"
+    },
+    {
+      "name": "ElasticSearch Groovy Sandbox Bypass and Remote Code Execution",
+      "cve": [
+        "CVE-2015-1427"
+      ],
+      "app": "ElasticSearch",
+      "path": "elasticsearch/CVE-2015-1427",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sat Apr 22 17:12:11 2017 +0800"
+    },
+    {
+      "name": "ElasticSearch Plug-in Directory Traversal",
+      "cve": [
+        "CVE-2015-3337"
+      ],
+      "app": "ElasticSearch",
+      "path": "elasticsearch/CVE-2015-3337",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Sun Apr 23 03:40:55 2017 +0800"
+    },
+    {
+      "name": "ElasticSearch Snapshot and Restore Directory Traversal",
+      "cve": [
+        "CVE-2015-5531"
+      ],
+      "app": "ElasticSearch",
+      "path": "elasticsearch/CVE-2015-5531",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Sun Apr 23 04:06:39 2017 +0800"
+    },
+    {
+      "name": "ElasticSearch Arbitrary File Upload",
+      "cve": [],
+      "app": "ElasticSearch",
+      "path": "elasticsearch/WooYun-2015-110216",
+      "tags": [
+        "File Operation"
+      ],
+      "date": "Mon Apr 24 22:24:44 2017 +0800"
+    },
+    {
+      "name": "Electron Remote Command Execution",
+      "cve": [
+        "CVE-2018-1000006"
+      ],
+      "app": "Electron",
+      "path": "electron/CVE-2018-1000006",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Fri Jan 26 01:31:02 2018 +0800"
+    },
+    {
+      "name": "Electron WebPreferences Remote Command Execution",
+      "cve": [
+        "CVE-2018-15685"
+      ],
+      "app": "Electron",
+      "path": "electron/CVE-2018-15685",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sun Aug 26 23:59:06 2018 +0800"
+    },
+    {
+      "name": "elFinder ZIP Parameter and Arbitrary Command Injection",
+      "cve": [
+        "CVE-2021-32682"
+      ],
+      "app": "elFinder",
+      "path": "elfinder/CVE-2021-32682",
+      "tags": [
+        "RCE",
+        "File Inclusion"
+      ],
+      "date": "Sun Feb 27 04:27:01 2022 +0800"
+    },
+    {
+      "name": "Fastjson 1.2.24 Deserialization Remote Command Execution",
+      "cve": [
+        "CVE-2017-18349"
+      ],
+      "app": "Fastjson",
+      "path": "fastjson/1.2.24-rce",
+      "tags": [
+        "RCE",
+        "Deserialization"
+      ],
+      "date": "Wed Sep 25 01:23:24 2019 +0800"
+    },
+    {
+      "name": "Fastjson 1.2.47 Deserialization Remote Command Execution",
+      "cve": [],
+      "app": "Fastjson",
+      "path": "fastjson/1.2.47-rce",
+      "tags": [
+        "RCE",
+        "Deserialization"
+      ],
+      "date": "Mon Jul 22 22:42:23 2019 +0800"
+    },
+    {
+      "name": "FFmpeg Arbitrary File Read and SSRF",
+      "cve": [
+        "CVE-2016-1897",
+        "CVE-2016-1898"
+      ],
+      "app": "FFmpeg",
+      "path": "ffmpeg/CVE-2016-1897",
+      "tags": [
+        "File Operation",
+        "SSRF"
+      ],
+      "date": "Wed Jul 5 02:23:01 2017 +0800"
+    },
+    {
+      "name": "FFmpeg AVI Arbitrary File Read",
+      "cve": [
+        "CVE-2017-9993"
+      ],
+      "app": "FFmpeg",
+      "path": "ffmpeg/CVE-2017-9993",
+      "tags": [
+        "File Operation"
+      ],
+      "date": "Sun Mar 9 00:29:52 2025 +0800"
+    },
+    {
+      "name": "Flask (Jinja2) Server-Side Template Injection",
+      "cve": [],
+      "app": "Jinja2",
+      "path": "flask/ssti",
+      "tags": [
+        "Template Injection"
+      ],
+      "date": "Tue May 2 02:40:03 2017 +0800"
+    },
+    {
+      "name": "Apache Flink Upload Path Traversal",
+      "cve": [
+        "CVE-2020-17518"
+      ],
+      "app": "Apache Flink",
+      "path": "flink/CVE-2020-17518",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Wed Jan 6 02:27:19 2021 +0800"
+    },
+    {
+      "name": "Apache Flink `jobmanager/logs` Path Traversal",
+      "cve": [
+        "CVE-2020-17519"
+      ],
+      "app": "Apache Flink",
+      "path": "flink/CVE-2020-17519",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Wed Jan 6 02:27:19 2021 +0800"
+    },
+    {
+      "name": "GeoServer Unauthenticated SSRF Vulnerability",
+      "cve": [
+        "CVE-2021-40822"
+      ],
+      "app": "GeoServer",
+      "path": "geoserver/CVE-2021-40822",
+      "tags": [
+        "SSRF"
+      ],
+      "date": "Fri Jan 31 19:48:04 2025 +0800"
+    },
+    {
+      "name": "GeoServer Remote Code Injection caused by JAI-EXT",
+      "cve": [
+        "CVE-2022-24816",
+        "CVE-2023-35042"
+      ],
+      "app": "GeoServer",
+      "path": "geoserver/CVE-2022-24816",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Sat Feb 1 05:42:37 2025 +0800"
+    },
+    {
+      "name": "GeoServer OGC Filter SQL Injection",
+      "cve": [
+        "CVE-2023-25157"
+      ],
+      "app": "GeoServer",
+      "path": "geoserver/CVE-2023-25157",
+      "tags": [
+        "SQL Injection"
+      ],
+      "date": "Sun Jun 18 00:01:42 2023 +0800"
+    },
+    {
+      "name": "GeoServer Unauthenticated Remote Code Execution in Evaluating Property Name Expressions",
+      "cve": [
+        "CVE-2024-36401"
+      ],
+      "app": "GeoServer",
+      "path": "geoserver/CVE-2024-36401",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Wed Jul 3 00:45:54 2024 +0800"
+    },
+    {
+      "name": "GhostScript Sandbox Bypass Command Execution",
+      "cve": [
+        "CVE-2018-16509"
+      ],
+      "app": "Ghostscript",
+      "path": "ghostscript/CVE-2018-16509",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Thu Sep 6 19:39:08 2018 +0800"
+    },
+    {
+      "name": "GhostScript Sandbox Bypass Command Execution",
+      "cve": [
+        "CVE-2018-19475"
+      ],
+      "app": "Ghostscript",
+      "path": "ghostscript/CVE-2018-19475",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Fri Dec 13 23:44:18 2019 +0800"
+    },
+    {
+      "name": "GhostScript Sandbox Bypass Command Execution",
+      "cve": [
+        "CVE-2019-6116"
+      ],
+      "app": "Ghostscript",
+      "path": "ghostscript/CVE-2019-6116",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sat Feb 16 18:02:50 2019 +0800"
+    },
+    {
+      "name": "GIT-SHELL Sandbox Bypass",
+      "cve": [
+        "CVE-2017-8386"
+      ],
+      "app": "Git",
+      "path": "git/CVE-2017-8386",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Fri May 12 02:03:01 2017 +0800"
+    },
+    {
+      "name": "Gitea 1.4.0 Directory Traversal Leading to Remote Command Execution",
+      "cve": [],
+      "app": "Gitea",
+      "path": "gitea/1.4-rce",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sat Jul 21 23:29:16 2018 +0800"
+    },
+    {
+      "name": "GitLab Arbitrary File Read",
+      "cve": [
+        "CVE-2016-9086"
+      ],
+      "app": "GitLab",
+      "path": "gitlab/CVE-2016-9086",
+      "tags": [
+        "File Operation"
+      ],
+      "date": "Fri Apr 28 01:54:31 2017 +0800"
+    },
+    {
+      "name": "GitLab Remote Command Execution",
+      "cve": [
+        "CVE-2021-22205"
+      ],
+      "app": "GitLab",
+      "path": "gitlab/CVE-2021-22205",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Fri Oct 29 02:24:12 2021 +0800"
+    },
+    {
+      "name": "gitlist 0.6.0 Remote Command Execution",
+      "cve": [
+        "CVE-2018-1000533"
+      ],
+      "app": "GitList",
+      "path": "gitlist/CVE-2018-1000533",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Wed May 12 00:00:32 2021 +0800"
+    },
+    {
+      "name": "GlassFish 4.1.0 Arbitrary File Read",
+      "cve": [
+        "CVE-2017-1000028"
+      ],
+      "app": "GlassFish",
+      "path": "glassfish/CVE-2017-1000028",
+      "tags": [
+        "File Operation",
+        "Web Server"
+      ],
+      "date": "Sun Mar 9 01:36:17 2025 +0800"
+    },
+    {
+      "name": "GoAhead Remote Command Execution",
+      "cve": [
+        "CVE-2017-17562"
+      ],
+      "app": "GoAhead",
+      "path": "goahead/CVE-2017-17562",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Tue Dec 19 01:06:34 2017 +0800"
+    },
+    {
+      "name": "GoAhead Server Environment Variable Injection",
+      "cve": [
+        "CVE-2021-42342"
+      ],
+      "app": "GoAhead",
+      "path": "goahead/CVE-2021-42342",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Wed Jan 5 01:24:07 2022 +0800"
+    },
+    {
+      "name": "Gogs Session Overwrite and Arbitrary User Forge",
+      "cve": [
+        "CVE-2018-18925"
+      ],
+      "app": "Gogs",
+      "path": "gogs/CVE-2018-18925",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Wed Nov 7 15:33:56 2018 +0800"
+    },
+    {
+      "name": "Grafana 8.x Plug-in Module Directory Traversal",
+      "cve": [
+        "CVE-2021-43798"
+      ],
+      "app": "Grafana",
+      "path": "grafana/CVE-2021-43798",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Sat Dec 11 21:44:20 2021 +0800"
+    },
+    {
+      "name": "Grafana Management Background SSRF",
+      "cve": [],
+      "app": "Grafana",
+      "path": "grafana/admin-ssrf",
+      "tags": [
+        "SSRF"
+      ],
+      "date": "Mon Jul 4 00:01:06 2022 +0800"
+    },
+    {
+      "name": "H2 Database Console Unauthorized Access",
+      "cve": [],
+      "app": "Springboot H2 Database",
+      "path": "h2database/h2-console-unacc",
+      "tags": [
+        "Java Framework"
+      ],
+      "date": "Thu Apr 30 02:23:09 2020 +0800"
+    },
+    {
+      "name": "Hadoop YARN ResourceManager Unauthorized Access",
+      "cve": [],
+      "app": "Hadoop YARN",
+      "path": "hadoop/unauthorized-yarn",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Wed Mar 21 20:51:28 2018 +0800"
+    },
+    {
+      "name": "Apache HertzBeat SnakeYaml Deserialization Remote Code Execution",
+      "cve": [
+        "CVE-2024-42323"
+      ],
+      "app": "Apache HertzBeat",
+      "path": "hertzbeat/CVE-2024-42323",
+      "tags": [
+        "RCE",
+        "Deserialization"
+      ],
+      "date": "Sun Mar 9 04:14:42 2025 +0800"
+    },
+    {
+      "name": "Apache HTTPD Newline Parsing Vulnerability",
+      "cve": [
+        "CVE-2017-15715"
+      ],
+      "app": "Apache HTTP Server",
+      "path": "httpd/CVE-2017-15715",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Mon Apr 2 01:27:49 2018 +0800"
+    },
+    {
+      "name": "Apache HTTP Server 2.4.48 mod_proxy SSRF",
+      "cve": [
+        "CVE-2021-40438"
+      ],
+      "app": "Apache HTTP Server",
+      "path": "httpd/CVE-2021-40438",
+      "tags": [
+        "SSRF"
+      ],
+      "date": "Tue Oct 19 21:45:02 2021 +0800"
+    },
+    {
+      "name": "Apache HTTP Server 2.4.49 Path Traversal",
+      "cve": [
+        "CVE-2021-41773"
+      ],
+      "app": "Apache HTTP Server",
+      "path": "httpd/CVE-2021-41773",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Wed Oct 6 00:36:25 2021 +0800"
+    },
+    {
+      "name": "Apache HTTP Server 2.4.50 Path Traversal",
+      "cve": [
+        "CVE-2021-42013"
+      ],
+      "app": "Apache HTTP Server",
+      "path": "httpd/CVE-2021-42013",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Fri Oct 8 12:40:33 2021 +0800"
+    },
+    {
+      "name": "Apache HTTPD Multiple Extension Parsing Vulnerability",
+      "cve": [],
+      "app": "Apache HTTP Server",
+      "path": "httpd/apache_parsing_vulnerability",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Mon Mar 19 01:24:42 2018 +0800"
+    },
+    {
+      "name": "Apache HTTP Server SSI Remote Command Execution",
+      "cve": [],
+      "app": "Apache HTTP Server",
+      "path": "httpd/ssi-rce",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sun Jan 20 21:58:32 2019 +0800"
+    },
+    {
+      "name": "Apache HugeGraph Unauthenticated Remote Code Execution",
+      "cve": [
+        "CVE-2024-27348"
+      ],
+      "app": "Apache HugeGraph",
+      "path": "hugegraph/CVE-2024-27348",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sun Feb 2 04:56:58 2025 +0800"
+    },
+    {
+      "name": "Apache HugeGraph JWT Token Secret Hardcoding Vulnerability",
+      "cve": [
+        "CVE-2024-43441"
+      ],
+      "app": "Apache HugeGraph",
+      "path": "hugegraph/CVE-2024-43441",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Thu Feb 13 19:27:50 2025 +0800"
+    },
+    {
+      "name": "Imagetragick Command Execution",
+      "cve": [
+        "CVE-2016-3714"
+      ],
+      "app": "ImageMagick",
+      "path": "imagemagick/imagetragick",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Mon Mar 19 01:25:15 2018 +0800"
+    },
+    {
+      "name": "ImageMagick PDF Password Location Command Injection",
+      "cve": [
+        "CVE-2020-29599"
+      ],
+      "app": "ImageMagick",
+      "path": "imagemagick/CVE-2020-29599",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Fri Apr 2 11:18:10 2021 +0800"
+    },
+    {
+      "name": "ImageMagick Arbitrary File Read",
+      "cve": [
+        "CVE-2022-44268"
+      ],
+      "app": "ImageMagick",
+      "path": "imagemagick/CVE-2022-44268",
+      "tags": [
+        "File Operation"
+      ],
+      "date": "Sat Feb 4 02:10:10 2023 +0800"
+    },
+    {
+      "name": "InfluxDB Empty JWT Secret Key Authentication Bypass",
+      "cve": [
+        "CVE-2019-20933"
+      ],
+      "app": "InfluxDB",
+      "path": "influxdb/CVE-2019-20933",
+      "tags": [
+        "Auth Bypass"
+      ],
+      "date": "Wed Nov 30 14:56:40 2022 +0800"
+    },
+    {
+      "name": "Jackson-databind Deserialization Remote Command Execution",
+      "cve": [
+        "CVE-2017-7525"
+      ],
+      "app": "Jackson-Databind",
+      "path": "jackson/CVE-2017-7525",
+      "tags": [
+        "RCE",
+        "Deserialization"
+      ],
+      "date": "Thu Oct 11 22:14:06 2018 +0800"
+    },
+    {
+      "name": "Java RMI codebase Remote Code Execution",
+      "cve": [],
+      "app": "Java RMI",
+      "path": "java/rmi-codebase",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Thu Oct 3 01:27:26 2019 +0800"
+    },
+    {
+      "name": "Java ≤JDK 8u111 RMI Registry Deserialization Remote Code Execution",
+      "cve": [],
+      "app": "Java RMI",
+      "path": "java/rmi-registry-bind-deserialization",
+      "tags": [
+        "RCE",
+        "Deserialization"
+      ],
+      "date": "Tue Feb 18 23:30:01 2020 +0800"
+    },
+    {
+      "name": "Java < JDK8u232_b09 RMI Registry Deserialization Remote Code Execution Bypass",
+      "cve": [],
+      "app": "Java RMI",
+      "path": "java/rmi-registry-bind-deserialization-bypass",
+      "tags": [
+        "RCE",
+        "Deserialization"
+      ],
+      "date": "Tue Feb 18 23:30:01 2020 +0800"
+    },
+    {
+      "name": "JBoss 5.x/6.x Deserialization Remote Code Execution",
+      "cve": [
+        "CVE-2017-12149"
+      ],
+      "app": "JBoss",
+      "path": "jboss/CVE-2017-12149",
+      "tags": [
+        "RCE",
+        "Deserialization",
+        "Web Server"
+      ],
+      "date": "Mon Nov 27 03:59:02 2017 +0800"
+    },
+    {
+      "name": "JBoss 4.x JBossMQ JMS Deserialization Remote Code Execution",
+      "cve": [
+        "CVE-2017-7504"
+      ],
+      "app": "JBoss",
+      "path": "jboss/CVE-2017-7504",
+      "tags": [
+        "RCE",
+        "Deserialization",
+        "Web Server"
+      ],
+      "date": "Wed May 9 02:08:22 2018 +0800"
+    },
+    {
+      "name": "JBoss JMXInvokerServlet Deserialization Remote Code Execution",
+      "cve": [],
+      "app": "JBoss",
+      "path": "jboss/JMXInvokerServlet-deserialization",
+      "tags": [
+        "RCE",
+        "Deserialization",
+        "Web Server"
+      ],
+      "date": "Wed Mar 28 17:57:17 2018 +0800"
+    },
+    {
+      "name": "Jenkins Remote Code Execution",
+      "cve": [
+        "CVE-2017-1000353"
+      ],
+      "app": "Jenkins",
+      "path": "jenkins/CVE-2017-1000353",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Wed May 3 23:22:30 2017 +0800"
+    },
+    {
+      "name": "Jenkins Remote Command Execution",
+      "cve": [
+        "CVE-2018-1000861"
+      ],
+      "app": "Jenkins",
+      "path": "jenkins/CVE-2018-1000861",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sun Apr 14 01:17:57 2019 +0800"
+    },
+    {
+      "name": "Jenkins Arbitrary File Read Vulnerability Through the CLI",
+      "cve": [
+        "CVE-2024-23897"
+      ],
+      "app": "Jenkins",
+      "path": "jenkins/CVE-2024-23897",
+      "tags": [
+        "File Operation"
+      ],
+      "date": "Fri Jan 26 17:18:58 2024 +0800"
+    },
+    {
+      "name": "Jetty WEB-INF Sensitive Information Disclosure",
+      "cve": [
+        "CVE-2021-28164"
+      ],
+      "app": "Jetty",
+      "path": "jetty/CVE-2021-28164",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Thu Jun 10 19:14:03 2021 +0800"
+    },
+    {
+      "name": "Jetty Common Servlets Component ConcatServlet Information Disclosure",
+      "cve": [
+        "CVE-2021-28169"
+      ],
+      "app": "Jetty",
+      "path": "jetty/CVE-2021-28169",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Thu Jun 10 02:54:32 2021 +0800"
+    },
+    {
+      "name": "Jetty WEB-INF Sensitive Information Disclosure",
+      "cve": [
+        "CVE-2021-34429"
+      ],
+      "app": "Jetty",
+      "path": "jetty/CVE-2021-34429",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Tue Aug 17 22:26:22 2021 +0800"
+    },
+    {
+      "name": "JimuReport FreeMarker Server Side Template Injection RCE",
+      "cve": [
+        "CVE-2023-4450"
+      ],
+      "app": "JimuReport",
+      "path": "jimureport/CVE-2023-4450",
+      "tags": [
+        "RCE",
+        "Template Injection"
+      ],
+      "date": "Sun May 5 22:29:58 2024 +0800"
+    },
+    {
+      "name": "Atlassian Jira Template Injection",
+      "cve": [
+        "CVE-2019-11581"
+      ],
+      "app": "Jira",
+      "path": "jira/CVE-2019-11581",
+      "tags": [
+        "Template Injection"
+      ],
+      "date": "Tue Jul 16 11:39:22 2019 +0800"
+    },
+    {
+      "name": "Apache JMeter RMI Deserialization Remote Code Execution",
+      "cve": [
+        "CVE-2018-1297"
+      ],
+      "app": "Apache Jmeter",
+      "path": "jmeter/CVE-2018-1297",
+      "tags": [
+        "RCE",
+        "Deserialization"
+      ],
+      "date": "Fri Mar 2 10:05:41 2018 +0800"
+    },
+    {
+      "name": "Joomla 3.4.5 Deserialization",
+      "cve": [
+        "CVE-2015-8562"
+      ],
+      "app": "Joomla",
+      "path": "joomla/CVE-2015-8562",
+      "tags": [
+        "Deserialization",
+        "CMS"
+      ],
+      "date": "Sun Dec 3 21:30:42 2017 +0800"
+    },
+    {
+      "name": "Joomla 3.7.0 SQL Injection",
+      "cve": [
+        "CVE-2017-8917"
+      ],
+      "app": "Joomla",
+      "path": "joomla/CVE-2017-8917",
+      "tags": [
+        "SQL Injection",
+        "CMS"
+      ],
+      "date": "Thu May 18 11:25:02 2017 +0800"
+    },
+    {
+      "name": "Joomla 4.2.7 Permission Bypass",
+      "cve": [
+        "CVE-2023-23752"
+      ],
+      "app": "Joomla",
+      "path": "joomla/CVE-2023-23752",
+      "tags": [
+        "Auth Bypass",
+        "CMS"
+      ],
+      "date": "Sat Apr 8 02:59:56 2023 +0800"
+    },
+    {
+      "name": "Jumpserver random seed leakage and account takeover",
+      "cve": [
+        "CVE-2023-42820"
+      ],
+      "app": "Jumpserver",
+      "path": "jumpserver/CVE-2023-42820",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Mon Oct 2 01:23:13 2023 +0800"
+    },
+    {
+      "name": "Jupyter Notebook Unauthorized Access",
+      "cve": [],
+      "app": "Jupyter",
+      "path": "jupyter/notebook-rce",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Fri Jan 12 21:19:20 2018 +0800"
+    },
+    {
+      "name": "Apache Kafka Clients JNDI Injection",
+      "cve": [
+        "CVE-2023-25194"
+      ],
+      "app": "Apache Kafka",
+      "path": "kafka/CVE-2023-25194",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Sat Apr 29 02:57:14 2023 +0800"
+    },
+    {
+      "name": "Kibana Local File Inclusion",
+      "cve": [
+        "CVE-2018-17246"
+      ],
+      "app": "Kibana",
+      "path": "kibana/CVE-2018-17246",
+      "tags": [
+        "File Inclusion"
+      ],
+      "date": "Tue Jan 21 23:41:53 2020 +0800"
+    },
+    {
+      "name": "Kibana Prototype Chain Pollution to Arbitrary Code Execution",
+      "cve": [
+        "CVE-2019-7609"
+      ],
+      "app": "Kibana",
+      "path": "kibana/CVE-2019-7609",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Tue Jan 21 23:47:47 2020 +0800"
+    },
+    {
+      "name": "Kibana 7.6.2 upgrade-assistant-telemetry Prototype Pollution Leads to RCE",
+      "cve": [
+        "CVE-2020-7012"
+      ],
+      "app": "Kibana",
+      "path": "kibana/CVE-2020-7012",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sun Mar 9 03:12:30 2025 +0800"
+    },
+    {
+      "name": "kkFileView ZipSlip Remote Code Execution",
+      "cve": [],
+      "app": "kkFileView",
+      "path": "kkfileview/4.3-zipslip-rce",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Fri Apr 19 02:40:02 2024 +0800"
+    },
+    {
+      "name": "Laravel Ignition 2.5.1 Remote Code Execution",
+      "cve": [
+        "CVE-2021-3129"
+      ],
+      "app": "Laravel",
+      "path": "laravel/CVE-2021-3129",
+      "tags": [
+        "RCE",
+        "PHP Framework"
+      ],
+      "date": "Tue Jan 19 01:09:59 2021 +0800"
+    },
+    {
+      "name": "Librsvg XInclude Arbitrary file reading",
+      "cve": [
+        "CVE-2023-38633"
+      ],
+      "app": "Librsvg",
+      "path": "librsvg/CVE-2023-38633",
+      "tags": [
+        "File Operation"
+      ],
+      "date": "Fri Sep 22 23:16:01 2023 +0800"
+    },
+    {
+      "name": "libssh Server-side Authentication Bypass",
+      "cve": [
+        "CVE-2018-10933"
+      ],
+      "app": "LibSSH",
+      "path": "libssh/CVE-2018-10933",
+      "tags": [
+        "Auth Bypass"
+      ],
+      "date": "Fri Oct 19 15:38:51 2018 +0800"
+    },
+    {
+      "name": "Liferay Portal CE Deserialization Remote Code Execution",
+      "cve": [
+        "CVE-2020-7961"
+      ],
+      "app": "Liferay Portal",
+      "path": "liferay-portal/CVE-2020-7961",
+      "tags": [
+        "RCE",
+        "Deserialization"
+      ],
+      "date": "Fri Apr 24 03:20:33 2020 +0800"
+    },
+    {
+      "name": "Apache Log4j TCP Server Deserialization Remote Code Execution",
+      "cve": [
+        "CVE-2017-5645"
+      ],
+      "app": "Apache Log4j",
+      "path": "log4j/CVE-2017-5645",
+      "tags": [
+        "RCE",
+        "Deserialization"
+      ],
+      "date": "Mon Mar 19 00:54:41 2018 +0800"
+    },
+    {
+      "name": "Apache Log4j2 lookup JNDI Injection",
+      "cve": [
+        "CVE-2021-44228"
+      ],
+      "app": "Apache Log4j",
+      "path": "log4j/CVE-2021-44228",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Tue Dec 14 01:28:57 2021 +0800"
+    },
+    {
+      "name": "Magento 2.2 SQL Injection",
+      "cve": [],
+      "app": "Magento",
+      "path": "magento/2.2-sqli",
+      "tags": [
+        "SQL Injection",
+        "CMS"
+      ],
+      "date": "Mon Apr 1 11:47:57 2019 +0800"
+    },
+    {
+      "name": "Metabase Arbitrary File Read",
+      "cve": [
+        "CVE-2021-41277"
+      ],
+      "app": "Metabase",
+      "path": "metabase/CVE-2021-41277",
+      "tags": [
+        "File Operation"
+      ],
+      "date": "Mon May 9 03:31:06 2022 +0800"
+    },
+    {
+      "name": "Metabase Pre-Auth JDBC Remote Code Execution",
+      "cve": [
+        "CVE-2023-38646"
+      ],
+      "app": "Metabase",
+      "path": "metabase/CVE-2023-38646",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sat Jul 29 01:01:43 2023 +0800"
+    },
+    {
+      "name": "MeterSphere v1.15.4 Authenticated SQL Injection",
+      "cve": [
+        "CVE-2021-45788"
+      ],
+      "app": "MeterSphere",
+      "path": "metersphere/CVE-2021-45788",
+      "tags": [
+        "SQL Injection"
+      ],
+      "date": "Fri Feb 23 03:20:31 2024 +0800"
+    },
+    {
+      "name": "MeterSphere Plugin Endpoint Remote Code Execution",
+      "cve": [],
+      "app": "MeterSphere",
+      "path": "metersphere/plugin-rce",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Mon Aug 7 19:00:28 2023 +0800"
+    },
+    {
+      "name": "ACME mini_httpd Arbitrary File Read",
+      "cve": [
+        "CVE-2018-18778"
+      ],
+      "app": "mini_httpd",
+      "path": "mini_httpd/CVE-2018-18778",
+      "tags": [
+        "File Operation",
+        "Web Server"
+      ],
+      "date": "Thu Nov 1 23:13:13 2018 +0800"
+    },
+    {
+      "name": "MinIO Cluster Mode Information Disclosure",
+      "cve": [
+        "CVE-2023-28432"
+      ],
+      "app": "MinIO",
+      "path": "minio/CVE-2023-28432",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Sat Mar 25 22:41:58 2023 +0800"
+    },
+    {
+      "name": "Mojarra JSF ViewState Deserialization",
+      "cve": [],
+      "app": "Mojarra JSF",
+      "path": "mojarra/jsf-viewstate-deserialization",
+      "tags": [
+        "Deserialization"
+      ],
+      "date": "Wed Jul 22 04:04:53 2020 +0800"
+    },
+    {
+      "name": "Mongo Express Remote Code Execution",
+      "cve": [
+        "CVE-2019-10758"
+      ],
+      "app": "Mongo Express",
+      "path": "mongo-express/CVE-2019-10758",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sun Jan 5 03:19:59 2020 +0800"
+    },
+    {
+      "name": "MySQL Authentication Bypass Vulnerability",
+      "cve": [
+        "CVE-2012-2122"
+      ],
+      "app": "MySQL",
+      "path": "mysql/CVE-2012-2122",
+      "tags": [
+        "Auth Bypass",
+        "Database"
+      ],
+      "date": "Fri Mar 23 16:52:18 2018 +0800"
+    },
+    {
+      "name": "Nacos Authentication Bypass",
+      "cve": [
+        "CVE-2021-29441"
+      ],
+      "app": "Nacos",
+      "path": "nacos/CVE-2021-29441",
+      "tags": [
+        "Auth Bypass"
+      ],
+      "date": "Tue Nov 16 11:59:58 2021 +0800"
+    },
+    {
+      "name": "Alibaba Nacos Authentication Bypass and Remote Code Execution",
+      "cve": [
+        "CVE-2021-29442"
+      ],
+      "app": "Nacos",
+      "path": "nacos/CVE-2021-29442",
+      "tags": [
+        "RCE",
+        "Auth Bypass"
+      ],
+      "date": "Mon Jul 15 23:24:48 2024 +0800"
+    },
+    {
+      "name": "Neo4j Shell Server Deserialization",
+      "cve": [
+        "CVE-2021-34371"
+      ],
+      "app": "Neo4j",
+      "path": "neo4j/CVE-2021-34371",
+      "tags": [
+        "Deserialization"
+      ],
+      "date": "Sun Sep 5 01:44:32 2021 +0800"
+    },
+    {
+      "name": "Nexus Repository Manager 3 Unauthenticated Remote Code Execution",
+      "cve": [
+        "CVE-2019-7238"
+      ],
+      "app": "Nexus Repository Manager",
+      "path": "nexus/CVE-2019-7238",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Wed Feb 20 01:31:35 2019 +0800"
+    },
+    {
+      "name": "Nexus Repository Manager 3 Authenticated Remote Code Execution",
+      "cve": [
+        "CVE-2020-10199"
+      ],
+      "app": "Nexus Repository Manager",
+      "path": "nexus/CVE-2020-10199",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Thu Apr 9 02:13:04 2020 +0800"
+    },
+    {
+      "name": "Nexus Repository Manager 3 Authenticated Remote Code Execution",
+      "cve": [
+        "CVE-2020-10204"
+      ],
+      "app": "Nexus Repository Manager",
+      "path": "nexus/CVE-2020-10204",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Wed Apr 8 12:00:02 2020 +0800"
+    },
+    {
+      "name": "Nexus Repository Manager 3 Unauthenticated Path Traversal",
+      "cve": [
+        "CVE-2024-4956"
+      ],
+      "app": "Nexus Repository Manager",
+      "path": "nexus/CVE-2024-4956",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Thu May 23 13:09:49 2024 +0800"
+    },
+    {
+      "name": "Nginx Filename Logic Vulnerability",
+      "cve": [
+        "CVE-2013-4547"
+      ],
+      "app": "Nginx",
+      "path": "nginx/CVE-2013-4547",
+      "tags": [
+        "Web Server"
+      ],
+      "date": "Tue Aug 29 00:00:45 2017 +0800"
+    },
+    {
+      "name": "Nginx Cache Leak by Integer Overflow",
+      "cve": [
+        "CVE-2017-7529"
+      ],
+      "app": "Nginx",
+      "path": "nginx/CVE-2017-7529",
+      "tags": [
+        "Web Server"
+      ],
+      "date": "Mon Jul 17 01:25:58 2017 +0800"
+    },
+    {
+      "name": "Nginx Misconfiguration Vulnerabilities",
+      "cve": [],
+      "app": "Nginx",
+      "path": "nginx/insecure-configuration",
+      "tags": [
+        "Web Server"
+      ],
+      "date": "Tue Jun 6 02:03:24 2017 +0800"
+    },
+    {
+      "name": "Nginx Parsing Vulnerability",
+      "cve": [],
+      "app": "Nginx",
+      "path": "nginx/nginx_parsing_vulnerability",
+      "tags": [
+        "Web Server"
+      ],
+      "date": "Mon Mar 19 01:24:00 2018 +0800"
+    },
+    {
+      "name": "Node.js 8.5.0 Path Traversal",
+      "cve": [
+        "CVE-2017-14849"
+      ],
+      "app": "Node.JS",
+      "path": "node/CVE-2017-14849",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Wed Nov 8 05:21:24 2017 +0800"
+    },
+    {
+      "name": "Node-Postgres Remote Code Execution",
+      "cve": [
+        "CVE-2017-16082"
+      ],
+      "app": "node-postgres",
+      "path": "node/CVE-2017-16082",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sat Aug 25 02:22:17 2018 +0800"
+    },
+    {
+      "name": "ntopng Permission Bypass",
+      "cve": [
+        "CVE-2021-28073"
+      ],
+      "app": "ntopng",
+      "path": "ntopng/CVE-2021-28073",
+      "tags": [
+        "Auth Bypass"
+      ],
+      "date": "Sat Mar 27 04:24:05 2021 +0800"
+    },
+    {
+      "name": "Apache OfBiz Deserialization Command Execution",
+      "cve": [
+        "CVE-2020-9496"
+      ],
+      "app": "Apache OFBiz",
+      "path": "ofbiz/CVE-2020-9496",
+      "tags": [
+        "RCE",
+        "Deserialization"
+      ],
+      "date": "Fri Oct 9 18:56:08 2020 +0800"
+    },
+    {
+      "name": "Unsafe deserialization of XMLRPC arguments in Apache OFBiz",
+      "cve": [
+        "CVE-2023-49070"
+      ],
+      "app": "Apache OFBiz",
+      "path": "ofbiz/CVE-2023-49070",
+      "tags": [
+        "Deserialization"
+      ],
+      "date": "Thu Dec 7 19:11:23 2023 +0800"
+    },
+    {
+      "name": "Apache OFBiz Authentication Bypass Leads to RCE",
+      "cve": [
+        "CVE-2023-51467"
+      ],
+      "app": "Apache OFBiz",
+      "path": "ofbiz/CVE-2023-51467",
+      "tags": [
+        "RCE",
+        "Auth Bypass"
+      ],
+      "date": "Sun Dec 31 01:32:18 2023 +0800"
+    },
+    {
+      "name": "Apache OFBiz Authentication Bypass Leads to RCE",
+      "cve": [
+        "CVE-2024-38856"
+      ],
+      "app": "Apache OFBiz",
+      "path": "ofbiz/CVE-2024-38856",
+      "tags": [
+        "RCE",
+        "Auth Bypass"
+      ],
+      "date": "Sun Sep 8 19:53:20 2024 +0800"
+    },
+    {
+      "name": "Apache OFBiz Authentication Bypass Leads to RCE",
+      "cve": [
+        "CVE-2024-45195"
+      ],
+      "app": "Apache OFBiz",
+      "path": "ofbiz/CVE-2024-45195",
+      "tags": [
+        "RCE",
+        "Auth Bypass"
+      ],
+      "date": "Sun Sep 8 20:31:56 2024 +0800"
+    },
+    {
+      "name": "Apache OFBiz SSRF and Remote Code Execution Vulnerability",
+      "cve": [
+        "CVE-2024-45507"
+      ],
+      "app": "Apache OFBiz",
+      "path": "ofbiz/CVE-2024-45507",
+      "tags": [
+        "RCE",
+        "SSRF"
+      ],
+      "date": "Fri Sep 13 19:29:45 2024 +0800"
+    },
+    {
+      "name": "Openfire Management Background Authentication Bypass",
+      "cve": [
+        "CVE-2023-32315"
+      ],
+      "app": "Openfire",
+      "path": "openfire/CVE-2023-32315",
+      "tags": [
+        "Auth Bypass"
+      ],
+      "date": "Sun Jun 18 02:21:35 2023 +0800"
+    },
+    {
+      "name": "OpenSMTPD Remote Command Execution",
+      "cve": [
+        "CVE-2020-7247"
+      ],
+      "app": "OpenSMTPD",
+      "path": "opensmtpd/CVE-2020-7247",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sat Jun 5 04:05:43 2021 +0800"
+    },
+    {
+      "name": "OpenSSH Username Enumeration",
+      "cve": [
+        "CVE-2018-15473"
+      ],
+      "app": "OpenSSH",
+      "path": "openssh/CVE-2018-15473",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Sun Aug 26 03:00:04 2018 +0800"
+    },
+    {
+      "name": "OpenSSL Heartbleed",
+      "cve": [
+        "CVE-2014-0160"
+      ],
+      "app": "OpenSSL",
+      "path": "openssl/CVE-2014-0160",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Tue Apr 12 02:12:02 2022 +0800"
+    },
+    {
+      "name": "OpenSSL Infinite Loop DoS",
+      "cve": [
+        "CVE-2022-0778"
+      ],
+      "app": "OpenSSL",
+      "path": "openssl/CVE-2022-0778",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Mon Apr 11 03:25:09 2022 +0800"
+    },
+    {
+      "name": "OpenTSDB Command Injection",
+      "cve": [
+        "CVE-2020-35476"
+      ],
+      "app": "OpenTSDB",
+      "path": "opentsdb/CVE-2020-35476",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sun Sep 5 22:00:13 2021 +0800"
+    },
+    {
+      "name": "OpenTSDB Arbitrary Commands Injection",
+      "cve": [
+        "CVE-2023-25826"
+      ],
+      "app": "OpenTSDB",
+      "path": "opentsdb/CVE-2023-25826",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Tue May 30 21:00:05 2023 +0800"
+    },
+    {
+      "name": "PDF.js Arbitrary JavaScript Code Execution",
+      "cve": [
+        "CVE-2024-4367"
+      ],
+      "app": "PDF.js",
+      "path": "pdfjs/CVE-2024-4367",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Fri May 24 19:47:53 2024 +0800"
+    },
+    {
+      "name": "pgAdmin <= 6.16 Unauthenticated Remote Command Execution",
+      "cve": [
+        "CVE-2022-4223"
+      ],
+      "app": "pgAdmin",
+      "path": "pgadmin/CVE-2022-4223",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Fri Apr 5 20:28:39 2024 +0800"
+    },
+    {
+      "name": "pgAdmin <= 7.6 Authenticated Remote Command Execution",
+      "cve": [
+        "CVE-2023-5002"
+      ],
+      "app": "pgAdmin",
+      "path": "pgadmin/CVE-2023-5002",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Fri Apr 5 21:08:15 2024 +0800"
+    },
+    {
+      "name": "PHP 8.1.0-dev Development Version Backdoor Event",
+      "cve": [],
+      "app": "PHP",
+      "path": "php/8.1-backdoor",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Wed Mar 31 01:34:53 2021 +0800"
+    },
+    {
+      "name": "PHP-CGI Remote Code Execution",
+      "cve": [
+        "CVE-2012-1823"
+      ],
+      "app": "PHP-CGI",
+      "path": "php/CVE-2012-1823",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sat May 6 02:58:53 2017 +0800"
+    },
+    {
+      "name": "PHP IMAP Remote Command Execution",
+      "cve": [
+        "CVE-2018-19518"
+      ],
+      "app": "PHP-IMAP",
+      "path": "php/CVE-2018-19518",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sun Dec 30 19:03:24 2018 +0100"
+    },
+    {
+      "name": "PHP-FPM Remote Code Execution",
+      "cve": [
+        "CVE-2019-11043"
+      ],
+      "app": "PHP-FPM",
+      "path": "php/CVE-2019-11043",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Wed Oct 23 19:44:27 2019 +0800"
+    },
+    {
+      "name": "PHP File Read to Remote Code Execution Through GNU C Library Iconv",
+      "cve": [
+        "CVE-2024-2961"
+      ],
+      "app": "PHP",
+      "path": "php/CVE-2024-2961",
+      "tags": [
+        "RCE",
+        "File Operation"
+      ],
+      "date": "Wed May 29 01:46:02 2024 +0800"
+    },
+    {
+      "name": "PHP-FPM FastCGI Unauthorized Access Leads to Remote Code Execution",
+      "cve": [],
+      "app": "PHP-FPM",
+      "path": "php/fpm",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Thu Feb 25 12:43:09 2021 +0800"
+    },
+    {
+      "name": "PHP Files Vulnerabilities (by phpinfo())",
+      "cve": [],
+      "app": "PHP",
+      "path": "php/inclusion",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Thu Apr 26 15:46:21 2018 +0800"
+    },
+    {
+      "name": "PHP XML External Entity Injection (XXE)",
+      "cve": [],
+      "app": "PHP",
+      "path": "php/php_xxe",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Mon Mar 19 01:23:23 2018 +0800"
+    },
+    {
+      "name": "XDebug Remote Debugging Code Execution",
+      "cve": [],
+      "app": "PHP",
+      "path": "php/xdebug-rce",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Wed Dec 6 00:38:24 2017 +0800"
+    },
+    {
+      "name": "PHPMailer Arbitrary File Read",
+      "cve": [
+        "CVE-2017-5223"
+      ],
+      "app": "PHPMailer",
+      "path": "phpmailer/CVE-2017-5223",
+      "tags": [
+        "File Operation"
+      ],
+      "date": "Mon Nov 27 17:51:58 2017 +0800"
+    },
+    {
+      "name": "phpMyAdmin 4.0.x—4.6.2 Remote Code Execution",
+      "cve": [
+        "CVE-2016-5734"
+      ],
+      "app": "phpMyAdmin",
+      "path": "phpmyadmin/CVE-2016-5734",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Mon May 21 14:40:12 2018 +0800"
+    },
+    {
+      "name": "phpmyadmin 4.8.1 Remote File Inclusion",
+      "cve": [
+        "CVE-2018-12613"
+      ],
+      "app": "phpMyAdmin",
+      "path": "phpmyadmin/CVE-2018-12613",
+      "tags": [
+        "File Inclusion"
+      ],
+      "date": "Mon Jun 25 11:34:53 2018 +0800"
+    },
+    {
+      "name": "phpmyadmin scripts/setup.php Deserialization",
+      "cve": [],
+      "app": "phpMyAdmin",
+      "path": "phpmyadmin/WooYun-2016-199433",
+      "tags": [
+        "Deserialization"
+      ],
+      "date": "Wed May 9 19:12:30 2018 +0800"
+    },
+    {
+      "name": "phpunit Remote Code Execution",
+      "cve": [
+        "CVE-2017-9841"
+      ],
+      "app": "PHPUnit",
+      "path": "phpunit/CVE-2017-9841",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sat Jun 2 21:59:26 2018 +0800"
+    },
+    {
+      "name": "Polkit pkexec Privilege Escalation",
+      "cve": [
+        "CVE-2021-4034"
+      ],
+      "app": "Polkit Pkexec",
+      "path": "polkit/CVE-2021-4034",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Sat Feb 12 18:27:36 2022 +0800"
+    },
+    {
+      "name": "PostgreSQL Privilege Escalation",
+      "cve": [
+        "CVE-2018-1058"
+      ],
+      "app": "PostgreSQL",
+      "path": "postgres/CVE-2018-1058",
+      "tags": [
+        "Database"
+      ],
+      "date": "Wed Mar 7 20:42:40 2018 +0800"
+    },
+    {
+      "name": "PostgreSQL Arbitrary Command Execution with Admin Privileges",
+      "cve": [
+        "CVE-2019-9193"
+      ],
+      "app": "PostgreSQL",
+      "path": "postgres/CVE-2019-9193",
+      "tags": [
+        "RCE",
+        "Database"
+      ],
+      "date": "Thu Mar 21 20:34:42 2019 +0800"
+    },
+    {
+      "name": "Python PIL/Pillow Remote Command Execution by GhostScript GhostButt",
+      "cve": [
+        "CVE-2017-8291"
+      ],
+      "app": "Python",
+      "path": "python/PIL-CVE-2017-8291",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sun Oct 1 02:45:04 2017 +0800"
+    },
+    {
+      "name": "Python PIL/Pillow Remote Command Execution by GhostScript",
+      "cve": [
+        "CVE-2018-16509"
+      ],
+      "app": "Python",
+      "path": "python/PIL-CVE-2018-16509",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sat Oct 27 03:42:56 2018 +0800"
+    },
+    {
+      "name": "Python Unpickle Deserialization Remote Code Execution",
+      "cve": [],
+      "app": "Python",
+      "path": "python/unpickle",
+      "tags": [
+        "RCE",
+        "Deserialization"
+      ],
+      "date": "Tue May 2 01:13:18 2017 +0800"
+    },
+    {
+      "name": "Ruby on Rails Path Traversal",
+      "cve": [
+        "CVE-2018-3760"
+      ],
+      "app": "Ruby on Rails",
+      "path": "rails/CVE-2018-3760",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Sat Sep 8 03:23:48 2018 +0800"
+    },
+    {
+      "name": "Ruby on Rails Path Traversal and Arbitrary File Read",
+      "cve": [
+        "CVE-2019-5418"
+      ],
+      "app": "Ruby on Rails",
+      "path": "rails/CVE-2019-5418",
+      "tags": [
+        "File Operation"
+      ],
+      "date": "Tue Mar 19 01:46:32 2019 +0800"
+    },
+    {
+      "name": "Redis 4.x/5.x Command Execution due to Master-Slave Replication",
+      "cve": [],
+      "app": "Redis",
+      "path": "redis/4-unacc",
+      "tags": [
+        "RCE",
+        "Database"
+      ],
+      "date": "Wed Jul 10 11:06:41 2019 +0800"
+    },
+    {
+      "name": "Redis Lua Sandbox Bypass Command Execution",
+      "cve": [
+        "CVE-2022-0543"
+      ],
+      "app": "Redis",
+      "path": "redis/CVE-2022-0543",
+      "tags": [
+        "RCE",
+        "Database"
+      ],
+      "date": "Thu Mar 10 22:20:16 2022 +0800"
+    },
+    {
+      "name": "Rocket Chat MongoDB Injection",
+      "cve": [
+        "CVE-2021-22911"
+      ],
+      "app": "Rocket.Chat",
+      "path": "rocketchat/CVE-2021-22911",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Wed Sep 8 03:04:56 2021 +0800"
+    },
+    {
+      "name": "Apache RocketMQ Broker Remote Command Execution",
+      "cve": [
+        "CVE-2023-33246"
+      ],
+      "app": "Apache RocketMQ",
+      "path": "rocketmq/CVE-2023-33246",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Fri Jun 2 22:12:22 2023 +0800"
+    },
+    {
+      "name": "Apache RocketMQ NameServer Arbitrary File Write Vulnerability",
+      "cve": [
+        "CVE-2023-37582"
+      ],
+      "app": "Apache RocketMQ",
+      "path": "rocketmq/CVE-2023-37582",
+      "tags": [
+        "File Operation"
+      ],
+      "date": "Wed Feb 5 02:12:09 2025 +0800"
+    },
+    {
+      "name": "Rsync Unauthorized Access",
+      "cve": [],
+      "app": "rsync",
+      "path": "rsync/common",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Thu Jan 18 14:23:36 2018 +0800"
+    },
+    {
+      "name": "Ruby Net::FTP Module Command Injection",
+      "cve": [
+        "CVE-2017-17405"
+      ],
+      "app": "Ruby",
+      "path": "ruby/CVE-2017-17405",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Mon Jan 22 00:36:31 2018 +0800"
+    },
+    {
+      "name": "SaltStack Horizontal Privilege Bypass",
+      "cve": [
+        "CVE-2020-11651"
+      ],
+      "app": "SaltStack",
+      "path": "saltstack/CVE-2020-11651",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Mon May 4 04:08:46 2020 +0800"
+    },
+    {
+      "name": "SaltStack Arbitrary File Read and Write",
+      "cve": [
+        "CVE-2020-11652"
+      ],
+      "app": "SaltStack",
+      "path": "saltstack/CVE-2020-11652",
+      "tags": [
+        "File Operation"
+      ],
+      "date": "Mon May 4 07:31:27 2020 +0800"
+    },
+    {
+      "name": "SaltStack Command Injection",
+      "cve": [
+        "CVE-2020-16846"
+      ],
+      "app": "SaltStack",
+      "path": "saltstack/CVE-2020-16846",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Fri Nov 13 00:42:42 2020 +0800"
+    },
+    {
+      "name": "Samba Remote Command Execution",
+      "cve": [
+        "CVE-2017-7494"
+      ],
+      "app": "Samba",
+      "path": "samba/CVE-2017-7494",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Mon Jun 12 23:16:29 2017 +0800"
+    },
+    {
+      "name": "Scrapyd Unauthorized Access",
+      "cve": [],
+      "app": "Scrapyd",
+      "path": "scrapy/scrapyd-unacc",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Thu Sep 19 21:00:03 2019 +0800"
+    },
+    {
+      "name": "Apache Shiro Authentication Bypass",
+      "cve": [
+        "CVE-2010-3863"
+      ],
+      "app": "Apache Shiro",
+      "path": "shiro/CVE-2010-3863",
+      "tags": [
+        "Auth Bypass"
+      ],
+      "date": "Fri Feb 24 11:43:16 2023 +0900"
+    },
+    {
+      "name": "Apache Shiro 1.2.4 Deserialization Remote Code Execution",
+      "cve": [
+        "CVE-2016-4437"
+      ],
+      "app": "Apache Shiro",
+      "path": "shiro/CVE-2016-4437",
+      "tags": [
+        "RCE",
+        "Deserialization"
+      ],
+      "date": "Fri Dec 20 02:33:23 2019 +0800"
+    },
+    {
+      "name": "Apache Shiro Authentication Bypass",
+      "cve": [
+        "CVE-2020-1957"
+      ],
+      "app": "Apache Shiro",
+      "path": "shiro/CVE-2020-1957",
+      "tags": [
+        "Auth Bypass"
+      ],
+      "date": "Fri Apr 23 01:25:41 2021 +0800"
+    },
+    {
+      "name": "ShowDoc 3.2.5 SQL Injection",
+      "cve": [],
+      "app": "ShowDoc",
+      "path": "showdoc/3.2.5-sqli",
+      "tags": [
+        "SQL Injection"
+      ],
+      "date": "Tue Jun 4 19:21:48 2024 +0800"
+    },
+    {
+      "name": "ShowDoc Unauthenticated File Upload and Remote Code Execution",
+      "cve": [],
+      "app": "ShowDoc",
+      "path": "showdoc/CNVD-2020-26585",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Wed May 29 19:36:23 2024 +0800"
+    },
+    {
+      "name": "Apache Skywalking 8.3.0 SQL Injection",
+      "cve": [],
+      "app": "Apache SkyWalking",
+      "path": "skywalking/8.3.0-sqli",
+      "tags": [
+        "SQL Injection"
+      ],
+      "date": "Wed Feb 10 01:09:43 2021 +0800"
+    },
+    {
+      "name": "Apache Solr Remote Command Execution",
+      "cve": [
+        "CVE-2017-12629"
+      ],
+      "app": "Apache Solr",
+      "path": "solr/CVE-2017-12629-RCE",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Mon Mar 18 22:30:48 2019 +0800"
+    },
+    {
+      "name": "Apache Solr XML External Entity Injection",
+      "cve": [
+        "CVE-2017-12629"
+      ],
+      "app": "Apache Solr",
+      "path": "solr/CVE-2017-12629-XXE",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Sun Nov 5 05:07:25 2017 +0800"
+    },
+    {
+      "name": "Apache Solr Remote Command Execution",
+      "cve": [
+        "CVE-2019-0193"
+      ],
+      "app": "Apache Solr",
+      "path": "solr/CVE-2019-0193",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Tue Sep 24 22:40:01 2019 +0800"
+    },
+    {
+      "name": "Apache Solr Remote Code Execution Via Velocity Template",
+      "cve": [
+        "CVE-2019-17558"
+      ],
+      "app": "Apache Solr",
+      "path": "solr/CVE-2019-17558",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Tue Jan 21 20:56:16 2020 +0800"
+    },
+    {
+      "name": "Apache Solr RemoteStreaming Arbitrary File Reading and SSRF",
+      "cve": [],
+      "app": "Apache Solr",
+      "path": "solr/Remote-Streaming-Fileread",
+      "tags": [
+        "File Operation",
+        "SSRF"
+      ],
+      "date": "Thu Mar 18 21:23:46 2021 +0800"
+    },
+    {
+      "name": "Apache Spark Unauthorized Access Leads to Remote Code Execution",
+      "cve": [],
+      "app": "Apache Spark",
+      "path": "spark/unacc",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Thu Aug 2 01:29:26 2018 +0800"
+    },
+    {
+      "name": "Spring Security Oauth2 Remote Command Execution",
+      "cve": [
+        "CVE-2016-4977"
+      ],
+      "app": "Spring Security Oauth2",
+      "path": "spring/CVE-2016-4977",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Mon Jan 29 03:18:23 2018 +0800"
+    },
+    {
+      "name": "Spring WebFlow Remote Code Execution",
+      "cve": [
+        "CVE-2017-4971"
+      ],
+      "app": "Spring Webflow",
+      "path": "spring/CVE-2017-4971",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Sun Feb 25 04:02:48 2018 +0800"
+    },
+    {
+      "name": "Spring Data Rest Remote Command Execution",
+      "cve": [
+        "CVE-2017-8046"
+      ],
+      "app": "Spring Data Rest",
+      "path": "spring/CVE-2017-8046",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Wed Jan 31 03:16:48 2018 +0800"
+    },
+    {
+      "name": "Spring Messaging Remote Command Execution",
+      "cve": [
+        "CVE-2018-1270"
+      ],
+      "app": "Spring Messaging",
+      "path": "spring/CVE-2018-1270",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Fri Apr 27 18:56:07 2018 +0800"
+    },
+    {
+      "name": "Spring Data Commons Remote Command Execution",
+      "cve": [
+        "CVE-2018-1273"
+      ],
+      "app": "Spring Data Commons",
+      "path": "spring/CVE-2018-1273",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Fri Apr 13 01:29:53 2018 +0800"
+    },
+    {
+      "name": "Spring Cloud Gateway Actuator API SpEL Expression Injection Command Execution",
+      "cve": [
+        "CVE-2022-22947"
+      ],
+      "app": "Spring Cloud Gateway",
+      "path": "spring/CVE-2022-22947",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Thu Mar 3 04:00:46 2022 +0800"
+    },
+    {
+      "name": "Spring Cloud Function SpEL Expression Command Injection",
+      "cve": [
+        "CVE-2022-22963"
+      ],
+      "app": "Spring Cloud Function",
+      "path": "spring/CVE-2022-22963",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Thu Mar 31 21:21:23 2022 +0800"
+    },
+    {
+      "name": "Remote Code Execution Vulnerability due to Spring Framework Data Binding and JDK 9+",
+      "cve": [
+        "CVE-2022-22965"
+      ],
+      "app": "Spring",
+      "path": "spring/CVE-2022-22965",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Fri Apr 1 04:44:47 2022 +0800"
+    },
+    {
+      "name": "Spring Security Authorization Bypass in RegexRequestMatcher",
+      "cve": [
+        "CVE-2022-22978"
+      ],
+      "app": "Spring",
+      "path": "spring/CVE-2022-22978",
+      "tags": [
+        "Java Framework"
+      ],
+      "date": "Thu Jul 21 20:21:06 2022 +0200"
+    },
+    {
+      "name": "S2-001 Remote Code Execution",
+      "cve": [],
+      "app": "Apache Struts2",
+      "path": "struts2/s2-001",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Sat Apr 15 16:27:35 2017 +0800"
+    },
+    {
+      "name": "S2-005 Remote Code Execution",
+      "cve": [
+        "CVE-2010-1870"
+      ],
+      "app": "Apache Struts2",
+      "path": "struts2/s2-005",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Sun Apr 16 02:31:10 2017 +0800"
+    },
+    {
+      "name": "S2-007 Remote Code Execution",
+      "cve": [],
+      "app": "Apache Struts2",
+      "path": "struts2/s2-007",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Mon Apr 17 00:44:15 2017 +0800"
+    },
+    {
+      "name": "S2-008 Remote Code Execution",
+      "cve": [
+        "CVE-2012-0391"
+      ],
+      "app": "Apache Struts2",
+      "path": "struts2/s2-008",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Mon Apr 17 21:47:34 2017 +0800"
+    },
+    {
+      "name": "S2-009 Remote Code Execution",
+      "cve": [
+        "CVE-2011-3923"
+      ],
+      "app": "Apache Struts2",
+      "path": "struts2/s2-009",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Mon Apr 17 22:19:16 2017 +0800"
+    },
+    {
+      "name": "S2-012 Remote Code Execution",
+      "cve": [
+        "CVE-2013-1965"
+      ],
+      "app": "Apache Struts2",
+      "path": "struts2/s2-012",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Tue Apr 18 22:03:05 2017 +0800"
+    },
+    {
+      "name": "S2-013 Remote Code Execution",
+      "cve": [
+        "CVE-2013-1966"
+      ],
+      "app": "Apache Struts2",
+      "path": "struts2/s2-013",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Thu Apr 27 00:36:59 2017 +0800"
+    },
+    {
+      "name": "S2-015 Remote Code Execution",
+      "cve": [
+        "CVE-2013-2134",
+        "CVE-2013-2135"
+      ],
+      "app": "Apache Struts2",
+      "path": "struts2/s2-015",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Fri Jun 16 01:36:16 2017 +0800"
+    },
+    {
+      "name": "S2-016 Remote Code Execution",
+      "cve": [
+        "CVE-2013-2251"
+      ],
+      "app": "Apache Struts2",
+      "path": "struts2/s2-016",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Tue Oct 17 01:48:15 2017 +0800"
+    },
+    {
+      "name": "S2-032 Remote Code Execution",
+      "cve": [
+        "CVE-2016-3081"
+      ],
+      "app": "Apache Struts2",
+      "path": "struts2/s2-032",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Sun Jul 12 00:25:03 2020 +0800"
+    },
+    {
+      "name": "S2-045 Remote Code Execution",
+      "cve": [
+        "CVE-2017-5638"
+      ],
+      "app": "Apache Struts2",
+      "path": "struts2/s2-045",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Sat Oct 12 22:39:18 2019 +0800"
+    },
+    {
+      "name": "S2-046 Remote Code Execution",
+      "cve": [
+        "CVE-2017-5638"
+      ],
+      "app": "Apache Struts2",
+      "path": "struts2/s2-046",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Sat Oct 12 22:39:18 2019 +0800"
+    },
+    {
+      "name": "S2-048 Remote Code Execution",
+      "cve": [
+        "CVE-2017-9791"
+      ],
+      "app": "Apache Struts2",
+      "path": "struts2/s2-048",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Sun Jul 16 17:51:59 2017 +0800"
+    },
+    {
+      "name": "S2-052 Remote Code Execution",
+      "cve": [
+        "CVE-2017-9805"
+      ],
+      "app": "Apache Struts2",
+      "path": "struts2/s2-052",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Fri Sep 8 20:00:53 2017 +0800"
+    },
+    {
+      "name": "S2-053 Remote Code Execution",
+      "cve": [
+        "CVE-2017-12611"
+      ],
+      "app": "Apache Struts2",
+      "path": "struts2/s2-053",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Sat Sep 9 19:28:15 2017 +0800"
+    },
+    {
+      "name": "Struts2 S2-057 Remote Command Execution",
+      "cve": [
+        "CVE-2018-11776"
+      ],
+      "app": "Apache Struts2",
+      "path": "struts2/s2-057",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Fri Aug 24 19:03:04 2018 +0800"
+    },
+    {
+      "name": "Struts2 S2-059 Remote Command Execution",
+      "cve": [
+        "CVE-2019-0230"
+      ],
+      "app": "Apache Struts2",
+      "path": "struts2/s2-059",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Tue Sep 8 01:33:45 2020 +0800"
+    },
+    {
+      "name": "Struts2 S2-061 Remote Command Execution",
+      "cve": [
+        "CVE-2020-17530"
+      ],
+      "app": "Apache Struts2",
+      "path": "struts2/s2-061",
+      "tags": [
+        "RCE",
+        "Java Framework"
+      ],
+      "date": "Fri Dec 11 03:08:35 2020 +0800"
+    },
+    {
+      "name": "Struts2 S2-066 Upload Path Traversal",
+      "cve": [
+        "CVE-2023-50164"
+      ],
+      "app": "Apache Struts2",
+      "path": "struts2/s2-066",
+      "tags": [
+        "Java Framework"
+      ],
+      "date": "Tue Feb 4 00:15:47 2025 +0800"
+    },
+    {
+      "name": "Struts2 S2-067 Upload Path Traversal",
+      "cve": [
+        "CVE-2024-53677"
+      ],
+      "app": "Apache Struts2",
+      "path": "struts2/s2-067",
+      "tags": [
+        "Java Framework"
+      ],
+      "date": "Tue Feb 4 00:17:47 2025 +0800"
+    },
+    {
+      "name": "Supervisord XML-RPC Remote Command Execution",
+      "cve": [
+        "CVE-2017-11610"
+      ],
+      "app": "Supervisor",
+      "path": "supervisor/CVE-2017-11610",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Thu Aug 3 20:27:04 2017 +0800"
+    },
+    {
+      "name": "Jetbrains TeamCity Authentication Bypass and Remote Command Execution",
+      "cve": [
+        "CVE-2023-42793"
+      ],
+      "app": "TeamCity",
+      "path": "teamcity/CVE-2023-42793",
+      "tags": [
+        "RCE",
+        "Auth Bypass"
+      ],
+      "date": "Thu Feb 1 03:07:35 2024 +0800"
+    },
+    {
+      "name": "ThinkPHP 2.x Remote Code Execution",
+      "cve": [],
+      "app": "ThinkPHP",
+      "path": "thinkphp/2-rce",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Tue Sep 24 22:17:12 2019 +0800"
+    },
+    {
+      "name": "ThinkPHP5 5.0.22/5.1.29 Remote Code Execution",
+      "cve": [],
+      "app": "ThinkPHP",
+      "path": "thinkphp/5-rce",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Mon Dec 10 21:47:02 2018 +0800"
+    },
+    {
+      "name": "ThinkPHP5 5.0.23 Remote Code Execution",
+      "cve": [],
+      "app": "ThinkPHP",
+      "path": "thinkphp/5.0.23-rce",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Fri Jan 11 17:31:26 2019 +0800"
+    },
+    {
+      "name": "ThinkPHP5 SQL Injection Vulnerabilities/Information Leakage",
+      "cve": [],
+      "app": "ThinkPHP",
+      "path": "thinkphp/in-sqlinjection",
+      "tags": [
+        "SQL Injection"
+      ],
+      "date": "Tue Jul 4 04:10:44 2017 +0800"
+    },
+    {
+      "name": "ThinkPHP Multilingual Local File Inclusion",
+      "cve": [],
+      "app": "ThinkPHP",
+      "path": "thinkphp/lang-rce",
+      "tags": [
+        "File Inclusion"
+      ],
+      "date": "Mon Dec 12 00:02:50 2022 +0800"
+    },
+    {
+      "name": "Tiki Wiki CMS Groupware Authentication Bypass",
+      "cve": [
+        "CVE-2020-15906"
+      ],
+      "app": "Tiki Wiki",
+      "path": "tikiwiki/CVE-2020-15906",
+      "tags": [
+        "Auth Bypass"
+      ],
+      "date": "Wed Mar 3 00:18:38 2021 +0800"
+    },
+    {
+      "name": "Tomcat Arbitrary Writing of Files in the PUT Method",
+      "cve": [
+        "CVE-2017-12615"
+      ],
+      "app": "Apache Tomcat",
+      "path": "tomcat/CVE-2017-12615",
+      "tags": [
+        "Web Server"
+      ],
+      "date": "Wed Sep 20 19:26:45 2017 +0800"
+    },
+    {
+      "name": "Apache Tomcat AJP Bug",
+      "cve": [
+        "CVE-2020-1938"
+      ],
+      "app": "Apache Tomcat",
+      "path": "tomcat/CVE-2020-1938",
+      "tags": [
+        "Web Server"
+      ],
+      "date": "Fri Feb 21 00:40:44 2020 +0800"
+    },
+    {
+      "name": "Tomcat Weak Password",
+      "cve": [],
+      "app": "Apache Tomcat",
+      "path": "tomcat/tomcat8",
+      "tags": [
+        "Web Server"
+      ],
+      "date": "Sun Apr 23 23:15:32 2017 +0800"
+    },
+    {
+      "name": "Apache Unomi Remote Expression Code Execution",
+      "cve": [
+        "CVE-2020-13942"
+      ],
+      "app": "Apache Unomi",
+      "path": "unomi/CVE-2020-13942",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Sun Nov 22 01:49:35 2020 +0800"
+    },
+    {
+      "name": "uWSGI PHP Directory Traversal",
+      "cve": [
+        "CVE-2018-7490"
+      ],
+      "app": "uWSGI",
+      "path": "uwsgi/CVE-2018-7490",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Sun Mar 25 02:31:08 2018 +0800"
+    },
+    {
+      "name": "uWSGI Unauthorized Access",
+      "cve": [],
+      "app": "uWSGI",
+      "path": "uwsgi/unacc",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Fri Dec 7 00:22:38 2018 +0800"
+    },
+    {
+      "name": "V2board 1.6.1 Privilege Escalation",
+      "cve": [],
+      "app": "V2board",
+      "path": "v2board/1.6-privilege-escalation",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Sat Dec 17 21:51:53 2022 +0800"
+    },
+    {
+      "name": "WebLogic < 10.3.6 'wls-wsat' XMLDecoder Deserialization Remote Command Execution",
+      "cve": [
+        "CVE-2017-10271"
+      ],
+      "app": "WebLogic",
+      "path": "weblogic/CVE-2017-10271",
+      "tags": [
+        "RCE",
+        "Deserialization",
+        "Web Server"
+      ],
+      "date": "Sun Feb 25 01:28:47 2018 +0800"
+    },
+    {
+      "name": "Weblogic WLS Core Components Deserialization Remote Command Execution",
+      "cve": [
+        "CVE-2018-2628"
+      ],
+      "app": "WebLogic",
+      "path": "weblogic/CVE-2018-2628",
+      "tags": [
+        "RCE",
+        "Deserialization",
+        "Web Server"
+      ],
+      "date": "Sun Apr 22 23:53:40 2018 +0800"
+    },
+    {
+      "name": "WebLogic Arbitrary File Upload",
+      "cve": [
+        "CVE-2018-2894"
+      ],
+      "app": "WebLogic",
+      "path": "weblogic/CVE-2018-2894",
+      "tags": [
+        "File Operation",
+        "Web Server"
+      ],
+      "date": "Thu Jul 19 21:50:51 2018 +0800"
+    },
+    {
+      "name": "WebLogic Management Console Unauthorized Remote Command Execution",
+      "cve": [
+        "CVE-2020-14882"
+      ],
+      "app": "WebLogic",
+      "path": "weblogic/CVE-2020-14882",
+      "tags": [
+        "RCE",
+        "Web Server"
+      ],
+      "date": "Sun Nov 1 04:47:33 2020 +0800"
+    },
+    {
+      "name": "WebLogic Unauthorized Remote Code Execution",
+      "cve": [
+        "CVE-2023-21839"
+      ],
+      "app": "WebLogic",
+      "path": "weblogic/CVE-2023-21839",
+      "tags": [
+        "RCE",
+        "Web Server"
+      ],
+      "date": "Sun Feb 26 17:34:58 2023 +0800"
+    },
+    {
+      "name": "Weblogic UDDI Explorer Server-Side Request Forgery (SSRF)",
+      "cve": [],
+      "app": "WebLogic",
+      "path": "weblogic/ssrf",
+      "tags": [
+        "SSRF",
+        "Web Server"
+      ],
+      "date": "Thu May 11 16:59:59 2017 +0800"
+    },
+    {
+      "name": "WebLogic Weak Password, Arbitrary File Read and Remote Code Execution",
+      "cve": [],
+      "app": "WebLogic",
+      "path": "weblogic/weak_password",
+      "tags": [
+        "RCE",
+        "File Operation",
+        "Web Server"
+      ],
+      "date": "Tue May 9 21:28:28 2017 +0800"
+    },
+    {
+      "name": "Webmin Remote Command Execution",
+      "cve": [
+        "CVE-2019-15107"
+      ],
+      "app": "Webmin",
+      "path": "webmin/CVE-2019-15107",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sun Aug 18 04:57:28 2019 +0800"
+    },
+    {
+      "name": "Wordpress 4.6 Arbitrary Command Execution (PwnScriptum)",
+      "cve": [],
+      "app": "Wordpress",
+      "path": "wordpress/pwnscriptum",
+      "tags": [
+        "RCE",
+        "CMS"
+      ],
+      "date": "Mon Nov 27 22:34:12 2017 +0800"
+    },
+    {
+      "name": "XStream Deserialization Command Execution",
+      "cve": [
+        "CVE-2021-21351"
+      ],
+      "app": "XStream",
+      "path": "xstream/CVE-2021-21351",
+      "tags": [
+        "RCE",
+        "Deserialization"
+      ],
+      "date": "Mon May 24 03:50:55 2021 +0800"
+    },
+    {
+      "name": "XStream Deserialization Command Execution",
+      "cve": [
+        "CVE-2021-29505"
+      ],
+      "app": "XStream",
+      "path": "xstream/CVE-2021-29505",
+      "tags": [
+        "RCE",
+        "Deserialization"
+      ],
+      "date": "Sat May 22 04:18:12 2021 +0800"
+    },
+    {
+      "name": "XXL-JOB Executor Unauthorized Access",
+      "cve": [],
+      "app": "XXL-JOB",
+      "path": "xxl-job/unacc",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Mon Nov 9 03:40:28 2020 +0800"
+    },
+    {
+      "name": "YApi NoSQL Injection to Remote Command Execution",
+      "cve": [],
+      "app": "YApi",
+      "path": "yapi/mongodb-inj",
+      "tags": [
+        "SQL Injection",
+        "RCE"
+      ],
+      "date": "Sun Nov 20 02:33:14 2022 +0800"
+    },
+    {
+      "name": "YApi Open Registration due to RCE",
+      "cve": [],
+      "app": "YApi",
+      "path": "yapi/unacc",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Fri Mar 4 03:04:19 2022 +0800"
+    },
+    {
+      "name": "Zabbix latest.php SQL Injection",
+      "cve": [
+        "CVE-2016-10134"
+      ],
+      "app": "Zabbix",
+      "path": "zabbix/CVE-2016-10134",
+      "tags": [
+        "SQL Injection"
+      ],
+      "date": "Wed May 2 02:43:49 2018 +0800"
+    },
+    {
+      "name": "Zabbix Server Active Proxy Trapper Command Injection",
+      "cve": [
+        "CVE-2017-2824"
+      ],
+      "app": "Zabbix",
+      "path": "zabbix/CVE-2017-2824",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Wed Jan 13 00:28:21 2021 +0800"
+    },
+    {
+      "name": "Zabbix Server Active Proxy Trapper Command Injection Bypass",
+      "cve": [
+        "CVE-2020-11800"
+      ],
+      "app": "Zabbix",
+      "path": "zabbix/CVE-2020-11800",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Wed Jan 13 00:36:27 2021 +0800"
+    }
+  ]
+}
