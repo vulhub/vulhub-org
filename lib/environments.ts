@@ -1,5 +1,4 @@
-import fs from 'fs';
-import path from 'path';
+import environmentsData from './environments.json';
 import dayjs, { Dayjs } from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 
@@ -16,40 +15,41 @@ export interface Environment {
 
 // Define the structure of the parsed JSON file
 interface JsonData {
-  environment: Array<Environment>;
+  environment: Array<{
+    name: string;
+    cve: string[];
+    app: string;
+    path: string;
+    tags: string[];
+    date: string;
+  }>;
 }
 
-function jsonDateReviver(key: string, value: any) {
-  if (typeof value === 'string' && key === 'date') {
-    return dayjs(value);
-  }
-  return value;
-}
-
-function loadEnvironments(): Environment[] {
-  const filePath = path.join(process.cwd(), 'lib', 'environments.json');
-  const fileContents = fs.readFileSync(filePath, 'utf8');
-  const parsed = JSON.parse(fileContents, jsonDateReviver) as JsonData;
-  // Sort environments by date from newest to oldest
-  return parsed.environment.sort((a, b) => {
+function processEnvironments(data: JsonData): Environment[] {
+  // Convert date strings to Dayjs objects and sort by date
+  return data.environment.map(env => ({
+    ...env,
+    date: dayjs(env.date)
+  })).sort((a, b) => {
     if (a.date.isAfter(b.date)) return -1;
     if (a.date.isBefore(b.date)) return 1;
     return 0;
   });
 }
 
-function loadAllTags(): string[] {
+function loadAllTags(envs: Environment[]): string[] {
   const tagsSet = new Set<string>();
   
-  environments.forEach(env => {
+  envs.forEach(env => {
     env.tags.forEach(tag => tagsSet.add(tag));
   });
   
   return Array.from(tagsSet).sort();
 }
 
-const environments = loadEnvironments();
-const tags = loadAllTags();
+// Process the imported JSON data
+const environments = processEnvironments(environmentsData as JsonData);
+const tags = loadAllTags(environments);
 
 // Get popular environments (for the homepage)
 export function getPopularEnvironments(limit: number = 6): Environment[] {

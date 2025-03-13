@@ -8,7 +8,7 @@ import {
 } from "@/lib/environments";
 import { SearchForm } from "@/components/search";
 
-export const runtime = process.env.NEXT_RUNTIME === "edge" ? "edge" : "nodejs";
+export const runtime = "edge";
 
 export default async function EnvironmentsPage({
   searchParams,
