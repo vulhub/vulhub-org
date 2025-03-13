@@ -54,8 +54,8 @@ export default function Home() {
                 <span>{environments.length} Environments</span>
               </div>
             </div>
-            <div className="md:w-1/2">
-              <div className="bg-slate-800 border border-slate-700 rounded-lg p-6 shadow-xl">
+            <div className="md:w-1/2 w-full overflow-x-auto">
+              <div className="bg-slate-800 border border-slate-700 rounded-lg p-6 shadow-xl min-w-[300px]">
                 <pre className="text-slate-200 overflow-x-auto font-mono">
                   <code>
                     <span className="text-slate-400">
