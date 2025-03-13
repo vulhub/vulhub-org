@@ -1,4 +1,9 @@
 ---
+description: 
+globs: *
+alwaysApply: false
+---
+---
 description: For writing official website for Vulhub project
 globs: 
 alwaysApply: true

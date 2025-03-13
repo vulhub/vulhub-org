@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Github, BookOpen, Database, Shield, ArrowRight } from "lucide-react";
+import { Github, BookOpen, Shield, ArrowRight, Box, Bug } from "lucide-react";
 import { getLatestEnvironments, getAllEnvironments } from "@/lib/environments";
 
 export default function Home() {
@@ -100,9 +100,9 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-slate-50 p-6 rounded-lg border border-slate-100">
               <div className="bg-blue-100 text-blue-700 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <Database className="h-6 w-6" />
+                <Box className="h-6 w-6" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Docker-Based</h3>
+              <h3 className="text-xl font-semibold mb-3">Docker Based</h3>
               <p className="text-slate-600">
                 All environments are built with Docker and Docker Compose,
                 making them easy to deploy and isolate.
@@ -110,7 +110,7 @@ export default function Home() {
             </div>
             <div className="bg-slate-50 p-6 rounded-lg border border-slate-100">
               <div className="bg-green-100 text-green-700 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <Shield className="h-6 w-6" />
+                <Bug className="h-6 w-6" />
               </div>
               <h3 className="text-xl font-semibold mb-3">
                 Real Vulnerabilities

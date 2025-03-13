@@ -22,7 +22,7 @@ export function Footer() {
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://twitter.com/vulhub"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-300 hover:text-white"
@@ -45,11 +45,6 @@ export function Footer() {
               <li>
                 <Link href="/environments" className="text-slate-300 hover:text-white">
                   All Environments
-                </Link>
-              </li>
-              <li>
-                <Link href="/docs" className="text-slate-300 hover:text-white">
-                  Documentation
                 </Link>
               </li>
               <li>
@@ -78,17 +73,17 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/contributors" className="text-slate-300 hover:text-white">
+                <Link href="https://github.com/vulhub/vulhub/graphs/contributors" className="text-slate-300 hover:text-white">
                   Contributors
                 </Link>
               </li>
               <li>
-                <Link href="/license" className="text-slate-300 hover:text-white">
+                <Link href="https://github.com/vulhub/vulhub/blob/master/LICENSE" className="text-slate-300 hover:text-white">
                   MIT License
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-slate-300 hover:text-white">
+                <Link href="https://discord.gg/bQCpZEK" className="text-slate-300 hover:text-white">
                   Contact
                 </Link>
               </li>

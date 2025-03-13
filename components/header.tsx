@@ -17,7 +17,7 @@ export function Header() {
             <Link href="/" className="flex items-center">
               <div className="w-8 h-8 mr-2 relative">
                 <Image
-                  src="/placeholder.svg?height=32&width=32"
+                  src="/logo/128x128.png"
                   alt="Vulhub Logo"
                   width={32}
                   height={32}

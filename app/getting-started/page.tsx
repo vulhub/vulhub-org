@@ -20,19 +20,75 @@ export default function GettingStartedPage() {
             <div>
               <h3 className="text-blue-800 font-medium">Prerequisites</h3>
               <p className="text-blue-700">
-                Before you begin, make sure you have Docker and Docker Compose installed on your system. Vulhub
+                Before you begin, make sure you have Docker installed on your system. Vulhub
                 environments are designed to run in isolated containers.
               </p>
             </div>
           </div>
         </div>
 
-        <Tabs defaultValue="quickstart" className="mb-8">
+        <Tabs defaultValue="docker" className="mb-8">
           <TabsList className="grid w-full grid-cols-3">
-            <TabsTrigger value="quickstart">Quick Start</TabsTrigger>
             <TabsTrigger value="docker">Docker Setup</TabsTrigger>
+            <TabsTrigger value="quickstart">Quick Start</TabsTrigger>
             <TabsTrigger value="advanced">Advanced Usage</TabsTrigger>
           </TabsList>
+          <TabsContent value="docker" className="p-4 border rounded-md mt-2">
+            <h2 className="text-xl font-semibold mb-4">Docker Setup</h2>
+            <div className="space-y-4">
+              <p className="text-slate-600">
+                Vulhub requires Docker to run. Follow these instructions to set up Docker on your
+                system.
+              </p>
+
+              <h3 className="font-medium mt-4">Install Docker</h3>
+              <div className="grid gap-4">
+                <Card>
+                  <CardHeader className="pb-2">
+                    <CardTitle className="text-lg flex items-center">
+                      Linux
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-slate-600 mb-2">
+                      Install Docker using the convenience script:
+                    </p>
+                    <pre className="bg-slate-800 text-slate-100 p-3 rounded-md text-sm overflow-x-auto">
+                      <code>{`curl -fsSL https://get.docker.com | sh`}</code>
+                    </pre>
+                  </CardContent>
+                </Card>
+                
+                <Card>
+                  <CardHeader className="pb-2">
+                    <CardTitle className="text-lg flex items-center">
+                      MacOS & Windows
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-slate-600 mb-2">
+                      Download and install Docker Desktop from the official website.
+                    </p>
+                    <Button asChild variant="outline" size="sm">
+                      <a
+                        href="https://www.docker.com/products/docker-desktop"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Download Docker Desktop
+                      </a>
+                    </Button>
+                  </CardContent>
+                </Card>
+              </div>
+
+              <h3 className="font-medium mt-4">Verify Installation</h3>
+              <p className="text-slate-600">Verify that Docker is installed correctly:</p>
+              <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-2 overflow-x-auto">
+                <code>{`docker --version`}</code>
+              </pre>
+            </div>
+          </TabsContent>
           <TabsContent value="quickstart" className="p-4 border rounded-md mt-2">
             <h2 className="text-xl font-semibold mb-4">Quick Start Guide</h2>
             <ol className="space-y-4">
@@ -58,7 +114,7 @@ export default function GettingStartedPage() {
                     different vulnerable application.
                   </p>
                   <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-2 overflow-x-auto">
-                    <code>cd vulhub/flask/ssti</code>
+                    <code>cd vulhub/spring/CVE-2022-22947</code>
                   </pre>
                 </div>
               </li>
@@ -72,7 +128,7 @@ export default function GettingStartedPage() {
                     Use Docker Compose to build and start the vulnerable environment.
                   </p>
                   <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-2 overflow-x-auto">
-                    <code>docker-compose up -d</code>
+                    <code>docker compose up -d</code>
                   </pre>
                 </div>
               </li>
@@ -86,7 +142,7 @@ export default function GettingStartedPage() {
                     Once the environment is running, access the vulnerable application through your browser.
                   </p>
                   <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-2 overflow-x-auto">
-                    <code>http://your-ip-address:8000</code>
+                    <code>http://your-ip:8080</code>
                   </pre>
                 </div>
               </li>
@@ -103,65 +159,6 @@ export default function GettingStartedPage() {
               </li>
             </ol>
           </TabsContent>
-          <TabsContent value="docker" className="p-4 border rounded-md mt-2">
-            <h2 className="text-xl font-semibold mb-4">Docker Setup</h2>
-            <div className="space-y-4">
-              <p className="text-slate-600">
-                Vulhub requires Docker and Docker Compose to run. Follow these instructions to set up Docker on your
-                system.
-              </p>
-
-              <h3 className="font-medium mt-4">Install Docker</h3>
-              <div className="grid md:grid-cols-2 gap-4">
-                <Card>
-                  <CardHeader className="pb-2">
-                    <CardTitle className="text-lg">Linux</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <pre className="bg-slate-800 text-slate-100 p-3 rounded-md text-sm overflow-x-auto">
-                      <code>{`curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh get-docker.sh`}</code>
-                    </pre>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardHeader className="pb-2">
-                    <CardTitle className="text-lg">macOS</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-slate-600 mb-2">
-                      Download and install Docker Desktop from the official website.
-                    </p>
-                    <Button asChild variant="outline" size="sm">
-                      <a
-                        href="https://www.docker.com/products/docker-desktop"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Download Docker Desktop
-                      </a>
-                    </Button>
-                  </CardContent>
-                </Card>
-              </div>
-
-              <h3 className="font-medium mt-4">Install Docker Compose</h3>
-              <p className="text-slate-600">
-                Docker Compose is included with Docker Desktop for macOS and Windows. For Linux:
-              </p>
-              <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-2 overflow-x-auto">
-                <code>{`sudo curl -L "https://github.com/docker/compose/releases/download/v2.18.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose`}</code>
-              </pre>
-
-              <h3 className="font-medium mt-4">Verify Installation</h3>
-              <p className="text-slate-600">Verify that Docker and Docker Compose are installed correctly:</p>
-              <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-2 overflow-x-auto">
-                <code>{`docker --version
-docker-compose --version`}</code>
-              </pre>
-            </div>
-          </TabsContent>
           <TabsContent value="advanced" className="p-4 border rounded-md mt-2">
             <h2 className="text-xl font-semibold mb-4">Advanced Usage</h2>
             <div className="space-y-4">
@@ -171,25 +168,25 @@ docker-compose --version`}</code>
                 <div>
                   <h4 className="text-sm font-medium">Stop an environment</h4>
                   <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-1 overflow-x-auto">
-                    <code>docker-compose down</code>
+                    <code>docker compose down -v</code>
                   </pre>
                 </div>
                 <div>
                   <h4 className="text-sm font-medium">Rebuild an environment</h4>
                   <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-1 overflow-x-auto">
-                    <code>docker-compose build --no-cache</code>
+                    <code>docker compose build --no-cache</code>
                   </pre>
                 </div>
                 <div>
                   <h4 className="text-sm font-medium">View logs</h4>
                   <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-1 overflow-x-auto">
-                    <code>docker-compose logs -f</code>
+                    <code>docker compose logs -f</code>
                   </pre>
                 </div>
                 <div>
                   <h4 className="text-sm font-medium">Access a container's shell</h4>
                   <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-1 overflow-x-auto">
-                    <code>docker-compose exec [service_name] bash</code>
+                    <code>docker compose exec [service_name] bash</code>
                   </pre>
                 </div>
               </div>
@@ -236,16 +233,18 @@ docker-compose --version`}</code>
                 Explore our collection of pre-built vulnerable environments.
               </p>
             </Link>
-            <Link
-              href="/docs"
+            <a
+              href="https://discord.gg/bQCpZEK"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block p-4 border rounded-md bg-white hover:border-blue-300 hover:shadow-sm transition-all"
             >
               <h3 className="font-medium flex items-center">
-                Read Documentation
+                Join Our Community
                 <ArrowRight className="ml-2 h-4 w-4" />
               </h3>
-              <p className="text-sm text-slate-600 mt-1">Learn more about how to use Vulhub effectively.</p>
-            </Link>
+              <p className="text-sm text-slate-600 mt-1">Connect with other security researchers in the Vulhub Discord community.</p>
+            </a>
             <a
               href="https://github.com/vulhub/vulhub"
               target="_blank"
