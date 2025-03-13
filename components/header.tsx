@@ -30,6 +30,9 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
+            <Link href="/" className="text-slate-600 hover:text-slate-900">
+              Home
+            </Link>
             <Link
               href="/getting-started"
               className="text-slate-600 hover:text-slate-900"
@@ -81,6 +84,12 @@ export function Header() {
       {isMenuOpen && (
         <div className="md:hidden bg-white border-b border-slate-200">
           <div className="container mx-auto px-4 py-4 space-y-4">
+            <Link
+              href="/"
+              className="block text-slate-600 hover:text-slate-900 py-2"
+            >
+              Home
+            </Link>
             <Link
               href="/getting-started"
               className="block text-slate-600 hover:text-slate-900 py-2"
