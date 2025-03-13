@@ -1,20 +1,27 @@
 import dayjs from "dayjs";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { getEnvironmentsByTag, getAllTags, searchEnvironments } from "@/lib/environments";
+import {
+  getEnvironmentsByTag,
+  getAllTags,
+  searchEnvironments,
+} from "@/lib/environments";
 import { SearchForm } from "@/components/search";
 
-export default function EnvironmentsPage({
+export const runtime = process.env.NEXT_RUNTIME === "edge" ? "edge" : "nodejs";
+
+export default async function EnvironmentsPage({
   searchParams,
 }: {
-  searchParams: { q?: string; tag?: string };
+  searchParams: Promise<{ q?: string; tag?: string }>;
 }) {
+  const { q = "", tag = "all" } = await searchParams;
   const allTags = getAllTags();
-  const query = searchParams.q || "";
-  const tag = searchParams.tag || "all";
-  
-  const shouldGroupByTag = !query && tag === "all";  
-  const filteredEnvironments = shouldGroupByTag ? [] : searchEnvironments(query, tag);
+
+  const shouldGroupByTag = !q && tag === "all";
+  const filteredEnvironments = shouldGroupByTag
+    ? []
+    : searchEnvironments(q, tag);
 
   return (
     <div className="container mx-auto px-4 py-12">
@@ -26,23 +33,26 @@ export default function EnvironmentsPage({
           with Docker and comes with detailed documentation.
         </p>
 
-        <SearchForm initialQuery={query} initialTag={tag} allTags={allTags} />
+        <SearchForm
+          initialQuery={q || ""}
+          initialTag={tag || "all"}
+          allTags={allTags}
+        />
 
         {!shouldGroupByTag && (
           <div className="space-y-6">
             <h2 className="text-2xl font-semibold">
               {filteredEnvironments.length} Results
-              {query && <span> for "{query}"</span>}
+              {q && <span> for "{q}"</span>}
               {tag !== "all" && <span> in {tag}</span>}
             </h2>
-            
+
             {filteredEnvironments.length === 0 ? (
               <div className="text-center py-12">
-                <p className="text-slate-500">No environments found matching your criteria.</p>
-                <Button 
-                  variant="link" 
-                  asChild
-                >
+                <p className="text-slate-500">
+                  No environments found matching your criteria.
+                </p>
+                <Button variant="link" asChild>
                   <Link href="/environments">Clear filters</Link>
                 </Button>
               </div>
@@ -101,54 +111,49 @@ export default function EnvironmentsPage({
                 <div key={tag} className="space-y-4">
                   <h2 className="text-2xl font-semibold">{tag}</h2>
                   <div className="grid md:grid-cols-2 gap-4">
-                    {environments
-                      .slice(0, 4)
-                      .map((env) => (
-                        <Link
-                          key={env.path}
-                          href={`https://github.com/vulhub/vulhub/tree/master/${env.path}`}
-                          target="_blank"
-                          className="border border-slate-200 rounded-lg p-4 hover:border-blue-300 hover:shadow-sm transition-all flex flex-col h-full"
-                        >
-                          <div className="flex flex-wrap items-center gap-1 mb-2">
-                            {env.tags.map((tag, index) => (
-                              <span
-                                key={index}
-                                className="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full text-xs"
-                              >
-                                {tag}
-                              </span>
-                            ))}
-                          </div>
-                          <h3 className="font-medium">{env.name}</h3>
-                          <p className="text-sm text-slate-600 mb-3">
-                            Explore the {env.name} vulnerability and learn how to
-                            exploit it.
-                          </p>
-                          <div className="flex flex-wrap items-center justify-between gap-1 text-xs mt-auto">
-                            <span className="text-xs bg-slate-100 px-2 py-1 rounded whitespace-nowrap">
-                              {env.cve[0] || "N/A"}
-                            </span>
+                    {environments.slice(0, 4).map((env) => (
+                      <Link
+                        key={env.path}
+                        href={`https://github.com/vulhub/vulhub/tree/master/${env.path}`}
+                        target="_blank"
+                        className="border border-slate-200 rounded-lg p-4 hover:border-blue-300 hover:shadow-sm transition-all flex flex-col h-full"
+                      >
+                        <div className="flex flex-wrap items-center gap-1 mb-2">
+                          {env.tags.map((tag, index) => (
                             <span
-                              className="text-slate-500"
-                              title={env.date.format()}
+                              key={index}
+                              className="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full text-xs"
                             >
-                              Created {env.date.fromNow()}
+                              {tag}
                             </span>
-                          </div>
-                        </Link>
-                      ))}
+                          ))}
+                        </div>
+                        <h3 className="font-medium">{env.name}</h3>
+                        <p className="text-sm text-slate-600 mb-3">
+                          Explore the {env.name} vulnerability and learn how to
+                          exploit it.
+                        </p>
+                        <div className="flex flex-wrap items-center justify-between gap-1 text-xs mt-auto">
+                          <span className="text-xs bg-slate-100 px-2 py-1 rounded whitespace-nowrap">
+                            {env.cve[0] || "N/A"}
+                          </span>
+                          <span
+                            className="text-slate-500"
+                            title={env.date.format()}
+                          >
+                            Created {env.date.fromNow()}
+                          </span>
+                        </div>
+                      </Link>
+                    ))}
                   </div>
                   {environments.length > 4 && (
                     <div className="text-center mt-4">
-                      <Button 
-                        variant="outline" 
-                        size="sm"
-                        asChild
-                      >
-                        <Link href={`/environments?tag=${encodeURIComponent(tag)}`}>
-                          View all {environments.length} {tag}{" "}
-                          environments
+                      <Button variant="outline" size="sm" asChild>
+                        <Link
+                          href={`/environments?tag=${encodeURIComponent(tag)}`}
+                        >
+                          View all {environments.length} {tag} environments
                         </Link>
                       </Button>
                     </div>

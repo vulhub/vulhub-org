@@ -8,7 +8,8 @@
       "app": "Apache ActiveMQ",
       "path": "activemq/CVE-2015-5254",
       "tags": [
-        "Deserialization"
+        "Deserialization",
+        "Message Queue"
       ],
       "date": "Mon Feb 26 14:34:36 2018 +0800"
     },
@@ -20,7 +21,8 @@
       "app": "Apache ActiveMQ",
       "path": "activemq/CVE-2016-3088",
       "tags": [
-        "File Operation"
+        "File Operation",
+        "Message Queue"
       ],
       "date": "Mon Jul 3 17:09:30 2017 +0800"
     },
@@ -32,7 +34,8 @@
       "app": "Apache ActiveMQ",
       "path": "activemq/CVE-2022-41678",
       "tags": [
-        "RCE"
+        "RCE",
+        "Message Queue"
       ],
       "date": "Thu Nov 30 16:20:21 2023 +0800"
     },
@@ -45,7 +48,8 @@
       "path": "activemq/CVE-2023-46604",
       "tags": [
         "RCE",
-        "Deserialization"
+        "Deserialization",
+        "Message Queue"
       ],
       "date": "Tue Nov 7 17:38:41 2023 +0800"
     },
@@ -269,7 +273,8 @@
       "app": "Adobe ColdFusion",
       "path": "coldfusion/CVE-2010-2861",
       "tags": [
-        "File Operation"
+        "File Operation",
+        "Web Server"
       ],
       "date": "Fri May 4 17:36:56 2018 +0800"
     },
@@ -281,7 +286,8 @@
       "app": "Adobe ColdFusion",
       "path": "coldfusion/CVE-2017-3066",
       "tags": [
-        "Deserialization"
+        "Deserialization",
+        "Web Server"
       ],
       "date": "Thu Mar 15 20:38:22 2018 +0800"
     },
@@ -294,7 +300,8 @@
       "path": "coldfusion/CVE-2023-26360",
       "tags": [
         "RCE",
-        "File Inclusion"
+        "File Inclusion",
+        "Web Server"
       ],
       "date": "Sun Jan 28 07:50:17 2024 +0800"
     },
@@ -307,7 +314,8 @@
       "path": "coldfusion/CVE-2023-29300",
       "tags": [
         "RCE",
-        "Deserialization"
+        "Deserialization",
+        "Web Server"
       ],
       "date": "Tue Jan 30 01:40:16 2024 +0800"
     },
@@ -379,7 +387,8 @@
       "app": "Apache CouchDB",
       "path": "couchdb/CVE-2017-12635",
       "tags": [
-        "Auth Bypass"
+        "Auth Bypass",
+        "Database"
       ],
       "date": "Sat Dec 2 05:51:59 2017 +0800"
     },
@@ -391,7 +400,8 @@
       "app": "Apache CouchDB",
       "path": "couchdb/CVE-2017-12636",
       "tags": [
-        "RCE"
+        "RCE",
+        "Database"
       ],
       "date": "Sun Dec 3 01:30:09 2017 +0800"
     },
@@ -403,7 +413,7 @@
       "app": "Apache CouchDB",
       "path": "couchdb/CVE-2022-24706",
       "tags": [
-        "Web Application"
+        "Database"
       ],
       "date": "Fri Nov 18 03:42:46 2022 +0800"
     },
@@ -415,7 +425,8 @@
       "app": "CraftCMS",
       "path": "craftcms/CVE-2024-56145",
       "tags": [
-        "RCE"
+        "RCE",
+        "CMS"
       ],
       "date": "Sun Dec 29 03:07:05 2024 +0800"
     },
@@ -460,7 +471,7 @@
       "path": "django/CVE-2017-12794",
       "tags": [
         "XSS",
-        "Python Framework"
+        "Framework"
       ],
       "date": "Fri Sep 8 05:36:14 2017 +0800"
     },
@@ -472,7 +483,7 @@
       "app": "Django",
       "path": "django/CVE-2018-14574",
       "tags": [
-        "Python Framework"
+        "Framework"
       ],
       "date": "Tue Aug 7 14:20:23 2018 +0800"
     },
@@ -485,7 +496,7 @@
       "path": "django/CVE-2019-14234",
       "tags": [
         "SQL Injection",
-        "Python Framework"
+        "Framework"
       ],
       "date": "Sat Aug 3 03:48:57 2019 +0800"
     },
@@ -498,7 +509,7 @@
       "path": "django/CVE-2020-9402",
       "tags": [
         "SQL Injection",
-        "Python Framework"
+        "Framework"
       ],
       "date": "Mon Mar 16 23:34:29 2020 +0800"
     },
@@ -511,7 +522,7 @@
       "path": "django/CVE-2021-35042",
       "tags": [
         "SQL Injection",
-        "Python Framework"
+        "Framework"
       ],
       "date": "Mon Jul 26 02:33:37 2021 +0800"
     },
@@ -524,7 +535,7 @@
       "path": "django/CVE-2022-34265",
       "tags": [
         "SQL Injection",
-        "Python Framework"
+        "Framework"
       ],
       "date": "Thu Jul 14 00:58:18 2022 +0800"
     },
@@ -668,7 +679,8 @@
       "app": "ElasticSearch",
       "path": "elasticsearch/CVE-2014-3120",
       "tags": [
-        "RCE"
+        "RCE",
+        "Database"
       ],
       "date": "Sat Apr 22 01:59:53 2017 +0800"
     },
@@ -680,7 +692,8 @@
       "app": "ElasticSearch",
       "path": "elasticsearch/CVE-2015-1427",
       "tags": [
-        "RCE"
+        "RCE",
+        "Database"
       ],
       "date": "Sat Apr 22 17:12:11 2017 +0800"
     },
@@ -692,7 +705,7 @@
       "app": "ElasticSearch",
       "path": "elasticsearch/CVE-2015-3337",
       "tags": [
-        "Web Application"
+        "Database"
       ],
       "date": "Sun Apr 23 03:40:55 2017 +0800"
     },
@@ -704,7 +717,7 @@
       "app": "ElasticSearch",
       "path": "elasticsearch/CVE-2015-5531",
       "tags": [
-        "Web Application"
+        "Database"
       ],
       "date": "Sun Apr 23 04:06:39 2017 +0800"
     },
@@ -714,7 +727,8 @@
       "app": "ElasticSearch",
       "path": "elasticsearch/WooYun-2015-110216",
       "tags": [
-        "File Operation"
+        "File Operation",
+        "Database"
       ],
       "date": "Mon Apr 24 22:24:44 2017 +0800"
     },
@@ -1059,7 +1073,8 @@
       "app": "Springboot H2 Database",
       "path": "h2database/h2-console-unacc",
       "tags": [
-        "Java Framework"
+        "Framework",
+        "Database"
       ],
       "date": "Thu Apr 30 02:23:09 2020 +0800"
     },
@@ -1355,7 +1370,7 @@
       "app": "Jetty",
       "path": "jetty/CVE-2021-28164",
       "tags": [
-        "Web Application"
+        "Web Server"
       ],
       "date": "Thu Jun 10 19:14:03 2021 +0800"
     },
@@ -1367,7 +1382,7 @@
       "app": "Jetty",
       "path": "jetty/CVE-2021-28169",
       "tags": [
-        "Web Application"
+        "Web Server"
       ],
       "date": "Thu Jun 10 02:54:32 2021 +0800"
     },
@@ -1379,7 +1394,7 @@
       "app": "Jetty",
       "path": "jetty/CVE-2021-34429",
       "tags": [
-        "Web Application"
+        "Web Server"
       ],
       "date": "Tue Aug 17 22:26:22 2021 +0800"
     },
@@ -1490,7 +1505,7 @@
       "app": "Apache Kafka",
       "path": "kafka/CVE-2023-25194",
       "tags": [
-        "Web Application"
+        "Message Queue"
       ],
       "date": "Sat Apr 29 02:57:14 2023 +0800"
     },
@@ -1549,7 +1564,7 @@
       "path": "laravel/CVE-2021-3129",
       "tags": [
         "RCE",
-        "PHP Framework"
+        "Framework"
       ],
       "date": "Tue Jan 19 01:09:59 2021 +0800"
     },
@@ -1715,7 +1730,9 @@
       "app": "Mongo Express",
       "path": "mongo-express/CVE-2019-10758",
       "tags": [
-        "RCE"
+        "RCE",
+        "Framework",
+        "Database"
       ],
       "date": "Sun Jan 5 03:19:59 2020 +0800"
     },
@@ -1825,6 +1842,7 @@
       "app": "Nginx",
       "path": "nginx/CVE-2013-4547",
       "tags": [
+        "Framework",
         "Web Server"
       ],
       "date": "Tue Aug 29 00:00:45 2017 +0800"
@@ -1837,6 +1855,7 @@
       "app": "Nginx",
       "path": "nginx/CVE-2017-7529",
       "tags": [
+        "Framework",
         "Web Server"
       ],
       "date": "Mon Jul 17 01:25:58 2017 +0800"
@@ -1847,6 +1866,7 @@
       "app": "Nginx",
       "path": "nginx/insecure-configuration",
       "tags": [
+        "Framework",
         "Web Server"
       ],
       "date": "Tue Jun 6 02:03:24 2017 +0800"
@@ -1857,6 +1877,7 @@
       "app": "Nginx",
       "path": "nginx/nginx_parsing_vulnerability",
       "tags": [
+        "Framework",
         "Web Server"
       ],
       "date": "Mon Mar 19 01:24:00 2018 +0800"
@@ -2331,7 +2352,7 @@
       "app": "Ruby on Rails",
       "path": "rails/CVE-2018-3760",
       "tags": [
-        "Web Application"
+        "Framework"
       ],
       "date": "Sat Sep 8 03:23:48 2018 +0800"
     },
@@ -2343,7 +2364,8 @@
       "app": "Ruby on Rails",
       "path": "rails/CVE-2019-5418",
       "tags": [
-        "File Operation"
+        "File Operation",
+        "Framework"
       ],
       "date": "Tue Mar 19 01:46:32 2019 +0800"
     },
@@ -2391,7 +2413,8 @@
       "app": "Apache RocketMQ",
       "path": "rocketmq/CVE-2023-33246",
       "tags": [
-        "RCE"
+        "RCE",
+        "Message Queue"
       ],
       "date": "Fri Jun 2 22:12:22 2023 +0800"
     },
@@ -2403,7 +2426,8 @@
       "app": "Apache RocketMQ",
       "path": "rocketmq/CVE-2023-37582",
       "tags": [
-        "File Operation"
+        "File Operation",
+        "Message Queue"
       ],
       "date": "Wed Feb 5 02:12:09 2025 +0800"
     },
@@ -2632,7 +2656,7 @@
       "path": "spring/CVE-2016-4977",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Mon Jan 29 03:18:23 2018 +0800"
     },
@@ -2645,7 +2669,7 @@
       "path": "spring/CVE-2017-4971",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Sun Feb 25 04:02:48 2018 +0800"
     },
@@ -2658,7 +2682,7 @@
       "path": "spring/CVE-2017-8046",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Wed Jan 31 03:16:48 2018 +0800"
     },
@@ -2671,7 +2695,7 @@
       "path": "spring/CVE-2018-1270",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Fri Apr 27 18:56:07 2018 +0800"
     },
@@ -2684,7 +2708,7 @@
       "path": "spring/CVE-2018-1273",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Fri Apr 13 01:29:53 2018 +0800"
     },
@@ -2697,7 +2721,7 @@
       "path": "spring/CVE-2022-22947",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Thu Mar 3 04:00:46 2022 +0800"
     },
@@ -2710,7 +2734,7 @@
       "path": "spring/CVE-2022-22963",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Thu Mar 31 21:21:23 2022 +0800"
     },
@@ -2723,7 +2747,7 @@
       "path": "spring/CVE-2022-22965",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Fri Apr 1 04:44:47 2022 +0800"
     },
@@ -2735,7 +2759,7 @@
       "app": "Spring",
       "path": "spring/CVE-2022-22978",
       "tags": [
-        "Java Framework"
+        "Framework"
       ],
       "date": "Thu Jul 21 20:21:06 2022 +0200"
     },
@@ -2746,7 +2770,7 @@
       "path": "struts2/s2-001",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Sat Apr 15 16:27:35 2017 +0800"
     },
@@ -2759,7 +2783,7 @@
       "path": "struts2/s2-005",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Sun Apr 16 02:31:10 2017 +0800"
     },
@@ -2770,7 +2794,7 @@
       "path": "struts2/s2-007",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Mon Apr 17 00:44:15 2017 +0800"
     },
@@ -2783,7 +2807,7 @@
       "path": "struts2/s2-008",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Mon Apr 17 21:47:34 2017 +0800"
     },
@@ -2796,7 +2820,7 @@
       "path": "struts2/s2-009",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Mon Apr 17 22:19:16 2017 +0800"
     },
@@ -2809,7 +2833,7 @@
       "path": "struts2/s2-012",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Tue Apr 18 22:03:05 2017 +0800"
     },
@@ -2822,7 +2846,7 @@
       "path": "struts2/s2-013",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Thu Apr 27 00:36:59 2017 +0800"
     },
@@ -2836,7 +2860,7 @@
       "path": "struts2/s2-015",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Fri Jun 16 01:36:16 2017 +0800"
     },
@@ -2849,7 +2873,7 @@
       "path": "struts2/s2-016",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Tue Oct 17 01:48:15 2017 +0800"
     },
@@ -2862,7 +2886,7 @@
       "path": "struts2/s2-032",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Sun Jul 12 00:25:03 2020 +0800"
     },
@@ -2875,7 +2899,7 @@
       "path": "struts2/s2-045",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Sat Oct 12 22:39:18 2019 +0800"
     },
@@ -2888,7 +2912,7 @@
       "path": "struts2/s2-046",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Sat Oct 12 22:39:18 2019 +0800"
     },
@@ -2901,7 +2925,7 @@
       "path": "struts2/s2-048",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Sun Jul 16 17:51:59 2017 +0800"
     },
@@ -2914,7 +2938,7 @@
       "path": "struts2/s2-052",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Fri Sep 8 20:00:53 2017 +0800"
     },
@@ -2927,7 +2951,7 @@
       "path": "struts2/s2-053",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Sat Sep 9 19:28:15 2017 +0800"
     },
@@ -2940,7 +2964,7 @@
       "path": "struts2/s2-057",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Fri Aug 24 19:03:04 2018 +0800"
     },
@@ -2953,7 +2977,7 @@
       "path": "struts2/s2-059",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Tue Sep 8 01:33:45 2020 +0800"
     },
@@ -2966,7 +2990,7 @@
       "path": "struts2/s2-061",
       "tags": [
         "RCE",
-        "Java Framework"
+        "Framework"
       ],
       "date": "Fri Dec 11 03:08:35 2020 +0800"
     },
@@ -2978,7 +3002,7 @@
       "app": "Apache Struts2",
       "path": "struts2/s2-066",
       "tags": [
-        "Java Framework"
+        "Framework"
       ],
       "date": "Tue Feb 4 00:15:47 2025 +0800"
     },
@@ -2990,7 +3014,7 @@
       "app": "Apache Struts2",
       "path": "struts2/s2-067",
       "tags": [
-        "Java Framework"
+        "Framework"
       ],
       "date": "Tue Feb 4 00:17:47 2025 +0800"
     },
