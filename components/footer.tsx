@@ -73,17 +73,17 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="https://github.com/vulhub/vulhub/graphs/contributors" className="text-slate-300 hover:text-white">
+                <Link href="https://github.com/vulhub/vulhub/graphs/contributors" target="_blank" className="text-slate-300 hover:text-white">
                   Contributors
                 </Link>
               </li>
               <li>
-                <Link href="https://github.com/vulhub/vulhub/blob/master/LICENSE" className="text-slate-300 hover:text-white">
+                <Link href="https://github.com/vulhub/vulhub/blob/master/LICENSE" target="_blank" className="text-slate-300 hover:text-white">
                   MIT License
                 </Link>
               </li>
               <li>
-                <Link href="https://discord.gg/bQCpZEK" className="text-slate-300 hover:text-white">
+                <Link href="https://discord.gg/bQCpZEK" target="_blank" className="text-slate-300 hover:text-white">
                   Contact
                 </Link>
               </li>
