@@ -189,9 +189,12 @@ function getCreatedTime(vulhubPath, envPath) {
       throw new Error(`Directory does not exist: ${cwd}`);
     }
 
+    console.log(
+      `Executing "git log --reverse --format=%ad -- ${envPath}" on ${cwd}`
+    );
     const gitLogCommand = execFileSync(
       "git",
-      ["log", "--reverse", "--format=%ad", "--", envPath],
+      ["--no-pager", "log", "--reverse", "--format=%ad", "--", envPath],
       {
         encoding: "utf8",
         stdio: ["ignore", "pipe", "pipe"],
@@ -202,13 +205,14 @@ function getCreatedTime(vulhubPath, envPath) {
 
     // Get the first line (earliest commit)
     const createdTime = gitLogCommand.split("\n")[0];
-    return createdTime || new Date().toISOString();
+    if (!createdTime) {
+      throw new Error(`No git history found for ${envPath}`);
+    }
+    return createdTime;
   } catch (error) {
-    console.error(
-      `Error getting creation time for ${envPath}: ${error.message}`
+    throw new Error(
+      `Failed to get creation time for ${envPath}: ${error.message}`
     );
-    // If error occurs, return current time
-    return new Date().toISOString();
   }
 }
 
