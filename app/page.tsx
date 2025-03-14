@@ -180,10 +180,21 @@ export default function Home() {
                     >
                       Learn more
                     </Link>
-                    <div className="flex items-center text-slate-500 text-sm">
-                      <span className="bg-slate-100 px-2 py-1 rounded">
-                        {env.cve[0] || "N/A"}
-                      </span>
+                    <div className="flex items-center text-slate-500 text-sm gap-1">
+                      {env.cve.length > 0 ? (
+                        env.cve.map((cve, index) => (
+                          <span
+                            key={index}
+                            className="bg-slate-100 px-2 py-1 rounded"
+                          >
+                            {cve}
+                          </span>
+                        ))
+                      ) : (
+                        <span className="bg-slate-100 px-2 py-1 rounded">
+                          N/A
+                        </span>
+                      )}
                     </div>
                   </div>
                 </div>

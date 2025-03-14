@@ -86,9 +86,22 @@ export default async function EnvironmentsPage({
                       exploit it.
                     </p>
                     <div className="flex flex-wrap items-center justify-between gap-1 text-xs mt-auto">
-                      <span className="text-xs bg-slate-100 px-2 py-1 rounded whitespace-nowrap">
-                        {env.cve[0] || "N/A"}
-                      </span>
+                      <div className="flex flex-wrap gap-1">
+                        {env.cve.length > 0 ? (
+                          env.cve.map((cve, index) => (
+                            <span
+                              key={index}
+                              className="text-xs bg-slate-100 px-2 py-1 rounded whitespace-nowrap"
+                            >
+                              {cve}
+                            </span>
+                          ))
+                        ) : (
+                          <span className="text-xs bg-slate-100 px-2 py-1 rounded whitespace-nowrap">
+                            N/A
+                          </span>
+                        )}
+                      </div>
                       <span
                         className="text-slate-500"
                         title={env.date.format()}
