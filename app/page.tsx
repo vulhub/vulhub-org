@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Github, BookOpen, Shield, ArrowRight, Box, Bug } from "lucide-react";
+import { BookOpen, Shield, ArrowRight, Box, Bug } from "lucide-react";
 import { getLatestEnvironments, getAllEnvironments } from "@/lib/environments";
+import { Github } from "@/components/icons";
 
 export default function Home() {
   const environments = getAllEnvironments();
@@ -62,7 +63,7 @@ export default function Home() {
                     </span>
                     {"\n"}
                     <span className="text-emerald-400">
-                      git clone https://github.com/vulhub/vulhub.git
+                      git clone --depth 1 https://github.com/vulhub/vulhub.git
                     </span>
                     {"\n"}
                     {"\n"}

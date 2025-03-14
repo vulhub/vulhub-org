@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Github, Users, Award, Heart, Box, Bug, BookOpen } from "lucide-react";
+import { Users, Award, Heart, Box, Bug, BookOpen } from "lucide-react";
+import { Github } from "@/components/icons";
 
 export default function AboutPage() {
   return (

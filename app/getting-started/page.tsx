@@ -2,7 +2,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { AlertCircle, Info, ArrowRight, Github } from "lucide-react";
+import { AlertCircle, Info, ArrowRight } from "lucide-react";
+import { Github } from "@/components/icons";
 
 export default function GettingStartedPage() {
   return (
@@ -107,7 +108,9 @@ export default function GettingStartedPage() {
                 <div className="w-full">
                   <h3 className="font-medium">Clone the repository</h3>
                   <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-2 text-xs sm:text-sm overflow-x-auto whitespace-pre-wrap">
-                    <code>git clone https://github.com/vulhub/vulhub.git</code>
+                    <code>
+                      git clone --depth 1 https://github.com/vulhub/vulhub.git
+                    </code>
                   </pre>
                 </div>
               </li>
