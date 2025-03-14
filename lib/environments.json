@@ -854,7 +854,7 @@
       "date": "Wed Jan 6 02:27:19 2021 +0800"
     },
     {
-      "name": "GeoServer Unauthenticated SSRF Vulnerability",
+      "name": "GeoServer Unauthenticated Server-Side Request Forgery",
       "cve": [
         "CVE-2021-40822"
       ],
@@ -1182,14 +1182,14 @@
       "date": "Sun Feb 2 04:56:58 2025 +0800"
     },
     {
-      "name": "Apache HugeGraph JWT Token Secret Hardcoding Vulnerability",
+      "name": "Apache HugeGraph JWT Token Secret Hardcoding Leads to Authentication Bypass",
       "cve": [
         "CVE-2024-43441"
       ],
       "app": "Apache HugeGraph",
       "path": "hugegraph/CVE-2024-43441",
       "tags": [
-        "Web Application"
+        "Auth Bypass"
       ],
       "date": "Thu Feb 13 19:27:50 2025 +0800"
     },
@@ -1351,7 +1351,7 @@
       "date": "Sun Apr 14 01:17:57 2019 +0800"
     },
     {
-      "name": "Jenkins Arbitrary File Read Vulnerability Through the CLI",
+      "name": "Jenkins Arbitrary File Read Through the CLI",
       "cve": [
         "CVE-2024-23897"
       ],
@@ -1737,7 +1737,7 @@
       "date": "Sun Jan 5 03:19:59 2020 +0800"
     },
     {
-      "name": "MySQL Authentication Bypass Vulnerability",
+      "name": "MySQL Authentication Bypass",
       "cve": [
         "CVE-2012-2122"
       ],
@@ -1983,7 +1983,7 @@
       "date": "Sun Sep 8 20:31:56 2024 +0800"
     },
     {
-      "name": "Apache OFBiz SSRF and Remote Code Execution Vulnerability",
+      "name": "Apache OFBiz SSRF and Remote Code Execution",
       "cve": [
         "CVE-2024-45507"
       ],
@@ -2419,7 +2419,7 @@
       "date": "Fri Jun 2 22:12:22 2023 +0800"
     },
     {
-      "name": "Apache RocketMQ NameServer Arbitrary File Write Vulnerability",
+      "name": "Apache RocketMQ NameServer Arbitrary File Write",
       "cve": [
         "CVE-2023-37582"
       ],
@@ -2739,7 +2739,7 @@
       "date": "Thu Mar 31 21:21:23 2022 +0800"
     },
     {
-      "name": "Remote Code Execution Vulnerability due to Spring Framework Data Binding and JDK 9+",
+      "name": "Spring Framework Data Binding Remote Code Execution on JDK 9+",
       "cve": [
         "CVE-2022-22965"
       ],
