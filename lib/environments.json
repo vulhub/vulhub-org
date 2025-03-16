@@ -3130,6 +3130,20 @@
       "date": "Fri Feb 21 00:40:44 2020 +0800"
     },
     {
+      "name": "Tomcat Session Deserialization Remote Code Execution",
+      "cve": [
+        "CVE-2025-24813"
+      ],
+      "app": "Apache Tomcat",
+      "path": "tomcat/CVE-2025-24813",
+      "tags": [
+        "RCE",
+        "Deserialization",
+        "Web Server"
+      ],
+      "date": "Mon Mar 17 02:23:49 2025 +0800"
+    },
+    {
       "name": "Tomcat Weak Password",
       "cve": [],
       "app": "Apache Tomcat",
