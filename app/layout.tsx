@@ -5,6 +5,10 @@ import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import dayjs from "dayjs";
+import relativeTime from "dayjs/plugin/relativeTime";
+
+dayjs.extend(relativeTime);
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,7 +40,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" forcedTheme="light" enableSystem={false}>
+        <ThemeProvider
+          attribute="class"
+          forcedTheme="light"
+          enableSystem={false}
+        >
           <div className="flex flex-col min-h-screen">
             <Header />
             <main className="flex-grow">{children}</main>

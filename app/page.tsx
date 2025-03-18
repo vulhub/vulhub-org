@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { BookOpen, Shield, ArrowRight, Box, Bug } from "lucide-react";
 import { getLatestEnvironments, getAllEnvironments } from "@/lib/environments";
 import { Github } from "@/components/icons";
+import { RelativeTime } from "@/components/time";
+import dayjs from "dayjs";
 
 export default function Home() {
   const environments = getAllEnvironments();
@@ -163,12 +165,10 @@ export default function Home() {
                         </span>
                       ))}
                     </div>
-                    <span
-                      className="text-xs text-slate-500"
-                      title={env.date.format()}
-                    >
-                      Created {env.date.fromNow()}
-                    </span>
+                    <RelativeTime
+                      date={env.date}
+                      fallback={dayjs(env.date).fromNow()}
+                    />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{env.name}</h3>
                   <p className="text-slate-600">{`Explore the ${env.name} vulnerability and learn how to exploit it.`}</p>

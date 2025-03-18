@@ -7,6 +7,7 @@ import {
   searchEnvironments,
 } from "@/lib/environments";
 import { SearchForm } from "@/components/search";
+import { RelativeTime } from "@/components/time";
 
 export const runtime = "edge";
 
@@ -150,12 +151,10 @@ export default async function EnvironmentsPage({
                           <span className="text-xs bg-slate-100 px-2 py-1 rounded whitespace-nowrap">
                             {env.cve[0] || "N/A"}
                           </span>
-                          <span
-                            className="text-slate-500"
-                            title={env.date.format()}
-                          >
-                            Created {env.date.fromNow()}
-                          </span>
+                          <RelativeTime
+                            date={env.date}
+                            fallback={dayjs(env.date).fromNow()}
+                          />
                         </div>
                       </Link>
                     ))}
