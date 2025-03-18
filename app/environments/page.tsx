@@ -153,7 +153,6 @@ export default async function EnvironmentsPage({
                           </span>
                           <RelativeTime
                             date={env.date}
-                            fallback={dayjs(env.date).fromNow()}
                             className="text-slate-500"
                           />
                         </div>
