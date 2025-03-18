@@ -91,8 +91,20 @@ export default function GettingStartedPage() {
                 Verify that Docker is installed correctly:
               </p>
               <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-2 text-xs sm:text-sm overflow-x-auto w-full whitespace-pre-wrap">
-                <code>{`docker --version`}</code>
+                <code>{`docker version`}</code>
               </pre>
+
+              <p className="text-slate-600 mt-4">
+                Also verify that Docker Compose is available:
+              </p>
+              <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-2 text-xs sm:text-sm overflow-x-auto w-full whitespace-pre-wrap">
+                <code>{`docker compose version`}</code>
+              </pre>
+              <p className="text-yellow-700 mt-2">
+                If the compose command is not found, you may be using an older
+                version of Docker. Please upgrade to the latest version of
+                Docker which includes Docker Compose as a built-in command.
+              </p>
             </div>
           </TabsContent>
           <TabsContent
