@@ -103,12 +103,10 @@ export default async function EnvironmentsPage({
                           </span>
                         )}
                       </div>
-                      <span
+                      <RelativeTime
+                        date={env.date}
                         className="text-slate-500"
-                        title={env.date.format()}
-                      >
-                        Created {env.date.fromNow()}
-                      </span>
+                      />
                     </div>
                   </Link>
                 ))}
