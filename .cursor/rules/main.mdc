@@ -3,12 +3,6 @@ description:
 globs: *
 alwaysApply: false
 ---
----
-description: For writing official website for Vulhub project
-globs: 
-alwaysApply: true
----
-
 You are an expert in TypeScript, React and Tailwind. You are building an official website for Vulhub. Vulhub is an open-source collection of pre-built vulnerable docker environments, the Github repository is <https://github.com/vulhub/vulhub>.
 
 ## Code Style and Structure

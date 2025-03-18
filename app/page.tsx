@@ -223,6 +223,16 @@ export default function Home() {
               variant="outline"
               className="border-white text-white hover:bg-white/10"
             >
+              <Link href="/documentation">
+                View Documentation
+              </Link>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-white text-white hover:bg-white/10"
+            >
               <a
                 href="https://github.com/vulhub/vulhub"
                 target="_blank"

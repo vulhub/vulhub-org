@@ -1,0 +1,55 @@
+# Getting Started with Vulhub
+
+Vulhub is an open-source collection of pre-built vulnerable docker environments. This guide will help you get started with using Vulhub for your security research and education.
+
+## Prerequisites
+
+Before getting started with Vulhub, make sure you have the following installed:
+
+- [Docker](https://www.docker.com/get-started)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+- [Git](https://git-scm.com/downloads)
+
+## Installation
+
+To get started with Vulhub, follow these steps:
+
+```bash
+# Clone the repository
+git clone --depth 1 https://github.com/vulhub/vulhub.git
+
+# Enter the directory
+cd vulhub
+```
+
+## Using Vulnerable Environments
+
+Each vulnerability in Vulhub is stored in its own directory. To use a specific vulnerability environment:
+
+```bash
+# Navigate to the vulnerability directory
+cd vulhub/[application]/[vulnerability]
+
+# Start the environment
+docker compose up -d
+```
+
+## Example: Running a Spring Vulnerability
+
+```bash
+# Navigate to the Spring CVE-2022-22947 directory
+cd vulhub/spring/CVE-2022-22947
+
+# Start the environment
+docker compose up -d
+```
+
+## Cleaning Up
+
+When you're done with a vulnerability environment, you can stop and remove the containers:
+
+```bash
+docker compose down
+```
+
+For more information, visit the [Vulhub GitHub repository](https://github.com/vulhub/vulhub). 
