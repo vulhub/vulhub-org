@@ -154,6 +154,7 @@ export default async function EnvironmentsPage({
                           <RelativeTime
                             date={env.date}
                             fallback={dayjs(env.date).fromNow()}
+                            className="text-slate-500"
                           />
                         </div>
                       </Link>

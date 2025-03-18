@@ -9,9 +9,11 @@ dayjs.extend(relativeTime);
 export function RelativeTime({
   date,
   fallback,
+  className,
 }: {
   date: string;
   fallback: string;
+  className?: string;
 }) {
   const [relativeTime, setRelativeTime] = useState<string | null>(null);
 
@@ -20,7 +22,7 @@ export function RelativeTime({
   }, [date]);
 
   return (
-    <span className="text-slate-500" title={dayjs(date).format()}>
+    <span className={className} title={dayjs(date).format()}>
       Created {relativeTime || fallback}
     </span>
   );

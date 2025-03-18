@@ -168,6 +168,7 @@ export default function Home() {
                     <RelativeTime
                       date={env.date}
                       fallback={dayjs(env.date).fromNow()}
+                      className="text-slate-500 text-xs"
                     />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{env.name}</h3>
