@@ -3,6 +3,18 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Users, Award, Heart, Box, Bug, BookOpen } from "lucide-react";
 import { Github } from "@/components/icons";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Vulhub | Project History and Team",
+  description: "Learn about the Vulhub project, our mission, team members, and how to contribute to this open-source collection of vulnerable docker environments",
+  keywords: ["vulhub", "about", "team", "project history", "contribute", "open source", "security education"],
+  openGraph: {
+    title: "About the Vulhub Project",
+    description: "The story behind Vulhub and the team that makes it possible",
+    type: "website",
+  },
+};
 
 export default function AboutPage() {
   return (

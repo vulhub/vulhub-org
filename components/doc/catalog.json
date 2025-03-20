@@ -1,14 +1,20 @@
 [
     {
         "title": "Getting Started",
-        "slug": "getting-started"
+        "slug": "getting-started",
+        "description": "Learn how to get started with Vulhub, an open-source collection of pre-built vulnerable docker environments",
+        "keywords": ["vulhub", "docker", "security", "getting started", "installation"]
     },
     {
         "title": "Contributing",
-        "slug": "contributing"
+        "slug": "contributing",
+        "description": "How to contribute to the Vulhub project and help build vulnerable docker environments",
+        "keywords": ["contribute", "development", "pull request", "vulnerability", "docker"]
     },
     {
         "title": "FAQ",
-        "slug": "faq"
+        "slug": "faq",
+        "description": "Frequently asked questions about using Vulhub and working with vulnerable docker environments",
+        "keywords": ["faq", "help", "questions", "troubleshooting", "docker", "vulnerability"]
     }
 ]

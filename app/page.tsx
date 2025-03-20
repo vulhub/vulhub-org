@@ -4,7 +4,19 @@ import { BookOpen, Shield, ArrowRight, Box, Bug } from "lucide-react";
 import { getLatestEnvironments, getAllEnvironments } from "@/lib/environments";
 import { Github } from "@/components/icons";
 import { RelativeTime } from "@/components/time";
+import { Metadata } from "next";
 import dayjs from "dayjs";
+
+export const metadata: Metadata = {
+  title: "Vulhub - Open-Source Vulnerable Docker Environments",
+  description: "Vulhub is an open-source collection of pre-built vulnerable docker environments for security researchers, penetration testers, and educators",
+  keywords: ["vulhub", "docker", "security", "vulnerability", "CVE", "penetration testing", "cybersecurity"],
+  openGraph: {
+    title: "Vulhub - Vulnerable Docker Environments",
+    description: "A collection of pre-built vulnerable docker environments for security research and education",
+    type: "website",
+  },
+};
 
 export default function Home() {
   const environments = getAllEnvironments();

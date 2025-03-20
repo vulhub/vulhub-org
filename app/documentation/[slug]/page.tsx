@@ -1,10 +1,38 @@
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 import catalog from "@/components/doc/catalog";
 
 export function generateStaticParams() {
   return catalog.map((item) => ({ slug: item.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const { slug } = params;
+  const document = catalog.find((doc) => doc.slug === slug);
+
+  if (!document) {
+    return {
+      title: "Document Not Found",
+      description: "The requested documentation page could not be found",
+    };
+  }
+
+  return {
+    title: `${document.title} | Vulhub Documentation`,
+    description: document.description || `Documentation about ${document.title} for Vulhub - an open-source collection of pre-built vulnerable docker environments`,
+    keywords: document.keywords || ["vulhub", "documentation", "security", "docker", "vulnerability"],
+    openGraph: {
+      title: `${document.title} | Vulhub Documentation`,
+      description: document.description || `Documentation about ${document.title} for Vulhub`,
+      type: "article",
+    },
+  };
 }
 
 export default async function DocumentPage({

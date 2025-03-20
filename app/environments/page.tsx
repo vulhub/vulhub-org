@@ -8,6 +8,18 @@ import {
 } from "@/lib/environments";
 import { SearchForm } from "@/components/search";
 import { RelativeTime } from "@/components/time";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Vulnerable Environments | Vulhub",
+  description: "Browse our collection of pre-built vulnerable environments for security research and education, organized by technology and vulnerability type",
+  keywords: ["vulhub", "docker", "security", "vulnerable environments", "CVE", "exploits", "security research"],
+  openGraph: {
+    title: "Explore Vulnerable Environments - Vulhub",
+    description: "Search and browse vulnerable docker environments for security practice and education",
+    type: "website",
+  },
+};
 
 export const runtime = "edge";
 

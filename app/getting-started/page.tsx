@@ -3,7 +3,19 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AlertCircle, Info, ArrowRight } from "lucide-react";
+import { Metadata } from "next";
 import { Github } from "@/components/icons";
+
+export const metadata: Metadata = {
+  title: "Getting Started | Vulhub",
+  description: "Learn how to set up and run your first vulnerable environment with Vulhub, an open-source collection of pre-built vulnerable docker environments",
+  keywords: ["vulhub", "docker", "security", "installation", "setup", "vulnerable environments", "cybersecurity"],
+  openGraph: {
+    title: "Getting Started with Vulhub",
+    description: "Quick guide to setting up and running vulnerable environments with Vulhub",
+    type: "article",
+  },
+};
 
 export default function GettingStartedPage() {
   return (
