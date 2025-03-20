@@ -62,7 +62,7 @@ export default async function DocumentPage({
 
     return (
       <div className="max-w-4xl mx-auto">
-        <article className="prose prose-slate max-w-none prose-p:text-lg prose-p:text-slate-600">
+        <article className="prose prose-slate max-w-none prose-p:text-lg prose-p:text-slate-600 prose-li:text-lg">
           <Post />
         </article>
 
