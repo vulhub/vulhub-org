@@ -11,29 +11,90 @@ There are several ways you can contribute to Vulhub:
 3. **Enhancing documentation**
 4. **Reporting bugs**
 
-## Guidelines for Adding New Environments
+## Project Structure
 
-When adding a new vulnerable environment, please follow these guidelines:
+**base/** directory contains the Dockerfile and related files for all vulnerability environments.
 
-- Each environment should be in its own directory
-- Include a detailed README.md with:
-  - Description of the vulnerability
-  - Steps to reproduce
-  - References to CVEs or other sources
-- Make sure the environment is reproducible using Docker Compose
+For example, [base/activemq/5.17.3/Dockerfile](https://github.com/vulhub/vulhub/blob/master/base/activemq/5.17.3/Dockerfile) is the Dockerfile for ActiveMQ version 5.17.3. By compiling this Dockerfile, you can obtain an Apache ActiveMQ service of version 5.17.3 for use in subsequent vulnerability environments.
 
-## Pull Request Process
+**[software name]/[vulnerability ID or name]** directories are used to store vulnerability docker-compose.yml files and related descriptions of the corresponding vulnerabilities.
 
-1. Fork the repository
-2. Create a new branch for your changes
-3. Make your changes
-4. Test your environment thoroughly
-5. Submit a pull request
+For example, [activemq/CVE-2023-46604](https://github.com/vulhub/vulhub/tree/master/activemq/CVE-2023-46604) contains all files related to the CVE-2023-46604 vulnerability, including the docker-compose.yml file for the vulnerability environment, README.md is the English manual, README.zh-cn.md is the Chinese manual, and some POC scripts needed to reproduce the vulnerability.
 
-## Code of Conduct
+## Adding a New Vulnerable Environment
 
-Please follow our code of conduct when contributing to the project. Be respectful and considerate of other contributors.
+When adding a new vulnerable environment, please follow this steps:
 
-## Need Help?
+1. Create a new directory in the **base/[software name]/[version]** directory to store the Dockerfile and related files for the new vulnerable environment.
+2. Write the Dockerfile in this directory.
+3. Create a new directory in the **[software name]/[vulnerability ID or name]** directory to store the docker-compose.yml file and related files for the new vulnerable environment.
+4. Write the docker-compose.yml file in this directory.
+5. Write the README.md document to describe how to reproduce the vulnerability in English.
+6. Write the README.zh-cn.md document to describe how to reproduce the vulnerability in Chinese. (optional if you don't know understand the Chinese)
+7. If there are some POC scripts or other related files needed to reproduce the vulnerability, you can put them in the same directory as the README.md file.
 
-If you need help with contributing, please open an issue on GitHub or reach out to the maintainers. 
+## Vulnerability Document Format
+
+Please refer to the following steps to write the vulnerability document:
+
+1.  Vulnerability Title. If the vulnerability has a CVE ID, it needs to be referenced in the title in parentheses.
+2.  Chinese Translation Link. If the document is an English README.md, a hyperlink to the Chinese README.zh-cn.md should be added.
+3.  Vulnerability Component Description. Use one or two sentences to introduce the component (or software) affected by the current vulnerability.
+4.  Vulnerability Description. Use a paragraph to describe the principle of the vulnerability, the affected version number, and the harm that attackers can cause by using the vulnerability.
+5.  Reference Links. List no more than 5 reference links.
+6.  How to Start the Vulnerability Environment. Describe how to start the vulnerability environment and how users can access the environment after it is started.
+7.  Vulnerability Reproduction Steps. At least one image needs to be used to mark some important steps.
+8.  Proof of Successful Vulnerability Exploitation.
+
+After reading the document, users can use the docker compose command on their own computers to start the environment with the vulnerability and refer to the README to reproduce the vulnerability and learn the principle of the vulnerability.
+
+A complete document format is as follows:
+
+````
+# Title (CVE ID if exist)
+
+Link to Chinese README
+
+Example is a ...
+
+description of the issue...
+
+References:
+
+- link1
+- link2
+- ...
+
+## Environment Setup
+
+Execute the following command to start a Example server v1.2.3:
+
+```
+docker compose up -d
+```
+
+After the server starts, ...
+
+## Vulnerability Reproduction
+
+...
+
+(Describe the steps to reproduce the vulnerability using natural language, do not use list)
+````
+
+Below are some well-written examples from the Vulhub project. Please study and refer to them:
+
+- [Struts2 S2-067 Upload Path Traversal (CVE-2024-53677)](https://github.com/vulhub/vulhub/tree/master/struts2/s2-067)
+- [Kibana Local File Inclusion (CVE-2018-17246)](https://github.com/vulhub/vulhub/tree/master/kibana/CVE-2018-17246)
+- [Magento 2.2 SQL Injection](https://github.com/vulhub/vulhub/tree/master/magento/2.2-sqli)
+- [XXL-JOB Executor Unauthorized Access](https://github.com/vulhub/vulhub/tree/master/xxl-job/unacc)
+- [CraftCMS `register_argc_argv` Leads to Remote Code Execution (CVE-2024-56145)](https://github.com/vulhub/vulhub/tree/master/craftcms/CVE-2024-56145)
+
+All vulnerability documents must be bilingual, with the English document in the README.md file and the Chinese document in the README.zh-cn.md file. Other language documents are not included for the time being.
+
+When writing the document, you need to pay attention to the following and write it correctly:
+
+- When describing vulnerabilities, describe the range of software versions affected by the vulnerability as much as possible.
+- All hyperlinks in the document should be wrapped in ``<>`` or `[]()`.
+- When describing the vulnerability reproduction steps, use natural language, do not use lists.
+- In the English document, a link to the Chinese document needs to be inserted below the title; however, in the Chinese document, there is no need to insert a link to the English document.
