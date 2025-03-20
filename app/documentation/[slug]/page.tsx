@@ -11,9 +11,9 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = params;
+  const { slug } = await params;
   const document = catalog.find((doc) => doc.slug === slug);
 
   if (!document) {
@@ -61,8 +61,8 @@ export default async function DocumentPage({
         : null;
 
     return (
-      <div className="max-w-3xl mx-auto">
-        <article className="prose prose-slate max-w-none">
+      <div className="max-w-4xl mx-auto">
+        <article className="prose prose-slate max-w-none prose-p:text-lg prose-p:text-slate-600">
           <Post />
         </article>
 

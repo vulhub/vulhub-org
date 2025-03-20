@@ -22,7 +22,7 @@ export default function AboutPage() {
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl font-bold mb-6">About Vulhub</h1>
 
-        <div className="prose max-w-none">
+        <div className="max-w-none">
           <p className="text-lg text-slate-600 mb-8">
             Vulhub is an open-source collection of pre-built vulnerable docker
             environments. It's designed to be an easy-to-use platform for
