@@ -1,0 +1,103 @@
+# Getting Started with Vulhub
+
+Vulhub is an open-source collection of pre-built vulnerable docker environments. This guide will help you get started with using Vulhub for your security research and education.
+
+## Prerequisites
+
+Before getting started with Vulhub, make sure you have the following installed:
+
+- [Docker](https://www.docker.com/get-started)
+- [Git](https://git-scm.com/downloads)
+
+## Installation
+
+To get started with Vulhub, follow these steps:
+
+```bash
+# Clone the repository
+git clone --depth 1 https://github.com/vulhub/vulhub.git
+
+# Enter the directory
+cd vulhub
+```
+
+## Using Vulnerable Environments
+
+Each vulnerability in Vulhub is stored in its own directory. To use a specific vulnerability environment:
+
+```bash
+# Navigate to the vulnerability directory
+cd vulhub/[application]/[vulnerability]
+
+# Start the environment
+docker compose up -d
+```
+
+### Example: Running a Spring Vulnerability
+
+For example, to run the Spring CVE-2022-22947 vulnerability environment, navigate to the directory and start the environment:
+
+```bash
+# Navigate to the Spring CVE-2022-22947 directory
+cd vulhub/spring/CVE-2022-22947
+
+# Start the environment
+docker compose up -d
+```
+
+## Common Useful Commands
+
+Here are some essential Docker operations you'll need when working with Vulhub vulnerability environments:
+
+### Checking Environment Status
+
+Check if the vulnerable application is running properly:
+
+```bash
+docker compose ps
+```
+
+This shows you the status of all containers in the current vulnerability environment, including port mappings that you'll need to access the vulnerable service.
+
+### Accessing a Container's Shell
+
+For deeper investigation or to modify the vulnerable environment, you can enter the container's shell:
+
+```bash
+# Enter the container's shell
+docker compose exec [container_name] bash
+```
+
+### Viewing Application Logs
+
+Monitor application behavior during exploitation attempts:
+
+```bash
+# View real-time logs of the vulnerable application
+docker compose logs -f
+
+# View logs from a specific container
+docker compose logs [container_name]
+```
+
+### Examining Web Server or Application Config
+
+Inspect configuration files inside the container:
+
+```bash
+# Example: checking Apache config in a web container
+docker compose exec web cat /etc/apache2/apache2.conf
+
+# Example: viewing PHP configuration
+docker compose exec web php -i
+```
+
+These operations will help you interact with the vulnerable environments, understand how they're configured, and assist in your exploitation and testing processes.
+
+### Cleaning Up
+
+When you're done with a vulnerability environment, you can stop and remove the containers:
+
+```bash
+docker compose down -v
+```

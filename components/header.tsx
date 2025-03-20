@@ -46,6 +46,12 @@ export function Header() {
             >
               Environments
             </Link>
+            <Link
+              href="/documentation/getting-started"
+              className="text-slate-600 hover:text-slate-900"
+            >
+              Documentation
+            </Link>
             <Link href="/about" className="text-slate-600 hover:text-slate-900">
               About
             </Link>
@@ -102,6 +108,12 @@ export function Header() {
               className="block text-slate-600 hover:text-slate-900 py-2"
             >
               Environments
+            </Link>
+            <Link
+              href="/documentation/getting-started"
+              className="block text-slate-600 hover:text-slate-900 py-2"
+            >
+              Documentation
             </Link>
             <Link
               href="/about"

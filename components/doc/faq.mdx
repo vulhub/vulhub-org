@@ -1,0 +1,84 @@
+# Frequently Asked Questions
+
+Below are some common questions about Vulhub and their answers.
+
+## Network Issues
+
+### Why do I experience timeouts or errors when installing Docker or pulling vulnerability environments?
+
+If you're located in mainland China, you may experience network limitations due to the Great Firewall (GFW). This can affect Docker installations and image downloads.
+
+**Solutions:**
+
+- Use a VPS or cloud server located outside mainland China
+- Use China-based Docker registry mirrors
+
+## Architecture Compatibility Issues
+
+### Why do I get errors when running Vulhub on Apple Silicon (M1+) Macs?
+
+Most Vulhub environments are built for x86 architecture and won't run natively on ARM-based machines like Apple Silicon Macs.
+
+**Solutions:**
+
+Set the Docker platform environment variable before using the Docker compose command:
+
+```bash
+# Set the platform to x86_64
+export DOCKER_DEFAULT_PLATFORM=linux/amd64
+
+# Start the environment
+docker compose up -d
+```
+
+Alternatively, you can add the platform specification in your docker-compose.yml files:
+
+```yaml
+services:
+  service-name:
+    image: image-name
+    platform: linux/amd64
+```
+
+For more information, please refer to [this issue](https://github.com/vulhub/vulhub/issues/478).
+
+## System Configuration Issues
+
+### Why can't I start some environments on Kali Linux?
+
+Some environments may fail to start on Kali Linux due to system limitations with error messages like "too many open files" or similar resource exhaustion errors.
+
+**What is ulimit?**
+
+`ulimit` is a Linux system command and shell built-in that controls the resources available to the shell and processes started by it. It sets or reports user process resource limits, including the maximum number of open files a process can have.
+
+**Solution:**
+
+The simplest solution is to modify the Docker daemon configuration to increase the default ulimit:
+
+1. Edit the Docker daemon configuration file:
+
+```bash
+sudo nano /etc/docker/daemon.json
+```
+
+2. Add or modify the file to include the default-ulimit parameter:
+
+```json
+{
+  "default-ulimit": "nofile=65535:65535"
+}
+```
+
+3. Restart the Docker service:
+
+```bash
+sudo systemctl restart docker
+```
+
+After these changes, you should be able to run Vulhub environments without hitting resource limits.
+
+## Additional Help
+
+If you encounter other issues not mentioned here, please [submit an issue](https://github.com/vulhub/vulhub/issues) on the Vulhub GitHub repository.
+
