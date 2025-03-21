@@ -7,9 +7,9 @@ export default {
   navigation: {
     home: "首页",
     gettingStarted: "入门指南",
-    environments: "漏洞环境",
-    documentation: "文档",
-    about: "关于",
+    environments: "环境列表",
+    documentation: "文档中心",
+    about: "关于我们",
     github: "GitHub",
     languageSwitcher: "切换语言"
   },
@@ -18,11 +18,11 @@ export default {
     resources: "资源",
     allEnvironments: "所有环境",
     gettingStarted: "入门指南",
-    githubRepo: "GitHub仓库",
+    githubRepo: "GitHub 仓库",
     about: "关于",
-    aboutVulhub: "关于Vulhub",
+    aboutVulhub: "关于 Vulhub",
     contributors: "贡献者",
-    mitLicense: "MIT许可证",
+    mitLicense: "MIT 许可证",
     contact: "联系我们",
   },
   
@@ -253,6 +253,18 @@ export default {
     license: {
       title: "许可证",
       description: "Vulhub根据MIT许可证发布。这意味着您可以自由使用、修改和分发该项目，只要您包含原始版权声明。",
+    }
+  },
+  
+  // Documentation
+  documentation: {
+    title: "文档中心",
+    previous: "上一篇",
+    next: "下一篇",
+    redirecting: "重定向中...",
+    notFound: {
+      title: "文档未找到",
+      description: "请求的文档页面无法找到"
     }
   }
 } as const;

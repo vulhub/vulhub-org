@@ -26,6 +26,18 @@ export default {
     contact: "Contact",
   },
   
+  // Documentation
+  documentation: {
+    title: "Documentation",
+    previous: "Previous",
+    next: "Next",
+    redirecting: "Redirecting...",
+    notFound: {
+      title: "Document Not Found",
+      description: "The requested documentation page could not be found"
+    }
+  },
+  
   // Homepage
   title: "Vulhub - Open-Source Vulnerable Docker Environments",
   subtitle: "Vulhub is an open-source collection of pre-built vulnerable docker environments for security researchers and educators.",

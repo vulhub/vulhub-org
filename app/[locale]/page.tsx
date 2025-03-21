@@ -227,7 +227,7 @@ export default async function Home() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button asChild size="lg" variant="secondary">
-              <Link href="/documentation/getting-started">{t('cta.getStarted')}</Link>
+              <Link href="/getting-started">{t('cta.getStarted')}</Link>
             </Button>
             <Button
               asChild
