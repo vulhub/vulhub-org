@@ -3,6 +3,29 @@ export default {
   "hello.world": "Hello world!",
   welcome: "Hello {name}!",
   
+  // Common UI elements
+  navigation: {
+    home: "Home",
+    gettingStarted: "Getting Started",
+    environments: "Environments",
+    documentation: "Documentation",
+    about: "About",
+    github: "GitHub",
+    languageSwitcher: "Change language"
+  },
+
+  footer: {
+    resources: "Resources",
+    allEnvironments: "All Environments",
+    gettingStarted: "Getting Started",
+    githubRepo: "GitHub Repository",
+    about: "About",
+    aboutVulhub: "About Vulhub",
+    contributors: "Contributors",
+    mitLicense: "MIT License",
+    contact: "Contact",
+  },
+  
   // Homepage
   title: "Vulhub - Open-Source Vulnerable Docker Environments",
   subtitle: "Vulhub is an open-source collection of pre-built vulnerable docker environments for security researchers and educators.",

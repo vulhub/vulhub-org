@@ -1,8 +1,12 @@
 import Link from "next/link";
 import { Globe } from "lucide-react";
 import { Github, Twitter } from "@/components/icons";
+import { getI18n } from "@/locales/server";
 
-export function Footer() {
+export async function Footer() {
+  const t = await getI18n();
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-slate-900 text-white">
       <div className="container mx-auto px-4 py-12">
@@ -10,8 +14,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <h2 className="text-xl font-bold mb-4">Vulhub</h2>
             <p className="text-slate-300 mb-4">
-              An open-source collection of pre-built vulnerable docker
-              environments for security researchers and educators.
+              {t('subtitle')}
             </p>
             <div className="flex space-x-4">
               <a
@@ -41,14 +44,14 @@ export function Footer() {
             </div>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Resources</h3>
+            <h3 className="text-lg font-semibold mb-4">{t('footer.resources')}</h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/environments"
                   className="text-slate-300 hover:text-white"
                 >
-                  All Environments
+                  {t('footer.allEnvironments')}
                 </Link>
               </li>
               <li>
@@ -56,7 +59,7 @@ export function Footer() {
                   href="/getting-started"
                   className="text-slate-300 hover:text-white"
                 >
-                  Getting Started
+                  {t('footer.gettingStarted')}
                 </Link>
               </li>
               <li>
@@ -66,17 +69,17 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="text-slate-300 hover:text-white"
                 >
-                  GitHub Repository
+                  {t('footer.githubRepo')}
                 </a>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">About</h3>
+            <h3 className="text-lg font-semibold mb-4">{t('footer.about')}</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/about" className="text-slate-300 hover:text-white">
-                  About Vulhub
+                  {t('footer.aboutVulhub')}
                 </Link>
               </li>
               <li>
@@ -85,7 +88,7 @@ export function Footer() {
                   target="_blank"
                   className="text-slate-300 hover:text-white"
                 >
-                  Contributors
+                  {t('footer.contributors')}
                 </Link>
               </li>
               <li>
@@ -94,7 +97,7 @@ export function Footer() {
                   target="_blank"
                   className="text-slate-300 hover:text-white"
                 >
-                  MIT License
+                  {t('footer.mitLicense')}
                 </Link>
               </li>
               <li>
@@ -103,7 +106,7 @@ export function Footer() {
                   target="_blank"
                   className="text-slate-300 hover:text-white"
                 >
-                  Contact
+                  {t('footer.contact')}
                 </Link>
               </li>
             </ul>

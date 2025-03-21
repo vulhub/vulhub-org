@@ -3,6 +3,29 @@ export default {
   "hello.world": "你好，世界！",
   welcome: "你好，{name}！",
   
+  // 通用UI元素
+  navigation: {
+    home: "首页",
+    gettingStarted: "入门指南",
+    environments: "漏洞环境",
+    documentation: "文档",
+    about: "关于",
+    github: "GitHub",
+    languageSwitcher: "切换语言"
+  },
+
+  footer: {
+    resources: "资源",
+    allEnvironments: "所有环境",
+    gettingStarted: "入门指南",
+    githubRepo: "GitHub仓库",
+    about: "关于",
+    aboutVulhub: "关于Vulhub",
+    contributors: "贡献者",
+    mitLicense: "MIT许可证",
+    contact: "联系我们",
+  },
+  
   // 首页
   title: "Vulhub - 开源的漏洞Docker环境",
   subtitle: "Vulhub是一个面向安全研究人员和教育工作者的开源预构建漏洞Docker环境集合。",
