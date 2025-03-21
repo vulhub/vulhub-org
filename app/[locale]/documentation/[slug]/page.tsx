@@ -3,29 +3,22 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import catalogByLocale from "@/components/doc/catalog";
-import { getI18n, getCurrentLocale } from "@/locales/server";
+import { getI18n, getCurrentLocale, getStaticParams } from "@/locales/server";
+import { setStaticParamsLocale } from 'next-international/server'
 
 type Props = {
   params: Promise<{ slug: string; locale: string }>;
 };
 
 export function generateStaticParams() {
-  // Generate paths for all locales and slugs
-  const params: { locale: string; slug: string }[] = [];
-  
-  Object.entries(catalogByLocale).forEach(([locale, catalog]) => {
-    catalog.forEach((item) => {
-      params.push({ locale, slug: item.slug });
-    });
-  });
-  
-  return params;
+  return getStaticParams();
 }
 
 export async function generateMetadata({
   params,
 }: Props): Promise<Metadata> {
   const { slug, locale } = await params;
+  setStaticParamsLocale(locale);
   const catalog = catalogByLocale[locale as "en" | "zh"];
   const document = catalog.find((doc) => doc.slug === slug);
   const t = await getI18n();
