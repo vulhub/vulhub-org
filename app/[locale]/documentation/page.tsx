@@ -1,12 +1,11 @@
 import { redirect } from "next/navigation";
 import { Metadata } from "next";
 import { getI18n } from "@/locales/server";
+import { getCurrentLocale } from "@/locales/server";
 
-type Props = {
-  params: { locale: string };
-};
+export const runtime = 'edge';
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> {
   const t = await getI18n();
   
   return {
@@ -21,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function DocumentationPage({ params }: Props) {
-  const { locale } = params;
+export default function DocumentationPage() {
+  const locale = getCurrentLocale();
   redirect(`/${locale}/documentation/getting-started`);
 }

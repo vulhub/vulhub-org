@@ -7,6 +7,8 @@ import { Metadata } from "next";
 import { getI18n } from "@/locales/server";
 import { Github } from "@/components/icons";
 
+export const runtime = 'edge';
+
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getI18n();
   
