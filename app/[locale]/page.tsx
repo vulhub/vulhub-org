@@ -7,6 +7,8 @@ import { RelativeTime } from "@/components/time";
 import { Metadata } from "next";
 import { getI18n } from '@/locales/server';
 
+export const runtime = 'edge';
+
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getI18n();
   
