@@ -205,13 +205,13 @@ export default async function GettingStartedPage() {
               </p>
               <div className="space-y-3">
                 <div className="w-full">
-                  <h4 className="text-sm font-medium">{t('gettingStarted.advanced.managing.stop')}</h4>
+                  <h4 className="font-medium">{t('gettingStarted.advanced.managing.stop')}</h4>
                   <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-1 text-xs sm:text-sm overflow-x-auto whitespace-pre-wrap">
                     <code>docker compose down -v</code>
                   </pre>
                 </div>
                 <div className="w-full">
-                  <h4 className="text-sm font-medium">
+                  <h4 className="font-medium">
                     {t('gettingStarted.advanced.managing.rebuild')}
                   </h4>
                   <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-1 text-xs sm:text-sm overflow-x-auto whitespace-pre-wrap">
@@ -219,13 +219,13 @@ export default async function GettingStartedPage() {
                   </pre>
                 </div>
                 <div className="w-full">
-                  <h4 className="text-sm font-medium">{t('gettingStarted.advanced.managing.logs')}</h4>
+                  <h4 className="font-medium">{t('gettingStarted.advanced.managing.logs')}</h4>
                   <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-1 text-xs sm:text-sm overflow-x-auto whitespace-pre-wrap">
                     <code>docker compose logs -f</code>
                   </pre>
                 </div>
                 <div className="w-full">
-                  <h4 className="text-sm font-medium">
+                  <h4 className="font-medium">
                     {t('gettingStarted.advanced.managing.shell')}
                   </h4>
                   <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-1 text-xs sm:text-sm overflow-x-auto whitespace-pre-wrap">

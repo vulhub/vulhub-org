@@ -29,27 +29,27 @@ export default {
   // 首页
   title: "Vulhub - 开源的漏洞Docker环境",
   subtitle: "Vulhub是一个面向安全研究人员和教育工作者的开源预构建漏洞Docker环境集合。",
-  exploreEnvironments: "探索环境",
+  exploreEnvironments: "所有环境",
   github: "GitHub",
   stats: {
-    stars: "18.4k+ 星标",
-    forks: "4.5k+ 复刻",
+    stars: "18.4k+ Stars",
+    forks: "4.5k+ Forks",
     environments: "{count} 个环境"
   },
   codeSnippet: {
     cloneRepo: "# 克隆仓库",
-    enterDir: "# 进入目录",
+    enterDir: "# 进入任何一个漏洞目录",
     startEnv: "# 启动环境"
   },
   whyUseVulhub: "为什么使用Vulhub？",
   features: {
     dockerBased: {
       title: "基于Docker",
-      description: "所有环境都是用Docker和Docker Compose构建的，使其易于部署和隔离。"
+      description: "所有环境都是基于Docker和Docker Compose构建，使其易于部署和隔离测试。"
     },
     realVulnerabilities: {
       title: "真实漏洞",
-      description: "在安全、受控的环境中练习真实世界的漏洞，用于学习和研究。"
+      description: "在安全、受控的环境中学习和研究真实世界的漏洞。"
     },
     wellDocumented: {
       title: "详尽文档",
@@ -73,7 +73,7 @@ export default {
   // 入门页面
   gettingStarted: {
     title: "Vulhub入门指南",
-    description: "按照本指南设置并运行您的第一个Vulhub漏洞环境。所有环境都使用Docker容器化，使其易于部署和隔离。",
+    description: "按照本指南设置并运行您的第一个Vulhub漏洞环境。所有环境都使用Docker容器化，使其易于部署和隔离测试。",
     meta: {
       title: "入门指南 | Vulhub",
       description: "学习如何使用Vulhub设置和运行您的第一个漏洞环境，Vulhub是一个开源的预构建漏洞Docker环境集合"
@@ -211,11 +211,11 @@ export default {
       title: "主要特点",
       dockerBased: {
         title: "基于Docker",
-        description: "所有环境都是用Docker和Docker Compose构建的，使其易于部署和隔离。"
+        description: "所有环境都是基于Docker和Docker Compose构建，使其易于部署和隔离测试。"
       },
       realVulnerabilities: {
         title: "真实漏洞",
-        description: "在安全、受控的环境中练习真实世界的漏洞，用于学习和研究。"
+        description: "在安全、受控的环境中学习和研究真实世界的漏洞。"
       },
       wellDocumented: {
         title: "详尽文档",
