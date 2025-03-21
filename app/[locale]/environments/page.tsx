@@ -9,27 +9,35 @@ import {
 import { SearchForm } from "@/components/search";
 import { RelativeTime } from "@/components/time";
 import { Metadata } from "next";
+import { getI18n } from "@/locales/server";
 
-export const metadata: Metadata = {
-  title: "Vulnerable Environments | Vulhub",
-  description: "Browse our collection of pre-built vulnerable environments for security research and education, organized by technology and vulnerability type",
-  keywords: ["vulhub", "docker", "security", "vulnerable environments", "CVE", "exploits", "security research"],
-  openGraph: {
-    title: "Explore Vulnerable Environments - Vulhub",
-    description: "Search and browse vulnerable docker environments for security practice and education",
-    type: "website",
-  },
-};
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getI18n();
+  
+  return {
+    title: t('environments.meta.title'),
+    description: t('environments.meta.description'),
+    keywords: ["vulhub", "docker", "security", "vulnerable environments", "CVE", "exploits", "security research"],
+    openGraph: {
+      title: t('environments.meta.title'),
+      description: t('environments.meta.description'),
+      type: "website",
+    },
+  };
+}
 
 export const runtime = "edge";
 
 export default async function EnvironmentsPage({
   searchParams,
+  params: { locale },
 }: {
   searchParams: Promise<{ q?: string; tag?: string }>;
+  params: { locale: string };
 }) {
   const { q = "", tag = "all" } = await searchParams;
   const allTags = getAllTags();
+  const t = await getI18n();
 
   const shouldGroupByTag = !q && tag === "all";
   const filteredEnvironments = shouldGroupByTag
@@ -39,11 +47,9 @@ export default async function EnvironmentsPage({
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl font-bold mb-6">Vulnerable Environments</h1>
+        <h1 className="text-3xl font-bold mb-6">{t('environments.title')}</h1>
         <p className="text-slate-600 mb-8">
-          Browse our collection of pre-built vulnerable environments for
-          security research and education. Each environment is containerized
-          with Docker and comes with detailed documentation.
+          {t('environments.description')}
         </p>
 
         <SearchForm
@@ -55,18 +61,18 @@ export default async function EnvironmentsPage({
         {!shouldGroupByTag && (
           <div className="space-y-6">
             <h2 className="text-2xl font-semibold">
-              {filteredEnvironments.length} Results
-              {q && <span> for "{q}"</span>}
-              {tag !== "all" && <span> in {tag}</span>}
+              {t('environments.results.count', { count: filteredEnvironments.length })}
+              {q && <span> {t('environments.results.for')} "{q}"</span>}
+              {tag !== "all" && <span> {t('environments.results.in')} {tag}</span>}
             </h2>
 
             {filteredEnvironments.length === 0 ? (
               <div className="text-center py-12">
                 <p className="text-slate-500">
-                  No environments found matching your criteria.
+                  {t('environments.results.noResults')}
                 </p>
                 <Button variant="link" asChild>
-                  <Link href="/environments">Clear filters</Link>
+                  <Link href="/environments">{t('environments.results.clearFilters')}</Link>
                 </Button>
               </div>
             ) : (
@@ -89,14 +95,13 @@ export default async function EnvironmentsPage({
                       ))}
                       {env.tags.length > 3 && (
                         <span className="text-slate-500 text-xs">
-                          +{env.tags.length - 3} more
+                          {t('environments.results.moreTag', { count: env.tags.length - 3 })}
                         </span>
                       )}
                     </div>
                     <h3 className="font-medium">{env.name}</h3>
                     <p className="text-sm text-slate-600 mb-3">
-                      Explore the {env.name} vulnerability and learn how to
-                      exploit it.
+                      {t('environmentCard.exploreAndLearn', { name: env.name })}
                     </p>
                     <div className="flex flex-wrap items-center justify-between gap-1 text-xs mt-auto">
                       <div className="flex flex-wrap gap-1">
@@ -111,7 +116,7 @@ export default async function EnvironmentsPage({
                           ))
                         ) : (
                           <span className="text-xs bg-slate-100 px-2 py-1 rounded whitespace-nowrap">
-                            N/A
+                            {t('environmentCard.na')}
                           </span>
                         )}
                       </div>
@@ -154,12 +159,11 @@ export default async function EnvironmentsPage({
                         </div>
                         <h3 className="font-medium">{env.name}</h3>
                         <p className="text-sm text-slate-600 mb-3">
-                          Explore the {env.name} vulnerability and learn how to
-                          exploit it.
+                          {t('environmentCard.exploreAndLearn', { name: env.name })}
                         </p>
                         <div className="flex flex-wrap items-center justify-between gap-1 text-xs mt-auto">
                           <span className="text-xs bg-slate-100 px-2 py-1 rounded whitespace-nowrap">
-                            {env.cve[0] || "N/A"}
+                            {env.cve[0] || t('environmentCard.na')}
                           </span>
                           <RelativeTime
                             date={env.date}
@@ -175,7 +179,7 @@ export default async function EnvironmentsPage({
                         <Link
                           href={`/environments?tag=${encodeURIComponent(tag)}`}
                         >
-                          View all {environments.length} {tag} environments
+                          {t('environments.viewAll', { count: environments.length, tag })}
                         </Link>
                       </Button>
                     </div>

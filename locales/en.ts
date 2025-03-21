@@ -1,8 +1,4 @@
 export default {
-  hello: "Hello",
-  "hello.world": "Hello world!",
-  welcome: "Hello {name}!",
-  
   // Homepage
   title: "Vulhub - Open-Source Vulnerable Docker Environments",
   subtitle: "Vulhub is an open-source collection of pre-built vulnerable docker environments for security researchers and educators.",
@@ -146,5 +142,29 @@ export default {
         description: "Learn about the history and mission of Vulhub."
       }
     }
+  },
+  
+  // Environments Page
+  environments: {
+    title: "Vulnerable Environments",
+    description: "Browse our collection of pre-built vulnerable environments for security research and education. Each environment is containerized with Docker and comes with detailed documentation.",
+    meta: {
+      title: "Vulnerable Environments | Vulhub",
+      description: "Browse our collection of pre-built vulnerable environments for security research and education, organized by technology and vulnerability type"
+    },
+    searchForm: {
+      allTags: "All Categories",
+      searchPlaceholder: "Search environments...",
+      searchButton: "Search"
+    },
+    results: {
+      count: "{count} Results",
+      for: "for",
+      in: "in",
+      noResults: "No environments found matching your criteria.",
+      clearFilters: "Clear filters",
+      moreTag: "+{count} more"
+    },
+    viewAll: "View all {count} {tag} environments"
   }
 } as const;

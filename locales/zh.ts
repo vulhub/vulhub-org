@@ -1,8 +1,4 @@
 export default {
-  hello: "你好",
-  "hello.world": "你好，世界！",
-  welcome: "你好，{name}！",
-  
   // 首页
   title: "Vulhub - 开源的漏洞Docker环境",
   subtitle: "Vulhub是一个面向安全研究人员和教育工作者的开源预构建漏洞Docker环境集合。",
@@ -146,5 +142,29 @@ export default {
         description: "了解Vulhub的历史和使命。"
       }
     }
+  },
+  
+  // 环境页面
+  environments: {
+    title: "漏洞环境",
+    description: "浏览我们的预构建漏洞环境集合，用于安全研究和教育。每个环境都使用Docker容器化，并配有详细的文档。",
+    meta: {
+      title: "漏洞环境 | Vulhub",
+      description: "浏览我们的预构建漏洞环境集合，按技术和漏洞类型组织，用于安全研究和教育"
+    },
+    searchForm: {
+      allTags: "所有类别",
+      searchPlaceholder: "搜索环境...",
+      searchButton: "搜索"
+    },
+    results: {
+      count: "{count} 个结果",
+      for: "搜索",
+      in: "分类",
+      noResults: "没有找到符合您条件的环境。",
+      clearFilters: "清除筛选条件",
+      moreTag: "还有 {count} 个"
+    },
+    viewAll: "查看全部 {count} 个 {tag} 环境"
   }
 } as const;

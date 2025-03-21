@@ -7,7 +7,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
-
+import { I18nProviderClient } from "@/locales/client";
 
 dayjs.extend(relativeTime);
 
@@ -50,11 +50,13 @@ export default async function RootLayout({
           forcedTheme="light"
           enableSystem={false}
         >
-          <div className="flex flex-col min-h-screen">
-            <Header />
-            <main className="flex-grow">{children}</main>
-            <Footer />
-          </div>
+          <I18nProviderClient locale={locale}>
+            <div className="flex flex-col min-h-screen">
+              <Header />
+              <main className="flex-grow">{children}</main>
+              <Footer />
+            </div>
+          </I18nProviderClient>
         </ThemeProvider>
       </body>
     </html>
