@@ -6,11 +6,7 @@ import { Github } from "@/components/icons";
 import { Metadata } from "next";
 import { getI18n } from "@/locales/server";
 
-export async function generateMetadata({ 
-  params: { locale } 
-}: { 
-  params: { locale: string } 
-}): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> {
   const t = await getI18n();
   
   return {
@@ -25,11 +21,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function AboutPage({ 
-  params: { locale } 
-}: { 
-  params: { locale: string } 
-}) {
+export default async function AboutPage() {
   const t = await getI18n();
   const currentYear = new Date().getFullYear();
   

@@ -7,7 +7,7 @@ import { RelativeTime } from "@/components/time";
 import { Metadata } from "next";
 import { getI18n } from '@/locales/server';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> {
   const t = await getI18n();
   
   return {
@@ -22,7 +22,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-export default async function Home({ params: { locale } }: { params: { locale: string } }) {
+export default async function Home() {
   const environments = getAllEnvironments();
   const latestEnvironments = getLatestEnvironments();
   const t = await getI18n();
