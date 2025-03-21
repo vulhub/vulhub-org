@@ -2,45 +2,49 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
-import catalog from "@/components/doc/catalog";
+import catalogByLocale from "@/components/doc/catalog";
+import { getI18n, getCurrentLocale } from "@/locales/server";
 
-export function generateStaticParams() {
-  return catalog.map((item) => ({ slug: item.slug }));
-}
+export const runtime = 'edge';
+
+type Props = {
+  params: Promise<{ slug: string; locale: string }>;
+};
 
 export async function generateMetadata({
   params,
-}: {
-  params: Promise<{ slug: string }>;
-}): Promise<Metadata> {
-  const { slug } = await params;
+}: Props): Promise<Metadata> {
+  const { slug, locale } = await params;
+  const catalog = catalogByLocale[locale as "en" | "zh"];
   const document = catalog.find((doc) => doc.slug === slug);
+  const t = await getI18n();
 
   if (!document) {
     return {
-      title: "Document Not Found",
-      description: "The requested documentation page could not be found",
+      title: t('documentation.notFound.title'),
+      description: t('documentation.notFound.description'),
     };
   }
 
   return {
-    title: `${document.title} | Vulhub Documentation`,
+    title: `${document.title} | ${t('documentation.title')}`,
     description: document.description || `Documentation about ${document.title} for Vulhub - an open-source collection of pre-built vulnerable docker environments`,
     keywords: document.keywords || ["vulhub", "documentation", "security", "docker", "vulnerability"],
     openGraph: {
-      title: `${document.title} | Vulhub Documentation`,
+      title: `${document.title} | ${t('documentation.title')}`,
       description: document.description || `Documentation about ${document.title} for Vulhub`,
       type: "article",
     },
   };
 }
 
-export default async function DocumentPage({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
+export default async function DocumentPage({ params }: Props) {
   const { slug } = await params;
+  const locale = await getCurrentLocale();
+  const t = await getI18n();
+  
+  // Get catalog for the current locale
+  const catalog = catalogByLocale[locale as "en" | "zh"];
 
   // Find the current document in the catalog
   const currentDocIndex = catalog.findIndex((doc) => doc.slug === slug);
@@ -51,7 +55,14 @@ export default async function DocumentPage({
   }
 
   try {
-    const { default: Post } = await import(`@/components/doc/${slug}.mdx`);
+    // Try to import the MDX file for the current locale first
+    let Post;
+    try {
+      const localeModule = await import(`@/components/doc/${locale}/${slug}.mdx`);
+      Post = localeModule.default;
+    } catch (error) {
+      notFound();
+    }
 
     // Get previous and next documents
     const prevDoc = currentDocIndex > 0 ? catalog[currentDocIndex - 1] : null;
@@ -69,12 +80,12 @@ export default async function DocumentPage({
         <div className="mt-16 flex justify-between border-t border-slate-200 pt-8">
           {prevDoc ? (
             <Link
-              href={`/documentation/${prevDoc.slug}`}
+              href={`/${locale}/documentation/${prevDoc.slug}`}
               className="flex items-center text-blue-600 hover:text-blue-800"
             >
               <ArrowLeft className="mr-2 h-4 w-4" />
               <div>
-                <div className="text-sm text-slate-500">Previous</div>
+                <div className="text-sm text-slate-500">{t('documentation.previous')}</div>
                 <div className="font-medium">{prevDoc.title}</div>
               </div>
             </Link>
@@ -84,11 +95,11 @@ export default async function DocumentPage({
 
           {nextDoc ? (
             <Link
-              href={`/documentation/${nextDoc.slug}`}
+              href={`/${locale}/documentation/${nextDoc.slug}`}
               className="flex items-center text-blue-600 hover:text-blue-800 text-right"
             >
               <div>
-                <div className="text-sm text-slate-500">Next</div>
+                <div className="text-sm text-slate-500">{t('documentation.next')}</div>
                 <div className="font-medium">{nextDoc.title}</div>
               </div>
               <ArrowRight className="ml-2 h-4 w-4" />

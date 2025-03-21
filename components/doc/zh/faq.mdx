@@ -1,0 +1,83 @@
+# 常见问题解答
+
+以下是关于 Vulhub 的一些常见问题及其答案。
+
+## 网络问题
+
+### 为什么在安装 Docker 或拉取漏洞环境时会遇到超时或错误？
+
+如果您位于中国大陆，由于防火墙（GFW）的网络限制，可能会影响 Docker 安装和镜像下载。
+
+**解决方案：**
+
+- 使用位于中国大陆以外的 VPS 或云服务器
+- 使用中国境内的 Docker 镜像源
+
+## 架构兼容性问题
+
+### 为什么在 Apple Silicon (M1+) Mac 上运行 Vulhub 时会出现错误？
+
+大多数 Vulhub 环境是为 x86 架构构建的，无法在 Apple Silicon Mac 等基于 ARM 的机器上原生运行。
+
+**解决方案：**
+
+在使用 Docker compose 命令之前设置 `DOCKER_DEFAULT_PLATFORM` 环境变量：
+
+```bash
+# 将平台设置为 x86_64
+export DOCKER_DEFAULT_PLATFORM=linux/amd64
+
+# 启动环境
+docker compose up -d
+```
+
+或者，您可以在 docker-compose.yml 文件中添加 `platform: linux/amd64`：
+
+```yaml
+services:
+  service-name:
+    image: image-name
+    platform: linux/amd64
+```
+
+有关更多信息，请参考[这个Issue](https://github.com/vulhub/vulhub/issues/478)。
+
+## 系统配置问题
+
+### 为什么我在 Kali Linux 上无法启动某些环境？
+
+由于系统限制，某些环境可能无法在 Kali Linux 上启动，出现错误消息如"too many open files"或类似的资源耗尽错误。
+
+**什么是 ulimit？**
+
+`ulimit` 是一个 Linux 系统命令和 shell 内置命令，用于控制 shell 及其启动的进程可用的资源。它设置或报告用户进程资源限制，包括进程可以打开的最大文件数。
+
+**解决方案：**
+
+最简单的解决方案是修改 Docker 守护程序配置以增加默认 ulimit：
+
+1. 编辑 Docker 守护程序配置文件：
+
+```bash
+sudo nano /etc/docker/daemon.json
+```
+
+2. 添加或修改文件以包含 default-ulimit 参数：
+
+```json
+{
+  "default-ulimit": "nofile=65535:65535"
+}
+```
+
+3. 重启 Docker 服务：
+
+```bash
+sudo systemctl restart docker
+```
+
+完成这些更改后，您应该能够运行 Vulhub 环境而不会遇到资源限制。
+
+## 更多帮助
+
+如果您遇到此处未提及的其他问题，请在 Vulhub GitHub 仓库上[提交问题](https://github.com/vulhub/vulhub/issues)。 

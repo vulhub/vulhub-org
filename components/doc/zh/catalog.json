@@ -1,0 +1,20 @@
+[
+    {
+        "title": "入门指南",
+        "slug": "getting-started",
+        "description": "学习如何开始使用Vulhub，一个开源的预构建的包含漏洞的Docker环境集合",
+        "keywords": ["vulhub", "docker", "安全", "入门", "安装"]
+    },
+    {
+        "title": "贡献指南",
+        "slug": "contributing",
+        "description": "如何为Vulhub项目做出贡献并帮助构建包含漏洞的Docker环境",
+        "keywords": ["贡献", "开发", "拉取请求", "漏洞", "docker"]
+    },
+    {
+        "title": "常见问题",
+        "slug": "faq",
+        "description": "关于使用Vulhub和处理漏洞Docker环境的常见问题解答",
+        "keywords": ["常见问题", "帮助", "问题", "故障排除", "docker", "漏洞"]
+    }
+]

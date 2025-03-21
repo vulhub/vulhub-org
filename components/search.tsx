@@ -12,6 +12,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Search, RefreshCw } from "lucide-react";
+import { useI18n } from "@/locales/client";
 
 interface SearchFormProps {
   initialQuery: string;
@@ -24,6 +25,7 @@ export function SearchForm({ initialQuery, initialTag, allTags }: SearchFormProp
   const [searchQuery, setSearchQuery] = useState(initialQuery);
   const [selectedTag, setSelectedTag] = useState(initialTag);
   const isFirstRender = useRef(true);
+  const t = useI18n();
 
   const updateSearchUrl = (query: string, tag: string) => {
     const params = new URLSearchParams();
@@ -36,7 +38,6 @@ export function SearchForm({ initialQuery, initialTag, allTags }: SearchFormProp
   // 处理表单提交（搜索框输入后按回车）
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
     updateSearchUrl(searchQuery, selectedTag);    
   };
 
@@ -66,7 +67,7 @@ export function SearchForm({ initialQuery, initialTag, allTags }: SearchFormProp
           size={18}
         />
         <Input 
-          placeholder="Search environments..." 
+          placeholder={t('environments.searchForm.searchPlaceholder')} 
           className="pl-10" 
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
@@ -81,7 +82,7 @@ export function SearchForm({ initialQuery, initialTag, allTags }: SearchFormProp
             <SelectValue placeholder="Tag" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="all">All Tags</SelectItem>
+            <SelectItem value="all">{t('environments.searchForm.allTags')}</SelectItem>
             {allTags.map((tag) => (
               <SelectItem
                 key={tag}
@@ -97,7 +98,7 @@ export function SearchForm({ initialQuery, initialTag, allTags }: SearchFormProp
           variant="outline" 
           size="icon"
           onClick={handleReset}
-          title="Reset filters"
+          title={t('environments.results.clearFilters')}
         >
           <RefreshCw size={18} />
         </Button>

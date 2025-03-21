@@ -1,0 +1,103 @@
+# Vulhub 入门指南
+
+Vulhub 是一个开源的预构建漏洞 Docker 环境集合。本指南将帮助您开始使用 Vulhub 进行安全研究和教育。
+
+## 前提条件
+
+在开始使用 Vulhub 之前，请确保已安装以下软件：
+
+- [Docker](https://www.docker.com/get-started)
+- [Git](https://git-scm.com/downloads)
+
+## 安装
+
+要开始使用 Vulhub，请按照以下步骤操作：
+
+```bash
+# 克隆仓库
+git clone --depth 1 https://github.com/vulhub/vulhub.git
+
+# 进入目录
+cd vulhub
+```
+
+## 使用漏洞环境
+
+Vulhub 中的每个漏洞都存储在自己的目录中。要使用特定的漏洞环境：
+
+```bash
+# 导航到漏洞目录
+cd vulhub/[应用程序]/[漏洞]
+
+# 启动环境
+docker compose up -d
+```
+
+### 示例：运行 Spring 漏洞环境
+
+例如，要运行 Spring CVE-2022-22947 漏洞环境，请导航到该目录并启动环境：
+
+```bash
+# 导航到 Spring CVE-2022-22947 目录
+cd vulhub/spring/CVE-2022-22947
+
+# 启动环境
+docker compose up -d
+```
+
+## 常用命令
+
+以下是在使用 Vulhub 漏洞环境时需要的一些基本 Docker 操作：
+
+### 检查环境状态
+
+检查漏洞应用程序是否正常运行：
+
+```bash
+docker compose ps
+```
+
+这会显示当前漏洞环境中所有容器的状态，包括访问漏洞服务所需的端口映射。
+
+### 访问容器的 Shell
+
+为了深入调查或修改漏洞环境，您可以进入容器的 shell：
+
+```bash
+# 进入容器的 shell
+docker compose exec [容器名称] bash
+```
+
+### 查看应用程序日志
+
+在漏洞利用尝试期间监控应用程序行为：
+
+```bash
+# 查看漏洞应用程序的实时日志
+docker compose logs -f
+
+# 查看特定容器的日志
+docker compose logs [容器名称]
+```
+
+### 检查 Web 服务器或应用程序配置
+
+检查容器内的配置文件：
+
+```bash
+# 示例：在 web 容器中检查 Apache 配置
+docker compose exec web cat /etc/apache2/apache2.conf
+
+# 示例：查看 PHP 配置
+docker compose exec web php -i
+```
+
+这些操作将帮助您与漏洞环境交互，了解它们的配置方式，并协助您的漏洞利用和测试过程。
+
+### 清理环境
+
+当您使用完漏洞环境后，可以停止并删除容器：
+
+```bash
+docker compose down -v
+``` 

@@ -1,0 +1,100 @@
+# 为 Vulhub 做贡献
+
+我们欢迎对 Vulhub 的贡献！本指南将帮助您开始为该项目做出贡献。
+
+## 贡献类型
+
+您可以通过以下几种方式为 Vulhub 做出贡献：
+
+1. 添加新的漏洞环境
+2. 改进现有环境
+3. 增强文档
+4. 报告错误
+
+## 项目结构
+
+**base/** 目录包含所有漏洞环境的 Dockerfile 和相关文件。
+
+例如，[base/activemq/5.17.3/Dockerfile](https://github.com/vulhub/vulhub/blob/master/base/activemq/5.17.3/Dockerfile) 是 ActiveMQ 版本 5.17.3 的 Dockerfile。通过编译这个 Dockerfile，您可以获得 Apache ActiveMQ 5.17.3 版本的服务，用于后续的漏洞环境。
+
+**[软件名称]/[漏洞ID或名称]** 目录用于存储对应漏洞的 docker-compose.yml 文件和相关描述。
+
+例如，[activemq/CVE-2023-46604](https://github.com/vulhub/vulhub/tree/master/activemq/CVE-2023-46604) 包含与 CVE-2023-46604 漏洞相关的所有文件，包括漏洞环境的 docker-compose.yml 文件，README.md 是英文手册，README.zh-cn.md 是中文手册，以及重现漏洞所需的一些 POC 脚本。
+
+## 添加新的漏洞环境
+
+添加新的漏洞环境时，请按照以下步骤操作：
+
+1. 在 **base/[软件名称]/[版本]** 目录中创建一个新目录，用于存储新漏洞环境的 Dockerfile 和相关文件。
+2. 在此目录中编写 Dockerfile。
+3. 在 **[软件名称]/[漏洞ID或名称]** 目录中创建一个新目录，用于存储新漏洞环境的 docker-compose.yml 文件和相关文件。
+4. 在此目录中编写 docker-compose.yml 文件。
+5. 编写 README.md 文档，用英文描述如何重现漏洞。
+6. 编写 README.zh-cn.md 文档，用中文描述如何重现漏洞。（如果您不懂中文，这是可选的）
+7. 如果重现漏洞需要一些 POC 脚本或其他相关文件，可以将它们放在与 README.md 文件相同的目录中。
+
+## 漏洞文档格式
+
+请参考以下步骤编写漏洞文档：
+
+1. **漏洞标题。** 如果漏洞有 CVE ID，需要在标题中用括号引用。
+2. **中文翻译链接。** 如果文档是英文 README.md，应添加到中文 README.zh-cn.md 的超链接。
+3. **漏洞组件描述。** 用一两句话介绍受当前漏洞影响的组件（或软件）。
+4. **漏洞描述。** 用一段话描述漏洞原理、受影响的版本号以及攻击者利用该漏洞可能造成的危害。
+5. **参考链接。** 列出不超过 5 个参考链接。
+6. **如何启动漏洞环境。** 描述如何启动漏洞环境以及环境启动后用户如何访问。
+7. **漏洞复现步骤。** 至少需要使用一张图片标记一些重要步骤。
+8. **成功漏洞利用的证明。**
+
+阅读文档后，用户可以在自己的计算机上使用 docker compose 命令启动带有漏洞的环境，并参考 README 重现漏洞并了解漏洞原理。
+
+完整的文档格式如下：
+
+````
+# Title (CVE ID if exist)
+
+Link to Chinese README
+
+Example is a ...
+
+description of the issue...
+
+References:
+
+- link1
+- link2
+- ...
+
+## Environment Setup
+
+Execute the following command to start a Example server v1.2.3:
+
+```
+docker compose up -d
+```
+
+After the server starts, ...
+
+## Vulnerability Reproduction
+
+...
+
+(Describe the steps to reproduce the vulnerability using natural language, do not use list)
+````
+
+以下是 Vulhub 项目中一些写得很好的例子，可以进行参考：
+
+- [Struts2 S2-067 上传路径遍历漏洞 (CVE-2024-53677)](https://github.com/vulhub/vulhub/tree/master/struts2/s2-067)
+- [Kibana 本地文件包含漏洞 (CVE-2018-17246)](https://github.com/vulhub/vulhub/tree/master/kibana/CVE-2018-17246)
+- [Magento 2.2 SQL注入漏洞](https://github.com/vulhub/vulhub/tree/master/magento/2.2-sqli)
+- [XXL-JOB 执行器未授权访问漏洞](https://github.com/vulhub/vulhub/tree/master/xxl-job/unacc)
+- [CraftCMS `register_argc_argv` 导致远程代码执行 (CVE-2024-56145)](https://github.com/vulhub/vulhub/tree/master/craftcms/CVE-2024-56145)
+
+所有漏洞文档必须是双语的，英文文档在 README.md 文件中，中文文档在 README.zh-cn.md 文件中。暂不包含其他语言文档。
+
+编写文档时，需要注意以下几点：
+
+- 描述漏洞时，尽可能描述漏洞影响的软件版本范围。
+- 文档中的所有超链接都应该用 ``<>`` 或 `[]()` 包装。
+- 描述漏洞复现步骤时，使用自然语言，不要使用列表。
+- 在英文文档中，需要在标题下方插入到中文文档的链接；但在中文文档中，不需要插入到英文文档的链接。 

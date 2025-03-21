@@ -4,55 +4,57 @@ import { Button } from "@/components/ui/button";
 import { Users, Award, Heart, Box, Bug, BookOpen } from "lucide-react";
 import { Github } from "@/components/icons";
 import { Metadata } from "next";
+import { getI18n } from "@/locales/server";
 
-export const metadata: Metadata = {
-  title: "About Vulhub | Project History and Team",
-  description: "Learn about the Vulhub project, our mission, team members, and how to contribute to this open-source collection of vulnerable docker environments",
-  keywords: ["vulhub", "about", "team", "project history", "contribute", "open source", "security education"],
-  openGraph: {
-    title: "About the Vulhub Project",
-    description: "The story behind Vulhub and the team that makes it possible",
-    type: "website",
-  },
-};
+export const runtime = 'edge';
 
-export default function AboutPage() {
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getI18n();
+  
+  return {
+    title: t('about.meta.title'),
+    description: t('about.meta.description'),
+    keywords: ["vulhub", "about", "team", "project history", "contribute", "open source", "security education"],
+    openGraph: {
+      title: t('about.meta.title'),
+      description: t('about.meta.description'),
+      type: "website",
+    },
+  };
+}
+
+export default async function AboutPage() {
+  const t = await getI18n();
+  const currentYear = new Date().getFullYear();
+  
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl font-bold mb-6">About Vulhub</h1>
+        <h1 className="text-3xl font-bold mb-6">{t('about.title')}</h1>
 
         <div className="max-w-none">
           <p className="text-lg text-slate-600 mb-8">
-            Vulhub is an open-source collection of pre-built vulnerable docker
-            environments. It's designed to be an easy-to-use platform for
-            security researchers, educators, and students to learn about,
-            practice, and teach vulnerability assessment and exploitation.
+            {t('about.introduction')}
           </p>
 
           <div className="my-8">
-            <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
+            <h2 className="text-2xl font-semibold mb-4">{t('about.mission.title')}</h2>
             <p className="text-slate-600">
-              Our mission is to make security education accessible to everyone.
-              By providing pre-built vulnerable environments, we aim to lower
-              the barrier to entry for security research and education. We
-              believe that understanding vulnerabilities is the first step to
-              building more secure software.
+              {t('about.mission.description')}
             </p>
           </div>
 
           <div className="my-8">
-            <h2 className="text-2xl font-semibold mb-4">Key Features</h2>
+            <h2 className="text-2xl font-semibold mb-4">{t('about.features.title')}</h2>
             <div className="grid gap-6">
               <div className="flex items-start p-4 bg-white rounded-lg border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-md flex items-center justify-center mr-4">
                   <Box className="h-5 w-5 text-blue-600" />
                 </div>
                 <div>
-                  <h3 className="font-medium text-lg">Docker Based</h3>
+                  <h3 className="font-medium text-lg">{t('about.features.dockerBased.title')}</h3>
                   <p className="text-slate-600 mt-1">
-                    All environments are built with Docker and Docker Compose,
-                    making them easy to deploy and isolate.
+                    {t('about.features.dockerBased.description')}
                   </p>
                 </div>
               </div>
@@ -62,10 +64,9 @@ export default function AboutPage() {
                   <Bug className="h-5 w-5 text-green-600" />
                 </div>
                 <div>
-                  <h3 className="font-medium text-lg">Real Vulnerabilities</h3>
+                  <h3 className="font-medium text-lg">{t('about.features.realVulnerabilities.title')}</h3>
                   <p className="text-slate-600 mt-1">
-                    Practice with real-world vulnerabilities in a safe,
-                    controlled environment for learning and research.
+                    {t('about.features.realVulnerabilities.description')}
                   </p>
                 </div>
               </div>
@@ -75,10 +76,9 @@ export default function AboutPage() {
                   <BookOpen className="h-5 w-5 text-purple-600" />
                 </div>
                 <div>
-                  <h3 className="font-medium text-lg">Well Documented</h3>
+                  <h3 className="font-medium text-lg">{t('about.features.wellDocumented.title')}</h3>
                   <p className="text-slate-600 mt-1">
-                    Each vulnerability comes with detailed documentation
-                    explaining the vulnerability and exploitation steps.
+                    {t('about.features.wellDocumented.description')}
                   </p>
                 </div>
               </div>
@@ -86,48 +86,64 @@ export default function AboutPage() {
           </div>
 
           <div className="my-8">
-            <h2 className="text-2xl font-semibold mb-4">Project History</h2>
+            <h2 className="text-2xl font-semibold mb-4">{t('about.history.title')}</h2>
             <p className="text-slate-600 mb-4">
-              Vulhub was created in 2017 by a group of security researchers who
-              wanted to make it easier for people to learn about and practice
-              exploiting vulnerabilities in a safe, controlled environment.
+              {t('about.history.p1')}
             </p>
             <p className="text-slate-600">
-              Since then, the project has grown to include over 100 different
-              vulnerable environments, covering a wide range of technologies and
-              vulnerability types. It has been used by thousands of security
-              professionals, educators, and students around the world.
+              {t('about.history.p2')}
             </p>
           </div>
 
           <div className="my-8">
-            <h2 className="text-2xl font-semibold mb-4">Our Team</h2>
+            <h2 className="text-2xl font-semibold mb-4">{t('about.team.title')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {team.map((member) => (
-                <div key={member.name} className="text-center">
-                  <div className="w-24 h-24 mx-auto mb-4 relative">
-                    <Image
-                      src={member.avatar || "/logo/512x512.png"}
-                      alt={member.name}
-                      width={96}
-                      height={96}
-                      className="rounded-full object-cover"
-                    />
-                  </div>
-                  <h3 className="font-medium">{member.name}</h3>
-                  <p className="text-sm text-slate-500">{member.role}</p>
+              <div className="text-center">
+                <div className="w-24 h-24 mx-auto mb-4 relative">
+                  <Image
+                    src="/contributors/phith0n.png"
+                    alt="phith0n"
+                    width={96}
+                    height={96}
+                    className="rounded-full object-cover"
+                  />
                 </div>
-              ))}
+                <h3 className="font-medium">{t('about.team.members.phith0n.name')}</h3>
+                <p className="text-sm text-slate-500">{t('about.team.members.phith0n.role')}</p>
+              </div>
+              <div className="text-center">
+                <div className="w-24 h-24 mx-auto mb-4 relative">
+                  <Image
+                    src="/contributors/ar3h.jpg"
+                    alt="Ar3h"
+                    width={96}
+                    height={96}
+                    className="rounded-full object-cover"
+                  />
+                </div>
+                <h3 className="font-medium">{t('about.team.members.ar3h.name')}</h3>
+                <p className="text-sm text-slate-500">{t('about.team.members.ar3h.role')}</p>
+              </div>
+              <div className="text-center">
+                <div className="w-24 h-24 mx-auto mb-4 relative">
+                  <Image
+                    src="/contributors/xcxmiku.jpg"
+                    alt="小晨曦"
+                    width={96}
+                    height={96}
+                    className="rounded-full object-cover"
+                  />
+                </div>
+                <h3 className="font-medium">{t('about.team.members.xcxmiku.name')}</h3>
+                <p className="text-sm text-slate-500">{t('about.team.members.xcxmiku.role')}</p>
+              </div>
             </div>
           </div>
 
           <div className="my-8">
-            <h2 className="text-2xl font-semibold mb-4">Contributing</h2>
+            <h2 className="text-2xl font-semibold mb-4">{t('about.contributing.title')}</h2>
             <p className="text-slate-600 mb-4">
-              Vulhub is an open-source project, and we welcome contributions
-              from everyone. Whether you're fixing a bug, adding a new
-              vulnerable environment, or improving documentation, your help is
-              appreciated.
+              {t('about.contributing.description')}
             </p>
             <div className="flex flex-wrap gap-4 mt-6">
               <Button asChild>
@@ -137,7 +153,7 @@ export default function AboutPage() {
                   rel="noopener noreferrer"
                 >
                   <Github className="mr-2 h-5 w-5" />
-                  Contribute on GitHub
+                  {t('about.contributing.github')}
                 </a>
               </Button>
               <Button asChild variant="outline">
@@ -146,23 +162,21 @@ export default function AboutPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Contact Us
+                  {t('about.contributing.contact')}
                 </Link>
               </Button>
             </div>
           </div>
 
           <div className="my-8">
-            <h2 className="text-2xl font-semibold mb-4">License</h2>
+            <h2 className="text-2xl font-semibold mb-4">{t('about.license.title')}</h2>
             <p className="text-slate-600">
-              Vulhub is released under the MIT License. This means you are free
-              to use, modify, and distribute the project, as long as you include
-              the original copyright notice.
+              {t('about.license.description')}
             </p>
             <div className="bg-slate-50 p-4 rounded-md mt-4 text-sm font-mono">
               <p className="mb-4">The MIT License</p>
               <p className="mb-4">
-                Copyright (c) 2017-{new Date().getFullYear()},{" "}
+                Copyright (c) 2017-{currentYear},{" "}
                 <a
                   href="https://www.leavesongs.com"
                   target="_blank"
@@ -203,21 +217,3 @@ export default function AboutPage() {
     </div>
   );
 }
-
-const team = [
-  {
-    name: "phith0n",
-    role: "Project Lead",
-    avatar: "/contributors/phith0n.png",
-  },
-  {
-    name: "Ar3h",
-    role: "Founder of Java-Chains",
-    avatar: "/contributors/ar3h.jpg",
-  },
-  {
-    name: "小晨曦",
-    role: "Core Contributor",
-    avatar: "/contributors/xcxmiku.jpg",
-  },
-];

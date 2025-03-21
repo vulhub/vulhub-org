@@ -1,4 +1,5 @@
-import catalog from "./catalog.json";
+import enCatalog from "./en/catalog.json";
+import zhCatalog from "./zh/catalog.json";
 
 export interface Catalog {
     title: string;
@@ -7,4 +8,14 @@ export interface Catalog {
     keywords?: string[];
 }
 
-export default catalog as Catalog[];
+export type CatalogByLocale = {
+    en: Catalog[];
+    zh: Catalog[];
+};
+
+const catalogByLocale: CatalogByLocale = {
+    en: enCatalog as Catalog[],
+    zh: zhCatalog as Catalog[]
+};
+
+export default catalogByLocale;

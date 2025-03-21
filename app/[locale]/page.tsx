@@ -5,22 +5,29 @@ import { getLatestEnvironments, getAllEnvironments } from "@/lib/environments";
 import { Github } from "@/components/icons";
 import { RelativeTime } from "@/components/time";
 import { Metadata } from "next";
-import dayjs from "dayjs";
+import { getI18n } from '@/locales/server';
 
-export const metadata: Metadata = {
-  title: "Vulhub - Open-Source Vulnerable Docker Environments",
-  description: "Vulhub is an open-source collection of pre-built vulnerable docker environments for security researchers, penetration testers, and educators",
-  keywords: ["vulhub", "docker", "security", "vulnerability", "CVE", "penetration testing", "cybersecurity"],
-  openGraph: {
-    title: "Vulhub - Vulnerable Docker Environments",
-    description: "A collection of pre-built vulnerable docker environments for security research and education",
-    type: "website",
-  },
-};
+export const runtime = 'edge';
 
-export default function Home() {
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getI18n();
+  
+  return {
+    title: t('title'),
+    description: t('subtitle'),
+    keywords: ["vulhub", "docker", "security", "vulnerability", "CVE", "penetration testing", "cybersecurity"],
+    openGraph: {
+      title: t('title'),
+      description: t('subtitle'),
+      type: "website",
+    },
+  };
+}
+
+export default async function Home() {
   const environments = getAllEnvironments();
   const latestEnvironments = getLatestEnvironments();
+  const t = await getI18n();
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -32,8 +39,7 @@ export default function Home() {
                 Vulhub
               </h1>
               <p className="text-xl text-slate-300">
-                Vulhub is an open-source collection of pre-built vulnerable
-                docker environments for security researchers and educators.
+                {t('subtitle')}
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <Button
@@ -41,7 +47,7 @@ export default function Home() {
                   size="lg"
                   className="bg-blue-600 hover:bg-blue-700"
                 >
-                  <Link href="/environments">Explore Environments</Link>
+                  <Link href="/environments">{t('exploreEnvironments')}</Link>
                 </Button>
                 <Button
                   asChild
@@ -55,17 +61,17 @@ export default function Home() {
                     rel="noopener noreferrer"
                   >
                     <Github className="mr-2 h-5 w-5" />
-                    GitHub
+                    {t('github')}
                   </a>
                 </Button>
               </div>
               <div className="flex items-center text-slate-400 text-sm">
                 <Shield className="mr-2 h-4 w-4" />
-                <span>18.4k+ Stars</span>
+                <span>{t('stats.stars')}</span>
                 <span className="mx-2">•</span>
-                <span>4.5k+ Forks</span>
+                <span>{t('stats.forks')}</span>
                 <span className="mx-2">•</span>
-                <span>{environments.length} Environments</span>
+                <span>{t('stats.environments', { count: environments.length })}</span>
               </div>
             </div>
             <div className="md:w-1/2 w-full overflow-x-auto">
@@ -73,7 +79,7 @@ export default function Home() {
                 <pre className="text-slate-200 overflow-x-auto font-mono">
                   <code>
                     <span className="text-slate-400">
-                      # Clone the repository
+                      {t('codeSnippet.cloneRepo')}
                     </span>
                     {"\n"}
                     <span className="text-emerald-400">
@@ -82,7 +88,7 @@ export default function Home() {
                     {"\n"}
                     {"\n"}
                     <span className="text-slate-400">
-                      # Enter the directory
+                      {t('codeSnippet.enterDir')}
                     </span>
                     {"\n"}
                     <span className="text-emerald-400">
@@ -91,7 +97,7 @@ export default function Home() {
                     {"\n"}
                     {"\n"}
                     <span className="text-slate-400">
-                      # Start the environment
+                      {t('codeSnippet.startEnv')}
                     </span>
                     {"\n"}
                     <span className="text-emerald-400">
@@ -108,17 +114,16 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">
-            Why Use Vulhub?
+            {t('whyUseVulhub')}
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-slate-50 p-6 rounded-lg border border-slate-100">
               <div className="bg-blue-100 text-blue-700 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                 <Box className="h-6 w-6" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Docker Based</h3>
+              <h3 className="text-xl font-semibold mb-3">{t('features.dockerBased.title')}</h3>
               <p className="text-slate-600">
-                All environments are built with Docker and Docker Compose,
-                making them easy to deploy and isolate.
+                {t('features.dockerBased.description')}
               </p>
             </div>
             <div className="bg-slate-50 p-6 rounded-lg border border-slate-100">
@@ -126,21 +131,19 @@ export default function Home() {
                 <Bug className="h-6 w-6" />
               </div>
               <h3 className="text-xl font-semibold mb-3">
-                Real Vulnerabilities
+                {t('features.realVulnerabilities.title')}
               </h3>
               <p className="text-slate-600">
-                Practice with real-world vulnerabilities in a safe, controlled
-                environment for learning and research.
+                {t('features.realVulnerabilities.description')}
               </p>
             </div>
             <div className="bg-slate-50 p-6 rounded-lg border border-slate-100">
               <div className="bg-purple-100 text-purple-700 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                 <BookOpen className="h-6 w-6" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Well Documented</h3>
+              <h3 className="text-xl font-semibold mb-3">{t('features.wellDocumented.title')}</h3>
               <p className="text-slate-600">
-                Each vulnerability comes with detailed documentation explaining
-                the vulnerability and exploitation steps.
+                {t('features.wellDocumented.description')}
               </p>
             </div>
           </div>
@@ -150,12 +153,12 @@ export default function Home() {
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center mb-12">
-            <h2 className="text-3xl font-bold">Latest Environments</h2>
+            <h2 className="text-3xl font-bold">{t('latestEnvironments')}</h2>
             <Link
               href="/environments"
               className="text-blue-600 hover:text-blue-800 flex items-center"
             >
-              View all environments
+              {t('viewAllEnvironments')}
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </div>
@@ -183,14 +186,14 @@ export default function Home() {
                     />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{env.name}</h3>
-                  <p className="text-slate-600">{`Explore the ${env.name} vulnerability and learn how to exploit it.`}</p>
+                  <p className="text-slate-600">{t('environmentCard.exploreAndLearn', { name: env.name })}</p>
                   <div className="flex justify-between items-center mt-auto pt-4">
                     <Link
                       href={`https://github.com/vulhub/vulhub/tree/master/${env.path}`}
                       target="_blank"
                       className="text-blue-600 hover:text-blue-800 font-medium"
                     >
-                      Learn more
+                      {t('environmentCard.learnMore')}
                     </Link>
                     <div className="flex items-center text-slate-500 text-sm gap-1">
                       {env.cve.length > 0 ? (
@@ -204,7 +207,7 @@ export default function Home() {
                         ))
                       ) : (
                         <span className="bg-slate-100 px-2 py-1 rounded">
-                          N/A
+                          {t('environmentCard.na')}
                         </span>
                       )}
                     </div>
@@ -219,15 +222,14 @@ export default function Home() {
       <section className="py-20 bg-blue-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">
-            Ready to start your security research?
+            {t('cta.ready')}
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Explore our collection of vulnerable environments and enhance your
-            security skills today.
+            {t('cta.description')}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button asChild size="lg" variant="secondary">
-              <Link href="/documentation/getting-started">Get Started</Link>
+              <Link href="/getting-started">{t('cta.getStarted')}</Link>
             </Button>
             <Button
               asChild
@@ -241,7 +243,7 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 <Github className="mr-2 h-5 w-5" />
-                Star on GitHub
+                {t('cta.starOnGithub')}
               </a>
             </Button>
           </div>

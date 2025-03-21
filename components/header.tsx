@@ -6,9 +6,12 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Github } from "@/components/icons";
+import { useI18n } from "@/locales/client";
+import { LanguageSwitcher } from "@/components/language-switcher";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const t = useI18n();
 
   return (
     <header className="bg-white border-b border-slate-200 sticky top-0 z-40">
@@ -32,32 +35,34 @@ export function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link href="/" className="text-slate-600 hover:text-slate-900">
-              Home
+              {t('navigation.home')}
             </Link>
             <Link
               href="/getting-started"
               className="text-slate-600 hover:text-slate-900"
             >
-              Getting Started
+              {t('navigation.gettingStarted')}
             </Link>
             <Link
               href="/environments"
               className="text-slate-600 hover:text-slate-900"
             >
-              Environments
+              {t('navigation.environments')}
             </Link>
             <Link
               href="/documentation/getting-started"
               className="text-slate-600 hover:text-slate-900"
             >
-              Documentation
+              {t('navigation.documentation')}
             </Link>
             <Link href="/about" className="text-slate-600 hover:text-slate-900">
-              About
+              {t('navigation.about')}
             </Link>
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
+            <LanguageSwitcher variant="dropdown" />
+            
             <Button asChild variant="outline" size="sm">
               <a
                 href="https://github.com/vulhub/vulhub"
@@ -65,7 +70,7 @@ export function Header() {
                 rel="noopener noreferrer"
               >
                 <Github className="mr-2 h-4 w-4" />
-                GitHub
+                {t('navigation.github')}
               </a>
             </Button>
           </div>
@@ -95,32 +100,35 @@ export function Header() {
               href="/"
               className="block text-slate-600 hover:text-slate-900 py-2"
             >
-              Home
+              {t('navigation.home')}
             </Link>
             <Link
               href="/getting-started"
               className="block text-slate-600 hover:text-slate-900 py-2"
             >
-              Getting Started
+              {t('navigation.gettingStarted')}
             </Link>
             <Link
               href="/environments"
               className="block text-slate-600 hover:text-slate-900 py-2"
             >
-              Environments
+              {t('navigation.environments')}
             </Link>
             <Link
               href="/documentation/getting-started"
               className="block text-slate-600 hover:text-slate-900 py-2"
             >
-              Documentation
+              {t('navigation.documentation')}
             </Link>
             <Link
               href="/about"
               className="block text-slate-600 hover:text-slate-900 py-2"
             >
-              About
+              {t('navigation.about')}
             </Link>
+            
+            <LanguageSwitcher variant="buttons" />
+            
             <Button asChild variant="outline" size="sm" className="w-full">
               <a
                 href="https://github.com/vulhub/vulhub"
@@ -128,7 +136,7 @@ export function Header() {
                 rel="noopener noreferrer"
               >
                 <Github className="mr-2 h-4 w-4" />
-                GitHub
+                {t('navigation.github')}
               </a>
             </Button>
           </div>
