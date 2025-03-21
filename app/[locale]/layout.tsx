@@ -8,6 +8,7 @@ import { Footer } from "@/components/footer";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 
+
 dayjs.extend(relativeTime);
 
 const inter = Inter({ subsets: ["latin"] });
@@ -32,13 +33,17 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
+
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
