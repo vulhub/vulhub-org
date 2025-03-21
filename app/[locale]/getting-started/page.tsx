@@ -4,39 +4,42 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AlertCircle, Info, ArrowRight } from "lucide-react";
 import { Metadata } from "next";
+import { getI18n } from "@/locales/server";
 import { Github } from "@/components/icons";
 
-export const metadata: Metadata = {
-  title: "Getting Started | Vulhub",
-  description: "Learn how to set up and run your first vulnerable environment with Vulhub, an open-source collection of pre-built vulnerable docker environments",
-  keywords: ["vulhub", "docker", "security", "installation", "setup", "vulnerable environments", "cybersecurity"],
-  openGraph: {
-    title: "Getting Started with Vulhub",
-    description: "Quick guide to setting up and running vulnerable environments with Vulhub",
-    type: "article",
-  },
-};
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getI18n();
+  
+  return {
+    title: t('gettingStarted.meta.title'),
+    description: t('gettingStarted.meta.description'),
+    keywords: ["vulhub", "docker", "security", "installation", "setup", "vulnerable environments", "cybersecurity"],
+    openGraph: {
+      title: t('gettingStarted.title'),
+      description: t('gettingStarted.description'),
+      type: "article",
+    },
+  };
+}
 
-export default function GettingStartedPage() {
+export default async function GettingStartedPage({ params: { locale } }: { params: { locale: string } }) {
+  const t = await getI18n();
+
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl font-bold mb-6">Getting Started with Vulhub</h1>
+        <h1 className="text-3xl font-bold mb-6">{t('gettingStarted.title')}</h1>
         <p className="text-slate-600 mb-8">
-          Follow this guide to set up and run your first vulnerable environment
-          with Vulhub. All environments are containerized with Docker, making
-          them easy to deploy and isolate.
+          {t('gettingStarted.description')}
         </p>
 
         <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
           <div className="flex">
             <Info className="h-6 w-6 text-blue-500 mr-3 flex-shrink-0" />
             <div>
-              <h3 className="text-blue-800 font-medium">Prerequisites</h3>
+              <h3 className="text-blue-800 font-medium">{t('gettingStarted.prerequisites.title')}</h3>
               <p className="text-blue-700">
-                Before you begin, make sure you have Docker installed on your
-                system. Vulhub environments are designed to run in isolated
-                containers.
+                {t('gettingStarted.prerequisites.description')}
               </p>
             </div>
           </div>
@@ -44,29 +47,28 @@ export default function GettingStartedPage() {
 
         <Tabs defaultValue="docker" className="mb-8">
           <TabsList className="grid w-full grid-cols-3">
-            <TabsTrigger value="docker">Docker Setup</TabsTrigger>
-            <TabsTrigger value="quickstart">Quick Start</TabsTrigger>
-            <TabsTrigger value="advanced">Advanced Usage</TabsTrigger>
+            <TabsTrigger value="docker">{t('gettingStarted.tabs.dockerSetup')}</TabsTrigger>
+            <TabsTrigger value="quickstart">{t('gettingStarted.tabs.quickStart')}</TabsTrigger>
+            <TabsTrigger value="advanced">{t('gettingStarted.tabs.advanced')}</TabsTrigger>
           </TabsList>
           <TabsContent value="docker" className="p-4 border rounded-md mt-2">
-            <h2 className="text-xl font-semibold mb-4">Docker Setup</h2>
+            <h2 className="text-xl font-semibold mb-4">{t('gettingStarted.dockerSetup.title')}</h2>
             <div className="space-y-4">
               <p className="text-slate-600">
-                Vulhub requires Docker to run. Follow these instructions to set
-                up Docker on your system.
+                {t('gettingStarted.dockerSetup.description')}
               </p>
 
-              <h3 className="font-medium mt-4">Install Docker</h3>
+              <h3 className="font-medium mt-4">{t('gettingStarted.dockerSetup.install')}</h3>
               <div className="grid gap-4">
                 <Card>
                   <CardHeader className="pb-2">
                     <CardTitle className="text-lg flex items-center">
-                      Linux
+                      {t('gettingStarted.dockerSetup.linux')}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-slate-600 mb-2">
-                      Install Docker using the convenience script:
+                      {t('gettingStarted.dockerSetup.linuxDesc')}
                     </p>
                     <pre className="bg-slate-800 text-slate-100 p-3 rounded-md text-xs sm:text-sm overflow-x-auto w-full whitespace-pre-wrap">
                       <code>{`curl -fsSL https://get.docker.com | sh`}</code>
@@ -77,13 +79,12 @@ export default function GettingStartedPage() {
                 <Card>
                   <CardHeader className="pb-2">
                     <CardTitle className="text-lg flex items-center">
-                      MacOS & Windows
+                      {t('gettingStarted.dockerSetup.macosWindows')}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-slate-600 mb-2">
-                      Download and install Docker Desktop from the official
-                      website.
+                      {t('gettingStarted.dockerSetup.macosWindowsDesc')}
                     </p>
                     <Button asChild variant="outline" size="sm">
                       <a
@@ -91,31 +92,29 @@ export default function GettingStartedPage() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Download Docker Desktop
+                        {t('gettingStarted.dockerSetup.downloadDocker')}
                       </a>
                     </Button>
                   </CardContent>
                 </Card>
               </div>
 
-              <h3 className="font-medium mt-4">Verify Installation</h3>
+              <h3 className="font-medium mt-4">{t('gettingStarted.dockerSetup.verifyInstall')}</h3>
               <p className="text-slate-600">
-                Verify that Docker is installed correctly:
+                {t('gettingStarted.dockerSetup.verifyDesc')}
               </p>
               <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-2 text-xs sm:text-sm overflow-x-auto w-full whitespace-pre-wrap">
                 <code>{`docker version`}</code>
               </pre>
 
               <p className="text-slate-600 mt-4">
-                Also verify that Docker Compose is available:
+                {t('gettingStarted.dockerSetup.composeDesc')}
               </p>
               <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-2 text-xs sm:text-sm overflow-x-auto w-full whitespace-pre-wrap">
                 <code>{`docker compose version`}</code>
               </pre>
               <p className="text-yellow-700 mt-2">
-                If the compose command is not found, you may be using an older
-                version of Docker. Please upgrade to the latest version of
-                Docker which includes Docker Compose as a built-in command.
+                {t('gettingStarted.dockerSetup.composeWarning')}
               </p>
             </div>
           </TabsContent>
@@ -123,14 +122,14 @@ export default function GettingStartedPage() {
             value="quickstart"
             className="p-4 border rounded-md mt-2"
           >
-            <h2 className="text-xl font-semibold mb-4">Quick Start Guide</h2>
+            <h2 className="text-xl font-semibold mb-4">{t('gettingStarted.quickStart.title')}</h2>
             <ol className="space-y-4">
               <li className="flex">
                 <span className="bg-green-100 text-green-800 font-medium rounded-full w-6 h-6 flex items-center justify-center mr-3 flex-shrink-0">
                   1
                 </span>
                 <div className="w-full">
-                  <h3 className="font-medium">Clone the repository</h3>
+                  <h3 className="font-medium">{t('gettingStarted.quickStart.steps.clone.step')}</h3>
                   <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-2 text-xs sm:text-sm overflow-x-auto whitespace-pre-wrap">
                     <code>
                       git clone --depth 1 https://github.com/vulhub/vulhub.git
@@ -144,12 +143,10 @@ export default function GettingStartedPage() {
                 </span>
                 <div className="w-full">
                   <h3 className="font-medium">
-                    Choose a vulnerability environment
+                    {t('gettingStarted.quickStart.steps.choose.step')}
                   </h3>
                   <p className="text-slate-600 mt-1">
-                    Browse the repository and select a vulnerability you want to
-                    explore. Each directory represents a different vulnerable
-                    application.
+                    {t('gettingStarted.quickStart.steps.choose.desc')}
                   </p>
                   <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-2 text-xs sm:text-sm overflow-x-auto whitespace-pre-wrap">
                     <code>cd vulhub/spring/CVE-2022-22947</code>
@@ -161,10 +158,9 @@ export default function GettingStartedPage() {
                   3
                 </span>
                 <div className="w-full">
-                  <h3 className="font-medium">Start the environment</h3>
+                  <h3 className="font-medium">{t('gettingStarted.quickStart.steps.start.step')}</h3>
                   <p className="text-slate-600 mt-1">
-                    Use Docker Compose to build and start the vulnerable
-                    environment.
+                    {t('gettingStarted.quickStart.steps.start.desc')}
                   </p>
                   <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-2 text-xs sm:text-sm overflow-x-auto whitespace-pre-wrap">
                     <code>docker compose up -d</code>
@@ -176,10 +172,9 @@ export default function GettingStartedPage() {
                   4
                 </span>
                 <div className="w-full">
-                  <h3 className="font-medium">Access the application</h3>
+                  <h3 className="font-medium">{t('gettingStarted.quickStart.steps.access.step')}</h3>
                   <p className="text-slate-600 mt-1">
-                    Once the environment is running, access the vulnerable
-                    application through your browser.
+                    {t('gettingStarted.quickStart.steps.access.desc')}
                   </p>
                   <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-2 text-xs sm:text-sm overflow-x-auto whitespace-pre-wrap">
                     <code>http://your-ip:8080</code>
@@ -191,47 +186,45 @@ export default function GettingStartedPage() {
                   5
                 </span>
                 <div className="w-full">
-                  <h3 className="font-medium">Explore and learn</h3>
+                  <h3 className="font-medium">{t('gettingStarted.quickStart.steps.explore.step')}</h3>
                   <p className="text-slate-600 mt-1">
-                    Follow the documentation in the README file to understand
-                    and exploit the vulnerability.
+                    {t('gettingStarted.quickStart.steps.explore.desc')}
                   </p>
                 </div>
               </li>
             </ol>
           </TabsContent>
           <TabsContent value="advanced" className="p-4 border rounded-md mt-2">
-            <h2 className="text-xl font-semibold mb-4">Advanced Usage</h2>
+            <h2 className="text-xl font-semibold mb-4">{t('gettingStarted.advanced.title')}</h2>
             <div className="space-y-4">
-              <h3 className="font-medium">Managing Environments</h3>
+              <h3 className="font-medium">{t('gettingStarted.advanced.managing.title')}</h3>
               <p className="text-slate-600">
-                Here are some useful commands for managing your Vulhub
-                environments:
+                {t('gettingStarted.advanced.managing.description')}
               </p>
               <div className="space-y-3">
                 <div className="w-full">
-                  <h4 className="text-sm font-medium">Stop an environment</h4>
+                  <h4 className="text-sm font-medium">{t('gettingStarted.advanced.managing.stop')}</h4>
                   <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-1 text-xs sm:text-sm overflow-x-auto whitespace-pre-wrap">
                     <code>docker compose down -v</code>
                   </pre>
                 </div>
                 <div className="w-full">
                   <h4 className="text-sm font-medium">
-                    Rebuild an environment
+                    {t('gettingStarted.advanced.managing.rebuild')}
                   </h4>
                   <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-1 text-xs sm:text-sm overflow-x-auto whitespace-pre-wrap">
                     <code>docker compose build --no-cache</code>
                   </pre>
                 </div>
                 <div className="w-full">
-                  <h4 className="text-sm font-medium">View logs</h4>
+                  <h4 className="text-sm font-medium">{t('gettingStarted.advanced.managing.logs')}</h4>
                   <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-1 text-xs sm:text-sm overflow-x-auto whitespace-pre-wrap">
                     <code>docker compose logs -f</code>
                   </pre>
                 </div>
                 <div className="w-full">
                   <h4 className="text-sm font-medium">
-                    Access a container's shell
+                    {t('gettingStarted.advanced.managing.shell')}
                   </h4>
                   <pre className="bg-slate-800 text-slate-100 p-3 rounded-md mt-1 text-xs sm:text-sm overflow-x-auto whitespace-pre-wrap">
                     <code>docker compose exec [service_name] bash</code>
@@ -239,16 +232,15 @@ export default function GettingStartedPage() {
                 </div>
               </div>
 
-              <h3 className="font-medium mt-4">Customizing Environments</h3>
+              <h3 className="font-medium mt-4">{t('gettingStarted.advanced.customizing.title')}</h3>
               <p className="text-slate-600">
-                You can customize environments by modifying the
-                docker-compose.yml file. This allows you to:
+                {t('gettingStarted.advanced.customizing.description')}
               </p>
               <ul className="list-disc pl-5 space-y-1 text-slate-600">
-                <li>Change exposed ports</li>
-                <li>Add persistent volumes</li>
-                <li>Modify environment variables</li>
-                <li>Link with other containers</li>
+                <li>{t('gettingStarted.advanced.customizing.options.0')}</li>
+                <li>{t('gettingStarted.advanced.customizing.options.1')}</li>
+                <li>{t('gettingStarted.advanced.customizing.options.2')}</li>
+                <li>{t('gettingStarted.advanced.customizing.options.3')}</li>
               </ul>
 
               <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 mt-4">
@@ -256,12 +248,10 @@ export default function GettingStartedPage() {
                   <AlertCircle className="h-6 w-6 text-yellow-500 mr-3 flex-shrink-0" />
                   <div>
                     <h3 className="text-yellow-800 font-medium">
-                      Security Warning
+                      {t('gettingStarted.advanced.securityWarning.title')}
                     </h3>
                     <p className="text-yellow-700">
-                      Remember that these environments contain real
-                      vulnerabilities. Always run them in isolated networks and
-                      never expose them to the internet.
+                      {t('gettingStarted.advanced.securityWarning.description')}
                     </p>
                   </div>
                 </div>
@@ -271,18 +261,18 @@ export default function GettingStartedPage() {
         </Tabs>
 
         <div className="border rounded-lg p-6 bg-slate-50">
-          <h2 className="text-xl font-semibold mb-4">Next Steps</h2>
+          <h2 className="text-xl font-semibold mb-4">{t('gettingStarted.nextSteps.title')}</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <Link
               href="/environments"
               className="block p-4 border rounded-md bg-white hover:border-blue-300 hover:shadow-sm transition-all"
             >
               <h3 className="font-medium flex items-center">
-                Browse Environments
+                {t('gettingStarted.nextSteps.browseEnvironments.title')}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </h3>
               <p className="text-sm text-slate-600 mt-1">
-                Explore our collection of pre-built vulnerable environments.
+                {t('gettingStarted.nextSteps.browseEnvironments.description')}
               </p>
             </Link>
             <a
@@ -292,12 +282,11 @@ export default function GettingStartedPage() {
               className="block p-4 border rounded-md bg-white hover:border-blue-300 hover:shadow-sm transition-all"
             >
               <h3 className="font-medium flex items-center">
-                Join Our Community
+                {t('gettingStarted.nextSteps.joinCommunity.title')}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </h3>
               <p className="text-sm text-slate-600 mt-1">
-                Connect with other security researchers in the Vulhub Discord
-                community.
+                {t('gettingStarted.nextSteps.joinCommunity.description')}
               </p>
             </a>
             <a
@@ -307,11 +296,11 @@ export default function GettingStartedPage() {
               className="block p-4 border rounded-md bg-white hover:border-blue-300 hover:shadow-sm transition-all"
             >
               <h3 className="font-medium flex items-center">
-                Contribute on GitHub
+                {t('gettingStarted.nextSteps.contribute.title')}
                 <Github className="ml-2 h-4 w-4" />
               </h3>
               <p className="text-sm text-slate-600 mt-1">
-                Help improve Vulhub by contributing to the project.
+                {t('gettingStarted.nextSteps.contribute.description')}
               </p>
             </a>
             <Link
@@ -319,11 +308,11 @@ export default function GettingStartedPage() {
               className="block p-4 border rounded-md bg-white hover:border-blue-300 hover:shadow-sm transition-all"
             >
               <h3 className="font-medium flex items-center">
-                About the Project
+                {t('gettingStarted.nextSteps.about.title')}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </h3>
               <p className="text-sm text-slate-600 mt-1">
-                Learn about the history and mission of Vulhub.
+                {t('gettingStarted.nextSteps.about.description')}
               </p>
             </Link>
           </div>
