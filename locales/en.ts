@@ -1,4 +1,8 @@
 export default {
+  hello: "Hello",
+  "hello.world": "Hello world!",
+  welcome: "Hello {name}!",
+  
   // Homepage
   title: "Vulhub - Open-Source Vulnerable Docker Environments",
   subtitle: "Vulhub is an open-source collection of pre-built vulnerable docker environments for security researchers and educators.",
@@ -166,5 +170,66 @@ export default {
       moreTag: "+{count} more"
     },
     viewAll: "View all {count} {tag} environments"
+  },
+  
+  // About Page
+  about: {
+    title: "About Vulhub",
+    meta: {
+      title: "About Vulhub | Project History and Team",
+      description: "Learn about the Vulhub project, our mission, team members, and how to contribute to this open-source collection of vulnerable docker environments"
+    },
+    introduction: "Vulhub is an open-source collection of pre-built vulnerable docker environments. It's designed to be an easy-to-use platform for security researchers, educators, and students to learn about, practice, and teach vulnerability assessment and exploitation.",
+    mission: {
+      title: "Our Mission",
+      description: "Our mission is to make security education accessible to everyone. By providing pre-built vulnerable environments, we aim to lower the barrier to entry for security research and education. We believe that understanding vulnerabilities is the first step to building more secure software."
+    },
+    features: {
+      title: "Key Features",
+      dockerBased: {
+        title: "Docker Based",
+        description: "All environments are built with Docker and Docker Compose, making them easy to deploy and isolate."
+      },
+      realVulnerabilities: {
+        title: "Real Vulnerabilities",
+        description: "Practice with real-world vulnerabilities in a safe, controlled environment for learning and research."
+      },
+      wellDocumented: {
+        title: "Well Documented",
+        description: "Each vulnerability comes with detailed documentation explaining the vulnerability and exploitation steps."
+      }
+    },
+    history: {
+      title: "Project History",
+      p1: "Vulhub was created in 2017 by a group of security researchers who wanted to make it easier for people to learn about and practice exploiting vulnerabilities in a safe, controlled environment.",
+      p2: "Since then, the project has grown to include over 100 different vulnerable environments, covering a wide range of technologies and vulnerability types. It has been used by thousands of security professionals, educators, and students around the world."
+    },
+    team: {
+      title: "Our Team",
+      members: {
+        phith0n: {
+          name: "phith0n",
+          role: "Project Lead"
+        },
+        ar3h: {
+          name: "Ar3h",
+          role: "Founder of Java-Chains"
+        },
+        xcxmiku: {
+          name: "小晨曦",
+          role: "Core Contributor"
+        }
+      }
+    },
+    contributing: {
+      title: "Contributing",
+      description: "Vulhub is an open-source project, and we welcome contributions from everyone. Whether you're fixing a bug, adding a new vulnerable environment, or improving documentation, your help is appreciated.",
+      github: "Contribute on GitHub",
+      contact: "Contact Us"
+    },
+    license: {
+      title: "License",
+      description: "Vulhub is released under the MIT License. This means you are free to use, modify, and distribute the project, as long as you include the original copyright notice.",
+    }
   }
 } as const;

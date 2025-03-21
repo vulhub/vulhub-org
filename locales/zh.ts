@@ -1,4 +1,8 @@
 export default {
+  hello: "你好",
+  "hello.world": "你好，世界！",
+  welcome: "你好，{name}！",
+  
   // 首页
   title: "Vulhub - 开源的漏洞Docker环境",
   subtitle: "Vulhub是一个面向安全研究人员和教育工作者的开源预构建漏洞Docker环境集合。",
@@ -166,5 +170,66 @@ export default {
       moreTag: "还有 {count} 个"
     },
     viewAll: "查看全部 {count} 个 {tag} 环境"
+  },
+  
+  // 关于页面
+  about: {
+    title: "关于 Vulhub",
+    meta: {
+      title: "关于 Vulhub | 项目历史和团队",
+      description: "了解Vulhub项目、我们的使命、团队成员，以及如何为这个开源的预构建漏洞Docker环境集合做出贡献"
+    },
+    introduction: "Vulhub是一个开源的预构建漏洞Docker环境集合。它旨在成为一个易于使用的平台，帮助安全研究人员、教育工作者和学生学习、实践和教授漏洞评估和利用技术。",
+    mission: {
+      title: "我们的使命",
+      description: "我们的使命是让安全教育变得人人可及。通过提供预构建的漏洞环境，我们旨在降低安全研究和教育的门槛。我们相信，理解漏洞是构建更安全软件的第一步。"
+    },
+    features: {
+      title: "主要特点",
+      dockerBased: {
+        title: "基于Docker",
+        description: "所有环境都是用Docker和Docker Compose构建的，使其易于部署和隔离。"
+      },
+      realVulnerabilities: {
+        title: "真实漏洞",
+        description: "在安全、受控的环境中练习真实世界的漏洞，用于学习和研究。"
+      },
+      wellDocumented: {
+        title: "详尽文档",
+        description: "每个漏洞都附有详细的文档，解释漏洞和利用步骤。"
+      }
+    },
+    history: {
+      title: "项目历史",
+      p1: "Vulhub创建于2017年，由一群安全研究人员创建，他们希望让人们更容易在安全、受控的环境中学习和实践漏洞利用。",
+      p2: "自那时起，该项目已发展到包含超过100个不同的漏洞环境，涵盖广泛的技术和漏洞类型。它已被全球数千名安全专业人士、教育工作者和学生使用。"
+    },
+    team: {
+      title: "我们的团队",
+      members: {
+        phith0n: {
+          name: "phith0n",
+          role: "项目负责人"
+        },
+        ar3h: {
+          name: "Ar3h",
+          role: "Java-Chains创始人"
+        },
+        xcxmiku: {
+          name: "小晨曦",
+          role: "核心贡献者"
+        }
+      }
+    },
+    contributing: {
+      title: "贡献",
+      description: "Vulhub是一个开源项目，我们欢迎每个人的贡献。无论您是修复bug、添加新的漏洞环境，还是改进文档，您的帮助都将受到感谢。",
+      github: "在GitHub上贡献",
+      contact: "联系我们"
+    },
+    license: {
+      title: "许可证",
+      description: "Vulhub根据MIT许可证发布。这意味着您可以自由使用、修改和分发该项目，只要您包含原始版权声明。",
+    }
   }
 } as const;
