@@ -121,8 +121,15 @@ function generateTags(env) {
     tags.push("Path Traversal");
   }
 
-  if (name.includes("information disclosure")) {
-    tags.push("Information Disclosure");
+  if (
+    name.includes("information disclosure") ||
+    name.includes("information leak")
+  ) {
+    tags.push("Info Disclosure");
+  }
+
+  if (/\bdos\b/.test(name) || name.includes("denial of service")) {
+    tags.push("DoS");
   }
 
   // Application type tags
