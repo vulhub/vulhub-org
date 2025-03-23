@@ -57,7 +57,8 @@ function generateTags(env) {
     name.includes("code execution") ||
     name.includes("command execution") ||
     name.includes("command injection") ||
-    name.includes("code injection")
+    name.includes("code injection") ||
+    name.includes("jndi injection")
   ) {
     tags.push("RCE");
   }
@@ -92,7 +93,9 @@ function generateTags(env) {
     name.includes("authorization bypass") ||
     name.includes("permission bypass") ||
     name.includes("access control bypass") ||
-    name.includes("user forge")
+    name.includes("user forge") ||
+    name.includes("account takeover") ||
+    name.includes("unauthorized access")
   ) {
     tags.push("Auth Bypass");
   }
@@ -116,6 +119,10 @@ function generateTags(env) {
 
   if (name.includes("path traversal") || name.includes("directory traversal")) {
     tags.push("Path Traversal");
+  }
+
+  if (name.includes("information disclosure")) {
+    tags.push("Information Disclosure");
   }
 
   // Application type tags
@@ -169,7 +176,8 @@ function generateTags(env) {
     app.includes("weblogic") ||
     app.includes("websphere") ||
     app.includes("coldfusion") ||
-    app.includes("jetty")
+    app.includes("jetty") ||
+    app.includes("apache http server")
   ) {
     tags.push("Webserver");
   }
