@@ -54,9 +54,10 @@ function generateTags(env) {
 
   if (
     name.includes("rce") ||
-    name.includes("remote code execution") ||
+    name.includes("code execution") ||
     name.includes("command execution") ||
-    name.includes("command injection")
+    name.includes("command injection") ||
+    name.includes("code injection")
   ) {
     tags.push("RCE");
   }
@@ -89,7 +90,8 @@ function generateTags(env) {
     name.includes("authentication bypass") ||
     name.includes("auth bypass") ||
     name.includes("authorization bypass") ||
-    name.includes("permission bypass")
+    name.includes("permission bypass") ||
+    name.includes("access control bypass")
   ) {
     tags.push("Auth Bypass");
   }
