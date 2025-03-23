@@ -125,14 +125,14 @@
       "date": "Tue May 21 00:20:44 2024 +0800"
     },
     {
-      "name": "Apache Druid Code Execution",
+      "name": "Apache Druid Embedded Javascript Remote Code Execution",
       "cve": [
         "CVE-2021-25646"
       ],
       "app": "Apache Druid",
       "path": "apache-druid/CVE-2021-25646",
       "tags": [
-        "Web Application"
+        "RCE"
       ],
       "date": "Sun Apr 30 02:58:40 2023 +0800"
     },
@@ -148,14 +148,14 @@
       "date": "Thu Jul 16 01:47:28 2020 +0800"
     },
     {
-      "name": "Apache APISIX Default Key",
+      "name": "Apache APISIX Hardcoded API Token Leads to RCE",
       "cve": [
         "CVE-2020-13945"
       ],
       "app": "Apache APISIX",
       "path": "apisix/CVE-2020-13945",
       "tags": [
-        "Web Application"
+        "RCE"
       ],
       "date": "Sun Jan 16 21:35:03 2022 +0800"
     },
@@ -195,14 +195,14 @@
       "date": "Sun Dec 17 03:39:32 2017 +0800"
     },
     {
-      "name": "Bash Shellshock Shell Exploit",
+      "name": "Bash Shellshock Remote Command Injection",
       "cve": [
         "CVE-2014-6271"
       ],
       "app": "Bash",
       "path": "bash/CVE-2014-6271",
       "tags": [
-        "Web Application"
+        "RCE"
       ],
       "date": "Tue Apr 12 03:01:24 2022 +0800"
     },
@@ -224,19 +224,20 @@
       "app": "Celery",
       "path": "celery/celery3_redis_unauth",
       "tags": [
-        "Deserialization"
+        "Deserialization",
+        "Auth Bypass"
       ],
       "date": "Wed Jun 30 11:43:09 2021 -0400"
     },
     {
-      "name": "CGI HTTPoxy Flaw",
+      "name": "CGI Application Environment Variable Injection by HTTPoxy",
       "cve": [
         "CVE-2016-5385"
       ],
       "app": "CGI",
       "path": "cgi/CVE-2016-5385",
       "tags": [
-        "Web Application"
+        "Other"
       ],
       "date": "Tue Apr 12 02:56:49 2022 +0800"
     },
@@ -274,7 +275,7 @@
       "path": "coldfusion/CVE-2010-2861",
       "tags": [
         "File Operation",
-        "Web Server"
+        "Webserver"
       ],
       "date": "Fri May 4 17:36:56 2018 +0800"
     },
@@ -287,7 +288,7 @@
       "path": "coldfusion/CVE-2017-3066",
       "tags": [
         "Deserialization",
-        "Web Server"
+        "Webserver"
       ],
       "date": "Thu Mar 15 20:38:22 2018 +0800"
     },
@@ -301,7 +302,7 @@
       "tags": [
         "RCE",
         "File Inclusion",
-        "Web Server"
+        "Webserver"
       ],
       "date": "Sun Jan 28 07:50:17 2024 +0800"
     },
@@ -315,67 +316,71 @@
       "tags": [
         "RCE",
         "Deserialization",
-        "Web Server"
+        "Webserver"
       ],
       "date": "Tue Jan 30 01:40:16 2024 +0800"
     },
     {
-      "name": "Atlassian Confluence Path Traversal and Command Execution",
+      "name": "Atlassian Confluence Path Traversal Leads to RCE",
       "cve": [
         "CVE-2019-3396"
       ],
       "app": "Confluence",
       "path": "confluence/CVE-2019-3396",
       "tags": [
-        "RCE"
+        "RCE",
+        "Path Traversal"
       ],
       "date": "Wed Apr 10 02:48:38 2019 +0800"
     },
     {
-      "name": "Atlassian Confluence OGNL Expression Injection Code Execution",
+      "name": "Atlassian Confluence Webwork Pre-Auth OGNL Injection Leads to RCE",
       "cve": [
         "CVE-2021-26084"
       ],
       "app": "Confluence",
       "path": "confluence/CVE-2021-26084",
       "tags": [
-        "Web Application"
+        "RCE",
+        "Expression Injection"
       ],
       "date": "Fri Sep 3 03:01:54 2021 +0800"
     },
     {
-      "name": "Atlassian Confluence OGNL Expression Injection Command Execution",
+      "name": "Atlassian Confluence Pre-Auth Remote Code Execution via OGNL Injection",
       "cve": [
         "CVE-2022-26134"
       ],
       "app": "Confluence",
       "path": "confluence/CVE-2022-26134",
       "tags": [
-        "RCE"
+        "RCE",
+        "Expression Injection"
       ],
       "date": "Sat Jun 4 08:36:19 2022 +0800"
     },
     {
-      "name": "Confluence Access Control Broken by Attributes Overwrite",
+      "name": "Atlassian Confluence Access Control Broken by Attributes Overwrite",
       "cve": [
         "CVE-2023-22515"
       ],
       "app": "Confluence",
       "path": "confluence/CVE-2023-22515",
       "tags": [
-        "Web Application"
+        "Other"
       ],
       "date": "Wed Oct 11 01:01:01 2023 +0800"
     },
     {
-      "name": "Confluence Pre-Auth Remote Code Execution via OGNL Injection",
+      "name": "Atlassian Confluence Pre-Auth Remote Code Execution via OGNL Injection",
       "cve": [
         "CVE-2023-22527"
       ],
       "app": "Confluence",
       "path": "confluence/CVE-2023-22527",
       "tags": [
-        "RCE"
+        "RCE",
+        "Expression Injection"
       ],
       "date": "Mon Jan 22 19:17:22 2024 +0800"
     },
@@ -413,6 +418,7 @@
       "app": "Apache CouchDB",
       "path": "couchdb/CVE-2022-24706",
       "tags": [
+        "RCE",
         "Database"
       ],
       "date": "Fri Nov 18 03:42:46 2022 +0800"
@@ -545,7 +551,7 @@
       "app": "DNS",
       "path": "dns/dns-zone-transfer",
       "tags": [
-        "Web Application"
+        "Other"
       ],
       "date": "Mon Mar 19 20:06:24 2018 +0800"
     },
@@ -555,7 +561,8 @@
       "app": "Docker",
       "path": "docker/unauthorized-rce",
       "tags": [
-        "RCE"
+        "RCE",
+        "Auth Bypass"
       ],
       "date": "Tue Mar 27 17:42:11 2018 +0800"
     },
@@ -667,7 +674,8 @@
       "app": "ECshop",
       "path": "ecshop/xianzhi-2017-02-82239600",
       "tags": [
-        "SQL Injection"
+        "SQL Injection",
+        "RCE"
       ],
       "date": "Sat Sep 1 03:23:53 2018 +0800"
     },
@@ -705,6 +713,7 @@
       "app": "ElasticSearch",
       "path": "elasticsearch/CVE-2015-3337",
       "tags": [
+        "Path Traversal",
         "Database"
       ],
       "date": "Sun Apr 23 03:40:55 2017 +0800"
@@ -717,6 +726,7 @@
       "app": "ElasticSearch",
       "path": "elasticsearch/CVE-2015-5531",
       "tags": [
+        "Path Traversal",
         "Database"
       ],
       "date": "Sun Apr 23 04:06:39 2017 +0800"
@@ -837,7 +847,7 @@
       "app": "Apache Flink",
       "path": "flink/CVE-2020-17518",
       "tags": [
-        "Web Application"
+        "Path Traversal"
       ],
       "date": "Wed Jan 6 02:27:19 2021 +0800"
     },
@@ -849,7 +859,7 @@
       "app": "Apache Flink",
       "path": "flink/CVE-2020-17519",
       "tags": [
-        "Web Application"
+        "Path Traversal"
       ],
       "date": "Wed Jan 6 02:27:19 2021 +0800"
     },
@@ -874,7 +884,7 @@
       "app": "GeoServer",
       "path": "geoserver/CVE-2022-24816",
       "tags": [
-        "Web Application"
+        "RCE"
       ],
       "date": "Sat Feb 1 05:42:37 2025 +0800"
     },
@@ -939,14 +949,14 @@
       "date": "Sat Feb 16 18:02:50 2019 +0800"
     },
     {
-      "name": "GIT-SHELL Sandbox Bypass",
+      "name": "GIT-SHELL Sandbox Bypass Leads to RCE",
       "cve": [
         "CVE-2017-8386"
       ],
       "app": "Git",
       "path": "git/CVE-2017-8386",
       "tags": [
-        "Web Application"
+        "RCE"
       ],
       "date": "Fri May 12 02:03:01 2017 +0800"
     },
@@ -956,7 +966,8 @@
       "app": "Gitea",
       "path": "gitea/1.4-rce",
       "tags": [
-        "RCE"
+        "RCE",
+        "Path Traversal"
       ],
       "date": "Sat Jul 21 23:29:16 2018 +0800"
     },
@@ -1005,12 +1016,12 @@
       "path": "glassfish/CVE-2017-1000028",
       "tags": [
         "File Operation",
-        "Web Server"
+        "Webserver"
       ],
       "date": "Sun Mar 9 01:36:17 2025 +0800"
     },
     {
-      "name": "GoAhead Remote Command Execution",
+      "name": "GoAhead Web Server Environment Variables Injection and `LD_PRELOAD` Remote Code Execution",
       "cve": [
         "CVE-2017-17562"
       ],
@@ -1022,14 +1033,14 @@
       "date": "Tue Dec 19 01:06:34 2017 +0800"
     },
     {
-      "name": "GoAhead Server Environment Variable Injection",
+      "name": "GoAhead Web Server Environment Variables Injection and `LD_PRELOAD` Remote Code Execution",
       "cve": [
         "CVE-2021-42342"
       ],
       "app": "GoAhead",
       "path": "goahead/CVE-2021-42342",
       "tags": [
-        "Web Application"
+        "RCE"
       ],
       "date": "Wed Jan 5 01:24:07 2022 +0800"
     },
@@ -1041,7 +1052,7 @@
       "app": "Gogs",
       "path": "gogs/CVE-2018-18925",
       "tags": [
-        "Web Application"
+        "Auth Bypass"
       ],
       "date": "Wed Nov 7 15:33:56 2018 +0800"
     },
@@ -1053,7 +1064,7 @@
       "app": "Grafana",
       "path": "grafana/CVE-2021-43798",
       "tags": [
-        "Web Application"
+        "Path Traversal"
       ],
       "date": "Sat Dec 11 21:44:20 2021 +0800"
     },
@@ -1073,6 +1084,7 @@
       "app": "Springboot H2 Database",
       "path": "h2database/h2-console-unacc",
       "tags": [
+        "Auth Bypass",
         "Framework",
         "Database"
       ],
@@ -1084,7 +1096,8 @@
       "app": "Hadoop YARN",
       "path": "hadoop/unauthorized-yarn",
       "tags": [
-        "RCE"
+        "RCE",
+        "Auth Bypass"
       ],
       "date": "Wed Mar 21 20:51:28 2018 +0800"
     },
@@ -1109,7 +1122,7 @@
       "app": "Apache HTTP Server",
       "path": "httpd/CVE-2017-15715",
       "tags": [
-        "Web Application"
+        "Webserver"
       ],
       "date": "Mon Apr 2 01:27:49 2018 +0800"
     },
@@ -1121,7 +1134,8 @@
       "app": "Apache HTTP Server",
       "path": "httpd/CVE-2021-40438",
       "tags": [
-        "SSRF"
+        "SSRF",
+        "Webserver"
       ],
       "date": "Tue Oct 19 21:45:02 2021 +0800"
     },
@@ -1133,7 +1147,8 @@
       "app": "Apache HTTP Server",
       "path": "httpd/CVE-2021-41773",
       "tags": [
-        "Web Application"
+        "Path Traversal",
+        "Webserver"
       ],
       "date": "Wed Oct 6 00:36:25 2021 +0800"
     },
@@ -1145,7 +1160,8 @@
       "app": "Apache HTTP Server",
       "path": "httpd/CVE-2021-42013",
       "tags": [
-        "Web Application"
+        "Path Traversal",
+        "Webserver"
       ],
       "date": "Fri Oct 8 12:40:33 2021 +0800"
     },
@@ -1155,7 +1171,7 @@
       "app": "Apache HTTP Server",
       "path": "httpd/apache_parsing_vulnerability",
       "tags": [
-        "Web Application"
+        "Webserver"
       ],
       "date": "Mon Mar 19 01:24:42 2018 +0800"
     },
@@ -1165,7 +1181,8 @@
       "app": "Apache HTTP Server",
       "path": "httpd/ssi-rce",
       "tags": [
-        "RCE"
+        "RCE",
+        "Webserver"
       ],
       "date": "Sun Jan 20 21:58:32 2019 +0800"
     },
@@ -1296,7 +1313,7 @@
       "tags": [
         "RCE",
         "Deserialization",
-        "Web Server"
+        "Webserver"
       ],
       "date": "Mon Nov 27 03:59:02 2017 +0800"
     },
@@ -1310,7 +1327,7 @@
       "tags": [
         "RCE",
         "Deserialization",
-        "Web Server"
+        "Webserver"
       ],
       "date": "Wed May 9 02:08:22 2018 +0800"
     },
@@ -1322,7 +1339,7 @@
       "tags": [
         "RCE",
         "Deserialization",
-        "Web Server"
+        "Webserver"
       ],
       "date": "Wed Mar 28 17:57:17 2018 +0800"
     },
@@ -1370,7 +1387,8 @@
       "app": "Jetty",
       "path": "jetty/CVE-2021-28164",
       "tags": [
-        "Web Server"
+        "Info Disclosure",
+        "Webserver"
       ],
       "date": "Thu Jun 10 19:14:03 2021 +0800"
     },
@@ -1382,7 +1400,8 @@
       "app": "Jetty",
       "path": "jetty/CVE-2021-28169",
       "tags": [
-        "Web Server"
+        "Info Disclosure",
+        "Webserver"
       ],
       "date": "Thu Jun 10 02:54:32 2021 +0800"
     },
@@ -1394,7 +1413,8 @@
       "app": "Jetty",
       "path": "jetty/CVE-2021-34429",
       "tags": [
-        "Web Server"
+        "Info Disclosure",
+        "Webserver"
       ],
       "date": "Tue Aug 17 22:26:22 2021 +0800"
     },
@@ -1483,7 +1503,7 @@
       "app": "Jumpserver",
       "path": "jumpserver/CVE-2023-42820",
       "tags": [
-        "Web Application"
+        "Auth Bypass"
       ],
       "date": "Mon Oct 2 01:23:13 2023 +0800"
     },
@@ -1493,7 +1513,7 @@
       "app": "Jupyter",
       "path": "jupyter/notebook-rce",
       "tags": [
-        "Web Application"
+        "Auth Bypass"
       ],
       "date": "Fri Jan 12 21:19:20 2018 +0800"
     },
@@ -1505,6 +1525,7 @@
       "app": "Apache Kafka",
       "path": "kafka/CVE-2023-25194",
       "tags": [
+        "RCE",
         "Message Queue"
       ],
       "date": "Sat Apr 29 02:57:14 2023 +0800"
@@ -1529,7 +1550,7 @@
       "app": "Kibana",
       "path": "kibana/CVE-2019-7609",
       "tags": [
-        "Web Application"
+        "RCE"
       ],
       "date": "Tue Jan 21 23:47:47 2020 +0800"
     },
@@ -1626,7 +1647,7 @@
       "app": "Apache Log4j",
       "path": "log4j/CVE-2021-44228",
       "tags": [
-        "Web Application"
+        "RCE"
       ],
       "date": "Tue Dec 14 01:28:57 2021 +0800"
     },
@@ -1696,7 +1717,7 @@
       "path": "mini_httpd/CVE-2018-18778",
       "tags": [
         "File Operation",
-        "Web Server"
+        "Webserver"
       ],
       "date": "Thu Nov 1 23:13:13 2018 +0800"
     },
@@ -1708,7 +1729,7 @@
       "app": "MinIO",
       "path": "minio/CVE-2023-28432",
       "tags": [
-        "Web Application"
+        "Info Disclosure"
       ],
       "date": "Sat Mar 25 22:41:58 2023 +0800"
     },
@@ -1794,7 +1815,8 @@
       "app": "Next.js",
       "path": "next.js/CVE-2025-29927",
       "tags": [
-        "Web Application"
+        "Auth Bypass",
+        "Framework"
       ],
       "date": "Mon Mar 24 00:00:34 2025 +0800"
     },
@@ -1842,7 +1864,7 @@
       "app": "Nexus Repository Manager",
       "path": "nexus/CVE-2024-4956",
       "tags": [
-        "Web Application"
+        "Path Traversal"
       ],
       "date": "Thu May 23 13:09:49 2024 +0800"
     },
@@ -1855,7 +1877,7 @@
       "path": "nginx/CVE-2013-4547",
       "tags": [
         "Framework",
-        "Web Server"
+        "Webserver"
       ],
       "date": "Tue Aug 29 00:00:45 2017 +0800"
     },
@@ -1868,7 +1890,7 @@
       "path": "nginx/CVE-2017-7529",
       "tags": [
         "Framework",
-        "Web Server"
+        "Webserver"
       ],
       "date": "Mon Jul 17 01:25:58 2017 +0800"
     },
@@ -1879,7 +1901,7 @@
       "path": "nginx/insecure-configuration",
       "tags": [
         "Framework",
-        "Web Server"
+        "Webserver"
       ],
       "date": "Tue Jun 6 02:03:24 2017 +0800"
     },
@@ -1890,7 +1912,7 @@
       "path": "nginx/nginx_parsing_vulnerability",
       "tags": [
         "Framework",
-        "Web Server"
+        "Webserver"
       ],
       "date": "Mon Mar 19 01:24:00 2018 +0800"
     },
@@ -1902,7 +1924,7 @@
       "app": "Node.JS",
       "path": "node/CVE-2017-14849",
       "tags": [
-        "Web Application"
+        "Path Traversal"
       ],
       "date": "Wed Nov 8 05:21:24 2017 +0800"
     },
@@ -2039,36 +2061,36 @@
       "app": "OpenSSH",
       "path": "openssh/CVE-2018-15473",
       "tags": [
-        "Web Application"
+        "Other"
       ],
       "date": "Sun Aug 26 03:00:04 2018 +0800"
     },
     {
-      "name": "OpenSSL Heartbleed",
+      "name": "OpenSSL Heartbleed Memory Leak Leads to Information Disclosure",
       "cve": [
         "CVE-2014-0160"
       ],
       "app": "OpenSSL",
       "path": "openssl/CVE-2014-0160",
       "tags": [
-        "Web Application"
+        "Info Disclosure"
       ],
       "date": "Tue Apr 12 02:12:02 2022 +0800"
     },
     {
-      "name": "OpenSSL Infinite Loop DoS",
+      "name": "OpenSSL Infinite Loop Leads to DoS",
       "cve": [
         "CVE-2022-0778"
       ],
       "app": "OpenSSL",
       "path": "openssl/CVE-2022-0778",
       "tags": [
-        "Web Application"
+        "DoS"
       ],
       "date": "Mon Apr 11 03:25:09 2022 +0800"
     },
     {
-      "name": "OpenTSDB Command Injection",
+      "name": "OpenTSDB Arbitrary Command Injection Remote Code Execution",
       "cve": [
         "CVE-2020-35476"
       ],
@@ -2080,14 +2102,14 @@
       "date": "Sun Sep 5 22:00:13 2021 +0800"
     },
     {
-      "name": "OpenTSDB Arbitrary Commands Injection",
+      "name": "OpenTSDB Arbitrary Command Injection Remote Code Execution",
       "cve": [
         "CVE-2023-25826"
       ],
       "app": "OpenTSDB",
       "path": "opentsdb/CVE-2023-25826",
       "tags": [
-        "Web Application"
+        "RCE"
       ],
       "date": "Tue May 30 21:00:05 2023 +0800"
     },
@@ -2099,7 +2121,7 @@
       "app": "PDF.js",
       "path": "pdfjs/CVE-2024-4367",
       "tags": [
-        "Web Application"
+        "RCE"
       ],
       "date": "Fri May 24 19:47:53 2024 +0800"
     },
@@ -2128,12 +2150,13 @@
       "date": "Fri Apr 5 21:08:15 2024 +0800"
     },
     {
-      "name": "PHP 8.1.0-dev Development Version Backdoor Event",
+      "name": "PHP 8.1.0-dev User-Agentt Backdoor Remote Code Execution",
       "cve": [],
       "app": "PHP",
       "path": "php/8.1-backdoor",
       "tags": [
-        "Web Application"
+        "RCE",
+        "Backdoor"
       ],
       "date": "Wed Mar 31 01:34:53 2021 +0800"
     },
@@ -2192,17 +2215,19 @@
       "app": "PHP-FPM",
       "path": "php/fpm",
       "tags": [
-        "RCE"
+        "RCE",
+        "Auth Bypass"
       ],
       "date": "Thu Feb 25 12:43:09 2021 +0800"
     },
     {
-      "name": "PHP Files Vulnerabilities (by phpinfo())",
+      "name": "PHP Local File Inclusion RCE with PHPINFO",
       "cve": [],
       "app": "PHP",
       "path": "php/inclusion",
       "tags": [
-        "Web Application"
+        "RCE",
+        "File Inclusion"
       ],
       "date": "Thu Apr 26 15:46:21 2018 +0800"
     },
@@ -2212,7 +2237,7 @@
       "app": "PHP",
       "path": "php/php_xxe",
       "tags": [
-        "Web Application"
+        "XXE"
       ],
       "date": "Mon Mar 19 01:23:23 2018 +0800"
     },
@@ -2222,7 +2247,7 @@
       "app": "PHP",
       "path": "php/xdebug-rce",
       "tags": [
-        "Web Application"
+        "RCE"
       ],
       "date": "Wed Dec 6 00:38:24 2017 +0800"
     },
@@ -2292,7 +2317,7 @@
       "app": "Polkit Pkexec",
       "path": "polkit/CVE-2021-4034",
       "tags": [
-        "Web Application"
+        "Privilege Escalation"
       ],
       "date": "Sat Feb 12 18:27:36 2022 +0800"
     },
@@ -2304,6 +2329,7 @@
       "app": "PostgreSQL",
       "path": "postgres/CVE-2018-1058",
       "tags": [
+        "Privilege Escalation",
         "Database"
       ],
       "date": "Wed Mar 7 20:42:40 2018 +0800"
@@ -2364,6 +2390,7 @@
       "app": "Ruby on Rails",
       "path": "rails/CVE-2018-3760",
       "tags": [
+        "Path Traversal",
         "Framework"
       ],
       "date": "Sat Sep 8 03:23:48 2018 +0800"
@@ -2377,6 +2404,7 @@
       "path": "rails/CVE-2019-5418",
       "tags": [
         "File Operation",
+        "Path Traversal",
         "Framework"
       ],
       "date": "Tue Mar 19 01:46:32 2019 +0800"
@@ -2406,14 +2434,14 @@
       "date": "Thu Mar 10 22:20:16 2022 +0800"
     },
     {
-      "name": "Rocket Chat MongoDB Injection",
+      "name": "Rocket Chat Pre-Auth Blind NoSQL Injection",
       "cve": [
         "CVE-2021-22911"
       ],
       "app": "Rocket.Chat",
       "path": "rocketchat/CVE-2021-22911",
       "tags": [
-        "Web Application"
+        "SQL Injection"
       ],
       "date": "Wed Sep 8 03:04:56 2021 +0800"
     },
@@ -2449,7 +2477,7 @@
       "app": "rsync",
       "path": "rsync/common",
       "tags": [
-        "Web Application"
+        "Auth Bypass"
       ],
       "date": "Thu Jan 18 14:23:36 2018 +0800"
     },
@@ -2466,14 +2494,15 @@
       "date": "Mon Jan 22 00:36:31 2018 +0800"
     },
     {
-      "name": "SaltStack Horizontal Privilege Bypass",
+      "name": "SaltStack Information Disclosure Leads to Privilege Escalation",
       "cve": [
         "CVE-2020-11651"
       ],
       "app": "SaltStack",
       "path": "saltstack/CVE-2020-11651",
       "tags": [
-        "Web Application"
+        "Privilege Escalation",
+        "Info Disclosure"
       ],
       "date": "Mon May 4 04:08:46 2020 +0800"
     },
@@ -2490,7 +2519,7 @@
       "date": "Mon May 4 07:31:27 2020 +0800"
     },
     {
-      "name": "SaltStack Command Injection",
+      "name": "SaltStack Command Injection Remote Code Execution",
       "cve": [
         "CVE-2020-16846"
       ],
@@ -2519,7 +2548,7 @@
       "app": "Scrapyd",
       "path": "scrapy/scrapyd-unacc",
       "tags": [
-        "Web Application"
+        "Auth Bypass"
       ],
       "date": "Thu Sep 19 21:00:03 2019 +0800"
     },
@@ -2610,7 +2639,7 @@
       "app": "Apache Solr",
       "path": "solr/CVE-2017-12629-XXE",
       "tags": [
-        "Web Application"
+        "XXE"
       ],
       "date": "Sun Nov 5 05:07:25 2017 +0800"
     },
@@ -2634,7 +2663,8 @@
       "app": "Apache Solr",
       "path": "solr/CVE-2019-17558",
       "tags": [
-        "RCE"
+        "RCE",
+        "Expression Injection"
       ],
       "date": "Tue Jan 21 20:56:16 2020 +0800"
     },
@@ -2655,7 +2685,8 @@
       "app": "Apache Spark",
       "path": "spark/unacc",
       "tags": [
-        "RCE"
+        "RCE",
+        "Auth Bypass"
       ],
       "date": "Thu Aug 2 01:29:26 2018 +0800"
     },
@@ -2733,6 +2764,7 @@
       "path": "spring/CVE-2022-22947",
       "tags": [
         "RCE",
+        "Expression Injection",
         "Framework"
       ],
       "date": "Thu Mar 3 04:00:46 2022 +0800"
@@ -2746,6 +2778,7 @@
       "path": "spring/CVE-2022-22963",
       "tags": [
         "RCE",
+        "Expression Injection",
         "Framework"
       ],
       "date": "Thu Mar 31 21:21:23 2022 +0800"
@@ -2771,6 +2804,7 @@
       "app": "Spring",
       "path": "spring/CVE-2022-22978",
       "tags": [
+        "Auth Bypass",
         "Framework"
       ],
       "date": "Thu Jul 21 20:21:06 2022 +0200"
@@ -3014,6 +3048,7 @@
       "app": "Apache Struts2",
       "path": "struts2/s2-066",
       "tags": [
+        "Path Traversal",
         "Framework"
       ],
       "date": "Tue Feb 4 00:15:47 2025 +0800"
@@ -3026,6 +3061,7 @@
       "app": "Apache Struts2",
       "path": "struts2/s2-067",
       "tags": [
+        "Path Traversal",
         "Framework"
       ],
       "date": "Tue Feb 4 00:17:47 2025 +0800"
@@ -3091,7 +3127,8 @@
       "app": "ThinkPHP",
       "path": "thinkphp/in-sqlinjection",
       "tags": [
-        "SQL Injection"
+        "SQL Injection",
+        "Info Disclosure"
       ],
       "date": "Tue Jul 4 04:10:44 2017 +0800"
     },
@@ -3125,7 +3162,7 @@
       "app": "Apache Tomcat",
       "path": "tomcat/CVE-2017-12615",
       "tags": [
-        "Web Server"
+        "Webserver"
       ],
       "date": "Wed Sep 20 19:26:45 2017 +0800"
     },
@@ -3137,7 +3174,7 @@
       "app": "Apache Tomcat",
       "path": "tomcat/CVE-2020-1938",
       "tags": [
-        "Web Server"
+        "Webserver"
       ],
       "date": "Fri Feb 21 00:40:44 2020 +0800"
     },
@@ -3151,7 +3188,7 @@
       "tags": [
         "RCE",
         "Deserialization",
-        "Web Server"
+        "Webserver"
       ],
       "date": "Mon Mar 17 02:23:49 2025 +0800"
     },
@@ -3161,19 +3198,19 @@
       "app": "Apache Tomcat",
       "path": "tomcat/tomcat8",
       "tags": [
-        "Web Server"
+        "Webserver"
       ],
       "date": "Sun Apr 23 23:15:32 2017 +0800"
     },
     {
-      "name": "Apache Unomi Remote Expression Code Execution",
+      "name": "Apache Unomi Expression Language Injection RCE",
       "cve": [
         "CVE-2020-13942"
       ],
       "app": "Apache Unomi",
       "path": "unomi/CVE-2020-13942",
       "tags": [
-        "Web Application"
+        "RCE"
       ],
       "date": "Sun Nov 22 01:49:35 2020 +0800"
     },
@@ -3185,7 +3222,7 @@
       "app": "uWSGI",
       "path": "uwsgi/CVE-2018-7490",
       "tags": [
-        "Web Application"
+        "Path Traversal"
       ],
       "date": "Sun Mar 25 02:31:08 2018 +0800"
     },
@@ -3195,7 +3232,7 @@
       "app": "uWSGI",
       "path": "uwsgi/unacc",
       "tags": [
-        "Web Application"
+        "Auth Bypass"
       ],
       "date": "Fri Dec 7 00:22:38 2018 +0800"
     },
@@ -3205,7 +3242,7 @@
       "app": "V2board",
       "path": "v2board/1.6-privilege-escalation",
       "tags": [
-        "Web Application"
+        "Privilege Escalation"
       ],
       "date": "Sat Dec 17 21:51:53 2022 +0800"
     },
@@ -3219,7 +3256,7 @@
       "tags": [
         "RCE",
         "Deserialization",
-        "Web Server"
+        "Webserver"
       ],
       "date": "Sun Feb 25 01:28:47 2018 +0800"
     },
@@ -3233,7 +3270,7 @@
       "tags": [
         "RCE",
         "Deserialization",
-        "Web Server"
+        "Webserver"
       ],
       "date": "Sun Apr 22 23:53:40 2018 +0800"
     },
@@ -3246,7 +3283,7 @@
       "path": "weblogic/CVE-2018-2894",
       "tags": [
         "File Operation",
-        "Web Server"
+        "Webserver"
       ],
       "date": "Thu Jul 19 21:50:51 2018 +0800"
     },
@@ -3259,7 +3296,7 @@
       "path": "weblogic/CVE-2020-14882",
       "tags": [
         "RCE",
-        "Web Server"
+        "Webserver"
       ],
       "date": "Sun Nov 1 04:47:33 2020 +0800"
     },
@@ -3272,7 +3309,7 @@
       "path": "weblogic/CVE-2023-21839",
       "tags": [
         "RCE",
-        "Web Server"
+        "Webserver"
       ],
       "date": "Sun Feb 26 17:34:58 2023 +0800"
     },
@@ -3283,7 +3320,7 @@
       "path": "weblogic/ssrf",
       "tags": [
         "SSRF",
-        "Web Server"
+        "Webserver"
       ],
       "date": "Thu May 11 16:59:59 2017 +0800"
     },
@@ -3295,7 +3332,7 @@
       "tags": [
         "RCE",
         "File Operation",
-        "Web Server"
+        "Webserver"
       ],
       "date": "Tue May 9 21:28:28 2017 +0800"
     },
@@ -3354,7 +3391,7 @@
       "app": "XXL-JOB",
       "path": "xxl-job/unacc",
       "tags": [
-        "Web Application"
+        "Auth Bypass"
       ],
       "date": "Mon Nov 9 03:40:28 2020 +0800"
     },
