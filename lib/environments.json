@@ -1787,6 +1787,18 @@
       "date": "Sun Sep 5 01:44:32 2021 +0800"
     },
     {
+      "name": "Next.js Middleware Authorization Bypass",
+      "cve": [
+        "CVE-2025-29927"
+      ],
+      "app": "Next.js",
+      "path": "next.js/CVE-2025-29927",
+      "tags": [
+        "Web Application"
+      ],
+      "date": "Mon Mar 24 00:00:34 2025 +0800"
+    },
+    {
       "name": "Nexus Repository Manager 3 Unauthenticated Remote Code Execution",
       "cve": [
         "CVE-2019-7238"
