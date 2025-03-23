@@ -92,7 +92,7 @@ function generateTags(env) {
     name.includes("auth bypass") ||
     name.includes("authorization bypass") ||
     name.includes("permission bypass") ||
-    name.includes("access control bypass") ||
+    name.includes("access control broken") ||
     name.includes("user forge") ||
     name.includes("account takeover") ||
     name.includes("unauthorized access")
@@ -120,6 +120,10 @@ function generateTags(env) {
     name.includes("mvel")
   ) {
     tags.push("Expression Injection");
+  }
+
+  if (/environment.*?injection/.test(name)) {
+    tags.push("Environment Injection");
   }
 
   if (name.includes("path traversal") || name.includes("directory traversal")) {
