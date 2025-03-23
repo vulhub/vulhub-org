@@ -114,7 +114,7 @@ function generateTags(env) {
     tags.push("Expression Injection");
   }
 
-  if (name.includes("path traversal") || name.includes("traversal")) {
+  if (name.includes("path traversal") || name.includes("directory traversal")) {
     tags.push("Path Traversal");
   }
 
