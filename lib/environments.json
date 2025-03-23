@@ -237,7 +237,7 @@
       "app": "CGI",
       "path": "cgi/CVE-2016-5385",
       "tags": [
-        "Other"
+        "Environment Injection"
       ],
       "date": "Tue Apr 12 02:56:49 2022 +0800"
     },
@@ -367,7 +367,7 @@
       "app": "Confluence",
       "path": "confluence/CVE-2023-22515",
       "tags": [
-        "Other"
+        "Auth Bypass"
       ],
       "date": "Wed Oct 11 01:01:01 2023 +0800"
     },
@@ -1028,7 +1028,8 @@
       "app": "GoAhead",
       "path": "goahead/CVE-2017-17562",
       "tags": [
-        "RCE"
+        "RCE",
+        "Environment Injection"
       ],
       "date": "Tue Dec 19 01:06:34 2017 +0800"
     },
@@ -1040,7 +1041,8 @@
       "app": "GoAhead",
       "path": "goahead/CVE-2021-42342",
       "tags": [
-        "RCE"
+        "RCE",
+        "Environment Injection"
       ],
       "date": "Wed Jan 5 01:24:07 2022 +0800"
     },
