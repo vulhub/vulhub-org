@@ -88,6 +88,7 @@ function generateTags(env) {
   if (
     name.includes("authentication bypass") ||
     name.includes("auth bypass") ||
+    name.includes("authorization bypass") ||
     name.includes("permission bypass")
   ) {
     tags.push("Auth Bypass");
@@ -99,6 +100,19 @@ function generateTags(env) {
 
   if (name.includes("ssti") || name.includes("template injection")) {
     tags.push("Template Injection");
+  }
+
+  if (
+    name.includes("ognl") ||
+    name.includes("spel") ||
+    name.includes("el expression") ||
+    name.includes("velocity")
+  ) {
+    tags.push("Expression Injection");
+  }
+
+  if (name.includes("path traversal") || name.includes("traversal")) {
+    tags.push("Path Traversal");
   }
 
   // Application type tags
@@ -127,7 +141,8 @@ function generateTags(env) {
     app.includes("bottle") ||
     app.includes("rails") ||
     app.includes("gin") ||
-    app.includes("asp.net")
+    app.includes("asp.net") ||
+    app.includes("next.js")
   ) {
     tags.push("Framework");
   }
@@ -153,7 +168,7 @@ function generateTags(env) {
     app.includes("coldfusion") ||
     app.includes("jetty")
   ) {
-    tags.push("Web Server");
+    tags.push("Webserver");
   }
 
   if (
@@ -173,7 +188,7 @@ function generateTags(env) {
 
   // If no specific tags found, add default tag
   if (tags.length === 0) {
-    tags.push("Web Application");
+    tags.push("Other");
   }
 
   return tags;
