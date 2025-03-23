@@ -100,6 +100,10 @@ function generateTags(env) {
     tags.push("Auth Bypass");
   }
 
+  if (name.includes("privilege escalation")) {
+    tags.push("Privilege Escalation");
+  }
+
   if (name.includes("csrf") || name.includes("cross-site request forgery")) {
     tags.push("CSRF");
   }
@@ -112,7 +116,8 @@ function generateTags(env) {
     name.includes("ognl") ||
     name.includes("spel") ||
     name.includes("el expression") ||
-    name.includes("velocity")
+    name.includes("velocity") ||
+    name.includes("mvel")
   ) {
     tags.push("Expression Injection");
   }
@@ -128,8 +133,16 @@ function generateTags(env) {
     tags.push("Info Disclosure");
   }
 
-  if (/\bdos\b/.test(name) || name.includes("denial of service")) {
+  if (name.includes("xxe") || /xml.*?injection/.test(name)) {
+    tags.push("XXE");
+  }
+
+  if (name.includes("dos") || name.includes("denial of service")) {
     tags.push("DoS");
+  }
+
+  if (name.includes("backdoor")) {
+    tags.push("Backdoor");
   }
 
   // Application type tags
