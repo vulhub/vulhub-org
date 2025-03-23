@@ -91,7 +91,8 @@ function generateTags(env) {
     name.includes("auth bypass") ||
     name.includes("authorization bypass") ||
     name.includes("permission bypass") ||
-    name.includes("access control bypass")
+    name.includes("access control bypass") ||
+    name.includes("user forge")
   ) {
     tags.push("Auth Bypass");
   }
