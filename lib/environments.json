@@ -3249,6 +3249,18 @@
       "date": "Sat Dec 17 21:51:53 2022 +0800"
     },
     {
+      "name": "Vite Development Server Arbitrary File Read",
+      "cve": [
+        "CVE-2025-30208"
+      ],
+      "app": "Vite",
+      "path": "vite/CVE-2025-30208",
+      "tags": [
+        "File Operation"
+      ],
+      "date": "Thu Mar 27 01:06:20 2025 +0800"
+    },
+    {
       "name": "WebLogic < 10.3.6 'wls-wsat' XMLDecoder Deserialization Remote Command Execution",
       "cve": [
         "CVE-2017-10271"
