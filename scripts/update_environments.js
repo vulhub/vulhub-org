@@ -67,11 +67,7 @@ function generateTags(env) {
     tags.push("Deserialization");
   }
 
-  if (
-    name.includes("file inclusion") ||
-    name.includes("lfi") ||
-    name.includes("rfi")
-  ) {
+  if (name.includes("file inclusion")) {
     tags.push("File Inclusion");
   }
 
