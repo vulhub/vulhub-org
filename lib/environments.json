@@ -3068,6 +3068,18 @@
       "date": "Tue Feb 4 00:17:47 2025 +0800"
     },
     {
+      "name": "Apache Superset Hardcoded JWT Secret Key Leads to Authentication Bypass",
+      "cve": [
+        "CVE-2023-27524"
+      ],
+      "app": "Apache Superset",
+      "path": "superset/CVE-2023-27524",
+      "tags": [
+        "Auth Bypass"
+      ],
+      "date": "Thu Mar 27 19:42:51 2025 +0800"
+    },
+    {
       "name": "Supervisord XML-RPC Remote Command Execution",
       "cve": [
         "CVE-2017-11610"
