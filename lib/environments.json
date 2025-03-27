@@ -3080,6 +3080,19 @@
       "date": "Thu Mar 27 19:42:51 2025 +0800"
     },
     {
+      "name": "Apache Superset Python Pickle Deserialization Leads to RCE",
+      "cve": [
+        "CVE-2023-37941"
+      ],
+      "app": "Apache Superset",
+      "path": "superset/CVE-2023-37941",
+      "tags": [
+        "RCE",
+        "Deserialization"
+      ],
+      "date": "Fri Mar 28 03:57:23 2025 +0800"
+    },
+    {
       "name": "Supervisord XML-RPC Remote Command Execution",
       "cve": [
         "CVE-2017-11610"
