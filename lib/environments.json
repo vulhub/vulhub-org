@@ -774,8 +774,7 @@
       "app": "elFinder",
       "path": "elfinder/CVE-2021-32682",
       "tags": [
-        "RCE",
-        "File Inclusion"
+        "RCE"
       ],
       "date": "Sun Feb 27 04:27:01 2022 +0800"
     },
@@ -3250,6 +3249,16 @@
     },
     {
       "name": "Vite Development Server Arbitrary File Read",
+      "cve": [],
+      "app": "Vite",
+      "path": "vite/CNVD-2022-44615",
+      "tags": [
+        "File Operation"
+      ],
+      "date": "Thu Mar 27 15:18:57 2025 +0800"
+    },
+    {
+      "name": "Vite Development Server Arbitrary File Read Bypass",
       "cve": [
         "CVE-2025-30208"
       ],
