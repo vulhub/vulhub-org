@@ -1,4 +1,31 @@
 {
+  "tags": [
+    "Auth Bypass",
+    "Backdoor",
+    "Deserialization",
+    "DoS",
+    "Environment Injection",
+    "Expression Injection",
+    "File Inclusion",
+    "File Operation",
+    "Hard Coding",
+    "Info Disclosure",
+    "Path Traversal",
+    "Privilege Escalation",
+    "RCE",
+    "SQL Injection",
+    "SSRF",
+    "SSTI",
+    "XXE",
+    "XSS",
+    "SSRF",
+    "CMS",
+    "Database",
+    "Framework",
+    "Message Queue",
+    "Webserver",
+    "Other"
+  ],
   "environment": [
     {
       "name": "Apache ActiveMQ Deserialization",
@@ -9,6 +36,7 @@
       "path": "activemq/CVE-2015-5254",
       "tags": [
         "Deserialization",
+        "RCE",
         "Message Queue"
       ],
       "date": "Mon Feb 26 14:34:36 2018 +0800"
@@ -22,6 +50,7 @@
       "path": "activemq/CVE-2016-3088",
       "tags": [
         "File Operation",
+        "RCE",
         "Message Queue"
       ],
       "date": "Mon Jul 3 17:09:30 2017 +0800"
@@ -61,7 +90,8 @@
       "app": "Adminer",
       "path": "adminer/CVE-2021-21311",
       "tags": [
-        "SSRF"
+        "SSRF",
+        "Database"
       ],
       "date": "Thu Jul 6 14:52:48 2023 +0800"
     },
@@ -155,7 +185,9 @@
       "app": "Apache APISIX",
       "path": "apisix/CVE-2020-13945",
       "tags": [
-        "RCE"
+        "RCE",
+        "Hard Coding",
+        "Webserver"
       ],
       "date": "Sun Jan 16 21:35:03 2022 +0800"
     },
@@ -168,7 +200,8 @@
       "path": "apisix/CVE-2021-45232",
       "tags": [
         "RCE",
-        "Auth Bypass"
+        "Auth Bypass",
+        "Webserver"
       ],
       "date": "Tue Oct 11 00:24:49 2022 +0800"
     },
@@ -180,7 +213,8 @@
       "app": "AppWeb",
       "path": "appweb/CVE-2018-8715",
       "tags": [
-        "Auth Bypass"
+        "Auth Bypass",
+        "Webserver"
       ],
       "date": "Wed Jan 30 17:32:37 2019 +0800"
     },
@@ -288,6 +322,7 @@
       "path": "coldfusion/CVE-2017-3066",
       "tags": [
         "Deserialization",
+        "RCE",
         "Webserver"
       ],
       "date": "Thu Mar 15 20:38:22 2018 +0800"
@@ -459,7 +494,7 @@
       "date": "Thu Jun 7 00:54:09 2018 +0800"
     },
     {
-      "name": "Discuz!X ≤3.4 Arbitrary File Deletion",
+      "name": "Discuz!X <= 3.4 Arbitrary File Deletion",
       "cve": [],
       "app": "Discuz!",
       "path": "discuz/x3.4-arbitrary-file-deletion",
@@ -642,6 +677,7 @@
       "path": "drupal/CVE-2019-6341",
       "tags": [
         "XSS",
+        "File Operation",
         "CMS"
       ],
       "date": "Wed Jun 19 16:25:51 2019 +0800"
@@ -654,7 +690,8 @@
       "app": "Apache Dubbo",
       "path": "dubbo/CVE-2019-17564",
       "tags": [
-        "Deserialization"
+        "Deserialization",
+        "RCE"
       ],
       "date": "Thu Jul 1 04:01:59 2021 +0800"
     },
@@ -664,7 +701,8 @@
       "app": "ECshop",
       "path": "ecshop/collection_list-sqli",
       "tags": [
-        "SQL Injection"
+        "SQL Injection",
+        "CMS"
       ],
       "date": "Sun Sep 26 20:02:01 2021 +0800"
     },
@@ -675,7 +713,8 @@
       "path": "ecshop/xianzhi-2017-02-82239600",
       "tags": [
         "SQL Injection",
-        "RCE"
+        "RCE",
+        "CMS"
       ],
       "date": "Sat Sep 1 03:23:53 2018 +0800"
     },
@@ -701,6 +740,7 @@
       "path": "elasticsearch/CVE-2015-1427",
       "tags": [
         "RCE",
+        "Expression Injection",
         "Database"
       ],
       "date": "Sat Apr 22 17:12:11 2017 +0800"
@@ -834,7 +874,9 @@
       "app": "Jinja2",
       "path": "flask/ssti",
       "tags": [
-        "Template Injection"
+        "SSTI",
+        "RCE",
+        "Framework"
       ],
       "date": "Tue May 2 02:40:03 2017 +0800"
     },
@@ -907,7 +949,8 @@
       "app": "GeoServer",
       "path": "geoserver/CVE-2024-36401",
       "tags": [
-        "RCE"
+        "RCE",
+        "Expression Injection"
       ],
       "date": "Wed Jul 3 00:45:54 2024 +0800"
     },
@@ -1053,7 +1096,8 @@
       "app": "Gogs",
       "path": "gogs/CVE-2018-18925",
       "tags": [
-        "Auth Bypass"
+        "Auth Bypass",
+        "Path Traversal"
       ],
       "date": "Wed Nov 7 15:33:56 2018 +0800"
     },
@@ -1086,7 +1130,6 @@
       "path": "h2database/h2-console-unacc",
       "tags": [
         "Auth Bypass",
-        "Framework",
         "Database"
       ],
       "date": "Thu Apr 30 02:23:09 2020 +0800"
@@ -1207,7 +1250,8 @@
       "app": "Apache HugeGraph",
       "path": "hugegraph/CVE-2024-43441",
       "tags": [
-        "Auth Bypass"
+        "Auth Bypass",
+        "Hard Coding"
       ],
       "date": "Thu Feb 13 19:27:50 2025 +0800"
     },
@@ -1255,7 +1299,8 @@
       "app": "InfluxDB",
       "path": "influxdb/CVE-2019-20933",
       "tags": [
-        "Auth Bypass"
+        "Auth Bypass",
+        "Hard Coding"
       ],
       "date": "Wed Nov 30 14:56:40 2022 +0800"
     },
@@ -1283,7 +1328,7 @@
       "date": "Thu Oct 3 01:27:26 2019 +0800"
     },
     {
-      "name": "Java ≤JDK 8u111 RMI Registry Deserialization Remote Code Execution",
+      "name": "Java <= JDK 8u111 RMI Registry Deserialization Remote Code Execution",
       "cve": [],
       "app": "Java RMI",
       "path": "java/rmi-registry-bind-deserialization",
@@ -1428,7 +1473,7 @@
       "path": "jimureport/CVE-2023-4450",
       "tags": [
         "RCE",
-        "Template Injection"
+        "SSTI"
       ],
       "date": "Sun May 5 22:29:58 2024 +0800"
     },
@@ -1440,7 +1485,8 @@
       "app": "Jira",
       "path": "jira/CVE-2019-11581",
       "tags": [
-        "Template Injection"
+        "SSTI",
+        "RCE"
       ],
       "date": "Tue Jul 16 11:39:22 2019 +0800"
     },
@@ -1466,6 +1512,7 @@
       "path": "joomla/CVE-2015-8562",
       "tags": [
         "Deserialization",
+        "RCE",
         "CMS"
       ],
       "date": "Sun Dec 3 21:30:42 2017 +0800"
@@ -1573,7 +1620,8 @@
       "app": "kkFileView",
       "path": "kkfileview/4.3-zipslip-rce",
       "tags": [
-        "RCE"
+        "RCE",
+        "Path Traversal"
       ],
       "date": "Fri Apr 19 02:40:02 2024 +0800"
     },
@@ -1740,7 +1788,8 @@
       "app": "Mojarra JSF",
       "path": "mojarra/jsf-viewstate-deserialization",
       "tags": [
-        "Deserialization"
+        "Deserialization",
+        "RCE"
       ],
       "date": "Wed Jul 22 04:04:53 2020 +0800"
     },
@@ -1752,9 +1801,7 @@
       "app": "Mongo Express",
       "path": "mongo-express/CVE-2019-10758",
       "tags": [
-        "RCE",
-        "Framework",
-        "Database"
+        "RCE"
       ],
       "date": "Sun Jan 5 03:19:59 2020 +0800"
     },
@@ -1804,7 +1851,8 @@
       "app": "Neo4j",
       "path": "neo4j/CVE-2021-34371",
       "tags": [
-        "Deserialization"
+        "Deserialization",
+        "RCE"
       ],
       "date": "Sun Sep 5 01:44:32 2021 +0800"
     },
@@ -1877,7 +1925,6 @@
       "app": "Nginx",
       "path": "nginx/CVE-2013-4547",
       "tags": [
-        "Framework",
         "Webserver"
       ],
       "date": "Tue Aug 29 00:00:45 2017 +0800"
@@ -1890,7 +1937,7 @@
       "app": "Nginx",
       "path": "nginx/CVE-2017-7529",
       "tags": [
-        "Framework",
+        "Info Disclosure",
         "Webserver"
       ],
       "date": "Mon Jul 17 01:25:58 2017 +0800"
@@ -1901,7 +1948,6 @@
       "app": "Nginx",
       "path": "nginx/insecure-configuration",
       "tags": [
-        "Framework",
         "Webserver"
       ],
       "date": "Tue Jun 6 02:03:24 2017 +0800"
@@ -1912,7 +1958,6 @@
       "app": "Nginx",
       "path": "nginx/nginx_parsing_vulnerability",
       "tags": [
-        "Framework",
         "Webserver"
       ],
       "date": "Mon Mar 19 01:24:00 2018 +0800"
@@ -1974,7 +2019,8 @@
       "app": "Apache OFBiz",
       "path": "ofbiz/CVE-2023-49070",
       "tags": [
-        "Deserialization"
+        "Deserialization",
+        "RCE"
       ],
       "date": "Thu Dec 7 19:11:23 2023 +0800"
     },
@@ -2062,7 +2108,7 @@
       "app": "OpenSSH",
       "path": "openssh/CVE-2018-15473",
       "tags": [
-        "Other"
+        "Info Disclosure"
       ],
       "date": "Sun Aug 26 03:00:04 2018 +0800"
     },
@@ -2265,7 +2311,7 @@
       "date": "Mon Nov 27 17:51:58 2017 +0800"
     },
     {
-      "name": "phpMyAdmin 4.0.x—4.6.2 Remote Code Execution",
+      "name": "phpMyAdmin 4.0.x-4.6.2 Remote Code Execution",
       "cve": [
         "CVE-2016-5734"
       ],
@@ -2294,7 +2340,8 @@
       "app": "phpMyAdmin",
       "path": "phpmyadmin/WooYun-2016-199433",
       "tags": [
-        "Deserialization"
+        "Deserialization",
+        "RCE"
       ],
       "date": "Wed May 9 19:12:30 2018 +0800"
     },
@@ -2549,7 +2596,8 @@
       "app": "Scrapyd",
       "path": "scrapy/scrapyd-unacc",
       "tags": [
-        "Auth Bypass"
+        "Auth Bypass",
+        "RCE"
       ],
       "date": "Thu Sep 19 21:00:03 2019 +0800"
     },
@@ -2574,7 +2622,8 @@
       "path": "shiro/CVE-2016-4437",
       "tags": [
         "RCE",
-        "Deserialization"
+        "Deserialization",
+        "Hard Coding"
       ],
       "date": "Fri Dec 20 02:33:23 2019 +0800"
     },
@@ -3075,7 +3124,8 @@
       "app": "Apache Superset",
       "path": "superset/CVE-2023-27524",
       "tags": [
-        "Auth Bypass"
+        "Auth Bypass",
+        "Hard Coding"
       ],
       "date": "Thu Mar 27 19:42:51 2025 +0800"
     },
@@ -3188,6 +3238,7 @@
       "app": "Apache Tomcat",
       "path": "tomcat/CVE-2017-12615",
       "tags": [
+        "File Operation",
         "Webserver"
       ],
       "date": "Wed Sep 20 19:26:45 2017 +0800"
@@ -3200,6 +3251,8 @@
       "app": "Apache Tomcat",
       "path": "tomcat/CVE-2020-1938",
       "tags": [
+        "Auth Bypass",
+        "File Inclusion",
         "Webserver"
       ],
       "date": "Fri Feb 21 00:40:44 2020 +0800"
@@ -3224,6 +3277,7 @@
       "app": "Apache Tomcat",
       "path": "tomcat/tomcat8",
       "tags": [
+        "Auth Bypass",
         "Webserver"
       ],
       "date": "Sun Apr 23 23:15:32 2017 +0800"
@@ -3236,7 +3290,8 @@
       "app": "Apache Unomi",
       "path": "unomi/CVE-2020-13942",
       "tags": [
-        "RCE"
+        "RCE",
+        "Expression Injection"
       ],
       "date": "Sun Nov 22 01:49:35 2020 +0800"
     },
@@ -3258,7 +3313,8 @@
       "app": "uWSGI",
       "path": "uwsgi/unacc",
       "tags": [
-        "Auth Bypass"
+        "Auth Bypass",
+        "RCE"
       ],
       "date": "Fri Dec 7 00:22:38 2018 +0800"
     },
