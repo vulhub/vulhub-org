@@ -6,8 +6,8 @@
     "DoS",
     "Environment Injection",
     "Expression Injection",
-    "File Inclusion",
-    "File Operation",
+    "File Upload",
+    "File Deletion",
     "Hard Coding",
     "Info Disclosure",
     "Path Traversal",
@@ -49,7 +49,7 @@
       "app": "Apache ActiveMQ",
       "path": "activemq/CVE-2016-3088",
       "tags": [
-        "File Operation",
+        "File Upload",
         "RCE",
         "Message Queue"
       ],
@@ -103,7 +103,7 @@
       "app": "Adminer",
       "path": "adminer/CVE-2021-43008",
       "tags": [
-        "File Operation"
+        "Path Traversal"
       ],
       "date": "Thu Jul 6 02:53:33 2023 +0800"
     },
@@ -224,7 +224,8 @@
       "app": "Aria2",
       "path": "aria2/rce",
       "tags": [
-        "File Operation"
+        "File Upload",
+        "RCE"
       ],
       "date": "Sun Dec 17 03:39:32 2017 +0800"
     },
@@ -308,7 +309,7 @@
       "app": "Adobe ColdFusion",
       "path": "coldfusion/CVE-2010-2861",
       "tags": [
-        "File Operation",
+        "Path Traversal",
         "Webserver"
       ],
       "date": "Fri May 4 17:36:56 2018 +0800"
@@ -336,7 +337,7 @@
       "path": "coldfusion/CVE-2023-26360",
       "tags": [
         "RCE",
-        "File Inclusion",
+        "Path Traversal",
         "Webserver"
       ],
       "date": "Sun Jan 28 07:50:17 2024 +0800"
@@ -499,7 +500,7 @@
       "app": "Discuz!",
       "path": "discuz/x3.4-arbitrary-file-deletion",
       "tags": [
-        "File Operation"
+        "File Deletion"
       ],
       "date": "Fri Nov 3 02:25:23 2017 +0800"
     },
@@ -677,7 +678,7 @@
       "path": "drupal/CVE-2019-6341",
       "tags": [
         "XSS",
-        "File Operation",
+        "File Upload",
         "CMS"
       ],
       "date": "Wed Jun 19 16:25:51 2019 +0800"
@@ -777,7 +778,7 @@
       "app": "ElasticSearch",
       "path": "elasticsearch/WooYun-2015-110216",
       "tags": [
-        "File Operation",
+        "File Upload",
         "Database"
       ],
       "date": "Mon Apr 24 22:24:44 2017 +0800"
@@ -851,7 +852,7 @@
       "app": "FFmpeg",
       "path": "ffmpeg/CVE-2016-1897",
       "tags": [
-        "File Operation",
+        "Path Traversal",
         "SSRF"
       ],
       "date": "Wed Jul 5 02:23:01 2017 +0800"
@@ -864,7 +865,7 @@
       "app": "FFmpeg",
       "path": "ffmpeg/CVE-2017-9993",
       "tags": [
-        "File Operation"
+        "Path Traversal"
       ],
       "date": "Sun Mar 9 00:29:52 2025 +0800"
     },
@@ -1021,7 +1022,7 @@
       "app": "GitLab",
       "path": "gitlab/CVE-2016-9086",
       "tags": [
-        "File Operation"
+        "Path Traversal"
       ],
       "date": "Fri Apr 28 01:54:31 2017 +0800"
     },
@@ -1057,7 +1058,7 @@
       "app": "GlassFish",
       "path": "glassfish/CVE-2017-1000028",
       "tags": [
-        "File Operation",
+        "Path Traversal",
         "Webserver"
       ],
       "date": "Sun Mar 9 01:36:17 2025 +0800"
@@ -1287,7 +1288,7 @@
       "app": "ImageMagick",
       "path": "imagemagick/CVE-2022-44268",
       "tags": [
-        "File Operation"
+        "Path Traversal"
       ],
       "date": "Sat Feb 4 02:10:10 2023 +0800"
     },
@@ -1421,7 +1422,7 @@
       "app": "Jenkins",
       "path": "jenkins/CVE-2024-23897",
       "tags": [
-        "File Operation"
+        "Path Traversal"
       ],
       "date": "Fri Jan 26 17:18:58 2024 +0800"
     },
@@ -1586,7 +1587,7 @@
       "app": "Kibana",
       "path": "kibana/CVE-2018-17246",
       "tags": [
-        "File Inclusion"
+        "Path Traversal"
       ],
       "date": "Tue Jan 21 23:41:53 2020 +0800"
     },
@@ -1646,7 +1647,7 @@
       "app": "Librsvg",
       "path": "librsvg/CVE-2023-38633",
       "tags": [
-        "File Operation"
+        "Path Traversal"
       ],
       "date": "Fri Sep 22 23:16:01 2023 +0800"
     },
@@ -1719,7 +1720,7 @@
       "app": "Metabase",
       "path": "metabase/CVE-2021-41277",
       "tags": [
-        "File Operation"
+        "Path Traversal"
       ],
       "date": "Mon May 9 03:31:06 2022 +0800"
     },
@@ -1765,7 +1766,7 @@
       "app": "mini_httpd",
       "path": "mini_httpd/CVE-2018-18778",
       "tags": [
-        "File Operation",
+        "Path Traversal",
         "Webserver"
       ],
       "date": "Thu Nov 1 23:13:13 2018 +0800"
@@ -2252,7 +2253,7 @@
       "path": "php/CVE-2024-2961",
       "tags": [
         "RCE",
-        "File Operation"
+        "Path Traversal"
       ],
       "date": "Wed May 29 01:46:02 2024 +0800"
     },
@@ -2274,7 +2275,7 @@
       "path": "php/inclusion",
       "tags": [
         "RCE",
-        "File Inclusion"
+        "Path Traversal"
       ],
       "date": "Thu Apr 26 15:46:21 2018 +0800"
     },
@@ -2306,7 +2307,7 @@
       "app": "PHPMailer",
       "path": "phpmailer/CVE-2017-5223",
       "tags": [
-        "File Operation"
+        "Path Traversal"
       ],
       "date": "Mon Nov 27 17:51:58 2017 +0800"
     },
@@ -2330,7 +2331,7 @@
       "app": "phpMyAdmin",
       "path": "phpmyadmin/CVE-2018-12613",
       "tags": [
-        "File Inclusion"
+        "Path Traversal"
       ],
       "date": "Mon Jun 25 11:34:53 2018 +0800"
     },
@@ -2451,7 +2452,6 @@
       "app": "Ruby on Rails",
       "path": "rails/CVE-2019-5418",
       "tags": [
-        "File Operation",
         "Path Traversal",
         "Framework"
       ],
@@ -2514,7 +2514,7 @@
       "app": "Apache RocketMQ",
       "path": "rocketmq/CVE-2023-37582",
       "tags": [
-        "File Operation",
+        "File Upload",
         "Message Queue"
       ],
       "date": "Wed Feb 5 02:12:09 2025 +0800"
@@ -2562,7 +2562,8 @@
       "app": "SaltStack",
       "path": "saltstack/CVE-2020-11652",
       "tags": [
-        "File Operation"
+        "File Upload",
+        "Path Traversal"
       ],
       "date": "Mon May 4 07:31:27 2020 +0800"
     },
@@ -2724,7 +2725,7 @@
       "app": "Apache Solr",
       "path": "solr/Remote-Streaming-Fileread",
       "tags": [
-        "File Operation",
+        "Path Traversal",
         "SSRF"
       ],
       "date": "Thu Mar 18 21:23:46 2021 +0800"
@@ -3214,7 +3215,7 @@
       "app": "ThinkPHP",
       "path": "thinkphp/lang-rce",
       "tags": [
-        "File Inclusion"
+        "Path Traversal"
       ],
       "date": "Mon Dec 12 00:02:50 2022 +0800"
     },
@@ -3238,7 +3239,7 @@
       "app": "Apache Tomcat",
       "path": "tomcat/CVE-2017-12615",
       "tags": [
-        "File Operation",
+        "File Upload",
         "Webserver"
       ],
       "date": "Wed Sep 20 19:26:45 2017 +0800"
@@ -3252,7 +3253,7 @@
       "path": "tomcat/CVE-2020-1938",
       "tags": [
         "Auth Bypass",
-        "File Inclusion",
+        "Path Traversal",
         "Webserver"
       ],
       "date": "Fri Feb 21 00:40:44 2020 +0800"
@@ -3334,7 +3335,7 @@
       "app": "Vite",
       "path": "vite/CNVD-2022-44615",
       "tags": [
-        "File Operation"
+        "Path Traversal"
       ],
       "date": "Thu Mar 27 15:18:57 2025 +0800"
     },
@@ -3346,7 +3347,7 @@
       "app": "Vite",
       "path": "vite/CVE-2025-30208",
       "tags": [
-        "File Operation"
+        "Path Traversal"
       ],
       "date": "Thu Mar 27 01:06:20 2025 +0800"
     },
@@ -3386,7 +3387,7 @@
       "app": "WebLogic",
       "path": "weblogic/CVE-2018-2894",
       "tags": [
-        "File Operation",
+        "File Upload",
         "Webserver"
       ],
       "date": "Thu Jul 19 21:50:51 2018 +0800"
@@ -3435,7 +3436,7 @@
       "path": "weblogic/weak_password",
       "tags": [
         "RCE",
-        "File Operation",
+        "Path Traversal",
         "Webserver"
       ],
       "date": "Tue May 9 21:28:28 2017 +0800"
