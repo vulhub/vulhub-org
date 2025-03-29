@@ -242,7 +242,7 @@
       "date": "Tue Apr 12 03:01:24 2022 +0800"
     },
     {
-      "name": "Cacti Foreground Command Injection",
+      "name": "Cacti remote_agent.php Pre-Auth Command Injection",
       "cve": [
         "CVE-2022-46169"
       ],
@@ -254,7 +254,7 @@
       "date": "Mon Dec 12 20:33:17 2022 +0800"
     },
     {
-      "name": "Cacti Pre-Auth SQL Injection Leads to RCE",
+      "name": "Cacti graph_view.php SQL Injection Leads to RCE",
       "cve": [
         "CVE-2023-39361",
         "CVE-2024-31459"
