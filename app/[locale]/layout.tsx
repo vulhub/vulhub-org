@@ -8,6 +8,7 @@ import { Footer } from "@/components/footer";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import { I18nProviderClient } from "@/locales/client";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 dayjs.extend(relativeTime);
 
@@ -59,6 +60,7 @@ export default async function RootLayout({
           </I18nProviderClient>
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId="G-DS7WR22B2P" />
     </html>
   );
 }
