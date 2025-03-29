@@ -1257,16 +1257,16 @@
       "date": "Thu Feb 13 19:27:50 2025 +0800"
     },
     {
-      "name": "Imagetragick Command Execution",
+      "name": "ImageMagick Imagetragick Command Injection",
       "cve": [
         "CVE-2016-3714"
       ],
       "app": "ImageMagick",
-      "path": "imagemagick/imagetragick",
+      "path": "imagemagick/CVE-2016-3714",
       "tags": [
         "RCE"
       ],
-      "date": "Mon Mar 19 01:25:15 2018 +0800"
+      "date": "Sat Mar 29 21:52:40 2025 +0800"
     },
     {
       "name": "ImageMagick PDF Password Location Command Injection",
@@ -1329,10 +1329,10 @@
       "date": "Thu Oct 3 01:27:26 2019 +0800"
     },
     {
-      "name": "Java <= JDK 8u111 RMI Registry Deserialization Remote Code Execution",
+      "name": "Java < JDK8u232_b09 RMI Registry Deserialization Remote Code Execution Bypass",
       "cve": [],
       "app": "Java RMI",
-      "path": "java/rmi-registry-bind-deserialization",
+      "path": "java/rmi-registry-bind-deserialization-bypass",
       "tags": [
         "RCE",
         "Deserialization"
@@ -1340,10 +1340,10 @@
       "date": "Tue Feb 18 23:30:01 2020 +0800"
     },
     {
-      "name": "Java < JDK8u232_b09 RMI Registry Deserialization Remote Code Execution Bypass",
+      "name": "Java <= JDK 8u111 RMI Registry Deserialization Remote Code Execution",
       "cve": [],
       "app": "Java RMI",
-      "path": "java/rmi-registry-bind-deserialization-bypass",
+      "path": "java/rmi-registry-bind-deserialization",
       "tags": [
         "RCE",
         "Deserialization"
@@ -1466,7 +1466,7 @@
       "date": "Tue Aug 17 22:26:22 2021 +0800"
     },
     {
-      "name": "JimuReport FreeMarker Server Side Template Injection RCE",
+      "name": "JeecgBoot JimuReport FreeMarker Server Side Template Injection RCE",
       "cve": [
         "CVE-2023-4450"
       ],
