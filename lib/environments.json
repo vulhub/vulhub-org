@@ -254,6 +254,19 @@
       "date": "Mon Dec 12 20:33:17 2022 +0800"
     },
     {
+      "name": "Cacti Pre-Auth SQL Injection Leads to RCE",
+      "cve": [
+        "CVE-2023-39361"
+      ],
+      "app": "Cacti",
+      "path": "cacti/CVE-2023-39361",
+      "tags": [
+        "SQL Injection",
+        "RCE"
+      ],
+      "date": "Sun Mar 30 02:40:56 2025 +0800"
+    },
+    {
       "name": "Celery <4.0 Redis Unauthorized Access and Pickle Deserialization",
       "cve": [],
       "app": "Celery",
