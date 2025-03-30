@@ -2316,7 +2316,7 @@
       "date": "Mon Mar 19 01:23:23 2018 +0800"
     },
     {
-      "name": "XDebug Remote Debugging Code Execution",
+      "name": "PHP XDebug Remote Debugging Code Execution",
       "cve": [],
       "app": "PHP",
       "path": "php/xdebug-rce",
