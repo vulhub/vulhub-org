@@ -486,6 +486,19 @@
       "date": "Fri Nov 18 03:42:46 2022 +0800"
     },
     {
+      "name": "CraftCMS ConditionsController Pre-Auth Remote Code Execution",
+      "cve": [
+        "CVE-2023-41892"
+      ],
+      "app": "CraftCMS",
+      "path": "craftcms/CVE-2023-41892",
+      "tags": [
+        "RCE",
+        "CMS"
+      ],
+      "date": "Tue Apr 1 00:15:31 2025 +0800"
+    },
+    {
       "name": "CraftCMS register_argc_argv Leads to Remote Code Execution",
       "cve": [
         "CVE-2024-56145"
