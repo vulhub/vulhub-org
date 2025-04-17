@@ -1345,6 +1345,19 @@
       "date": "Wed Nov 30 14:56:40 2022 +0800"
     },
     {
+      "name": "Kubernetes Ingress-NGINX Unauthenticated Remote Code Execution",
+      "cve": [
+        "CVE-2025-1974"
+      ],
+      "app": "ingress-nginx",
+      "path": "ingress-nginx/CVE-2025-1974",
+      "tags": [
+        "RCE",
+        "Webserver"
+      ],
+      "date": "Fri Apr 18 04:57:05 2025 +0800"
+    },
+    {
       "name": "Jackson-databind Deserialization Remote Command Execution",
       "cve": [
         "CVE-2017-7525"
