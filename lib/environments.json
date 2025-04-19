@@ -24,6 +24,7 @@
     "Framework",
     "Message Queue",
     "Webserver",
+    "LLM",
     "Other"
   ],
   "environment": [
@@ -1705,6 +1706,19 @@
         "Path Traversal"
       ],
       "date": "Fri Apr 19 02:40:02 2024 +0800"
+    },
+    {
+      "name": "Langflow `validate/code` API Pre-Auth Remote Code Execution",
+      "cve": [
+        "CVE-2025-3248"
+      ],
+      "app": "Langflow",
+      "path": "langflow/CVE-2025-3248",
+      "tags": [
+        "LLM",
+        "RCE"
+      ],
+      "date": "Sun Apr 20 04:28:30 2025 +0800"
     },
     {
       "name": "Laravel Ignition 2.5.1 Remote Code Execution",
