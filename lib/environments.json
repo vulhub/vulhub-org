@@ -1164,15 +1164,43 @@
       "date": "Mon Jul 4 00:01:06 2022 +0800"
     },
     {
-      "name": "H2 Database Console Unauthorized Access",
-      "cve": [],
-      "app": "Springboot H2 Database",
-      "path": "h2database/h2-console-unacc",
-      "tags": [
-        "Auth Bypass",
-        "Database"
+      "name": "H2 Database Web Console Authentication Remote Code Execution",
+      "cve": [
+        "CVE-2018-10054"
       ],
-      "date": "Thu Apr 30 02:23:09 2020 +0800"
+      "app": "Springboot H2 Database",
+      "path": "h2database/CVE-2018-10054",
+      "tags": [
+        "Database",
+        "RCE"
+      ],
+      "date": "Sun Apr 20 01:37:03 2025 +0800"
+    },
+    {
+      "name": "H2 Database Web Console Pre-Auth JNDI Injection RCE",
+      "cve": [
+        "CVE-2021-42392"
+      ],
+      "app": "Springboot H2 Database",
+      "path": "h2database/CVE-2021-42392",
+      "tags": [
+        "Database",
+        "RCE"
+      ],
+      "date": "Sun Apr 20 01:37:03 2025 +0800"
+    },
+    {
+      "name": "H2 Database Web Console Pre-Auth JDBC Attack RCE",
+      "cve": [
+        "CVE-2022-23221"
+      ],
+      "app": "Springboot H2 Database",
+      "path": "h2database/CVE-2022-23221",
+      "tags": [
+        "Database",
+        "RCE"
+      ],
+      "date": "Sun Apr 20 01:37:03 2025 +0800"
     },
     {
       "name": "Hadoop YARN ResourceManager Unauthorized Access",
