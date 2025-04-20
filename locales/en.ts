@@ -44,8 +44,6 @@ export default {
   exploreEnvironments: "Explore Environments",
   github: "GitHub",
   stats: {
-    stars: "18.4k+ Stars",
-    forks: "4.5k+ Forks",
     environments: "{count} Environments"
   },
   codeSnippet: {

@@ -6,6 +6,7 @@ import { Github } from "@/components/icons";
 import { RelativeTime } from "@/components/time";
 import { Metadata } from "next";
 import { getI18n } from '@/locales/server';
+import { GithubStats } from "@/components/github-stats";
 
 export const runtime = 'edge';
 
@@ -25,7 +26,6 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function Home() {
-  const environments = getAllEnvironments();
   const latestEnvironments = getLatestEnvironments();
   const t = await getI18n();
 
@@ -65,14 +65,7 @@ export default async function Home() {
                   </a>
                 </Button>
               </div>
-              <div className="flex items-center text-slate-400 text-sm">
-                <Shield className="mr-2 h-4 w-4" />
-                <span>{t('stats.stars')}</span>
-                <span className="mx-2">•</span>
-                <span>{t('stats.forks')}</span>
-                <span className="mx-2">•</span>
-                <span>{t('stats.environments', { count: environments.length })}</span>
-              </div>
+              <GithubStats />
             </div>
             <div className="md:w-1/2 w-full overflow-x-auto">
               <div className="bg-slate-800 border border-slate-700 rounded-lg p-6 shadow-xl min-w-[300px]">
