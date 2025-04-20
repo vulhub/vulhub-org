@@ -32,8 +32,6 @@ export default {
   exploreEnvironments: "所有环境",
   github: "GitHub",
   stats: {
-    stars: "18.4k+ Stars",
-    forks: "4.5k+ Forks",
     environments: "{count} 个环境"
   },
   codeSnippet: {
