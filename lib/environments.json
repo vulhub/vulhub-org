@@ -3500,7 +3500,7 @@
       "date": "Sun Nov 1 04:47:33 2020 +0800"
     },
     {
-      "name": "WebLogic Unauthorized Remote Code Execution",
+      "name": "WebLogic Pre-Auth Remote Command Execution",
       "cve": [
         "CVE-2023-21839"
       ],
