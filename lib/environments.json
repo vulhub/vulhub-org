@@ -860,6 +860,18 @@
       "date": "Sun Feb 27 04:27:01 2022 +0800"
     },
     {
+      "name": "Unauthenticated Remote Code Execution in Erlang/OTP SSH",
+      "cve": [
+        "CVE-2025-32433"
+      ],
+      "app": "Erlang/OTP SSH",
+      "path": "erlang/CVE-2025-32433",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Fri Apr 25 03:39:33 2025 +0800"
+    },
+    {
       "name": "Fastjson 1.2.24 Deserialization Remote Command Execution",
       "cve": [
         "CVE-2017-18349"
