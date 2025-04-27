@@ -1155,7 +1155,7 @@
       "date": "Wed Nov 7 15:33:56 2018 +0800"
     },
     {
-      "name": "Gradio `/file` Interface Directory Traversal",
+      "name": "Gradio File Path Traversal",
       "cve": [
         "CVE-2023-51449"
       ],
@@ -1166,6 +1166,19 @@
         "LLM"
       ],
       "date": "Sun Apr 27 00:48:30 2025 +0800"
+    },
+    {
+      "name": "Gradio Arbitrary File Read",
+      "cve": [
+        "CVE-2024-1561"
+      ],
+      "app": "Gradio",
+      "path": "gradio/CVE-2024-1561",
+      "tags": [
+        "Path Traversal",
+        "LLM"
+      ],
+      "date": "Sun Apr 27 22:23:28 2025 +0800"
     },
     {
       "name": "Grafana 8.x Plug-in Module Directory Traversal",
