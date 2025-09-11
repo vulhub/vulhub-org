@@ -109,6 +109,18 @@
       "date": "Thu Jul 6 02:53:33 2023 +0800"
     },
     {
+      "name": "aiohttp Directory Traversal Vulnerability",
+      "cve": [
+        "CVE-2024-23334"
+      ],
+      "app": "Python",
+      "path": "python/CVE-2024-23334",
+      "tags": [
+        "Path Traversal"
+      ],
+      "date": "Sat Jul 5 20:00:22 2025 +0800"
+    },
+    {
       "name": "Apache Airflow Command Injection",
       "cve": [
         "CVE-2020-11978"
