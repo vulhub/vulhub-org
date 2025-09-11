@@ -29,6 +29,18 @@
   ],
   "environment": [
     {
+      "name": "1Panel Control Panel PostAuth SQL Injection",
+      "cve": [
+        "CVE-2024-39907"
+      ],
+      "app": "1panel",
+      "path": "1panel/CVE-2024-39907",
+      "tags": [
+        "SQL Injection"
+      ],
+      "date": "Thu Sep 11 18:39:55 2025 +0800"
+    },
+    {
       "name": "Apache ActiveMQ Deserialization",
       "cve": [
         "CVE-2015-5254"
@@ -107,18 +119,6 @@
         "Path Traversal"
       ],
       "date": "Thu Jul 6 02:53:33 2023 +0800"
-    },
-    {
-      "name": "aiohttp Directory Traversal Vulnerability",
-      "cve": [
-        "CVE-2024-23334"
-      ],
-      "app": "Python",
-      "path": "python/CVE-2024-23334",
-      "tags": [
-        "Path Traversal"
-      ],
-      "date": "Sat Jul 5 20:00:22 2025 +0800"
     },
     {
       "name": "Apache Airflow Command Injection",
@@ -2551,6 +2551,18 @@
         "Database"
       ],
       "date": "Thu Mar 21 20:34:42 2019 +0800"
+    },
+    {
+      "name": "aiohttp Directory Traversal Vulnerability",
+      "cve": [
+        "CVE-2024-23334"
+      ],
+      "app": "Python",
+      "path": "python/CVE-2024-23334",
+      "tags": [
+        "Path Traversal"
+      ],
+      "date": "Sat Jul 5 20:00:22 2025 +0800"
     },
     {
       "name": "Python PIL/Pillow Remote Command Execution by GhostScript GhostButt",
