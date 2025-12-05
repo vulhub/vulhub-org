@@ -2638,6 +2638,20 @@
       "date": "Tue Mar 19 01:46:32 2019 +0800"
     },
     {
+      "name": "React Server Components Flight Protocol Deserialization RCE",
+      "cve": [
+        "CVE-2025-55182"
+      ],
+      "app": "React",
+      "path": "react/CVE-2025-55182",
+      "tags": [
+        "RCE",
+        "Deserialization",
+        "Framework"
+      ],
+      "date": "Sat Dec 6 04:16:19 2025 +0800"
+    },
+    {
       "name": "Redis 4.x/5.x Command Execution due to Master-Slave Replication",
       "cve": [],
       "app": "Redis",
