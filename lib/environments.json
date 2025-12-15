@@ -2366,6 +2366,18 @@
       "date": "Mon Sep 15 18:49:09 2025 +0800"
     },
     {
+      "name": "pgAdmin4 <= 9.10 Database Restore Tool Command Injection",
+      "cve": [
+        "CVE-2025-13780"
+      ],
+      "app": "pgAdmin",
+      "path": "pgadmin/CVE-2025-13780",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Tue Dec 16 00:48:36 2025 +0800"
+    },
+    {
       "name": "PHP 8.1.0-dev User-Agentt Backdoor Remote Code Execution",
       "cve": [],
       "app": "PHP",
