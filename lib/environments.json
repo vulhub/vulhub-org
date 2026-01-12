@@ -537,6 +537,19 @@
       "date": "Sun Dec 29 03:07:05 2024 +0800"
     },
     {
+      "name": "CraftCMS Yii Class Injection Remote Code Execution",
+      "cve": [
+        "CVE-2025-32432"
+      ],
+      "app": "CraftCMS",
+      "path": "craftcms/CVE-2025-32432",
+      "tags": [
+        "RCE",
+        "CMS"
+      ],
+      "date": "Tue Jan 13 03:30:13 2026 +0800"
+    },
+    {
       "name": "OpenPrinting Cups-Browsed Remote Code Execution via The FoomaticRIPCommandLine PPD parameter",
       "cve": [
         "CVE-2024-47177"
