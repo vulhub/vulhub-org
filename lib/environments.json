@@ -1436,6 +1436,20 @@
       "date": "Sat Feb 4 02:10:10 2023 +0800"
     },
     {
+      "name": "GNU InetUtils telnetd Argument Injection Authentication Bypass",
+      "cve": [
+        "CVE-2026-24061"
+      ],
+      "app": "GNU InetUtils",
+      "path": "inetutils/CVE-2026-24061",
+      "tags": [
+        "Auth Bypass",
+        "RCE",
+        "Environment Injection"
+      ],
+      "date": "Fri Jan 23 01:16:19 2026 +0800"
+    },
+    {
       "name": "InfluxDB Empty JWT Secret Key Authentication Bypass",
       "cve": [
         "CVE-2019-20933"
