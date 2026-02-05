@@ -408,6 +408,19 @@
       "date": "Tue Jan 30 01:40:16 2024 +0800"
     },
     {
+      "name": "ComfyUI-Manager Remote Code Execution",
+      "cve": [
+        "CVE-2025-67303"
+      ],
+      "app": "ComfyUI",
+      "path": "comfyui/CVE-2025-67303",
+      "tags": [
+        "RCE",
+        "LLM"
+      ],
+      "date": "Fri Feb 6 02:45:38 2026 +0800"
+    },
+    {
       "name": "Atlassian Confluence Path Traversal Leads to RCE",
       "cve": [
         "CVE-2019-3396"
