@@ -3213,10 +3213,10 @@ jose@5.9.6:
   resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
 
-js-toml@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/js-toml/-/js-toml-1.0.1.tgz"
-  integrity sha512-rHd/IolpFm2V5BmHCEY8CckHs8NDsYZZ64H5RNgA6Opsr9vX4QyTiQPplgtqg7b3ztqYShZC38nl6CUg7QuhXg==
+js-toml@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/js-toml/-/js-toml-1.0.2.tgz#e901e61ce582e317177470b0d16da1c123349a22"
+  integrity sha512-/7IQ//bzn2a/5IDazPUNzlW7bsjxS51cxciYZDR+Z+3Le60yzT0YfI8KOWqTtBcZkXXVklhWd2OuGd8ZksB0wQ==
   dependencies:
     chevrotain "^11.0.3"
     xregexp "^5.1.1"
