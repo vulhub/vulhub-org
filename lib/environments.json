@@ -1243,6 +1243,19 @@
       "date": "Sat Dec 11 21:44:20 2021 +0800"
     },
     {
+      "name": "Grafana SQL Expressions Remote Code Execution",
+      "cve": [
+        "CVE-2024-9264"
+      ],
+      "app": "Grafana",
+      "path": "grafana/CVE-2024-9264",
+      "tags": [
+        "RCE",
+        "SQL Injection"
+      ],
+      "date": "Sun Mar 8 08:02:08 2026 +0800"
+    },
+    {
       "name": "Grafana Management Background SSRF",
       "cve": [],
       "app": "Grafana",
