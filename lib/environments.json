@@ -2067,6 +2067,19 @@
       "date": "Mon Jul 15 23:24:48 2024 +0800"
     },
     {
+      "name": "n8n Content-Type Confusion Arbitrary File Read to RCE",
+      "cve": [
+        "CVE-2026-21858"
+      ],
+      "app": "n8n",
+      "path": "n8n/CVE-2026-21858",
+      "tags": [
+        "Path Traversal",
+        "RCE"
+      ],
+      "date": "Tue Mar 10 00:43:02 2026 +0800"
+    },
+    {
       "name": "Neo4j Shell Server Deserialization",
       "cve": [
         "CVE-2021-34371"
