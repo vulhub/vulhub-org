@@ -2080,6 +2080,19 @@
       "date": "Tue Mar 10 00:43:02 2026 +0800"
     },
     {
+      "name": "n8n Expression Sandbox Escape to RCE",
+      "cve": [
+        "CVE-2025-68613"
+      ],
+      "app": "n8n",
+      "path": "n8n/CVE-2025-68613",
+      "tags": [
+        "Expression Injection",
+        "RCE"
+      ],
+      "date": "Tue Mar 10 17:51:20 2026 +0800"
+    },
+    {
       "name": "Neo4j Shell Server Deserialization",
       "cve": [
         "CVE-2021-34371"
