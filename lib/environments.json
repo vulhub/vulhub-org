@@ -316,6 +316,18 @@
       "date": "Wed Jun 30 11:43:09 2021 -0400"
     },
     {
+      "name": "Chartbrew MongoDB Dataset Query Remote Code Execution",
+      "cve": [
+        "CVE-2026-25887"
+      ],
+      "app": "Chartbrew",
+      "path": "chartbrew/CVE-2026-25887",
+      "tags": [
+        "RCE"
+      ],
+      "date": "Thu Mar 12 01:11:38 2026 +0800"
+    },
+    {
       "name": "CGI Application Environment Variable Injection by HTTPoxy",
       "cve": [
         "CVE-2016-5385"
