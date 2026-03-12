@@ -2434,6 +2434,18 @@
       "date": "Tue May 30 21:00:05 2023 +0800"
     },
     {
+      "name": "ownCloud graphapi Information Disclosure",
+      "cve": [
+        "CVE-2023-49103"
+      ],
+      "app": "ownCloud",
+      "path": "owncloud/CVE-2023-49103",
+      "tags": [
+        "Info Disclosure"
+      ],
+      "date": "Fri Mar 13 00:03:09 2026 +0800"
+    },
+    {
       "name": "PDF.js Arbitrary JavaScript Code Execution",
       "cve": [
         "CVE-2024-4367"
