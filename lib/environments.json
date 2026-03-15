@@ -267,6 +267,18 @@
       "date": "Tue Apr 12 03:01:24 2022 +0800"
     },
     {
+      "name": "Budibase Authentication Bypass via Webhook Query Parameter",
+      "cve": [
+        "CVE-2026-31816"
+      ],
+      "app": "Budibase",
+      "path": "budibase/CVE-2026-31816",
+      "tags": [
+        "Auth Bypass"
+      ],
+      "date": "Sun Mar 15 18:17:23 2026 +0800"
+    },
+    {
       "name": "Cacti remote_agent.php Pre-Auth Command Injection",
       "cve": [
         "CVE-2022-46169"
