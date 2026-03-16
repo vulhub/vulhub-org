@@ -864,7 +864,7 @@
       "app": "DNS",
       "path": "dns/dns-zone-transfer",
       "dockerfile": {
-        "vulhub/bind:latest": "base/bind/latest"
+        "vulhub/bind:9.10.3": "base/bind/9.10.3"
       },
       "tags": [
         "Other"
@@ -3049,7 +3049,7 @@
       "app": "ownCloud",
       "path": "owncloud/CVE-2023-49103",
       "dockerfile": {
-        "vulhub/owncloud:10.12.1": "base/owncloud/10.12"
+        "vulhub/owncloud:10.12.1": "base/owncloud/10.12.1"
       },
       "tags": [
         "Info Disclosure"
@@ -4349,7 +4349,7 @@
       "app": "Supervisor",
       "path": "supervisor/CVE-2017-11610",
       "dockerfile": {
-        "vulhub/python:2.7": "base/python/2.7.7"
+        "vulhub/supervisor:3.3.2": "base/supervisor/3.3.2"
       },
       "tags": [
         "RCE"
