@@ -4373,6 +4373,22 @@
       "date": "Thu Feb 1 03:07:35 2024 +0800"
     },
     {
+      "name": "JetBrains TeamCity Authentication Bypass",
+      "cve": [
+        "CVE-2024-27198"
+      ],
+      "app": "TeamCity",
+      "path": "teamcity/CVE-2024-27198",
+      "dockerfile": {
+        "vulhub/teamcity:2023.11.3": "base/teamcity/2023.11.3"
+      },
+      "tags": [
+        "Auth Bypass",
+        "RCE"
+      ],
+      "date": "Tue Mar 17 19:12:01 2026 +0800"
+    },
+    {
       "name": "ThinkPHP 2.x Remote Code Execution",
       "cve": [],
       "app": "ThinkPHP",
