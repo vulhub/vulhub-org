@@ -547,6 +547,22 @@
       "date": "Fri Feb 6 02:45:38 2026 +0800"
     },
     {
+      "name": "ComfyUI-Manager CRLF Injection in Configuration Handler",
+      "cve": [
+        "CVE-2026-22777"
+      ],
+      "app": "ComfyUI",
+      "path": "comfyui/CVE-2026-22777",
+      "dockerfile": {
+        "vulhub/comfyui:3.39.1-with-manager": "base/comfyui/with-manager/3.39.1"
+      },
+      "tags": [
+        "RCE",
+        "LLM"
+      ],
+      "date": "Thu Mar 19 22:28:17 2026 +0800"
+    },
+    {
       "name": "Atlassian Confluence Path Traversal Leads to RCE",
       "cve": [
         "CVE-2019-3396"
