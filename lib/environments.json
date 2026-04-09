@@ -111,6 +111,38 @@
       "date": "Tue Nov 7 17:38:41 2023 +0800"
     },
     {
+      "name": "Apache ActiveMQ Jolokia API Unauthorized Access",
+      "cve": [
+        "CVE-2024-32114"
+      ],
+      "app": "Apache ActiveMQ",
+      "path": "activemq/CVE-2024-32114",
+      "dockerfile": {
+        "vulhub/activemq:6.1.1": "base/activemq/6.1.1"
+      },
+      "tags": [
+        "Info Disclosure",
+        "Message Queue"
+      ],
+      "date": "Thu Apr 9 22:30:55 2026 +0800"
+    },
+    {
+      "name": "Apache ActiveMQ Jolokia Remote Code Execution",
+      "cve": [
+        "CVE-2026-34197"
+      ],
+      "app": "Apache ActiveMQ",
+      "path": "activemq/CVE-2026-34197",
+      "dockerfile": {
+        "vulhub/activemq:6.2.2": "base/activemq/6.2.2"
+      },
+      "tags": [
+        "RCE",
+        "Message Queue"
+      ],
+      "date": "Thu Apr 9 22:30:55 2026 +0800"
+    },
+    {
       "name": "Adminer Server-side Request Forgery on Error Page of Elasticsearch and ClickHouse",
       "cve": [
         "CVE-2021-21311"
