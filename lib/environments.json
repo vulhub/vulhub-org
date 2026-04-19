@@ -4584,6 +4584,23 @@
       "date": "Mon Mar 17 02:23:49 2025 +0800"
     },
     {
+      "name": "Tomcat Tribes EncryptInterceptor Bypass Remote Code Execution",
+      "cve": [
+        "CVE-2026-34486"
+      ],
+      "app": "Apache Tomcat",
+      "path": "tomcat/CVE-2026-34486",
+      "dockerfile": {
+        "vulhub/tomcat:9.0.116": "base/tomcat/9.0.116"
+      },
+      "tags": [
+        "RCE",
+        "Deserialization",
+        "Webserver"
+      ],
+      "date": "Mon Apr 20 02:11:13 2026 +0800"
+    },
+    {
       "name": "Tomcat Weak Password",
       "cve": [],
       "app": "Apache Tomcat",
