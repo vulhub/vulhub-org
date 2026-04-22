@@ -811,6 +811,21 @@
       "date": "Fri Nov 3 02:25:23 2017 +0800"
     },
     {
+      "name": "DataEase Authentication Bypass via Whitelist Path Traversal",
+      "cve": [
+        "CVE-2024-56511"
+      ],
+      "app": "DataEase",
+      "path": "dataease/CVE-2024-56511",
+      "dockerfile": {
+        "vulhub/dataease:2.10.3": "base/dataease/2.10.3"
+      },
+      "tags": [
+        "Auth Bypass"
+      ],
+      "date": "Wed Apr 22 23:48:17 2026 +0800"
+    },
+    {
       "name": "DataEase H2 JDBC Remote Code Execution",
       "cve": [
         "CVE-2025-32966"
