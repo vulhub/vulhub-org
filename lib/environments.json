@@ -3056,7 +3056,7 @@
         "vulhub/openclaw:2026.1.28": "base/openclaw/2026.1.28"
       },
       "tags": [
-        "XSS",
+        "RCE",
         "Info Disclosure"
       ],
       "date": "Sat Apr 11 02:22:16 2026 +0800"
