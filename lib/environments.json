@@ -4777,6 +4777,21 @@
       "date": "Sun Apr 12 17:29:51 2026 +0800"
     },
     {
+      "name": "Vite Development Server WebSocket Arbitrary File Read",
+      "cve": [
+        "CVE-2026-39363"
+      ],
+      "app": "Vite",
+      "path": "vite/CVE-2026-39363",
+      "dockerfile": {
+        "vulhub/vite:7.3.1": "base/vite/7.3.1"
+      },
+      "tags": [
+        "Path Traversal"
+      ],
+      "date": "Sun Apr 26 17:09:29 2026 +0800"
+    },
+    {
       "name": "WebLogic < 10.3.6 'wls-wsat' XMLDecoder Deserialization Remote Command Execution",
       "cve": [
         "CVE-2017-10271"
