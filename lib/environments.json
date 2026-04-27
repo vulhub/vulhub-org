@@ -4102,6 +4102,23 @@
       "date": "Fri Apr 1 04:44:47 2022 +0800"
     },
     {
+      "name": "Spring Framework Path Traversal via Jetty URI Parsing Inconsistency",
+      "cve": [
+        "CVE-2025-41242"
+      ],
+      "app": "Spring",
+      "path": "spring/CVE-2025-41242",
+      "dockerfile": {
+        "vulhub/spring-boot-jetty:3.2.4": "base/spring/spring-boot-jetty/3.2.4"
+      },
+      "tags": [
+        "Path Traversal",
+        "Info Disclosure",
+        "Framework"
+      ],
+      "date": "Tue Apr 28 03:44:20 2026 +0800"
+    },
+    {
       "name": "Spring Security Authorization Bypass in RegexRequestMatcher",
       "cve": [
         "CVE-2022-22978"
