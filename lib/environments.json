@@ -4936,6 +4936,25 @@
       "date": "Sun Aug 18 04:57:28 2019 +0800"
     },
     {
+      "name": "WordPress Pre-Auth RCE via REST API Batch Route Confusion and SQL Injection (wp2shell)",
+      "cve": [
+        "CVE-2026-63030",
+        "CVE-2026-60137"
+      ],
+      "app": "Wordpress",
+      "path": "wordpress/CVE-2026-63030",
+      "dockerfile": {
+        "vulhub/wordpress:6.9.4": "base/wordpress/6.9.4"
+      },
+      "tags": [
+        "RCE",
+        "SQL Injection",
+        "Privilege Escalation",
+        "CMS"
+      ],
+      "date": "Sun Jul 19 03:23:33 2026 +0800"
+    },
+    {
       "name": "Wordpress 4.6 Arbitrary Command Execution (PwnScriptum)",
       "cve": [],
       "app": "Wordpress",
