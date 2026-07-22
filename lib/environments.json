@@ -1293,6 +1293,20 @@
       "date": "Mon Jul 22 22:42:23 2019 +0800"
     },
     {
+      "name": "Fastjson 1.2.83 Deserialization Remote Command Execution via jar Protocol",
+      "cve": [],
+      "app": "Fastjson",
+      "path": "fastjson/1.2.83-rce",
+      "dockerfile": {
+        "vulhub/fastjson:1.2.83": "base/fastjson/1.2.83"
+      },
+      "tags": [
+        "RCE",
+        "Deserialization"
+      ],
+      "date": "Tue Jul 21 23:41:29 2026 +0800"
+    },
+    {
       "name": "FFmpeg Arbitrary File Read and SSRF",
       "cve": [
         "CVE-2016-1897",
