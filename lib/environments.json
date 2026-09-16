@@ -2417,6 +2417,22 @@
       "date": "Sun Apr 20 04:28:30 2025 +0800"
     },
     {
+      "name": "Langflow Public Flow Build API Unauthenticated Remote Code Execution",
+      "cve": [
+        "CVE-2026-33017"
+      ],
+      "app": "Langflow",
+      "path": "langflow/CVE-2026-33017",
+      "dockerfile": {
+        "vulhub/langflow:1.8.1": "base/langflow/1.8.1"
+      },
+      "tags": [
+        "LLM",
+        "RCE"
+      ],
+      "date": "Thu Sep 17 01:39:23 2026 +0800"
+    },
+    {
       "name": "Laravel Ignition 2.5.1 Remote Code Execution",
       "cve": [
         "CVE-2021-3129"
