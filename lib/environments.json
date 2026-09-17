@@ -1550,6 +1550,22 @@
       "date": "Fri Oct 29 02:24:12 2021 +0800"
     },
     {
+      "name": "GitLab Unauthenticated Arbitrary Local File Read",
+      "cve": [
+        "CVE-2026-85706"
+      ],
+      "app": "GitLab",
+      "path": "gitlab/CVE-2026-85706",
+      "dockerfile": {
+        "vulhub/gitlab:19.3.1": "base/gitlab/19.3.1"
+      },
+      "tags": [
+        "Info Disclosure",
+        "Path Traversal"
+      ],
+      "date": "Thu Sep 17 21:34:42 2026 +0800"
+    },
+    {
       "name": "gitlist 0.6.0 Remote Command Execution",
       "cve": [
         "CVE-2018-1000533"
