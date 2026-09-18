@@ -1645,6 +1645,21 @@
       "date": "Wed Nov 7 15:33:56 2018 +0800"
     },
     {
+      "name": "Gotenberg 8.30.1 ExifTool Argument Injection via PDF Metadata Values",
+      "cve": [
+        "CVE-2026-40281"
+      ],
+      "app": "Gotenberg",
+      "path": "gotenberg/CVE-2026-40281",
+      "dockerfile": {
+        "vulhub/gotenberg:8.30.1": "base/gotenberg/8.30.1"
+      },
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sat Sep 19 01:56:37 2026 +0800"
+    },
+    {
       "name": "Gradio File Path Traversal",
       "cve": [
         "CVE-2023-51449"
