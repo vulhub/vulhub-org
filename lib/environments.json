@@ -1566,6 +1566,21 @@
       "date": "Thu Sep 17 21:34:42 2026 +0800"
     },
     {
+      "name": "GitLab CI/CD Regular Expression Compiler Remote Code Execution",
+      "cve": [
+        "CVE-2026-97229"
+      ],
+      "app": "GitLab",
+      "path": "gitlab/CVE-2026-97229",
+      "dockerfile": {
+        "vulhub/gitlab:19.4.1": "base/gitlab/19.4.1"
+      },
+      "tags": [
+        "RCE"
+      ],
+      "date": "Sun Oct 18 04:59:35 2026 +0800"
+    },
+    {
       "name": "gitlist 0.6.0 Remote Command Execution",
       "cve": [
         "CVE-2018-1000533"
